@@ -1,0 +1,268 @@
+{
+  "name": "FSL Sentiment Report → GitHub Pages",
+  "nodes": [
+    {
+      "parameters": {
+        "rule": { "interval": [{ "field": "cronExpression", "expression": "0 0 * * 1" }] }
+      },
+      "id": "trigger-1",
+      "name": "매주 월요일 자정 실행",
+      "type": "n8n-nodes-base.scheduleTrigger",
+      "typeVersion": 1.1,
+      "position": [0, 360]
+    },
+    {
+      "parameters": {
+        "url": "https://www.fmkorea.com/fifa_online",
+        "sendHeaders": true,
+        "headerParameters": {
+          "parameters": [
+            { "name": "User-Agent", "value": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36" },
+            { "name": "Accept", "value": "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8" },
+            { "name": "Accept-Language", "value": "ko-KR,ko;q=0.9,en;q=0.8" },
+            { "name": "Referer", "value": "https://www.fmkorea.com/" },
+            { "name": "Cache-Control", "value": "no-cache" }
+          ]
+        },
+        "options": { "timeout": 15000 }
+      },
+      "id": "http-all",
+      "name": "전체게시판 크롤링",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.1,
+      "position": [240, 200]
+    },
+    {
+      "parameters": {
+        "url": "https://www.fmkorea.com/index.php?mid=fifa_online&category=8064047289",
+        "sendHeaders": true,
+        "headerParameters": {
+          "parameters": [
+            { "name": "User-Agent", "value": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36" },
+            { "name": "Accept", "value": "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8" },
+            { "name": "Accept-Language", "value": "ko-KR,ko;q=0.9,en;q=0.8" },
+            { "name": "Referer", "value": "https://www.fmkorea.com/fifa_online" },
+            { "name": "Cache-Control", "value": "no-cache" }
+          ]
+        },
+        "options": { "timeout": 15000 }
+      },
+      "id": "http-fsl",
+      "name": "FSL탭 크롤링",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.1,
+      "position": [240, 520]
+    },
+    {
+      "parameters": {
+        "jsCode": "// ─────────────────────────────────────────\n// 전체게시판 HTML 파싱\n// 에펨코리아 li.li_post 구조\n// ─────────────────────────────────────────\nconst html = $input.first().json.data || '';\n\nfunction extractPosts(html) {\n  const posts = [];\n  const liPattern = /<li[^>]*class=\"[^\"]*li_post[^\"]*\"[^>]*>([\\s\\S]*?)<\\/li>/gi;\n  let match;\n  while ((match = liPattern.exec(html)) !== null) {\n    const block = match[1];\n    const titleMatch = block.match(/class=\"[^\"]*title[^\"]*\"[^>]*>[\\s\\S]*?<a[^>]*href=\"([^\"]+)\"[^>]*>([^<]+)</);\n    if (!titleMatch) continue;\n    const url = 'https://www.fmkorea.com' + titleMatch[1];\n    const title = titleMatch[2].trim().replace(/\\s+/g, ' ');\n    const viewMatch = block.match(/조회[^\\d]*(\\d[\\d,]*)/) || block.match(/(\\d[\\d,]*)\\s*읽음/);\n    const views = viewMatch ? parseInt(viewMatch[1].replace(/,/g, '')) : 0;\n    const commentMatch = block.match(/\\[(\\d+)\\]/);\n    const comments = commentMatch ? parseInt(commentMatch[1]) : 0;\n    const dateMatch = block.match(/(\\d{4}\\.\\d{2}\\.\\d{2}|\\d{2}\\.\\d{2}|\\d+분 전|\\d+시간 전|방금)/);\n    const date = dateMatch ? dateMatch[1] : '';\n    if (title.length > 2) posts.push({ title, url, views, comments, date, sentiment: 'pending' });\n  }\n  return posts;\n}\n\nconst posts = extractPosts(html);\nconst totalMatch = html.match(/총\\s*([\\d,]+)\\s*개/) || html.match(/전체\\s*([\\d,]+)/);\nconst total_posts = totalMatch ? parseInt(totalMatch[1].replace(/,/g, '')) : posts.length;\nconst total_views = posts.reduce((a, p) => a + p.views, 0);\nconst avg_views = posts.length > 0 ? Math.round(total_views / posts.length) : 0;\n\nreturn [{\n  json: {\n    source: 'all',\n    total_posts,\n    total_views,\n    avg_views_per_post: avg_views,\n    posts,\n    crawled_at: new Date().toISOString()\n  }\n}];\n"
+      },
+      "id": "parse-all",
+      "name": "전체게시판 파싱",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [480, 200]
+    },
+    {
+      "parameters": {
+        "jsCode": "const html = $input.first().json.data || '';\n\nfunction extractPosts(html) {\n  const posts = [];\n  const liPattern = /<li[^>]*class=\"[^\"]*li_post[^\"]*\"[^>]*>([\\s\\S]*?)<\\/li>/gi;\n  let match;\n  while ((match = liPattern.exec(html)) !== null) {\n    const block = match[1];\n    const titleMatch = block.match(/class=\"[^\"]*title[^\"]*\"[^>]*>[\\s\\S]*?<a[^>]*href=\"([^\"]+)\"[^>]*>([^<]+)</);\n    if (!titleMatch) continue;\n    const url = 'https://www.fmkorea.com' + titleMatch[1];\n    const title = titleMatch[2].trim().replace(/\\s+/g, ' ');\n    const viewMatch = block.match(/조회[^\\d]*(\\d[\\d,]*)/) || block.match(/(\\d[\\d,]*)\\s*읽음/);\n    const views = viewMatch ? parseInt(viewMatch[1].replace(/,/g, '')) : 0;\n    const commentMatch = block.match(/\\[(\\d+)\\]/);\n    const comments = commentMatch ? parseInt(commentMatch[1]) : 0;\n    const dateMatch = block.match(/(\\d{4}\\.\\d{2}\\.\\d{2}|\\d{2}\\.\\d{2}|\\d+분 전|\\d+시간 전|방금)/);\n    const date = dateMatch ? dateMatch[1] : '';\n    if (title.length > 2) posts.push({ title, url, views, comments, date, sentiment: 'pending' });\n  }\n  return posts;\n}\n\nconst posts = extractPosts(html);\nconst total_views = posts.reduce((a, p) => a + p.views, 0);\nconst avg_views = posts.length > 0 ? Math.round(total_views / posts.length) : 0;\n\nreturn [{\n  json: {\n    source: 'fsl',\n    total_posts: posts.length,\n    total_views,\n    avg_views_per_post: avg_views,\n    posts,\n    crawled_at: new Date().toISOString()\n  }\n}];\n"
+      },
+      "id": "parse-fsl",
+      "name": "FSL탭 파싱",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [480, 520]
+    },
+    {
+      "parameters": {
+        "jsCode": "// ─────────────────────────────────────────\n// Claude API: 게시글 감성분석 + EA 리포트 형식 데이터 생성\n// 전체게시판용\n// ─────────────────────────────────────────\nconst data = $input.first().json;\nconst posts = data.posts.slice(0, 30);\nconst titlesText = posts.map((p, i) => `${i+1}. ${p.title}`).join('\\n');\n\nconst prompt = `당신은 FC온라인 커뮤니티 분석 전문가입니다.\n아래 게시글 제목들을 분석하여 JSON만 응답하세요. 다른 텍스트 없이 순수 JSON만.\n\n게시글 제목:\n${titlesText}\n\n응답 형식:\n{\n  \"sentiments\": [\"positive\"|\"neutral\"|\"negative\", ...],\n  \"sentiment_summary\": { \"positive\": 숫자(%), \"neutral\": 숫자(%), \"negative\": 숫자(%) },\n  \"top_issues\": {\n    \"positive\": \"긍정 이슈 핵심 한 줄 (20자 이내)\",\n    \"negative\": \"부정 이슈 핵심 한 줄 (20자 이내)\",\n    \"neutral\": \"중립 이슈 핵심 한 줄 (20자 이내)\"\n  },\n  \"keywords\": [\n    { \"topic\": \"키워드명\", \"count\": 추정언급수, \"pct\": \"X.X%\", \"tags\": \"관련 서브키워드들\" }\n  ],\n  \"churn_signals\": [\"이탈/불만 신호 문장1\", \"문장2\"],\n  \"impact_score\": 4.0~6.0사이_소수점1자리\n}`;\n\nconst response = await fetch('https://api.anthropic.com/v1/messages', {\n  method: 'POST',\n  headers: {\n    'Content-Type': 'application/json',\n    'x-api-key': $credentials.anthropicApiKey,\n    'anthropic-version': '2023-06-01'\n  },\n  body: JSON.stringify({\n    model: 'claude-haiku-4-5-20251001',\n    max_tokens: 2000,\n    messages: [{ role: 'user', content: prompt }]\n  })\n});\n\nconst result = await response.json();\nconst raw = result.content[0].text.trim().replace(/```json|```/g, '').trim();\n\nlet analysis;\ntry { analysis = JSON.parse(raw); }\ncatch { analysis = { sentiments: posts.map(() => 'neutral'), sentiment_summary: { positive: 33, neutral: 34, negative: 33 }, top_issues: { positive: '분석 실패', negative: '분석 실패', neutral: '분석 실패' }, keywords: [], churn_signals: [], impact_score: 5.0 }; }\n\nconst updatedPosts = data.posts.map((p, i) => ({ ...p, sentiment: analysis.sentiments[i] || 'neutral' }));\n\nconst now = new Date();\nconst kstOffset = 9 * 60 * 60 * 1000;\nconst kst = new Date(now.getTime() + kstOffset);\nconst lastUpdated = kst.toISOString().replace('T', ' ').slice(0, 16);\n\nreturn [{\n  json: {\n    ...data,\n    posts: updatedPosts,\n    sentiment: analysis.sentiment_summary,\n    top_issues: analysis.top_issues,\n    keywords: analysis.keywords,\n    churn_signals: analysis.churn_signals,\n    impact_score: analysis.impact_score,\n    last_updated: lastUpdated\n  }\n}];\n"
+      },
+      "id": "claude-all",
+      "name": "Claude 분석 (전체게시판)",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [740, 200]
+    },
+    {
+      "parameters": {
+        "jsCode": "// FSL탭 Claude 분석 — 이스포츠 특화 프롬프트\nconst data = $input.first().json;\nconst posts = data.posts.slice(0, 30);\nconst titlesText = posts.map((p, i) => `${i+1}. ${p.title}`).join('\\n');\n\nconst prompt = `당신은 FC온라인 이스포츠(FSL) 커뮤니티 분석 전문가입니다.\n아래 FSL/프로게이머 관련 게시글 제목들을 분석하여 JSON만 응답하세요.\n\n게시글 제목:\n${titlesText}\n\n분석 시 이스포츠 관점 중심으로: 선수/팀 반응, 중계/운영 만족도, 시청 의향, 이벤트 기대감 등에 집중.\n\n응답 형식:\n{\n  \"sentiments\": [\"positive\"|\"neutral\"|\"negative\", ...],\n  \"sentiment_summary\": { \"positive\": 숫자(%), \"neutral\": 숫자(%), \"negative\": 숫자(%) },\n  \"top_issues\": {\n    \"positive\": \"긍정 이슈 핵심 한 줄 (20자 이내)\",\n    \"negative\": \"부정 이슈 핵심 한 줄 (20자 이내)\",\n    \"neutral\": \"중립 이슈 핵심 한 줄 (20자 이내)\"\n  },\n  \"keywords\": [\n    { \"topic\": \"키워드명\", \"count\": 추정언급수, \"pct\": \"X.X%\", \"tags\": \"관련 서브키워드들\" }\n  ],\n  \"esports_disengagement_signals\": [\"이스포츠 이탈/무관심 신호1\", \"신호2\"],\n  \"fsl_mention_rate\": \"X.X%\",\n  \"impact_score\": 4.0~7.0사이_소수점1자리,\n  \"viewer_engagement_estimate\": \"XXK\"\n}`;\n\nconst response = await fetch('https://api.anthropic.com/v1/messages', {\n  method: 'POST',\n  headers: {\n    'Content-Type': 'application/json',\n    'x-api-key': $credentials.anthropicApiKey,\n    'anthropic-version': '2023-06-01'\n  },\n  body: JSON.stringify({\n    model: 'claude-haiku-4-5-20251001',\n    max_tokens: 2000,\n    messages: [{ role: 'user', content: prompt }]\n  })\n});\n\nconst result = await response.json();\nconst raw = result.content[0].text.trim().replace(/```json|```/g, '').trim();\n\nlet analysis;\ntry { analysis = JSON.parse(raw); }\ncatch { analysis = { sentiments: posts.map(() => 'neutral'), sentiment_summary: { positive: 50, neutral: 30, negative: 20 }, top_issues: { positive: '분석 실패', negative: '분석 실패', neutral: '분석 실패' }, keywords: [], esports_disengagement_signals: [], fsl_mention_rate: '0%', impact_score: 5.0, viewer_engagement_estimate: '0K' }; }\n\nconst updatedPosts = data.posts.map((p, i) => ({ ...p, sentiment: analysis.sentiments[i] || 'neutral' }));\n\nconst now = new Date();\nconst kst = new Date(now.getTime() + 9 * 60 * 60 * 1000);\nconst lastUpdated = kst.toISOString().replace('T', ' ').slice(0, 16);\n\nreturn [{\n  json: {\n    ...data,\n    posts: updatedPosts,\n    sentiment: analysis.sentiment_summary,\n    top_issues: analysis.top_issues,\n    keywords: analysis.keywords,\n    esports_disengagement_signals: analysis.esports_disengagement_signals,\n    fsl_mention_rate: analysis.fsl_mention_rate,\n    impact_score: analysis.impact_score,\n    viewer_engagement_estimate: analysis.viewer_engagement_estimate,\n    last_updated: lastUpdated\n  }\n}];\n"
+      },
+      "id": "claude-fsl",
+      "name": "Claude 분석 (FSL탭)",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [740, 520]
+    },
+    {
+      "parameters": {
+        "jsCode": "const data = $input.first().json;\nreturn [{ json: { content: Buffer.from(JSON.stringify(data, null, 2)).toString('base64'), data } }];\n"
+      },
+      "id": "encode-all",
+      "name": "Base64 인코딩 (전체)",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [1000, 200]
+    },
+    {
+      "parameters": {
+        "jsCode": "const data = $input.first().json;\nreturn [{ json: { content: Buffer.from(JSON.stringify(data, null, 2)).toString('base64'), data } }];\n"
+      },
+      "id": "encode-fsl",
+      "name": "Base64 인코딩 (FSL)",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [1000, 520]
+    },
+    {
+      "parameters": {
+        "url": "https://api.github.com/repos/{{$credentials.githubOwner}}/{{$credentials.githubRepo}}/contents/data_all.json",
+        "authentication": "genericCredentialType",
+        "genericAuthType": "httpHeaderAuth",
+        "sendHeaders": true,
+        "headerParameters": {
+          "parameters": [
+            { "name": "Accept", "value": "application/vnd.github+json" },
+            { "name": "X-GitHub-Api-Version", "value": "2022-11-28" }
+          ]
+        },
+        "method": "GET",
+        "options": {}
+      },
+      "id": "github-get-all",
+      "name": "GitHub SHA 조회 (전체)",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.1,
+      "position": [1240, 200]
+    },
+    {
+      "parameters": {
+        "url": "https://api.github.com/repos/{{$credentials.githubOwner}}/{{$credentials.githubRepo}}/contents/data_fsl.json",
+        "authentication": "genericCredentialType",
+        "genericAuthType": "httpHeaderAuth",
+        "sendHeaders": true,
+        "headerParameters": {
+          "parameters": [
+            { "name": "Accept", "value": "application/vnd.github+json" },
+            { "name": "X-GitHub-Api-Version", "value": "2022-11-28" }
+          ]
+        },
+        "method": "GET",
+        "options": {}
+      },
+      "id": "github-get-fsl",
+      "name": "GitHub SHA 조회 (FSL)",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.1,
+      "position": [1240, 520]
+    },
+    {
+      "parameters": {
+        "jsCode": "const encoded = $node['Base64 인코딩 (전체)'].json;\nconst sha = $input.first().json.sha || '';\nreturn [{ json: { payload: { message: `[auto] data_all.json - ${new Date().toISOString().slice(0,10)}`, content: encoded.content, sha } } }];\n"
+      },
+      "id": "payload-all",
+      "name": "PUT 페이로드 (전체)",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [1480, 200]
+    },
+    {
+      "parameters": {
+        "jsCode": "const encoded = $node['Base64 인코딩 (FSL)'].json;\nconst sha = $input.first().json.sha || '';\nreturn [{ json: { payload: { message: `[auto] data_fsl.json - ${new Date().toISOString().slice(0,10)}`, content: encoded.content, sha } } }];\n"
+      },
+      "id": "payload-fsl",
+      "name": "PUT 페이로드 (FSL)",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [1480, 520]
+    },
+    {
+      "parameters": {
+        "url": "https://api.github.com/repos/{{$credentials.githubOwner}}/{{$credentials.githubRepo}}/contents/data_all.json",
+        "authentication": "genericCredentialType",
+        "genericAuthType": "httpHeaderAuth",
+        "sendHeaders": true,
+        "headerParameters": {
+          "parameters": [
+            { "name": "Accept", "value": "application/vnd.github+json" },
+            { "name": "X-GitHub-Api-Version", "value": "2022-11-28" }
+          ]
+        },
+        "sendBody": true,
+        "contentType": "json",
+        "body": "={{ JSON.stringify($json.payload) }}",
+        "method": "PUT",
+        "options": {}
+      },
+      "id": "github-push-all",
+      "name": "GitHub Push (전체)",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.1,
+      "position": [1720, 200]
+    },
+    {
+      "parameters": {
+        "url": "https://api.github.com/repos/{{$credentials.githubOwner}}/{{$credentials.githubRepo}}/contents/data_fsl.json",
+        "authentication": "genericCredentialType",
+        "genericAuthType": "httpHeaderAuth",
+        "sendHeaders": true,
+        "headerParameters": {
+          "parameters": [
+            { "name": "Accept", "value": "application/vnd.github+json" },
+            { "name": "X-GitHub-Api-Version", "value": "2022-11-28" }
+          ]
+        },
+        "sendBody": true,
+        "contentType": "json",
+        "body": "={{ JSON.stringify($json.payload) }}",
+        "method": "PUT",
+        "options": {}
+      },
+      "id": "github-push-fsl",
+      "name": "GitHub Push (FSL)",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.1,
+      "position": [1720, 520]
+    }
+  ],
+  "connections": {
+    "매주 월요일 자정 실행": {
+      "main": [[
+        { "node": "전체게시판 크롤링", "type": "main", "index": 0 },
+        { "node": "FSL탭 크롤링", "type": "main", "index": 0 }
+      ]]
+    },
+    "전체게시판 크롤링": { "main": [[{ "node": "전체게시판 파싱", "type": "main", "index": 0 }]] },
+    "FSL탭 크롤링": { "main": [[{ "node": "FSL탭 파싱", "type": "main", "index": 0 }]] },
+    "전체게시판 파싱": { "main": [[{ "node": "Claude 분석 (전체게시판)", "type": "main", "index": 0 }]] },
+    "FSL탭 파싱": { "main": [[{ "node": "Claude 분석 (FSL탭)", "type": "main", "index": 0 }]] },
+    "Claude 분석 (전체게시판)": { "main": [[{ "node": "Base64 인코딩 (전체)", "type": "main", "index": 0 }]] },
+    "Claude 분석 (FSL탭)": { "main": [[{ "node": "Base64 인코딩 (FSL)", "type": "main", "index": 0 }]] },
+    "Base64 인코딩 (전체)": { "main": [[{ "node": "GitHub SHA 조회 (전체)", "type": "main", "index": 0 }]] },
+    "Base64 인코딩 (FSL)": { "main": [[{ "node": "GitHub SHA 조회 (FSL)", "type": "main", "index": 0 }]] },
+    "GitHub SHA 조회 (전체)": { "main": [[{ "node": "PUT 페이로드 (전체)", "type": "main", "index": 0 }]] },
+    "GitHub SHA 조회 (FSL)": { "main": [[{ "node": "PUT 페이로드 (FSL)", "type": "main", "index": 0 }]] },
+    "PUT 페이로드 (전체)": { "main": [[{ "node": "GitHub Push (전체)", "type": "main", "index": 0 }]] },
+    "PUT 페이로드 (FSL)": { "main": [[{ "node": "GitHub Push (FSL)", "type": "main", "index": 0 }]] }
+  },
+  "settings": { "executionOrder": "v1" },
+  "_SETUP_GUIDE": {
+    "1_credentials": {
+      "GitHub_PAT": "GitHub → Settings → Developer Settings → Personal Access Tokens (Classic) → repo 체크 → 생성",
+      "n8n_등록": "n8n 인스턴스 → Credentials → New → HTTP Header Auth → Name: GitHub → Header Name: Authorization → Header Value: Bearer {PAT}",
+      "Anthropic_API_Key": "console.anthropic.com → API Keys → 발급 후 동일 방식으로 등록 (Header Value: Bearer {API_KEY})"
+    },
+    "2_variables": {
+      "githubOwner": "zhd135135-stack",
+      "githubRepo": "fmkorea-dashboard (새로 만들 repo명)",
+      "trigger": "매주 월요일 자정 → 필요 시 cron 표현식 변경 (매일: 0 0 * * *)"
+    },
+    "3_deploy": {
+      "step1": "GitHub에 fmkorea-dashboard repo 생성",
+      "step2": "index.html, data_all.json(빈 {}), data_fsl.json(빈 {}) 업로드",
+      "step3": "Settings → Pages → Source: Deploy from branch → main → / (root)",
+      "step4": "n8n에서 워크플로 import → Credentials 연결 → 테스트 실행"
+    },
+    "4_data_flow": "에펨코리아 크롤링 → HTML 파싱 → Claude Haiku 감성분석 + EA리포트 형식 JSON 생성 → GitHub data_all.json / data_fsl.json push → GitHub Pages index.html이 fetch해서 자동 반영",
+    "5_cost_estimate": "Claude Haiku 기준 1회 실행 약 $0.002 (2000 토큰) · 주 1회 = 월 $0.01 수준"
+  }
+}

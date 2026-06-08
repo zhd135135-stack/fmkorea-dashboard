@@ -1,0 +1,203 @@
+{
+  "_meta": {
+    "last_updated": "2026-06-08",
+    "data_sources": [
+      "인벤 FSL 기사 (inven.co.kr)",
+      "네이트스포츠 FSL 기사 (sports.news.nate.com)",
+      "MC플러스 FSL 기사 (mc-plus.net)",
+      "엑스포츠뉴스 FSL 기사 (v.daum.net)",
+      "나무위키 2026 FSL Spring 문서",
+      "넥슨 FC온라인 공식 공지 (fconline.nexon.com)",
+      "시티닷KR 그랜드파이널 결과 (city.kr)"
+    ],
+    "note": "esports.fconline.nexon.com/FSL는 JS렌더링으로 직접 파싱 불가 → 기사 기반으로 수집",
+    "seasons": {
+      "2026_spring": {
+        "period": "2026.01.25 ~ 2026.03.22",
+        "venue": "잠실 DN 콜로세움",
+        "prize_pool": "10억원",
+        "format": "32인 개인전 / GROUP→KNOCKOUT→FINAL STAGE / 더블엘리미네이션",
+        "champion": "BNK FEARX NoiZ (노영진)",
+        "runner_up": "젠시티 wonder08 (고원재)",
+        "grand_final_score": "GCT wonder08 1:4 BFX NoiZ",
+        "group_stage_1st": "KT 우타 (안현민)",
+        "knockout_results": {
+          "M1": "UTA 3:0 MINION",
+          "M2": "NoiZ 3:2 KWAK",
+          "M3": "Crong 3:0 Ofel",
+          "M4": "Chan 3:2 TaeGod",
+          "M5": "RYUK 3:2 9KKI",
+          "M6": "wonder08 3:1 Clutch",
+          "M7": "JM 2:3 Navy",
+          "M8": "Chase 1:3 ONE"
+        },
+        "final_8": ["UTA", "NoiZ", "Crong", "Chan", "RYUK", "wonder08", "Navy", "ONE"],
+        "team_ranking": {
+          "1st": "BNK FEARX",
+          "2nd": "젠시티",
+          "8th_last": "Dplus KIA"
+        }
+      },
+      "2026_summer": {
+        "status": "예정",
+        "estimated": "2026년 하반기"
+      }
+    }
+  },
+
+  "tier1_keywords": {
+
+    "league_official": [
+      "FSL", "fsl", "에프에스엘",
+      "FSL SPRING", "FSL SUMMER", "FSL WINTER", "FSL FALL",
+      "2026 FSL", "2025 FSL", "2024 FSL",
+      "FSL 스프링", "FSL 서머", "FSL 윈터",
+      "슈퍼챔피언스리그", "슈퍼 챔피언스 리그",
+      "FC ONLINE SUPER CHAMPIONS LEAGUE",
+      "FSL 팀배틀", "FSL 팀 배틀", "FTB",
+      "FC PRO", "FC PRO MASTERS", "FC 프로 마스터즈",
+      "FC PRO CHAMPIONS CUP", "FC 프로 챔피언스컵",
+      "FC PRO FESTIVAL", "FC 프로 페스티벌",
+      "EACC", "EA챔피언스컵", "EA 챔피언스컵",
+      "FIFAe", "피파이",
+      "피파 온라인 이스포츠", "FC온라인 이스포츠",
+      "넥슨 이스포츠", "넥슨 e스포츠",
+      "FFL", "풋볼팬리그", "풋볼 팬 리그",
+      "FC온라인 아카데미", "아카데미 선수"
+    ],
+
+    "tournament_stages": [
+      "결승전", "결승", "그랜드파이널", "그랜드 파이널", "Grand Final", "GRAND FINAL",
+      "8강", "4강", "준결승", "준우승", "우승",
+      "그룹스테이지", "그룹 스테이지", "Group Stage", "GROUP STAGE",
+      "녹아웃", "녹아웃스테이지", "Knockout Stage", "KNOCKOUT STAGE",
+      "파이널스테이지", "파이널 스테이지", "Final Stage", "FINAL STAGE",
+      "더블엘리미네이션", "더블 엘리미네이션",
+      "승자조", "패자조", "타이브레이커",
+      "32강", "16강", "조별리그", "조편성", "지명식",
+      "스네이크방식", "스네이크 방식",
+      "죽음의 조", "탑골공원"
+    ],
+
+    "broadcast_venues": [
+      "직관", "중계", "생중계", "방송",
+      "SOOP", "숲", "치지직",
+      "아프리카TV", "아프리카",
+      "잠실 DN 콜로세움", "DN 콜로세움", "콜로세움",
+      "이스포츠 스타디움", "현장관람", "현장 관람",
+      "오프라인 관람", "오프라인 직관"
+    ],
+
+    "esports_general": [
+      "이스포츠", "e스포츠", "E스포츠",
+      "프로게이머", "프로 게이머",
+      "프로선수", "프로 선수",
+      "이스포츠 팬", "이스포츠 마케팅",
+      "응원", "팬미팅", "싸인회", "팬서비스",
+      "선수 이적", "이적", "로스터",
+      "코치", "감독", "코칭스태프"
+    ],
+
+    "teams": [
+      "T1", "티원", "T 1",
+      "Gen.G", "젠지", "GenG", "젠지이스포츠",
+      "젠시티", "GEN CITY", "GENCITY", "GCT",
+      "DRX", "디알엑스",
+      "kt롤스터", "kt 롤스터", "KT롤스터", "KT", "케이티",
+      "BNK피어엑스", "BNK FEARX", "BNK", "피어엑스", "BFX",
+      "DN수퍼스", "DN Supers", "DNS", "디엔수퍼스",
+      "농심레드포스", "농심 레드포스", "농심", "NongShim", "NS",
+      "Dplus KIA", "디플러스기아", "디플러스 기아", "DK", "DK이스포츠",
+      "어드바이스이스포츠", "그라츠"
+    ],
+
+    "players": [
+      "찬", "Chan", "CHAN", "박찬화",
+      "우타", "UTA", "안현민",
+      "원더08", "wonder08", "WONDER08", "고원재",
+      "JM", "김정민",
+      "오펠", "Ofel", "OFEL", "강준호",
+      "별", "Star", "STAR", "박기홍",
+      "원", "ONE", "이원주",
+      "류크", "RYUK", "윤창근",
+      "라이트", "Light", "LIGHT", "김선재",
+      "디케", "Dike", "DIKE", "강무진",
+      "곽", "KWAK", "곽준혁",
+      "엑시토", "EXITO", "윤형석",
+      "카이저", "Kaiser", "KAISER", "카엘", "Kael", "KAEL", "송현수",
+      "클러치", "Clutch", "CLUTCH", "박지민",
+      "TK777", "tk777", "이태경",
+      "노이즈", "NoiZ", "NOIZ", "노영진",
+      "미니언", "MINION", "조민혁",
+      "호석", "HOSEOK", "최호석",
+      "구끼", "9KKI", "김시경",
+      "미밥", "MiBOB", "MIBOB", "김태현",
+      "체이스", "Chase", "CHASE", "권창환",
+      "네이비", "Navy", "NAVY", "김유민",
+      "솔리드", "SOLID", "임태산",
+      "태갓", "TaeGod", "TAEGOD", "김태신",
+      "크롱", "Crong", "CRONG", "황세종",
+      "체크", "Check", "CHECK", "김준수",
+      "박스", "BOX", "강성훈",
+      "샤이프", "Shype", "SHYPE", "김승환",
+      "세이비어", "Savior", "SAVIOR", "이상민",
+      "뿔제비", "김경식",
+      "토비오", "Tobio", "TOBIO", "니와에 반야왓", "니와에",
+      "지피제이", "JiffyJay", "JIFFYJAY", "지프리 바이카뎀", "지프리", "바이카뎀",
+      "줍줍", "파타나삭 워라난", "파타나삭"
+    ],
+
+    "gameplay_esports": [
+      "포메이션 분석", "전술 분석", "스쿼드 분석",
+      "프로 스쿼드", "프로 빌드", "프로 전술",
+      "플레이스타일", "플레이 스타일",
+      "피지컬", "조작", "컨트롤",
+      "하이라이트", "골장면", "명장면", "베스트 골", "골모음",
+      "커스텀", "1ON1", "1대1",
+      "픽률", "승률", "전적",
+      "경기 결과", "스코어", "세트스코어",
+      "연장전", "승부차기", "PK",
+      "명승부", "역대급", "역배"
+    ]
+  },
+
+  "tier2_time_window_days": 3,
+
+  "tier2_trigger_keywords": [
+    "스쿼드", "선수 추천", "선수추천",
+    "이 선수", "써봤는데", "써봄", "씀", "사용해봄",
+    "팀컬러", "조합", "어울림",
+    "전술", "포메이션", "픽률",
+    "따라해봤", "따라해봄", "벤치마킹",
+    "모방", "참고", "영향받아",
+    "요즘 유행", "메타", "핫한 선수",
+    "프로처럼", "프로 따라", "선수 스쿼드"
+  ],
+
+  "fsl_event_dates_2026": {
+    "spring_group_stage": [
+      "2026-01-25", "2026-01-26",
+      "2026-02-01", "2026-02-02",
+      "2026-02-08", "2026-02-09", "2026-02-10"
+    ],
+    "spring_knockout_stage": [
+      "2026-02-22", "2026-02-23",
+      "2026-02-24", "2026-02-25"
+    ],
+    "spring_final_stage": [
+      "2026-03-15", "2026-03-22"
+    ],
+    "summer_tbd": []
+  },
+
+  "tier3_noise_keywords": [
+    "강화", "강화실패", "강화확률", "강화비용",
+    "서버", "렉", "핑", "지연", "끊김",
+    "과금", "현질", "패키지", "결제",
+    "이적시장", "시세", "하한가", "BP", "상한가",
+    "버그", "오류", "튕김", "점검",
+    "인플레이션", "귀속",
+    "보정", "조작의혹", "핵",
+    "업데이트", "패치", "너프", "버프"
+  ]
+}
