@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 """
 에펨코리아 FC온라인 게시판 크롤러
-- cloudscraper로 Cloudflare 우회
+- 브라우저 쿠키 기반 Cloudflare 우회
 - 전체게시판 + FSL/프로게이머 탭 수집
 - Claude API로 감성분석
 - data_all.json / data_fsl.json 저장
@@ -14,12 +14,19 @@ import re
 import time
 from datetime import datetime, timezone, timedelta
 
-import cloudscraper
+import requests
 from bs4 import BeautifulSoup
 import anthropic
 
 KST = timezone(timedelta(hours=9))
 ANTHROPIC_API_KEY = os.environ.get("ANTHROPIC_API_KEY", "")
+FMKOREA_COOKIE = os.environ.get("FMKOREA_COOKIE", "")
+
+DEFAULT_UA = (
+    "Mozilla/5.0 (Windows NT 10.0; Win64; x64) "
+    "AppleWebKit/537.36 (KHTML, like Gecko) "
+    "Chrome/124.0.0.0 Safari/537.36"
+)
 
 TARGETS = {
     "all": {
@@ -32,17 +39,27 @@ TARGETS = {
     }
 }
 
-# ── 크롤러 세팅 ──────────────────────────────────────────
-def make_scraper():
-    scraper = cloudscraper.create_scraper(
-        browser={
-            "browser": "chrome",
-            "platform": "windows",
-            "mobile": False
-        },
-        delay=5
-    )
-    return scraper
+# ── 세션 세팅 ──────────────────────────────────────────
+def make_session(cookie_str):
+    session = requests.Session()
+    session.headers.update({
+        "User-Agent": DEFAULT_UA,
+        "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
+        "Accept-Language": "ko-KR,ko;q=0.9,en;q=0.8",
+        "Referer": "https://www.fmkorea.com/",
+        "Cache-Control": "no-cache"
+    })
+
+    # 쿠키 파싱해서 세션에 주입
+    if cookie_str:
+        for part in cookie_str.split(";"):
+            part = part.strip()
+            if "=" in part:
+                k, v = part.split("=", 1)
+                session.cookies.set(k.strip(), v.strip(), domain=".fmkorea.com")
+
+    return session
+
 
 # ── HTML 파싱 ──────────────────────────────────────────
 def parse_posts(html):
@@ -50,7 +67,6 @@ def parse_posts(html):
     posts = []
 
     for li in soup.select("li.li_post"):
-        # 제목 + URL
         title_el = li.select_one(".title a")
         if not title_el:
             continue
@@ -59,16 +75,13 @@ def parse_posts(html):
         href = title_el.get("href", "")
         url = "https://www.fmkorea.com" + href if href.startswith("/") else href
 
-        # 조회수
         view_el = li.select_one(".m_no") or li.select_one(".count")
         views = 0
         if view_el:
-            views_text = view_el.get_text(strip=True)
-            views_match = re.search(r"[\d,]+", views_text)
-            if views_match:
-                views = int(views_match.group().replace(",", ""))
+            v_match = re.search(r"[\d,]+", view_el.get_text(strip=True))
+            if v_match:
+                views = int(v_match.group().replace(",", ""))
 
-        # 댓글수
         comment_el = li.select_one(".replyCount") or li.select_one(".reply_num")
         comments = 0
         if comment_el:
@@ -76,7 +89,6 @@ def parse_posts(html):
             if c_match:
                 comments = int(c_match.group())
 
-        # 날짜
         date_el = li.select_one(".regdate") or li.select_one(".date")
         date = date_el.get_text(strip=True) if date_el else ""
 
@@ -90,7 +102,6 @@ def parse_posts(html):
                 "sentiment": "pending"
             })
 
-    # 총 게시글 수
     total_match = re.search(r"총\s*([\d,]+)\s*개", html)
     total_posts = int(total_match.group(1).replace(",", "")) if total_match else len(posts)
 
@@ -190,7 +201,10 @@ def main():
     now_kst = datetime.now(KST).strftime("%Y-%m-%d %H:%M")
     print(f"크롤링 시작: {now_kst}")
 
-    scraper = make_scraper()
+    if not FMKOREA_COOKIE:
+        print("경고: FMKOREA_COOKIE 환경변수가 없습니다.")
+
+    session = make_session(FMKOREA_COOKIE)
 
     for source, config in TARGETS.items():
         url = config["url"]
@@ -199,7 +213,7 @@ def main():
         print(f"\n[{source.upper()}] 크롤링 중: {url}")
 
         try:
-            resp = scraper.get(url, timeout=30)
+            resp = session.get(url, timeout=30)
             print(f"응답 코드: {resp.status_code}")
 
             if resp.status_code != 200:
@@ -208,15 +222,8 @@ def main():
 
             html = resp.text
 
-            # Cloudflare 챌린지 페이지 체크
             if "에펨코리아 보안 시스템" in html or "cf-turnstile" in html:
-                print("Cloudflare 챌린지 감지 - 재시도 중...")
-                time.sleep(5)
-                resp = scraper.get(url, timeout=30)
-                html = resp.text
-
-            if "에펨코리아 보안 시스템" in html:
-                print("Cloudflare 우회 실패 - 스킵")
+                print("Cloudflare 챌린지 감지 - 쿠키를 갱신해야 합니다.")
                 continue
 
         except Exception as e:
@@ -236,7 +243,6 @@ def main():
         print(f"Claude 감성분석 중...")
         analysis = analyze_sentiment(posts, source)
 
-        # 감성 적용
         sentiments = analysis.get("sentiments", [])
         for i, post in enumerate(posts):
             post["sentiment"] = sentiments[i] if i < len(sentiments) else "neutral"
