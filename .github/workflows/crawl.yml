@@ -2,8 +2,8 @@ name: FM Korea Crawler
 
 on:
   schedule:
-    - cron: '0 0 * * *'  # 매일 오전 9시 KST
-  workflow_dispatch:       # 수동 실행
+    - cron: '0 0 * * *'
+  workflow_dispatch:
 
 jobs:
   crawl:
@@ -19,12 +19,12 @@ jobs:
           python-version: '3.11'
 
       - name: Install dependencies
-        run: |
-          pip install cloudscraper beautifulsoup4 anthropic requests
+        run: pip install requests beautifulsoup4 anthropic
 
       - name: Run crawler
         env:
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          FMKOREA_COOKIE: ${{ secrets.FMKOREA_COOKIE }}
         run: python crawl.py
 
       - name: Commit and push data
