@@ -2,8 +2,8 @@ name: FM Korea Crawler
 
 on:
   schedule:
-    - cron: '0 0 * * *'
-  workflow_dispatch:
+    - cron: '0 0 * * *'  # 매일 오전 9시 KST
+  workflow_dispatch:       # 수동 실행
 
 jobs:
   crawl:
@@ -20,9 +20,7 @@ jobs:
 
       - name: Install dependencies
         run: |
-          pip install playwright anthropic
-          playwright install chromium
-          playwright install-deps chromium
+          pip install cloudscraper beautifulsoup4 anthropic requests
 
       - name: Run crawler
         env:
