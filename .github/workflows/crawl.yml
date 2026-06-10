@@ -21,7 +21,7 @@ jobs:
           FMKOREA_COOKIE: ${{ secrets.FMKOREA_COOKIE }}
         run: python crawl.py
       - name: Commit and push data
-        shell: pwsh
+        shell: powershell
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
