@@ -15,8 +15,11 @@ import time
 from datetime import datetime, timezone, timedelta
 
 import requests
+import urllib3
 from bs4 import BeautifulSoup
 import anthropic
+
+urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
 
 KST = timezone(timedelta(hours=9))
 ANTHROPIC_API_KEY = os.environ.get("ANTHROPIC_API_KEY", "")
@@ -39,7 +42,6 @@ TARGETS = {
     }
 }
 
-# ── 세션 세팅 ──────────────────────────────────────────
 def make_session(cookie_str):
     session = requests.Session()
     session.headers.update({
@@ -49,19 +51,15 @@ def make_session(cookie_str):
         "Referer": "https://www.fmkorea.com/",
         "Cache-Control": "no-cache"
     })
-
-    # 쿠키 파싱해서 세션에 주입
     if cookie_str:
         for part in cookie_str.split(";"):
             part = part.strip()
             if "=" in part:
                 k, v = part.split("=", 1)
                 session.cookies.set(k.strip(), v.strip(), domain=".fmkorea.com")
-
     return session
 
 
-# ── HTML 파싱 ──────────────────────────────────────────
 def parse_posts(html):
     soup = BeautifulSoup(html, "html.parser")
     posts = []
@@ -108,7 +106,6 @@ def parse_posts(html):
     return posts, total_posts
 
 
-# ── Claude 감성분석 ──────────────────────────────────────
 def analyze_sentiment(posts, source):
     if not posts or not ANTHROPIC_API_KEY:
         return {
@@ -196,7 +193,6 @@ def analyze_sentiment(posts, source):
         }
 
 
-# ── 메인 ──────────────────────────────────────────────
 def main():
     now_kst = datetime.now(KST).strftime("%Y-%m-%d %H:%M")
     print(f"크롤링 시작: {now_kst}")
@@ -213,7 +209,7 @@ def main():
         print(f"\n[{source.upper()}] 크롤링 중: {url}")
 
         try:
-            resp = session.get(url, timeout=30)
+            resp = session.get(url, timeout=30, verify=False)
             print(f"응답 코드: {resp.status_code}")
 
             if resp.status_code != 200:
