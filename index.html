@@ -614,7 +614,9 @@ function renderESI(){
 }
 
 function renderTrend(){
-  const hist = ESI_HISTORY.length >= 2 ? ESI_HISTORY : [
+  // 실제 누적 히스토리 사용 (data_all.json의 history 필드)
+  const realHistory = DATA.all.history || [];
+  const hist = realHistory.length >= 2 ? realHistory : [
     {label:"06/03",esi:3.2,posts:28400,esports:910},
     {label:"06/04",esi:3.8,posts:31200,esports:1180},
     {label:"06/05",esi:2.9,posts:26800,esports:780},
@@ -955,8 +957,33 @@ function renderPostTable(){
     </tr>`).join('');
 
   const totalPages=Math.ceil(total/PAGE_SIZE);
-  document.getElementById('pagination').innerHTML=totalPages<=1?'':
-    Array.from({length:totalPages},(_,i)=>`<button class="page-btn ${i+1===currentPage?'active':''}" onclick="goPage(${i+1})">${i+1}</button>`).join('');
+  if(totalPages<=1){ document.getElementById('pagination').innerHTML=''; return; }
+
+  const pages=[];
+  // 항상 첫 페이지
+  pages.push(1);
+  // 현재 페이지 주변 ±2
+  for(let i=Math.max(2,currentPage-2);i<=Math.min(totalPages-1,currentPage+2);i++) pages.push(i);
+  // 항상 마지막 페이지
+  if(totalPages>1) pages.push(totalPages);
+  // 중복 제거 및 정렬
+  const uniquePages=[...new Set(pages)].sort((a,b)=>a-b);
+
+  let html='';
+  // 이전 버튼
+  html+=`<button class="page-btn" onclick="goPage(${currentPage-1})" ${currentPage===1?'disabled style="opacity:0.3;cursor:default"':''}>‹ 이전</button>`;
+
+  let prev=0;
+  for(const p of uniquePages){
+    if(p-prev>1) html+=`<span style="color:var(--text-muted);font-family:'Barlow Condensed',sans-serif;font-size:13px;padding:0 4px;align-self:center;">...</span>`;
+    html+=`<button class="page-btn ${p===currentPage?'active':''}" onclick="goPage(${p})">${p}</button>`;
+    prev=p;
+  }
+
+  // 다음 버튼
+  html+=`<button class="page-btn" onclick="goPage(${currentPage+1})" ${currentPage===totalPages?'disabled style="opacity:0.3;cursor:default"':''}>다음 ›</button>`;
+
+  document.getElementById('pagination').innerHTML=html;
   document.getElementById('page-info').textContent=total?`${start+1}–${Math.min(start+PAGE_SIZE,total)} / 총 ${total}건`:'';
 }
 
