@@ -4,6 +4,7 @@
 에펨코리아 FC온라인 게시판 크롤러
 - 브라우저 쿠키 기반 Cloudflare 우회
 - 전체게시판 + FSL/프로게이머 탭 수집
+- 전날 10:01 ~ 당일 09:59 범위 데이터 수집
 - Claude API로 감성분석
 - data_all.json / data_fsl.json 저장
 """
@@ -42,6 +43,9 @@ TARGETS = {
     }
 }
 
+MAX_PAGES = 20  # 최대 페이지 수 (안전장치)
+
+
 def make_session(cookie_str):
     session = requests.Session()
     session.headers.update({
@@ -60,64 +64,168 @@ def make_session(cookie_str):
     return session
 
 
-def parse_posts(html):
+def parse_date(date_str, now_kst):
+    """
+    날짜 문자열을 datetime으로 변환
+    - "10:59" → 오늘 날짜 + 시:분
+    - "06.09" → 올해 월.일
+    - "2025.06.09" → 연.월.일
+    """
+    date_str = date_str.strip()
+
+    # 시:분 형식 (오늘 글)
+    if re.match(r'^\d{1,2}:\d{2}$', date_str):
+        h, m = map(int, date_str.split(":"))
+        return now_kst.replace(hour=h, minute=m, second=0, microsecond=0)
+
+    # 월.일 형식
+    if re.match(r'^\d{2}\.\d{2}$', date_str):
+        month, day = map(int, date_str.split("."))
+        year = now_kst.year
+        try:
+            return datetime(year, month, day, tzinfo=KST)
+        except:
+            return None
+
+    # 연.월.일 형식
+    if re.match(r'^\d{4}\.\d{2}\.\d{2}$', date_str):
+        year, month, day = map(int, date_str.split("."))
+        try:
+            return datetime(year, month, day, tzinfo=KST)
+        except:
+            return None
+
+    return None
+
+
+def is_in_range(post_dt, start_dt, end_dt):
+    if post_dt is None:
+        return False
+    return start_dt <= post_dt <= end_dt
+
+
+def parse_posts_from_html(html, now_kst, start_dt, end_dt):
+    """HTML에서 게시글 파싱, 날짜 범위 필터링"""
     soup = BeautifulSoup(html, "html.parser")
     posts = []
+    out_of_range_count = 0
 
-    # 다양한 셀렉터 시도
-    items = (
-        soup.select("li.li_post") or
-        soup.select("tr.notice_item") or
-        soup.select("tr.item") or
-        soup.select(".bd_lst tr") or
-        soup.select("table.bd_lst tbody tr")
-    )
+    for tr in soup.select("table.bd_lst tbody tr"):
+        # 공지글 스킵
+        if "notice" in tr.get("class", []):
+            continue
 
-    for item in items:
-        title_el = (
-            item.select_one(".title a") or
-            item.select_one("td.title a") or
-            item.select_one("a.hx") or
-            item.select_one("td.subject a")
-        )
+        title_el = tr.select_one("td.title a")
         if not title_el:
             continue
 
         title = title_el.get_text(strip=True)
+        if len(title) <= 2:
+            continue
+
         href = title_el.get("href", "")
         url = "https://www.fmkorea.com" + href if href.startswith("/") else href
 
-        view_el = item.select_one(".m_no") or item.select_one(".count") or item.select_one("td.m_no")
+        # 날짜
+        date_el = tr.select_one("td.time")
+        date_str = date_el.get_text(strip=True) if date_el else ""
+        post_dt = parse_date(date_str, now_kst)
+
+        # 범위 밖이면 카운트
+        if post_dt and post_dt < start_dt:
+            out_of_range_count += 1
+
+        # 범위 내 글만 수집
+        if not is_in_range(post_dt, start_dt, end_dt):
+            continue
+
+        # 조회수
         views = 0
-        if view_el:
-            v_match = re.search(r"[\d,]+", view_el.get_text(strip=True))
-            if v_match:
-                views = int(v_match.group().replace(",", ""))
+        m_no_els = tr.select("td.m_no")
+        for el in m_no_els:
+            if "voted" in el.get("class", []):
+                continue
+            txt = el.get_text(strip=True)
+            # "10만" → 100000
+            if "만" in txt:
+                num = re.search(r"[\d.]+", txt)
+                if num:
+                    views = int(float(num.group()) * 10000)
+            else:
+                num = re.search(r"[\d,]+", txt)
+                if num:
+                    views = int(num.group().replace(",", ""))
+            if views > 0:
+                break
 
-        comment_el = item.select_one(".replyCount") or item.select_one(".reply_num")
+        # 댓글수
         comments = 0
-        if comment_el:
-            c_match = re.search(r"\d+", comment_el.get_text(strip=True))
-            if c_match:
-                comments = int(c_match.group())
+        reply_el = tr.select_one(".replyNum")
+        if reply_el:
+            c = re.search(r"\d+", reply_el.get_text(strip=True))
+            if c:
+                comments = int(c.group())
 
-        date_el = item.select_one(".regdate") or item.select_one(".date") or item.select_one("td.time")
-        date = date_el.get_text(strip=True) if date_el else ""
+        # 카테고리
+        cate_el = tr.select_one("td.cate")
+        category = cate_el.get_text(strip=True) if cate_el else ""
 
-        if len(title) > 2:
-            posts.append({
-                "title": title,
-                "url": url,
-                "views": views,
-                "comments": comments,
-                "date": date,
-                "sentiment": "pending"
-            })
+        posts.append({
+            "title": title,
+            "url": url,
+            "views": views,
+            "comments": comments,
+            "date": date_str,
+            "category": category,
+            "sentiment": "pending"
+        })
 
-    total_match = re.search(r"총\s*([\d,]+)\s*개", html)
-    total_posts = int(total_match.group(1).replace(",", "")) if total_match else len(posts)
+    return posts, out_of_range_count
 
-    return posts, total_posts
+
+def crawl_with_date_range(session, base_url, source, start_dt, end_dt, now_kst):
+    """날짜 범위 기반 페이지 순회 크롤링"""
+    all_posts = []
+
+    for page in range(1, MAX_PAGES + 1):
+        if page == 1:
+            url = base_url
+        else:
+            sep = "&" if "?" in base_url else "?"
+            url = f"{base_url}{sep}page={page}"
+
+        print(f"  [{source.upper()}] 페이지 {page} 크롤링: {url}")
+
+        try:
+            resp = session.get(url, timeout=30, verify=False)
+            print(f"  응답 코드: {resp.status_code}")
+
+            if resp.status_code != 200:
+                print(f"  실패: {resp.status_code}")
+                break
+
+            html = resp.text
+
+            if "에펨코리아 보안 시스템" in html or "cf-turnstile" in html:
+                print("  Cloudflare 챌린지 감지 - 쿠키를 갱신해야 합니다.")
+                break
+
+        except Exception as e:
+            print(f"  크롤링 실패: {e}")
+            break
+
+        posts, out_of_range_count = parse_posts_from_html(html, now_kst, start_dt, end_dt)
+        all_posts.extend(posts)
+        print(f"  수집된 게시글: {len(posts)}개 (누적: {len(all_posts)}개)")
+
+        # 범위 밖 글이 5개 이상이면 더 이전 페이지는 수집 불필요
+        if out_of_range_count >= 5:
+            print(f"  범위 이전 글 {out_of_range_count}개 감지 → 수집 종료")
+            break
+
+        time.sleep(1)
+
+    return all_posts
 
 
 def analyze_sentiment(posts, source):
@@ -208,8 +316,15 @@ def analyze_sentiment(posts, source):
 
 
 def main():
-    now_kst = datetime.now(KST).strftime("%Y-%m-%d %H:%M")
-    print(f"크롤링 시작: {now_kst}")
+    now_kst = datetime.now(KST)
+    now_str = now_kst.strftime("%Y-%m-%d %H:%M")
+    print(f"크롤링 시작: {now_str}")
+
+    # 수집 범위: 전날 10:01 ~ 당일 09:59
+    end_dt = now_kst.replace(hour=9, minute=59, second=59, microsecond=0)
+    start_dt = (now_kst - timedelta(days=1)).replace(hour=10, minute=1, second=0, microsecond=0)
+
+    print(f"수집 범위: {start_dt.strftime('%Y-%m-%d %H:%M')} ~ {end_dt.strftime('%Y-%m-%d %H:%M')}")
 
     if not FMKOREA_COOKIE:
         print("경고: FMKOREA_COOKIE 환경변수가 없습니다.")
@@ -217,39 +332,38 @@ def main():
     session = make_session(FMKOREA_COOKIE)
 
     for source, config in TARGETS.items():
-        url = config["url"]
+        base_url = config["url"]
         output = config["output"]
 
-        print(f"\n[{source.upper()}] 크롤링 중: {url}")
+        print(f"\n[{source.upper()}] 크롤링 시작")
 
-        try:
-            resp = session.get(url, timeout=30, verify=False)
-            print(f"응답 코드: {resp.status_code}")
-
-            if resp.status_code != 200:
-                print(f"실패: {resp.status_code}")
-                continue
-
-            html = resp.text
-
-            # 디버그용 HTML 저장
-            with open(f"debug_{source}.html", "w", encoding="utf-8") as f:
-                f.write(html)
-            print(f"debug_{source}.html 저장됨")
-
-            if "에펨코리아 보안 시스템" in html or "cf-turnstile" in html:
-                print("Cloudflare 챌린지 감지 - 쿠키를 갱신해야 합니다.")
-                continue
-
-        except Exception as e:
-            print(f"크롤링 실패: {e}")
-            continue
-
-        posts, total_posts = parse_posts(html)
-        print(f"파싱된 게시글: {len(posts)}개 / 총: {total_posts}개")
+        posts = crawl_with_date_range(session, base_url, source, start_dt, end_dt, now_kst)
+        print(f"[{source.upper()}] 총 수집: {len(posts)}개")
 
         if not posts:
-            print("게시글 없음 - 스킵")
+            print(f"[{source.upper()}] 게시글 없음 - 빈 데이터로 저장")
+            data = {
+                "source": source,
+                "collection_range": {
+                    "start": start_dt.strftime("%Y-%m-%d %H:%M"),
+                    "end": end_dt.strftime("%Y-%m-%d %H:%M")
+                },
+                "total_posts": 0,
+                "total_views": 0,
+                "avg_views_per_post": 0,
+                "posts": [],
+                "sentiment": {"positive": 0, "neutral": 0, "negative": 0},
+                "top_issues": {},
+                "keywords": [],
+                "churn_signals": [],
+                "esports_disengagement_signals": [],
+                "fsl_mention_rate": "0%",
+                "impact_score": 0,
+                "viewer_engagement_estimate": "0K",
+                "last_updated": now_str
+            }
+            with open(output, "w", encoding="utf-8") as f:
+                json.dump(data, f, ensure_ascii=False, indent=2)
             continue
 
         total_views = sum(p["views"] for p in posts)
@@ -264,7 +378,11 @@ def main():
 
         data = {
             "source": source,
-            "total_posts": total_posts,
+            "collection_range": {
+                "start": start_dt.strftime("%Y-%m-%d %H:%M"),
+                "end": end_dt.strftime("%Y-%m-%d %H:%M")
+            },
+            "total_posts": len(posts),
             "total_views": total_views,
             "avg_views_per_post": avg_views,
             "posts": posts,
@@ -276,7 +394,7 @@ def main():
             "fsl_mention_rate": analysis.get("fsl_mention_rate", "0%"),
             "impact_score": analysis.get("impact_score", 5.0),
             "viewer_engagement_estimate": analysis.get("viewer_engagement_estimate", "0K"),
-            "last_updated": now_kst
+            "last_updated": now_str
         }
 
         with open(output, "w", encoding="utf-8") as f:
