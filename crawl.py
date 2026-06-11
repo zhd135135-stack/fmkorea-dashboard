@@ -321,7 +321,7 @@ def main():
     print(f"크롤링 시작: {now_str}")
 
     # 수집 범위: 전날 10:01 ~ 당일 09:59
-    end_dt = now_kst.replace(hour=9, minute=59, second=59, microsecond=0)
+    end_dt = now_kst  # 실행 시점까지
     start_dt = (now_kst - timedelta(days=1)).replace(hour=10, minute=1, second=0, microsecond=0)
 
     print(f"수집 범위: {start_dt.strftime('%Y-%m-%d %H:%M')} ~ {end_dt.strftime('%Y-%m-%d %H:%M')}")
