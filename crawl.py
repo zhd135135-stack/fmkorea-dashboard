@@ -421,6 +421,49 @@ def main():
             "last_updated": now_str
         }
 
+        # ── 히스토리 누적 ──────────────────────────────
+        # 기존 파일에서 히스토리 읽기
+        existing_history = []
+        try:
+            with open(output, "r", encoding="utf-8") as f:
+                existing = json.load(f)
+                existing_history = existing.get("history", [])
+        except (FileNotFoundError, json.JSONDecodeError):
+            pass
+
+        # ESI 계산 (T1+T2 기반)
+        t1_count = sum(1 for p in posts if any(k.lower() in p["title"].lower() for k in ["fsl","이스포츠","프로게이머","결승","직관","중계","찬","우타","원더","noiz","노이즈"]))
+        t2_count = sum(1 for p in posts if any(k in p["title"] for k in ["포메이션","전술","스쿼드","팀컬러","조합"]))
+        total = len(posts)
+        pos_count = sum(1 for p in posts if p.get("sentiment") == "positive")
+        pos_rate = pos_count / total * 100 if total else 0
+        sent_coeff = pos_rate / 50
+        raw_esi = (t1_count * 1.0 + t2_count * 0.5) / total * sent_coeff * 100 if total else 0
+        esi_score = round(min(10, raw_esi), 1)
+
+        # 오늘 날짜 히스토리 항목
+        today_label = now_kst.strftime("%m/%d")
+        today_entry = {
+            "label": today_label,
+            "date": now_kst.strftime("%Y-%m-%d"),
+            "esi": esi_score,
+            "posts": total,
+            "esports": t1_count + t2_count,
+            "positive": round(pos_rate)
+        }
+
+        # 같은 날짜 중복 방지 (오늘 항목 교체)
+        existing_history = [h for h in existing_history if h.get("date") != today_entry["date"]]
+        existing_history.append(today_entry)
+
+        # 최근 90일치만 유지
+        existing_history = existing_history[-90:]
+        existing_history.sort(key=lambda x: x.get("date", ""))
+
+        data["history"] = existing_history
+        print(f"히스토리 누적: {len(existing_history)}일치")
+        # ──────────────────────────────────────────────
+
         with open(output, "w", encoding="utf-8") as f:
             json.dump(data, f, ensure_ascii=False, indent=2)
 
