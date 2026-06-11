@@ -43,7 +43,7 @@ TARGETS = {
     }
 }
 
-MAX_PAGES = 50  # 최대 50페이지 = 최대 1,000개
+MAX_PAGES = 150  # 최대 150페이지 = 최대 3,000개
 
 
 def make_session(cookie_str):
@@ -241,8 +241,11 @@ def analyze_sentiment(posts, source):
             "viewer_engagement_estimate": "0K"
         }
 
-    sample = posts[:30]
-    titles_text = "\n".join(f"{i+1}. {p['title']}" for i, p in enumerate(sample))
+    # 100개씩 배치 처리로 전체 분석
+    all_sentiments = []
+    for batch_start in range(0, len(posts), 100):
+        batch = posts[batch_start:batch_start+100]
+        titles_text = "\n".join(f"{i+1}. {p['title']}" for i, p in enumerate(batch))
 
     if source == "fsl":
         prompt = f"""당신은 FC온라인 이스포츠(FSL) 커뮤니티 분석 전문가입니다.
@@ -301,18 +304,34 @@ def analyze_sentiment(posts, source):
     raw = message.content[0].text.strip()
     raw = re.sub(r"```json|```", "", raw).strip()
 
-    try:
-        return json.loads(raw)
-    except json.JSONDecodeError:
-        print(f"JSON 파싱 실패: {raw[:200]}")
-        return {
-            "sentiments": ["neutral"] * len(sample),
-            "sentiment_summary": {"positive": 33, "neutral": 34, "negative": 33},
-            "top_issues": {"positive": "파싱 실패", "negative": "파싱 실패", "neutral": "파싱 실패"},
-            "keywords": [],
-            "churn_signals": [],
-            "impact_score": 5.0
-        }
+        try:
+            batch_result = json.loads(raw)
+            batch_sents = batch_result.get("sentiments", ["neutral"] * len(batch))
+            all_sentiments.extend(batch_sents[:len(batch)])
+            # 마지막 배치의 분석 결과를 최종 결과로 사용
+            if batch_start + 100 >= len(posts):
+                batch_result["sentiments"] = all_sentiments
+                return batch_result
+        except json.JSONDecodeError:
+            print(f"JSON 파싱 실패 (배치 {batch_start//100+1}): {raw[:200]}")
+            all_sentiments.extend(["neutral"] * len(batch))
+            if batch_start + 100 >= len(posts):
+                return {
+                    "sentiments": all_sentiments,
+                    "sentiment_summary": {"positive": 33, "neutral": 34, "negative": 33},
+                    "top_issues": {"positive": "파싱 실패", "negative": "파싱 실패", "neutral": "파싱 실패"},
+                    "keywords": [],
+                    "churn_signals": [],
+                    "impact_score": 5.0
+                }
+    return {
+        "sentiments": all_sentiments,
+        "sentiment_summary": {"positive": 33, "neutral": 34, "negative": 33},
+        "top_issues": {},
+        "keywords": [],
+        "churn_signals": [],
+        "impact_score": 5.0
+    }
 
 
 def main():
