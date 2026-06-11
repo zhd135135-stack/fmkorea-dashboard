@@ -3,490 +3,461 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>FSL ESI Dashboard</title>
+<title>FC Online · FSL ESI Daily Report</title>
 <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Barlow+Condensed:wght@400;600;700;800&family=Noto+Sans+KR:wght@300;400;500;700&display=swap" rel="stylesheet">
 <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.0/chart.umd.min.js"></script>
 <style>
 :root {
-  --bg: #060810;
-  --surface: #0d1117;
-  --surface2: #131720;
-  --surface3: #1a2030;
-  --border: #1e2535;
-  --border2: #252d3d;
-  --accent: #00e5ff;
-  --gold: #ffd700;
-  --positive: #00e676;
-  --neutral: #78909c;
-  --negative: #ff1744;
-  --warning: #ff9100;
-  --text: #e8eaf0;
-  --text-muted: #546e7a;
-  --text-dim: #2a3545;
-  --tier1: #00e5ff;
-  --tier2: #7c4dff;
-  --tier3: #37474f;
+  --bg:#060d0a; --surface:#0a1410; --surface2:#0f1c16; --surface3:#162218;
+  --border:#1a2e22; --border2:#223a2a;
+  --accent:#00e676; --fsl:#00e5ff; --gold:#ffd600;
+  --positive:#00e676; --neutral:#78909c; --negative:#ff1744; --warning:#ff9100;
+  --text:#e8f0ec; --text-muted:#5a7a68; --text-dim:#1e3028;
 }
-* { margin:0; padding:0; box-sizing:border-box; }
-body {
-  background: var(--bg);
-  color: var(--text);
-  font-family: 'Noto Sans KR', sans-serif;
-  word-break: keep-all;
-  overflow-wrap: break-word;
-}
-body::before {
-  content:'';
-  position:fixed; inset:0;
-  background:
-    radial-gradient(ellipse 70% 40% at 15% 0%, rgba(0,229,255,0.05) 0%, transparent 55%),
-    radial-gradient(ellipse 50% 30% at 85% 100%, rgba(124,77,255,0.05) 0%, transparent 55%);
-  pointer-events:none; z-index:0;
-}
-body::after {
-  content:'';
-  position:fixed; inset:0;
-  background-image:
-    linear-gradient(rgba(0,229,255,0.02) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(0,229,255,0.02) 1px, transparent 1px);
-  background-size:50px 50px;
-  pointer-events:none; z-index:0;
-}
-.wrap { max-width:1440px; margin:0 auto; padding:0 32px 60px; position:relative; z-index:1; }
+*{margin:0;padding:0;box-sizing:border-box;}
+body{background:var(--bg);color:var(--text);font-family:'Noto Sans KR',sans-serif;word-break:keep-all;overflow-wrap:break-word;}
+body::before{content:'';position:fixed;inset:0;background:radial-gradient(ellipse 80% 50% at 0% 0%,rgba(0,230,118,0.06) 0%,transparent 50%),radial-gradient(ellipse 60% 40% at 100% 100%,rgba(0,229,255,0.04) 0%,transparent 50%);pointer-events:none;z-index:0;}
+.wrap{max-width:1440px;margin:0 auto;padding:0 40px 80px;position:relative;z-index:1;}
 
-/* ── 헤더 ── */
-.topbar {
-  display:flex; align-items:center; justify-content:space-between;
-  padding:14px 0; border-bottom:1px solid var(--border);
-  font-family:'Barlow Condensed',sans-serif; font-size:11px;
-  letter-spacing:2px; color:var(--text-muted); text-transform:uppercase;
-}
-.topbar-logo { font-size:16px; font-weight:800; color:var(--accent); letter-spacing:3px; }
-.live-row { display:flex; align-items:center; gap:6px; }
-.live-dot { width:6px; height:6px; background:var(--positive); border-radius:50%; animation:blink 2s infinite; }
-@keyframes blink { 0%,100%{opacity:1;} 50%{opacity:0.2;} }
+/* TOPBAR */
+.topbar{display:flex;align-items:center;justify-content:space-between;padding:16px 0;border-bottom:1px solid var(--border);font-family:'Barlow Condensed',sans-serif;font-size:11px;letter-spacing:2px;color:var(--text-muted);text-transform:uppercase;}
+.topbar-logo{font-size:14px;font-weight:800;color:var(--accent);letter-spacing:3px;}
+.live-row{display:flex;align-items:center;gap:6px;}
+.live-dot{width:6px;height:6px;background:var(--positive);border-radius:50%;animation:blink 2s infinite;}
+@keyframes blink{0%,100%{opacity:1;}50%{opacity:0.2;}}
 
-/* ── ESI 메인 히어로 ── */
-.esi-hero {
-  display:grid; grid-template-columns:1fr 420px;
-  gap:24px; margin:40px 0 28px; align-items:stretch;
-}
-.esi-main {
-  background:var(--surface);
-  border:1px solid var(--border2);
-  border-top:3px solid var(--accent);
-  border-radius:0 0 16px 16px;
-  padding:36px 40px;
-  display:flex; flex-direction:column; justify-content:space-between;
-}
-.esi-label {
-  font-family:'Barlow Condensed',sans-serif;
-  font-size:11px; font-weight:700; letter-spacing:3px;
-  color:var(--text-muted); text-transform:uppercase; margin-bottom:8px;
-}
-.esi-title {
-  font-family:'Bebas Neue',sans-serif; font-size:22px;
-  letter-spacing:2px; color:var(--text); margin-bottom:28px;
-}
-.esi-score-row { display:flex; align-items:flex-end; gap:20px; margin-bottom:20px; }
-.esi-score-value {
-  font-family:'Bebas Neue',sans-serif; font-size:120px;
-  letter-spacing:-2px; line-height:1;
-  background:linear-gradient(135deg, var(--accent) 0%, #7c4dff 100%);
-  -webkit-background-clip:text; -webkit-text-fill-color:transparent;
-}
-.esi-score-meta { padding-bottom:16px; }
-.esi-wow {
-  font-family:'Barlow Condensed',sans-serif; font-size:18px;
-  font-weight:700; letter-spacing:1px; margin-bottom:4px;
-}
-.esi-wow.up { color:var(--positive); }
-.esi-wow.down { color:var(--negative); }
-.esi-score-range { font-size:11px; color:var(--text-muted); }
-.esi-gauge-wrap { margin-bottom:20px; }
-.esi-gauge-bg {
-  height:8px; background:var(--border); border-radius:4px; overflow:hidden; margin-bottom:6px;
-}
-.esi-gauge-fill {
-  height:100%; border-radius:4px;
-  background:linear-gradient(90deg, var(--accent), #7c4dff);
-  transition:width 1s cubic-bezier(0.4,0,0.2,1);
-}
-.esi-gauge-labels {
-  display:flex; justify-content:space-between;
-  font-family:'Barlow Condensed',sans-serif; font-size:10px;
-  color:var(--text-muted); letter-spacing:1px;
-}
-.esi-interpretation {
-  background:rgba(0,229,255,0.05);
-  border:1px solid rgba(0,229,255,0.12);
-  border-left:3px solid var(--accent);
-  border-radius:0 8px 8px 0;
-  padding:12px 16px;
-}
-.esi-interpretation-level {
-  font-family:'Bebas Neue',sans-serif; font-size:20px;
-  letter-spacing:1px; color:var(--accent); margin-bottom:4px;
-}
-.esi-interpretation-desc { font-size:12px; color:#90a4ae; line-height:1.6; }
+/* DAILY REPORT HEADER */
+.report-header{padding:40px 0 28px;border-bottom:1px solid var(--border);margin-bottom:32px;}
+.report-eyebrow{font-family:'Barlow Condensed',sans-serif;font-size:11px;font-weight:700;letter-spacing:3px;color:var(--accent);text-transform:uppercase;margin-bottom:10px;}
+.report-title{font-family:'Bebas Neue',sans-serif;font-size:52px;letter-spacing:3px;line-height:1;color:var(--text);margin-bottom:6px;}
+.report-title span{color:var(--accent);}
+.report-date{font-family:'Barlow Condensed',sans-serif;font-size:13px;letter-spacing:2px;color:var(--text-muted);margin-bottom:20px;}
+.report-box{background:var(--surface2);border:1px solid var(--border2);border-left:4px solid var(--accent);border-radius:0 8px 8px 0;padding:16px 20px;max-width:960px;}
+.report-state{font-family:'Barlow Condensed',sans-serif;font-size:12px;font-weight:700;letter-spacing:1px;color:var(--accent);margin-bottom:6px;}
+.report-text{font-size:13px;color:#90a4ae;line-height:1.7;}
 
-/* ESI 우측 패널 */
-.esi-breakdown {
-  background:var(--surface);
-  border:1px solid var(--border2);
-  border-radius:12px;
-  padding:28px;
-  display:flex; flex-direction:column; gap:20px;
-}
-.breakdown-title {
-  font-family:'Barlow Condensed',sans-serif; font-size:11px;
-  font-weight:700; letter-spacing:2.5px; color:var(--text-muted);
-  text-transform:uppercase;
-}
-.breakdown-item { }
-.breakdown-item-head {
-  display:flex; align-items:center; justify-content:space-between; margin-bottom:6px;
-}
-.tier-badge {
-  display:inline-flex; align-items:center; gap:6px;
-  font-family:'Barlow Condensed',sans-serif; font-size:11px;
-  font-weight:700; letter-spacing:1.5px; text-transform:uppercase;
-}
-.tier-dot { width:8px; height:8px; border-radius:50%; flex-shrink:0; }
-.breakdown-count {
-  font-family:'Bebas Neue',sans-serif; font-size:22px; letter-spacing:0.5px;
-}
-.breakdown-bar-bg { height:5px; background:var(--border); border-radius:3px; overflow:hidden; margin-bottom:4px; }
-.breakdown-bar-fill { height:100%; border-radius:3px; transition:width 0.8s ease; }
-.breakdown-desc { font-size:11px; color:var(--text-muted); line-height:1.5; }
+/* KPI STRIP */
+.kpi-strip{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:var(--border);border:1px solid var(--border2);border-radius:10px;overflow:hidden;margin-bottom:32px;}
+.kpi-cell{background:var(--surface);padding:24px 28px;}
+.kpi-label{font-family:'Barlow Condensed',sans-serif;font-size:10px;font-weight:700;letter-spacing:2.5px;color:var(--text-muted);text-transform:uppercase;margin-bottom:10px;}
+.kpi-value{font-family:'Bebas Neue',sans-serif;font-size:48px;letter-spacing:1px;line-height:1;margin-bottom:6px;}
+.kpi-sub{font-family:'Barlow Condensed',sans-serif;font-size:11px;letter-spacing:1px;color:var(--text-muted);}
+.c-accent{color:var(--accent);} .c-fsl{color:var(--fsl);} .c-gold{color:var(--gold);} .c-warn{color:var(--warning);}
 
-/* 공식 */
-.esi-formula-card {
-  background:var(--surface2);
-  border:1px solid var(--border);
-  border-radius:10px; padding:16px 20px;
-  font-family:'Barlow Condensed',sans-serif;
-  font-size:12px; color:var(--text-muted); letter-spacing:0.5px;
-  line-height:1.8;
-}
-.formula-text { color:var(--accent); font-size:13px; font-weight:600; }
+/* ESI HERO */
+.esi-hero{display:grid;grid-template-columns:1fr 400px;gap:24px;margin-bottom:32px;}
+.esi-main{background:var(--surface);border:1px solid var(--border2);border-top:3px solid var(--accent);border-radius:0 0 12px 12px;padding:36px 40px;}
+.sec-eyebrow{font-family:'Barlow Condensed',sans-serif;font-size:10px;font-weight:700;letter-spacing:3px;color:var(--text-muted);text-transform:uppercase;margin-bottom:6px;}
+.sec-title{font-family:'Bebas Neue',sans-serif;font-size:28px;letter-spacing:2px;color:var(--text);margin-bottom:16px;}
+.sec-title span{color:var(--accent);}
 
-/* ── KPI 4개 ── */
-.kpi-row {
-  display:grid; grid-template-columns:repeat(4,1fr);
-  gap:1px; background:var(--border);
-  border:1px solid var(--border); border-radius:10px; overflow:hidden;
-  margin-bottom:28px;
-}
-.kpi-cell {
-  background:var(--surface); padding:20px 24px; text-align:center;
-}
-.kpi-cell-label {
-  font-family:'Barlow Condensed',sans-serif; font-size:10px;
-  font-weight:700; letter-spacing:2px; color:var(--text-muted);
-  text-transform:uppercase; margin-bottom:8px;
-}
-.kpi-cell-value {
-  font-family:'Bebas Neue',sans-serif; font-size:42px;
-  letter-spacing:1px; line-height:1;
-}
-.c-accent { color:var(--accent); }
-.c-gold { color:var(--gold); }
-.c-green { color:var(--positive); }
-.c-warn { color:var(--warning); }
-.kpi-cell-sub { font-size:11px; color:var(--text-muted); margin-top:4px; }
-.kpi-cell-sub.up { color:var(--positive); font-weight:700; }
-.kpi-cell-sub.down { color:var(--negative); font-weight:700; }
+/* ESI 설명 박스 */
+.esi-explain{background:var(--surface2);border:1px solid var(--border);border-radius:8px;padding:14px 18px;margin-bottom:20px;font-size:12px;color:#78909c;line-height:1.8;}
+.esi-explain-title{font-family:'Barlow Condensed',sans-serif;font-size:11px;font-weight:700;letter-spacing:2px;color:var(--text-muted);text-transform:uppercase;margin-bottom:8px;}
+.esi-explain-formula{font-family:'Barlow Condensed',sans-serif;font-size:12px;color:var(--accent);font-weight:600;margin-bottom:4px;}
 
-/* ── 트렌드 차트 ── */
-.trend-card {
-  background:var(--surface); border:1px solid var(--border2);
-  border-radius:12px; padding:28px 32px; margin-bottom:28px;
+.esi-score-row{display:flex;align-items:flex-end;gap:24px;margin-bottom:20px;}
+.esi-num{font-family:'Bebas Neue',sans-serif;font-size:100px;letter-spacing:-2px;line-height:1;background:linear-gradient(135deg,var(--accent) 0%,var(--fsl) 100%);-webkit-background-clip:text;-webkit-text-fill-color:transparent;}
+.esi-meta{padding-bottom:14px;}
+.esi-range{font-size:11px;color:var(--text-muted);margin-top:4px;}
+.esi-gauge-bg{height:8px;background:var(--border);border-radius:4px;overflow:hidden;margin-bottom:8px;}
+.esi-gauge-fill{height:100%;border-radius:4px;background:linear-gradient(90deg,var(--accent),var(--fsl));transition:width 1s ease;}
+.esi-gauge-ticks{display:flex;justify-content:space-between;font-family:'Barlow Condensed',sans-serif;font-size:10px;color:var(--text-muted);letter-spacing:1px;margin-bottom:20px;}
+.esi-interpret{background:rgba(0,230,118,0.04);border:1px solid rgba(0,230,118,0.1);border-left:3px solid var(--accent);border-radius:0 8px 8px 0;padding:14px 18px;}
+.esi-level{font-family:'Bebas Neue',sans-serif;font-size:22px;letter-spacing:1px;color:var(--accent);margin-bottom:5px;}
+.esi-desc{font-size:12px;color:#78909c;line-height:1.7;}
+
+.esi-side{background:var(--surface);border:1px solid var(--border2);border-radius:12px;padding:28px;display:flex;flex-direction:column;gap:18px;}
+.tier-row{}
+.tier-head{display:flex;align-items:center;justify-content:space-between;margin-bottom:8px;}
+.tier-label{display:flex;align-items:center;gap:7px;font-family:'Barlow Condensed',sans-serif;font-size:11px;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;}
+.tier-dot{width:8px;height:8px;border-radius:50%;flex-shrink:0;}
+.tier-count{font-family:'Bebas Neue',sans-serif;font-size:22px;}
+.tier-bar-bg{height:5px;background:var(--border);border-radius:3px;overflow:hidden;margin-bottom:5px;}
+.tier-bar-fill{height:100%;border-radius:3px;transition:width 0.8s ease;}
+.tier-desc{font-size:11px;color:var(--text-muted);line-height:1.5;}
+.formula-box{background:var(--surface2);border:1px solid var(--border);border-radius:8px;padding:14px 16px;font-family:'Barlow Condensed',sans-serif;font-size:12px;color:var(--text-muted);line-height:1.8;}
+.formula-val{color:var(--accent);font-size:13px;font-weight:600;}
+
+/* CARDS */
+.card{background:var(--surface);border:1px solid var(--border2);border-radius:12px;padding:32px;margin-bottom:32px;}
+.card-head{display:flex;align-items:flex-start;justify-content:space-between;margin-bottom:24px;flex-wrap:wrap;gap:16px;}
+.card-legend{display:flex;gap:16px;flex-wrap:wrap;align-items:center;}
+.leg{display:flex;align-items:center;gap:7px;font-family:'Barlow Condensed',sans-serif;font-size:11px;color:var(--text-muted);letter-spacing:1px;}
+.leg-line{width:22px;height:2px;border-radius:2px;}
+.leg-dot{width:9px;height:9px;border-radius:50%;}
+.leg-bar{width:12px;height:12px;border-radius:2px;opacity:0.7;}
+
+/* KEY HIGHLIGHTS */
+.hl-top{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-bottom:16px;}
+.hl-today-card{background:var(--surface2);border:1px solid var(--border2);border-radius:10px;padding:22px;position:relative;overflow:hidden;}
+.hl-today-card.all-board::before{content:'';position:absolute;top:0;left:0;right:0;height:3px;background:var(--text-muted);}
+.hl-today-card.fsl-board::before{content:'';position:absolute;top:0;left:0;right:0;height:3px;background:var(--fsl);}
+.hl-board-badge{font-family:'Barlow Condensed',sans-serif;font-size:10px;font-weight:700;letter-spacing:2px;text-transform:uppercase;margin-bottom:12px;padding-bottom:10px;border-bottom:1px solid var(--border);}
+.hl-board-badge.all{color:var(--text-muted);}
+.hl-board-badge.fsl{color:var(--fsl);}
+.hl-sent-row{display:flex;gap:16px;margin-bottom:12px;}
+.hl-sent-item{display:flex;flex-direction:column;align-items:center;gap:3px;}
+.hl-sent-val{font-family:'Bebas Neue',sans-serif;font-size:28px;line-height:1;}
+.hl-sent-lbl{font-family:'Barlow Condensed',sans-serif;font-size:9px;letter-spacing:1px;color:var(--text-muted);text-transform:uppercase;}
+.hl-issue-list{list-style:none;display:flex;flex-direction:column;gap:6px;}
+.hl-issue-list li{font-size:12px;color:#78909c;line-height:1.6;padding-left:12px;position:relative;}
+.hl-issue-list li::before{content:'›';position:absolute;left:0;font-weight:700;color:var(--text-muted);}
+
+/* 비교 3카드 */
+.hl-compare{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;}
+.hl-cmp-card{background:var(--surface2);border:1px solid var(--border2);border-radius:10px;padding:20px;}
+.hl-cmp-title{font-family:'Barlow Condensed',sans-serif;font-size:10px;font-weight:700;letter-spacing:2px;color:var(--text-muted);text-transform:uppercase;margin-bottom:14px;padding-bottom:10px;border-bottom:1px solid var(--border);}
+.hl-cmp-row{display:flex;align-items:flex-end;justify-content:space-around;gap:8px;margin-bottom:12px;}
+.hl-cmp-item{display:flex;flex-direction:column;align-items:center;gap:4px;}
+.hl-cmp-val{font-family:'Bebas Neue',sans-serif;font-size:36px;line-height:1;}
+.hl-cmp-lbl{font-family:'Barlow Condensed',sans-serif;font-size:10px;letter-spacing:1px;color:var(--text-muted);text-transform:uppercase;}
+.hl-cmp-vs{font-family:'Barlow Condensed',sans-serif;font-size:14px;font-weight:700;color:var(--border2);padding-bottom:16px;}
+.hl-cmp-insight{font-size:11px;color:#546e7a;line-height:1.6;border-top:1px solid var(--border);padding-top:10px;}
+.hl-cmp-insight.positive{color:var(--positive);}
+.hl-cmp-insight.accumulate{color:var(--gold);}
+
+/* COMPARE */
+.compare-grid{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-bottom:32px;}
+.compare-card{background:var(--surface);border:1px solid var(--border2);border-radius:12px;padding:28px;}
+.sent-wrap{display:flex;align-items:center;gap:24px;margin:16px 0;}
+.donut-box{position:relative;width:120px;height:120px;flex-shrink:0;}
+.donut-center{position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;}
+.donut-val{font-family:'Bebas Neue',sans-serif;font-size:24px;line-height:1;}
+.donut-lbl{font-size:9px;color:var(--text-muted);letter-spacing:1px;margin-top:1px;}
+.sent-legs{display:flex;flex-direction:column;gap:7px;flex:1;}
+.sent-row{display:flex;align-items:center;justify-content:space-between;font-size:12px;}
+.sent-left{display:flex;align-items:center;gap:7px;color:var(--text-muted);}
+.sent-dot{width:8px;height:8px;border-radius:2px;flex-shrink:0;}
+.sent-val{font-family:'Bebas Neue',sans-serif;font-size:18px;}
+.stat-grid{display:grid;grid-template-columns:1fr 1fr;gap:12px;}
+.stat-label{font-family:'Barlow Condensed',sans-serif;font-size:10px;font-weight:700;letter-spacing:2px;color:var(--text-muted);text-transform:uppercase;margin-bottom:4px;}
+.stat-val{font-family:'Bebas Neue',sans-serif;font-size:30px;letter-spacing:0.5px;}
+
+/* COMMUNITY SUMMARY */
+.comm-grid{display:grid;grid-template-columns:1fr 1fr;gap:24px;}
+.comm-card{background:var(--surface2);border:1px solid var(--border);border-radius:10px;padding:24px;}
+.issue-list{display:flex;flex-direction:column;gap:16px;margin-top:16px;}
+.issue-head{display:flex;align-items:baseline;gap:10px;margin-bottom:5px;}
+.issue-topic{font-size:13px;font-weight:700;color:var(--text);}
+.issue-pct{font-family:'Barlow Condensed',sans-serif;font-size:11px;font-weight:700;letter-spacing:1px;}
+.issue-pct.pos{color:var(--positive);}.issue-pct.neg{color:var(--negative);}.issue-pct.neu{color:var(--neutral);}
+.issue-desc{font-size:11px;color:#546e7a;line-height:1.6;}
+.pcount-list{display:flex;flex-direction:column;gap:12px;margin-top:16px;}
+.pcount-item{display:flex;align-items:flex-start;gap:10px;}
+.pcount-dot{width:8px;height:8px;border-radius:50%;flex-shrink:0;margin-top:4px;}
+.pcount-label{font-size:12px;font-weight:700;color:var(--text);margin-bottom:3px;}
+.pcount-val{font-family:'Barlow Condensed',sans-serif;font-size:11px;font-weight:700;letter-spacing:1px;}
+.pcount-desc{font-size:11px;color:#546e7a;line-height:1.5;margin-top:3px;}
+
+/* KEYWORDS */
+.kw-table{width:100%;border-collapse:collapse;}
+.kw-table thead tr{border-bottom:1px solid var(--border);}
+.kw-table th{font-family:'Barlow Condensed',sans-serif;font-size:10px;font-weight:700;letter-spacing:1.5px;color:var(--text-muted);text-transform:uppercase;padding:0 14px 12px;text-align:left;}
+.kw-table td{padding:10px 14px;font-size:12px;border-bottom:1px solid rgba(26,46,34,0.6);vertical-align:middle;}
+.kw-table tr:last-child td{border-bottom:none;}
+.kw-topic{font-weight:700;color:var(--text);}
+.kw-bar-bg{height:6px;background:var(--border);border-radius:3px;overflow:hidden;width:120px;}
+.kw-bar-fill{height:100%;border-radius:3px;}
+.kw-count{font-family:'Barlow Condensed',sans-serif;font-size:14px;font-weight:700;}
+.kw-tags{font-size:11px;color:#546e7a;}
+.tier-chip{display:inline-block;font-family:'Barlow Condensed',sans-serif;font-size:9px;font-weight:700;letter-spacing:1px;padding:2px 6px;border-radius:3px;text-transform:uppercase;}
+.chip-t1{background:rgba(0,229,255,0.1);color:var(--fsl);border:1px solid rgba(0,229,255,0.2);}
+.chip-t2{background:rgba(0,230,118,0.1);color:var(--accent);border:1px solid rgba(0,230,118,0.2);}
+.chip-t3{background:rgba(55,71,79,0.2);color:#546e7a;border:1px solid rgba(55,71,79,0.3);}
+
+/* CHURN */
+.churn-card{background:var(--surface);border:1px solid rgba(255,23,68,0.15);border-top:3px solid var(--negative);border-radius:0 0 12px 12px;padding:32px;margin-bottom:32px;}
+.churn-kpi-row{display:flex;gap:32px;flex-wrap:wrap;}
+.churn-stat-label{font-family:'Barlow Condensed',sans-serif;font-size:10px;font-weight:700;letter-spacing:2px;color:var(--text-muted);text-transform:uppercase;margin-bottom:4px;}
+.churn-stat-val{font-family:'Bebas Neue',sans-serif;font-size:36px;color:var(--negative);line-height:1;}
+.churn-stat-sub{font-family:'Barlow Condensed',sans-serif;font-size:11px;font-weight:700;margin-top:2px;color:var(--warning);}
+.churn-detail{background:rgba(255,23,68,0.03);border:1px solid rgba(255,23,68,0.08);border-radius:8px;padding:16px 20px;}
+.churn-detail-title{font-family:'Barlow Condensed',sans-serif;font-size:10px;font-weight:700;letter-spacing:2px;color:var(--negative);text-transform:uppercase;margin-bottom:10px;}
+.churn-detail-list{list-style:none;display:flex;flex-direction:column;gap:6px;}
+.churn-detail-list li{font-size:12px;color:#78909c;padding-left:12px;position:relative;line-height:1.5;}
+.churn-detail-list li::before{content:'›';position:absolute;left:0;color:var(--negative);font-weight:700;}
+.churn-quotes{display:grid;grid-template-columns:repeat(2,1fr);gap:12px;}
+.churn-quote{background:rgba(255,23,68,0.03);border:1px solid rgba(255,23,68,0.08);border-radius:8px;padding:14px 16px;}
+.churn-quote-cat{font-family:'Barlow Condensed',sans-serif;font-size:10px;font-weight:700;letter-spacing:1.5px;color:var(--negative);text-transform:uppercase;margin-bottom:7px;}
+.churn-quote-text{font-size:12px;color:#78909c;line-height:1.6;font-style:italic;}
+
+/* POSTS TABLE */
+.posts-card{background:var(--surface);border:1px solid var(--border2);border-radius:12px;padding:28px;margin-bottom:32px;}
+.tab-group{display:flex;gap:3px;background:var(--surface2);border:1px solid var(--border);border-radius:7px;padding:3px;}
+.tab-btn{background:none;border:none;color:var(--text-muted);font-family:'Noto Sans KR',sans-serif;font-size:12px;font-weight:500;padding:6px 14px;border-radius:5px;cursor:pointer;transition:all 0.2s;}
+.tab-btn.active{background:var(--accent);color:#000;font-weight:700;}
+.search-box{background:var(--surface2);border:1px solid var(--border);border-radius:6px;color:var(--text);font-family:'Noto Sans KR',sans-serif;font-size:12px;padding:7px 14px;width:200px;outline:none;transition:border-color 0.2s;}
+.search-box:focus{border-color:var(--accent);}
+.search-box::placeholder{color:var(--text-muted);}
+.posts-table{width:100%;border-collapse:collapse;font-size:12px;margin-top:4px;}
+.posts-table thead tr{border-bottom:1px solid var(--border);}
+.posts-table th{font-family:'Barlow Condensed',sans-serif;font-size:10px;font-weight:700;letter-spacing:1.5px;color:var(--text-muted);text-transform:uppercase;padding:0 10px 12px;text-align:left;}
+.posts-table td{padding:9px 10px;border-bottom:1px solid rgba(26,46,34,0.5);vertical-align:middle;}
+.posts-table tbody tr:hover{background:var(--surface2);cursor:pointer;}
+.posts-table tbody tr:last-child td{border-bottom:none;}
+.post-title-a{color:var(--text);text-decoration:none;display:block;max-width:420px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;}
+.post-title-a:hover{color:var(--accent);}
+.badge{display:inline-block;font-family:'Barlow Condensed',sans-serif;font-size:10px;font-weight:700;padding:2px 7px;border-radius:3px;letter-spacing:0.5px;text-transform:uppercase;}
+.badge-pos{background:rgba(0,230,118,0.1);color:var(--positive);}
+.badge-neu{background:rgba(120,144,156,0.1);color:var(--neutral);}
+.badge-neg{background:rgba(255,23,68,0.1);color:var(--negative);}
+.badge-t1{background:rgba(0,229,255,0.1);color:var(--fsl);}
+.badge-t2{background:rgba(0,230,118,0.1);color:var(--accent);}
+.num-cell{font-family:'Barlow Condensed',sans-serif;font-size:13px;color:var(--text-muted);}
+.date-cell{font-size:10px;color:var(--text-muted);white-space:nowrap;}
+.pagination{display:flex;gap:4px;justify-content:center;margin-top:16px;flex-wrap:wrap;}
+.page-btn{background:var(--surface2);border:1px solid var(--border);border-radius:4px;color:var(--text-muted);font-family:'Barlow Condensed',sans-serif;font-size:11px;font-weight:700;padding:5px 10px;cursor:pointer;transition:all 0.15s;}
+.page-btn:hover,.page-btn.active{background:var(--accent);color:#000;border-color:var(--accent);}
+.page-info{font-family:'Barlow Condensed',sans-serif;font-size:11px;color:var(--text-muted);text-align:center;margin-top:8px;letter-spacing:1px;}
+
+/* FOOTER */
+.footer{border-top:1px solid var(--border);padding-top:20px;margin-top:8px;display:flex;justify-content:space-between;align-items:center;font-family:'Barlow Condensed',sans-serif;font-size:11px;color:var(--text-muted);letter-spacing:1px;flex-wrap:wrap;gap:12px;}
+
+.spinner{width:22px;height:22px;border:2px solid var(--border);border-top-color:var(--accent);border-radius:50%;animation:spin 0.7s linear infinite;margin:0 auto 8px;}
+@keyframes spin{to{transform:rotate(360deg);}}
+.loading-ph{text-align:center;padding:40px;color:var(--text-muted);font-size:12px;}
+
+@media(max-width:1100px){
+  .esi-hero,.compare-grid,.comm-grid,.hl-top{grid-template-columns:1fr;}
+  .kpi-strip{grid-template-columns:repeat(2,1fr);}
+  .hl-compare{grid-template-columns:1fr;}
+  .churn-quotes{grid-template-columns:1fr;}
 }
-.card-header {
-  display:flex; align-items:center; justify-content:space-between;
-  margin-bottom:20px; flex-wrap:wrap; gap:12px;
-}
-.card-title {
-  font-family:'Bebas Neue',sans-serif; font-size:24px;
-  letter-spacing:2px; color:var(--text);
-}
-.card-title span { color:var(--accent); }
-.trend-legend { display:flex; gap:16px; flex-wrap:wrap; }
-.leg-item { display:flex; align-items:center; gap:6px; font-family:'Barlow Condensed',sans-serif; font-size:11px; color:var(--text-muted); letter-spacing:1px; }
-.leg-line { width:20px; height:2px; border-radius:2px; }
-.leg-dot { width:9px; height:9px; border-radius:50%; }
-
-/* ── 2열 그리드 ── */
-.two-col { display:grid; grid-template-columns:1fr 1fr; gap:20px; margin-bottom:28px; }
-.three-col { display:grid; grid-template-columns:1fr 1fr 1fr; gap:20px; margin-bottom:28px; }
-
-/* ── 섹션 카드 ── */
-.sec-card {
-  background:var(--surface); border:1px solid var(--border2);
-  border-radius:12px; padding:24px 28px;
-}
-
-/* 감성 도넛 */
-.donut-wrap { position:relative; width:160px; height:160px; margin:0 auto 16px; }
-.donut-center {
-  position:absolute; inset:0;
-  display:flex; flex-direction:column; align-items:center; justify-content:center;
-  pointer-events:none;
-}
-.donut-center-val { font-family:'Bebas Neue',sans-serif; font-size:30px; color:var(--text); line-height:1; }
-.donut-center-lbl { font-size:9px; color:var(--text-muted); letter-spacing:1px; margin-top:2px; }
-.sent-legend { display:flex; flex-direction:column; gap:8px; }
-.sent-leg-item { display:flex; align-items:center; justify-content:space-between; font-size:12px; }
-.sent-leg-left { display:flex; align-items:center; gap:7px; color:var(--text-muted); }
-.sent-leg-dot { width:9px; height:9px; border-radius:2px; flex-shrink:0; }
-.sent-leg-val { font-family:'Bebas Neue',sans-serif; font-size:18px; letter-spacing:0.5px; }
-
-/* 키워드 테이블 */
-.kw-table { width:100%; border-collapse:collapse; }
-.kw-table thead tr { border-bottom:1px solid var(--border); }
-.kw-table th {
-  font-family:'Barlow Condensed',sans-serif; font-size:10px;
-  font-weight:700; letter-spacing:1.5px; color:var(--text-muted);
-  text-transform:uppercase; padding:0 12px 10px; text-align:left;
-}
-.kw-table td { padding:9px 12px; font-size:12px; border-bottom:1px solid rgba(30,37,53,0.6); vertical-align:middle; }
-.kw-table tr:last-child td { border-bottom:none; }
-.kw-topic { font-weight:700; color:var(--text); }
-.kw-bar-bg { height:5px; background:var(--border); border-radius:3px; overflow:hidden; width:100px; }
-.kw-bar-fill { height:100%; border-radius:3px; background:linear-gradient(90deg,var(--accent),#7c4dff); }
-.kw-count { font-family:'Barlow Condensed',sans-serif; font-size:13px; font-weight:700; color:var(--accent); }
-.kw-pct { font-size:10px; color:var(--text-muted); margin-left:3px; }
-.kw-tags { font-size:10px; color:#546e7a; }
-.tier-chip {
-  display:inline-block; font-family:'Barlow Condensed',sans-serif;
-  font-size:9px; font-weight:700; letter-spacing:1px;
-  padding:2px 6px; border-radius:3px; text-transform:uppercase;
-}
-.chip-t1 { background:rgba(0,229,255,0.1); color:var(--tier1); border:1px solid rgba(0,229,255,0.2); }
-.chip-t2 { background:rgba(124,77,255,0.1); color:var(--tier2); border:1px solid rgba(124,77,255,0.2); }
-
-/* 게시글 테이블 */
-.posts-card { background:var(--surface); border:1px solid var(--border2); border-radius:12px; padding:24px 28px; margin-bottom:28px; }
-.tab-group { display:flex; gap:3px; background:var(--surface2); border:1px solid var(--border); border-radius:7px; padding:3px; }
-.tab-btn { background:none; border:none; color:var(--text-muted); font-family:'Noto Sans KR',sans-serif; font-size:12px; font-weight:500; padding:6px 14px; border-radius:5px; cursor:pointer; transition:all 0.2s; }
-.tab-btn.active { background:var(--accent); color:#000; font-weight:700; }
-.search-box { background:var(--surface2); border:1px solid var(--border); border-radius:6px; color:var(--text); font-family:'Noto Sans KR',sans-serif; font-size:12px; padding:7px 14px; width:180px; outline:none; transition:border-color 0.2s; }
-.search-box:focus { border-color:var(--accent); }
-.search-box::placeholder { color:var(--text-muted); }
-.posts-table { width:100%; border-collapse:collapse; font-size:12px; }
-.posts-table thead tr { border-bottom:1px solid var(--border); }
-.posts-table th { font-family:'Barlow Condensed',sans-serif; font-size:10px; font-weight:700; letter-spacing:1.5px; color:var(--text-muted); text-transform:uppercase; padding:0 10px 10px; text-align:left; }
-.posts-table td { padding:9px 10px; border-bottom:1px solid rgba(30,37,53,0.5); vertical-align:middle; }
-.posts-table tbody tr { transition:background 0.15s; cursor:pointer; }
-.posts-table tbody tr:hover { background:var(--surface2); }
-.posts-table tbody tr:last-child td { border-bottom:none; }
-.post-title-a { color:var(--text); text-decoration:none; display:block; max-width:360px; overflow:hidden; text-overflow:ellipsis; white-space:nowrap; }
-.post-title-a:hover { color:var(--accent); }
-.badge { display:inline-block; font-family:'Barlow Condensed',sans-serif; font-size:10px; font-weight:700; padding:2px 7px; border-radius:3px; letter-spacing:0.5px; text-transform:uppercase; }
-.badge-pos { background:rgba(0,230,118,0.1); color:var(--positive); }
-.badge-neu { background:rgba(120,144,156,0.1); color:var(--neutral); }
-.badge-neg { background:rgba(255,23,68,0.1); color:var(--negative); }
-.badge-t1 { background:rgba(0,229,255,0.1); color:var(--tier1); }
-.badge-t2 { background:rgba(124,77,255,0.1); color:var(--tier2); }
-.num-cell { font-family:'Barlow Condensed',sans-serif; font-size:13px; color:var(--text-muted); }
-.date-cell { font-size:10px; color:var(--text-muted); white-space:nowrap; }
-
-.pagination { display:flex; gap:4px; justify-content:center; margin-top:14px; flex-wrap:wrap; }
-.page-btn { background:var(--surface2); border:1px solid var(--border); border-radius:4px; color:var(--text-muted); font-family:'Barlow Condensed',sans-serif; font-size:11px; font-weight:700; padding:4px 9px; cursor:pointer; transition:all 0.15s; }
-.page-btn:hover,.page-btn.active { background:var(--accent); color:#000; border-color:var(--accent); }
-
-/* 이탈 신호 카드 */
-.signal-card {
-  background:var(--surface); border:1px solid rgba(255,23,68,0.15);
-  border-left:4px solid var(--negative);
-  border-radius:0 12px 12px 0; padding:24px 28px; margin-bottom:28px;
-}
-.signal-grid { display:grid; grid-template-columns:1fr 1fr; gap:12px; margin-top:16px; }
-.signal-box { background:rgba(255,23,68,0.04); border:1px solid rgba(255,23,68,0.08); border-radius:8px; padding:12px 14px; }
-.signal-box-title { font-family:'Barlow Condensed',sans-serif; font-size:10px; font-weight:700; letter-spacing:2px; color:var(--negative); text-transform:uppercase; margin-bottom:7px; }
-.signal-list { list-style:none; display:flex; flex-direction:column; gap:4px; }
-.signal-list li { font-size:11px; color:#78909c; padding-left:10px; position:relative; line-height:1.5; }
-.signal-list li::before { content:'›'; position:absolute; left:0; color:var(--negative); font-weight:700; }
-
-/* 푸터 */
-.footer { border-top:1px solid var(--border); padding-top:20px; margin-top:8px; display:flex; justify-content:space-between; align-items:center; font-family:'Barlow Condensed',sans-serif; font-size:11px; color:var(--text-dim); letter-spacing:1px; }
-
-/* 로딩 */
-.spinner { width:24px; height:24px; border:2px solid var(--border); border-top-color:var(--accent); border-radius:50%; animation:spin 0.7s linear infinite; margin:0 auto 8px; }
-@keyframes spin { to { transform:rotate(360deg); } }
-.loading-ph { text-align:center; padding:40px; color:var(--text-muted); font-size:12px; }
-
-@media(max-width:1100px) {
-  .esi-hero { grid-template-columns:1fr; }
-  .kpi-row { grid-template-columns:repeat(2,1fr); }
-  .two-col,.three-col { grid-template-columns:1fr; }
-  .signal-grid { grid-template-columns:1fr; }
-}
-@media(max-width:640px) {
-  .wrap { padding:0 16px 40px; }
-  .esi-score-value { font-size:80px; }
-  .kpi-row { grid-template-columns:1fr 1fr; }
+@media(max-width:640px){
+  .wrap{padding:0 16px 40px;}
+  .esi-num{font-size:72px;}
+  .report-title{font-size:36px;}
+  .kpi-strip{grid-template-columns:1fr 1fr;}
 }
 </style>
 </head>
 <body>
 <div class="wrap">
 
-<!-- 탑바 -->
+<!-- TOPBAR -->
 <div class="topbar">
-  <span class="topbar-logo">FC ONLINE · FSL ESI</span>
-  <span id="header-week">Esports Spread Index Dashboard</span>
+  <div style="display:flex;align-items:center;gap:20px">
+    <span class="topbar-logo">FC ONLINE · FSL ESI</span>
+    <span style="color:var(--border2)">|</span>
+    <span>Daily Intelligence Report</span>
+  </div>
   <div class="live-row"><div class="live-dot"></div><span id="header-updated">—</span></div>
 </div>
 
-<!-- ① ESI 메인 히어로 -->
-<div class="esi-hero">
-  <div class="esi-main">
-    <div>
-      <div class="esi-label">Esports Spread Index</div>
-      <div class="esi-title">이스포츠가 커뮤니티에 미치는 영향력 지수</div>
-      <div class="esi-score-row">
-        <div class="esi-score-value" id="esi-value">—</div>
-        <div class="esi-score-meta">
-          <div class="esi-wow" id="esi-wow">—</div>
-          <div class="esi-score-range">0 – 10 scale</div>
-        </div>
-      </div>
-      <div class="esi-gauge-wrap">
-        <div class="esi-gauge-bg"><div class="esi-gauge-fill" id="esi-gauge" style="width:0%"></div></div>
-        <div class="esi-gauge-labels">
-          <span>0 영향 미미</span>
-          <span>3 감지</span>
-          <span>6 주도</span>
-          <span>9+ 버즈 피크</span>
-        </div>
-      </div>
-    </div>
-    <div class="esi-interpretation" id="esi-interp">
-      <div class="esi-interpretation-level">—</div>
-      <div class="esi-interpretation-desc">데이터 로딩 중...</div>
-    </div>
+<!-- ① DAILY REPORT HEADER -->
+<div class="report-header">
+  <div style="display:flex;align-items:flex-start;justify-content:space-between;margin-bottom:6px;">
+    <div class="report-eyebrow">FC Online Community · Esports Intelligence</div>
+    <div style="font-family:'Barlow Condensed',sans-serif;font-size:11px;letter-spacing:2px;color:var(--text-muted);text-align:right;padding-top:2px;" id="report-range">—</div>
   </div>
-
-  <div class="esi-breakdown">
-    <div class="breakdown-title">ESI 구성 요소</div>
-    <div class="breakdown-item">
-      <div class="breakdown-item-head">
-        <div class="tier-badge">
-          <div class="tier-dot" style="background:var(--tier1)"></div>
-          <span style="color:var(--tier1)">Tier 1 — 직접 귀속</span>
-        </div>
-        <div class="breakdown-count c-accent" id="t1-count">—</div>
-      </div>
-      <div class="breakdown-bar-bg"><div class="breakdown-bar-fill" id="t1-bar" style="background:var(--tier1);width:0%"></div></div>
-      <div class="breakdown-desc">FSL·선수명·팀명·중계 키워드 명시 게시글 (가중치 ×1.0)</div>
-    </div>
-    <div class="breakdown-item">
-      <div class="breakdown-item-head">
-        <div class="tier-badge">
-          <div class="tier-dot" style="background:var(--tier2)"></div>
-          <span style="color:var(--tier2)">Tier 2 — 간접 귀속</span>
-        </div>
-        <div class="breakdown-count" style="color:var(--tier2)" id="t2-count">—</div>
-      </div>
-      <div class="breakdown-bar-bg"><div class="breakdown-bar-fill" id="t2-bar" style="background:var(--tier2);width:0%"></div></div>
-      <div class="breakdown-desc">경기일 ±3일 스쿼드·전술·선수 추천 게시글 (가중치 ×0.5)</div>
-    </div>
-    <div class="breakdown-item">
-      <div class="breakdown-item-head">
-        <div class="tier-badge">
-          <div class="tier-dot" style="background:var(--tier3)"></div>
-          <span style="color:var(--text-muted)">Tier 3 — 귀속 불가</span>
-        </div>
-        <div class="breakdown-count" style="color:var(--text-muted)" id="t3-count">—</div>
-      </div>
-      <div class="breakdown-bar-bg"><div class="breakdown-bar-fill" id="t3-bar" style="background:var(--tier3);width:0%"></div></div>
-      <div class="breakdown-desc">강화·서버·과금 등 게임 운영 이슈 (이스포츠 기여 0%)</div>
-    </div>
-    <div class="esi-formula-card">
-      <div class="formula-text">ESI = (T1 × 1.0 + T2 × 0.5) ÷ 전체 × (긍정률 / 50) × 100</div>
-      <div style="margin-top:6px">감성 보정: 긍정률이 50% 이상이면 스코어 상향 / 이하면 하향</div>
-    </div>
+  <div class="report-title">DAILY <span>ESPORTS REPORT</span></div>
+  <div class="report-box">
+    <div class="report-state" id="report-state">Sentiment State: —</div>
+    <div class="report-text" id="report-text">데이터 로딩 중...</div>
   </div>
 </div>
 
 <!-- ② KPI 4개 -->
-<div class="kpi-row">
+<div class="kpi-strip">
   <div class="kpi-cell">
-    <div class="kpi-cell-label">전체 게시글</div>
-    <div class="kpi-cell-value c-accent" id="kpi-total">—</div>
-    <div class="kpi-cell-sub" id="kpi-total-sub">—</div>
+    <div class="kpi-label">ESI Score</div>
+    <div class="kpi-value c-accent" id="kpi-esi">—</div>
+    <div class="kpi-sub" id="kpi-esi-sub">0 – 10 scale</div>
   </div>
   <div class="kpi-cell">
-    <div class="kpi-cell-label">FSL 언급률</div>
-    <div class="kpi-cell-value c-gold" id="kpi-mention">—</div>
-    <div class="kpi-cell-sub" id="kpi-mention-sub">—</div>
+    <div class="kpi-label">오늘 게시글</div>
+    <div class="kpi-value c-fsl" id="kpi-total">—</div>
+    <div class="kpi-sub">수집 기간 내 총 게시글</div>
   </div>
   <div class="kpi-cell">
-    <div class="kpi-cell-label">긍정 반응률</div>
-    <div class="kpi-cell-value c-green" id="kpi-positive">—</div>
-    <div class="kpi-cell-sub" id="kpi-positive-sub">—</div>
+    <div class="kpi-label">FSL 언급률</div>
+    <div class="kpi-value c-gold" id="kpi-mention">—</div>
+    <div class="kpi-sub">이스포츠 귀속 (T1+T2)</div>
   </div>
   <div class="kpi-cell">
-    <div class="kpi-cell-label">감성 보정계수</div>
-    <div class="kpi-cell-value c-warn" id="kpi-coeff">—</div>
-    <div class="kpi-cell-sub">긍정률 ÷ 50</div>
+    <div class="kpi-label">긍정 반응률</div>
+    <div class="kpi-value c-accent" id="kpi-positive">—</div>
+    <div class="kpi-sub">전체 게시판 기준</div>
   </div>
 </div>
 
-<!-- ③ ESI 트렌드 + 감성 -->
-<div class="two-col">
-  <div class="trend-card" style="margin-bottom:0">
-    <div class="card-header">
-      <div class="card-title">ESI <span>TREND</span></div>
-      <div class="trend-legend">
-        <div class="leg-item"><div class="leg-line" style="background:var(--accent)"></div>ESI Score</div>
-        <div class="leg-item"><div class="leg-dot" style="background:#ffd700"></div>FSL 이벤트</div>
+<!-- ③ ESI HERO -->
+<div class="esi-hero">
+  <div class="esi-main">
+    <div class="sec-eyebrow">Esports Spread Index · ESI란?</div>
+    <div class="sec-title">이스포츠가 커뮤니티에 미치는 <span>영향력 지수</span></div>
+
+    <!-- ESI 설명 -->
+    <div class="esi-explain">
+      <div class="esi-explain-title">ESI (Esports Spread Index) 란</div>
+      ESI는 FSL 등 이스포츠 관련 커뮤니티 게시글이 전체 FC온라인 게시판에서 차지하는 비중과 감성을 결합한 지표입니다.<br>
+      <br>
+      게시글은 세 단계로 분류됩니다. <strong style="color:var(--fsl)">Tier 1</strong>은 FSL·선수명·팀명 등 이스포츠를 직접 언급한 게시글(가중치 ×1.0), <strong style="color:var(--accent)">Tier 2</strong>는 전술·스쿼드 추천 등 간접적으로 연관된 게시글(가중치 ×0.5), <strong style="color:var(--text-muted)">Tier 3</strong>는 강화·과금·서버 등 이스포츠와 무관한 게시글입니다.<br>
+      <br>
+      <div class="esi-explain-formula">ESI = (T1×1.0 + T2×0.5) ÷ 전체 게시글 × (긍정률 ÷ 50) × 100</div>
+      긍정적인 반응이 많을수록 ESI가 올라가고, 부정 반응이 많으면 낮아집니다. 0~10 척도로 표현됩니다.
+    </div>
+
+    <div class="esi-score-row">
+      <div class="esi-num" id="esi-val">—</div>
+      <div class="esi-meta">
+        <div style="font-family:'Barlow Condensed',sans-serif;font-size:20px;font-weight:800;letter-spacing:1px;color:var(--positive)" id="esi-interpret-short">—</div>
+        <div class="esi-range">0 – 10 scale</div>
       </div>
     </div>
-    <canvas id="esiTrendChart" height="130"></canvas>
+    <div class="esi-gauge-bg"><div class="esi-gauge-fill" id="esi-gauge" style="width:0%"></div></div>
+    <div class="esi-gauge-ticks"><span>0 영향 미미</span><span>3 감지</span><span>6 주도</span><span>9+ 버즈 피크</span></div>
+    <div class="esi-interpret" id="esi-interpret">
+      <div class="esi-level">—</div><div class="esi-desc">데이터 로딩 중...</div>
+    </div>
   </div>
-  <div class="sec-card">
-    <div class="card-title" style="margin-bottom:20px">FSL 탭 <span style="color:var(--accent)">SENTIMENT</span></div>
-    <div class="donut-wrap">
-      <canvas id="sentChart"></canvas>
-      <div class="donut-center">
-        <div class="donut-center-val" id="sent-total">—</div>
-        <div class="donut-center-lbl">ANALYSED</div>
+
+  <div class="esi-side">
+    <div class="sec-eyebrow">ESI 구성 요소 · 오늘</div>
+    <div class="tier-row">
+      <div class="tier-head">
+        <div class="tier-label"><div class="tier-dot" style="background:var(--fsl)"></div><span style="color:var(--fsl)">Tier 1 — 직접 귀속</span></div>
+        <div class="tier-count c-fsl" id="t1-count">—</div>
       </div>
+      <div class="tier-bar-bg"><div class="tier-bar-fill" id="t1-bar" style="background:var(--fsl);width:0%"></div></div>
+      <div class="tier-desc">FSL·선수명·팀명·중계 키워드 명시 게시글 (가중치 ×1.0)</div>
     </div>
-    <div class="sent-legend" id="sent-legend"></div>
+    <div class="tier-row">
+      <div class="tier-head">
+        <div class="tier-label"><div class="tier-dot" style="background:var(--accent)"></div><span style="color:var(--accent)">Tier 2 — 간접 귀속</span></div>
+        <div class="tier-count c-accent" id="t2-count">—</div>
+      </div>
+      <div class="tier-bar-bg"><div class="tier-bar-fill" id="t2-bar" style="background:var(--accent);width:0%"></div></div>
+      <div class="tier-desc">전술·스쿼드·선수 추천 등 이스포츠 연관 게시글 (가중치 ×0.5)</div>
+    </div>
+    <div class="tier-row">
+      <div class="tier-head">
+        <div class="tier-label"><div class="tier-dot" style="background:#37474f"></div><span style="color:var(--text-muted)">Tier 3 — 귀속 불가</span></div>
+        <div class="tier-count" style="color:var(--text-muted)" id="t3-count">—</div>
+      </div>
+      <div class="tier-bar-bg"><div class="tier-bar-fill" id="t3-bar" style="background:#37474f;width:0%"></div></div>
+      <div class="tier-desc">강화·서버·과금 등 게임 운영 이슈 (이스포츠 기여 0%)</div>
+    </div>
+    <div class="formula-box">
+      <div class="formula-val">ESI = (T1×1.0 + T2×0.5) ÷ 전체 × (긍정률/50) × 100</div>
+      <div style="margin-top:5px">긍정률 50% 이상 → 스코어 상향 / 이하 → 하향</div>
+    </div>
   </div>
 </div>
 
-<!-- ④ 키워드 트렌드 -->
-<div class="trend-card">
-  <div class="card-header">
-    <div class="card-title">KEYWORD <span>TRENDS</span></div>
-    <div style="font-family:'Barlow Condensed',sans-serif;font-size:11px;color:var(--text-muted);letter-spacing:1px">
-      <span class="tier-chip chip-t1">T1 직접귀속</span>&nbsp;
+<!-- ④ POST & ESI TREND -->
+<div class="card">
+  <div class="card-head">
+    <div><div class="sec-eyebrow">누적 트렌드 · 매일 업데이트</div><div class="sec-title">POST &amp; ESI <span>TREND</span></div></div>
+    <div class="card-legend">
+      <div class="leg"><div class="leg-line" style="background:var(--accent)"></div>ESI Score</div>
+      <div class="leg"><div class="leg-bar" style="background:rgba(0,230,118,0.5)"></div>이스포츠 게시글</div>
+      <div class="leg"><div class="leg-bar" style="background:rgba(0,229,255,0.3)"></div>전체 게시글</div>
+    </div>
+  </div>
+  <canvas id="trendChart" height="110"></canvas>
+</div>
+
+<!-- ⑤ KEY HIGHLIGHTS -->
+<div class="card">
+  <div class="card-head">
+    <div>
+      <div class="sec-eyebrow">Daily Sentiment · 전체 vs FSL 비교</div>
+      <div class="sec-title">KEY <span>HIGHLIGHTS</span></div>
+    </div>
+  </div>
+
+  <!-- 상단: 전체 vs FSL 오늘 분위기 -->
+  <div class="hl-top" id="hl-top">
+    <div class="loading-ph" style="grid-column:1/-1"><div class="spinner"></div></div>
+  </div>
+
+  <!-- 하단: 3개 비교 지표 -->
+  <div class="hl-compare" id="hl-compare">
+    <div class="loading-ph" style="grid-column:1/-1"><div class="spinner"></div></div>
+  </div>
+</div>
+
+<!-- ⑥ ALL vs FSL 상세 비교 -->
+<div class="compare-grid">
+  <div class="compare-card">
+    <div class="sec-eyebrow">전체 게시판</div>
+    <div class="sec-title" style="margin-bottom:0">ALL <span>BOARD</span></div>
+    <div class="sent-wrap" id="sent-all"><div class="loading-ph"><div class="spinner"></div></div></div>
+    <div class="stat-grid" id="stats-all"></div>
+  </div>
+  <div class="compare-card">
+    <div class="sec-eyebrow">FSL / 프로게이머 탭</div>
+    <div class="sec-title" style="margin-bottom:0">FSL <span style="color:var(--fsl)">TAB</span></div>
+    <div class="sent-wrap" id="sent-fsl"><div class="loading-ph"><div class="spinner"></div></div></div>
+    <div class="stat-grid" id="stats-fsl"></div>
+  </div>
+</div>
+
+<!-- ⑦ COMMUNITY SUMMARY -->
+<div class="card">
+  <div class="card-head">
+    <div><div class="sec-eyebrow">Issue Classification</div><div class="sec-title">COMMUNITY <span>SUMMARY</span></div></div>
+  </div>
+  <div class="comm-grid">
+    <div class="comm-card">
+      <div class="sec-eyebrow">주요 이슈 분류</div>
+      <div class="issue-list" id="issue-list"><div class="loading-ph"><div class="spinner"></div></div></div>
+    </div>
+    <div class="comm-card">
+      <div class="sec-eyebrow"># of Posts by Issue</div>
+      <div class="pcount-list" id="pcount-list"><div class="loading-ph"><div class="spinner"></div></div></div>
+    </div>
+  </div>
+</div>
+
+<!-- ⑧ CUSTOM KEYWORD TRENDS -->
+<div class="card">
+  <div class="card-head">
+    <div><div class="sec-eyebrow">Keyword Intelligence</div><div class="sec-title">CUSTOM KEYWORD <span>TRENDS</span></div></div>
+    <div style="display:flex;gap:8px;align-items:center">
+      <span class="tier-chip chip-t1">T1 직접귀속</span>
       <span class="tier-chip chip-t2">T2 간접귀속</span>
+      <span class="tier-chip chip-t3">T3 일반</span>
     </div>
   </div>
   <table class="kw-table">
-    <thead>
-      <tr>
-        <th style="width:130px">Topic</th>
-        <th style="width:60px">Tier</th>
-        <th style="width:120px">Raw Data</th>
-        <th style="width:120px">Bar</th>
-        <th>Data Summary</th>
-      </tr>
-    </thead>
+    <thead><tr>
+      <th style="width:150px">Topic</th>
+      <th style="width:65px">Tier</th>
+      <th style="width:120px">Raw Data</th>
+      <th style="width:150px">Distribution</th>
+      <th>Data Summary</th>
+    </tr></thead>
     <tbody id="kw-tbody"><tr><td colspan="5" class="loading-ph"><div class="spinner"></div></td></tr></tbody>
   </table>
 </div>
 
-<!-- ⑤ 최신 게시글 -->
+<!-- ⑨ HOT POSTS RANKING -->
+<div class="card" style="border-top:3px solid var(--gold);border-radius:0 0 12px 12px;margin-bottom:32px;">
+  <div class="card-head">
+    <div>
+      <div class="sec-eyebrow" style="color:var(--gold)">Today's Top Posts · 조회수 + 댓글 기준</div>
+      <div class="sec-title">HOT <span style="color:var(--gold)">POSTS</span></div>
+    </div>
+    <div style="display:flex;gap:8px;align-items:center">
+      <div class="tab-group">
+        <button class="tab-btn active" id="hot-tab-all" onclick="switchHotTab('all')" style="font-size:11px;padding:5px 12px;">전체 게시판</button>
+        <button class="tab-btn" id="hot-tab-fsl" onclick="switchHotTab('fsl')" style="font-size:11px;padding:5px 12px;">FSL 탭</button>
+      </div>
+    </div>
+  </div>
+  <div id="hot-posts-grid"></div>
+</div>
+
+<!-- ⑩ LATEST POSTS (전체 수집 게시글) -->
 <div class="posts-card">
-  <div class="card-header">
-    <div class="card-title">LATEST <span>POSTS</span></div>
+  <div class="card-head">
+    <div>
+      <div class="sec-eyebrow">Raw Data · 오늘 수집된 전체 게시글</div>
+      <div class="sec-title">TODAY'S <span>POSTS</span></div>
+    </div>
     <div style="display:flex;gap:10px;align-items:center;flex-wrap:wrap">
       <div class="tab-group">
         <button class="tab-btn active" onclick="switchTab('all')">전체 게시판</button>
@@ -496,448 +467,513 @@ body::after {
     </div>
   </div>
   <table class="posts-table">
-    <thead>
-      <tr>
-        <th style="width:38%">Title</th>
+    <thead><tr>
+      <th style="width:44%">Title</th>
+      <th>귀속</th>
+      <th>Sentiment</th>
+      <th>Views</th>
+      <th>Comments</th>
+      <th>Date</th>
+    </tr></thead>
+    <tbody id="posts-tbody"><tr><td colspan="6" class="loading-ph"><div class="spinner"></div></td></tr></tbody>
+  </table>
+  <div class="pagination" id="pagination"></div>
+  <div class="page-info" id="page-info"></div>
+</div>
+
+<!-- FOOTER -->
+<div class="footer">
+  <div class="live-row"><div class="live-dot"></div><span id="footer-updated">—</span></div>
+  <span>FC ONLINE · FSL ESPORTS INTELLIGENCE · ESI v2.0 · Claude API</span>
+  <span id="footer-range">—</span>
+</div>
+
+</div>
+<script>
+const T1_KW=["fsl","에프에스엘","fsl spring","fsl summer","fsl winter","fsl 팀배틀","ftb","fc pro","fc pro masters","eacc","ea챔피언스컵","결승전","결승","8강","4강","그룹스테이지","녹아웃","직관","중계","soop","치지직","이스포츠","e스포츠","프로게이머","t1","티원","gen.g","젠지","geng","drx","bnk피어엑스","bnk fearx","bnk","피어엑스","dn수퍼스","dns","농심","dplus kia","디플러스","찬","박찬화","우타","이지환","원더08","고원재","jm","김정민","오펠","강준호","별","박기홍","원","이원주","류크","윤창근","라이트","김선재","디케","강무진","곽","곽준혁","엑시토","윤형석","카이저","송현수","클러치","박지민","tk777","이태경","노이즈","노영진","미니언","조민혁"];
+const T2_KW=["선수 추천","선수추천","팀컬러","조합","포메이션","픽률"];
+const CHURN_KW=["접겠","접었","접음","접을","탈주","환불","질림","지침","포기","그만두","삭제","언인스"];
+
+function classifyPost(title){
+  const t=title.toLowerCase();
+  if(T1_KW.some(k=>t.includes(k.toLowerCase()))) return 'T1';
+  if(T2_KW.some(k=>t.includes(k.toLowerCase()))) return 'T2';
+  return 'T3';
+}
+function isChurn(title){ return CHURN_KW.some(k=>title.includes(k)); }
+
+function calcESI(posts){
+  const total=posts.length;
+  if(!total) return {esi:0,t1:0,t2:0,t3:0,posRate:0,sentCoeff:1,classified:[]};
+  let t1=0,t2=0,t3=0;
+  const classified=posts.map(p=>{
+    const tier=classifyPost(p.title);
+    if(tier==='T1') t1++; else if(tier==='T2') t2++; else t3++;
+    return {...p,tier};
+  });
+  const pos=classified.filter(p=>p.sentiment==='positive').length;
+  const posRate=pos/total*100;
+  const sentCoeff=posRate/50;
+  const raw=(t1*1.0+t2*0.5)/total*sentCoeff*100;
+  const esi=Math.min(10,Math.round(raw*10)/10);
+  return {esi,t1,t2,t3,total,posRate,sentCoeff,classified};
+}
+
+// 더미 데이터
+const DUMMY_ALL={last_updated:"2026-06-11 10:00",collection_range:{start:"2026-06-10 10:01",end:"2026-06-11 09:59"},total_posts:24,sentiment:{positive:42,neutral:35,negative:23},top_issues:{positive:"이벤트·강화 성공 반응",negative:"강화 실패·서버 불만",neutral:"스쿼드·선수 정보"},keywords:[{topic:"골키퍼",count:547,pct:"1.6%",tags:"키퍼, GK, 선방, 막기 등"},{topic:"현질/과금",count:705,pct:"2.0%",tags:"패키지, 결제, 충전 등"},{topic:"스쿼드 구성",count:691,pct:"1.7%",tags:"포메이션, 팀컬러, 조합 등"},{topic:"강화/승급",count:524,pct:"1.3%",tags:"강화 실패, 비용, 확률 등"},{topic:"서버/렉",count:324,pct:"0.8%",tags:"렉, 핑, 지연, 끊김 등"}],churn_signals:["강화 비용 과부담 → 접겠다 직접 표현","FSL 시청 후 이적시장 실망 → 이탈 전환"],avg_views_per_post:412,posts:[{title:"11카 풀리는 거 부터 재앙 시작이었음",views:7204,comments:30,date:"2026-06-11 10:56",sentiment:"negative",url:"#"},{title:"어그로 진짜 미안하오",views:5102,comments:23,date:"2026-06-11 10:55",sentiment:"neutral",url:"#"},{title:"씨발 떴냐 ㅋㅋㅋㅋㅋ",views:3821,comments:54,date:"2026-06-11 10:54",sentiment:"neutral",url:"#"},{title:"뮌헨 노잼이란 말 이해를 못하겠네",views:4417,comments:35,date:"2026-06-11 10:53",sentiment:"positive",url:"#"},{title:"사람들이 떠난이유중 하나가 현질배율이라고 생각함",views:6890,comments:27,date:"2026-06-11 10:52",sentiment:"negative",url:"#"},{title:"백금 훈련코치 밸류 상상이상임",views:3155,comments:31,date:"2026-06-11 10:51",sentiment:"positive",url:"#"},{title:"이번 시즌 메타 완벽 정리",views:9341,comments:15,date:"2026-06-11 10:50",sentiment:"positive",url:"#"},{title:"fc온라인의 문제점",views:2800,comments:6,date:"2026-06-11 10:49",sentiment:"negative",url:"#"},{title:"근데 나만 지금 게임 꿀잼인가",views:1920,comments:26,date:"2026-06-11 10:48",sentiment:"positive",url:"#"},{title:"네이마르 생제 풀리는게 브라질 리그 라이센스를 딴거임?",views:1430,comments:3,date:"2026-06-11 10:47",sentiment:"neutral",url:"#"},{title:"강화 또 망함 환불 해줄거냐",views:2100,comments:18,date:"2026-06-11 10:46",sentiment:"negative",url:"#"},{title:"DRX 찬 직관 후기 레전드였음",views:8210,comments:44,date:"2026-06-11 10:45",sentiment:"positive",url:"#"}]};
+const DUMMY_FSL={last_updated:"2026-06-11 10:00",collection_range:{start:"2026-06-10 10:01",end:"2026-06-11 09:59"},total_posts:8,sentiment:{positive:61,neutral:27,negative:12},top_issues:{positive:"FSL 선수 활약·대진 기대",negative:"이스포츠 관심 이탈 우려",neutral:"선수/전술 정보 공유"},keywords:[{topic:"FSL/이스포츠",count:1204,pct:"2.9%",tags:"결승, 대진표, 직관, 중계 등"},{topic:"프로게이머",count:712,pct:"1.7%",tags:"찬, 우타, 원더08, JM 등"},{topic:"선수 전술 분석",count:480,pct:"1.2%",tags:"빌드, 플레이스타일, 픽률 등"},{topic:"스쿼드 구성",count:291,pct:"0.7%",tags:"포메이션, 팀컬러, 조합 등"}],esports_disengagement_signals:["FSL 시청자가 게임 미접속 상태 유지 증가","선수 팬덤이 게임보다 커뮤니티 소비에 집중"],avg_views_per_post:3756,posts:[{title:"FSL SUMMER 대진표 나왔다 ㄷㄷ",views:7204,comments:132,date:"2026-06-11 09:50",sentiment:"positive",url:"#"},{title:"찬 이번 시즌도 우승 후보 맞지?",views:5102,comments:89,date:"2026-06-11 09:45",sentiment:"positive",url:"#"},{title:"우타 포메이션 따라해봤는데 진짜 좋음",views:4417,comments:68,date:"2026-06-11 09:40",sentiment:"positive",url:"#"},{title:"T1 별 이번 시즌 스쿼드 뭐씀?",views:3155,comments:44,date:"2026-06-11 09:30",sentiment:"neutral",url:"#"},{title:"DRX 찬 직관 후기 레전드였음",views:8210,comments:178,date:"2026-06-11 09:20",sentiment:"positive",url:"#"},{title:"FSL 중계 화질 개선됐네",views:1920,comments:33,date:"2026-06-11 09:10",sentiment:"positive",url:"#"},{title:"원더08 포메이션 분석글",views:3540,comments:57,date:"2026-06-11 09:00",sentiment:"neutral",url:"#"},{title:"노이즈 선수 팬인데 접을 것 같음",views:1200,comments:22,date:"2026-06-11 08:50",sentiment:"negative",url:"#"}]};
+
+// 누적 트렌드 (매일 쌓임 - 초기값)
+let ESI_HISTORY = JSON.parse(localStorage.getItem('esi_history') || '[]');
+
+let DATA={all:DUMMY_ALL,fsl:DUMMY_FSL};
+let ESI=null;
+let currentTab='all';
+let filteredPosts=[];
+let currentPage=1;
+const PAGE_SIZE=50; // 더 많이 보여주기
+let trendCh=null;
+
+async function init(){
+  try{
+    const [r1,r2]=await Promise.all([fetch('data_all.json?t='+Date.now()),fetch('data_fsl.json?t='+Date.now())]);
+    if(r1.ok) DATA.all=await r1.json();
+    if(r2.ok) DATA.fsl=await r2.json();
+  }catch(e){}
+  ESI=calcESI(DATA.all.posts||[]);
+
+  // 오늘 ESI 누적 저장
+  const todayLabel = (DATA.all.last_updated||'').slice(5,10);
+  if(todayLabel && (!ESI_HISTORY.length || ESI_HISTORY[ESI_HISTORY.length-1].label !== todayLabel)){
+    ESI_HISTORY.push({
+      label: todayLabel,
+      esi: ESI.esi,
+      posts: DATA.all.total_posts || ESI.total,
+      esports: ESI.t1 + ESI.t2
+    });
+    if(ESI_HISTORY.length > 30) ESI_HISTORY = ESI_HISTORY.slice(-30);
+    try{ localStorage.setItem('esi_history', JSON.stringify(ESI_HISTORY)); }catch(e){}
+  }
+
+  renderTopbar(); renderHeader(); renderKPI(); renderESI();
+  renderTrend(); renderHighlights(); renderCompare();
+  renderCommunity(); renderKeywords(); renderHotPosts('all'); renderPosts();
+}
+
+function renderTopbar(){
+  const t=DATA.all.last_updated||'—';
+  document.getElementById('header-updated').textContent=t;
+  document.getElementById('footer-updated').textContent='마지막 업데이트: '+t;
+  const r=DATA.all.collection_range;
+  if(r) document.getElementById('footer-range').textContent=r.start+' ~ '+r.end;
+}
+
+function renderHeader(){
+  const r=DATA.all.collection_range;
+  if(r){
+    document.getElementById('report-range').textContent='수집 기간: '+r.start+' ~ '+r.end;
+  }
+  const {esi,posRate}=ESI;
+  const state=esi>=6?'Positive — 이스포츠 영향력 주도':esi>=3?'Neutral — 이스포츠 영향 감지 중':'Caution — 이스포츠 영향 미미';
+  document.getElementById('report-state').textContent='Sentiment State: '+state+' | ESI '+esi.toFixed(1);
+  const ti=DATA.all.top_issues||{};
+  const parts=[ti.positive&&`긍정: ${ti.positive}`,ti.negative&&`부정: ${ti.negative}`,ti.neutral&&`중립: ${ti.neutral}`].filter(Boolean);
+  document.getElementById('report-text').textContent=parts.join('  ·  ')||'오늘 커뮤니티 감성 분석 결과입니다.';
+}
+
+function renderKPI(){
+  const {esi,t1,t2,total,posRate}=ESI;
+  const mention=((t1+t2)/Math.max(total,1)*100).toFixed(1)+'%';
+  document.getElementById('kpi-esi').textContent=esi.toFixed(1);
+  document.getElementById('kpi-total').textContent=(DATA.all.total_posts||total).toLocaleString();
+  document.getElementById('kpi-mention').textContent=mention;
+  document.getElementById('kpi-positive').textContent=posRate.toFixed(0)+'%';
+}
+
+function renderESI(){
+  const {esi,t1,t2,t3,total}=ESI;
+  document.getElementById('esi-val').textContent=esi.toFixed(1);
+  document.getElementById('esi-gauge').style.width=(esi/10*100)+'%';
+
+  let level,desc,shortLabel;
+  if(esi<3){level='영향 미미';shortLabel='영향 미미';desc='이스포츠 관련 커뮤니티 반응이 배경 노이즈 수준. FSL 일정·콘텐츠 노출 강화 필요.';}
+  else if(esi<6){level='이스포츠 영향 감지';shortLabel='영향 감지';desc='이스포츠 관련 게시물이 커뮤니티 전반에 유의미한 흔적을 남기고 있음. 선수·경기 중심 콘텐츠가 반응을 이끌고 있는 구간.';}
+  else if(esi<9){level='이스포츠 주도 확산';shortLabel='주도 확산';desc='이스포츠가 커뮤니티 담론의 주요 축으로 작동 중. 선수 플레이스타일·스쿼드 모방 행동이 게임 내 활동에 전이될 가능성 높음.';}
+  else{level='버즈 피크';shortLabel='버즈 피크';desc='커뮤니티 전반이 이스포츠 중심으로 재편. 게임 내 지표와의 상관관계 확인 필요.';}
+
+  document.getElementById('esi-interpret-short').textContent=shortLabel;
+  document.getElementById('esi-interpret').innerHTML=`<div class="esi-level">${level}</div><div class="esi-desc">${desc}</div>`;
+
+  const mx=Math.max(t1,t2,t3,1);
+  document.getElementById('t1-count').textContent=t1+'건';
+  document.getElementById('t2-count').textContent=t2+'건';
+  document.getElementById('t3-count').textContent=t3+'건';
+  document.getElementById('t1-bar').style.width=(t1/mx*100)+'%';
+  document.getElementById('t2-bar').style.width=(t2/mx*100)+'%';
+  document.getElementById('t3-bar').style.width=(t3/mx*100)+'%';
+}
+
+function renderTrend(){
+  const hist = ESI_HISTORY.length >= 2 ? ESI_HISTORY : [
+    {label:"06/03",esi:3.2,posts:28400,esports:910},
+    {label:"06/04",esi:3.8,posts:31200,esports:1180},
+    {label:"06/05",esi:2.9,posts:26800,esports:780},
+    {label:"06/06",esi:4.1,posts:38900,esports:1590},
+    {label:"06/07",esi:5.3,posts:41200,esports:2180},
+    {label:"06/08",esi:6.8,posts:52400,esports:3560},
+    {label:"06/09",esi:5.1,posts:39800,esports:2030},
+    {label:"06/10",esi:7.2,posts:58300,esports:4200},
+    {label:"06/11",esi:ESI.esi,posts:DATA.all.total_posts||ESI.total,esports:ESI.t1+ESI.t2},
+  ];
+
+  const ctx=document.getElementById('trendChart').getContext('2d');
+  if(trendCh) trendCh.destroy();
+  trendCh=new Chart(ctx,{
+    data:{
+      labels:hist.map(d=>d.label),
+      datasets:[
+        {
+          type:'bar',
+          label:'전체 게시글',
+          data:hist.map(d=>d.posts),
+          backgroundColor:'rgba(0,229,255,0.12)',
+          borderColor:'rgba(0,229,255,0.25)',
+          borderWidth:1,
+          yAxisID:'y2',
+          borderRadius:3,
+          order:3
+        },
+        {
+          type:'bar',
+          label:'이스포츠 게시글',
+          data:hist.map(d=>d.esports||0),
+          backgroundColor:'rgba(0,230,118,0.35)',
+          borderColor:'rgba(0,230,118,0.6)',
+          borderWidth:1,
+          yAxisID:'y2',
+          borderRadius:3,
+          order:2
+        },
+        {
+          type:'line',
+          label:'ESI Score',
+          data:hist.map(d=>d.esi),
+          borderColor:'#00e676',
+          backgroundColor:'rgba(0,230,118,0.05)',
+          borderWidth:2.5,
+          pointBackgroundColor:'#00e676',
+          pointRadius:4,
+          pointHoverRadius:6,
+          tension:0.4,
+          fill:false,
+          yAxisID:'y1',
+          order:1
+        }
+      ]
+    },
+    options:{
+      plugins:{
+        legend:{display:false},
+        tooltip:{
+          callbacks:{
+            afterBody: ctx => {
+              const i=ctx[0].dataIndex;
+              const total=hist[i].posts||0;
+              const esports=hist[i].esports||0;
+              const pct=total?(esports/total*100).toFixed(1):'0';
+              return [`이스포츠 비중: ${pct}%`];
+            }
+          }
+        }
+      },
+      scales:{
+        x:{grid:{color:'#1a2e22'},ticks:{color:'#5a7a68',font:{size:10},maxRotation:0}},
+        y1:{position:'left',grid:{color:'#1a2e22'},ticks:{color:'#00e676',font:{size:10}},min:0,max:10,title:{display:true,text:'ESI',color:'#00e676',font:{size:10,weight:'bold'}}},
+        y2:{position:'right',grid:{display:false},ticks:{color:'#5a7a68',font:{size:10},callback:v=>v>=1000?(v/1000).toFixed(0)+'K':v},title:{display:true,text:'Posts',color:'#5a7a68',font:{size:10}}}
+      },
+      animation:{duration:800}
+    }
+  });
+}
+
+function renderHighlights(){
+  const sa=DATA.all.sentiment||{positive:42,neutral:35,negative:23};
+  const sf=DATA.fsl.sentiment||{positive:61,neutral:27,negative:12};
+  const ta=DATA.all.top_issues||{};
+  const tf=DATA.fsl.top_issues||{};
+  const allPosts=DATA.all.posts||[];
+  const fslPosts=DATA.fsl.posts||[];
+
+  // 상단 2분할
+  document.getElementById('hl-top').innerHTML=`
+    <div class="hl-today-card all-board">
+      <div class="hl-board-badge all">전체 게시판 · TODAY</div>
+      <div class="hl-sent-row">
+        <div class="hl-sent-item"><div class="hl-sent-val" style="color:var(--positive)">${sa.positive}%</div><div class="hl-sent-lbl">긍정</div></div>
+        <div class="hl-sent-item"><div class="hl-sent-val" style="color:var(--neutral)">${sa.neutral}%</div><div class="hl-sent-lbl">중립</div></div>
+        <div class="hl-sent-item"><div class="hl-sent-val" style="color:var(--negative)">${sa.negative}%</div><div class="hl-sent-lbl">부정</div></div>
+      </div>
+      <ul class="hl-issue-list">
+        ${ta.positive?`<li style="color:#90a4ae"><span style="color:var(--positive)">↑</span> ${ta.positive}</li>`:''}
+        ${ta.negative?`<li style="color:#90a4ae"><span style="color:var(--negative)">↓</span> ${ta.negative}</li>`:''}
+        ${ta.neutral?`<li style="color:#90a4ae"><span style="color:var(--neutral)">→</span> ${ta.neutral}</li>`:''}
+      </ul>
+    </div>
+    <div class="hl-today-card fsl-board">
+      <div class="hl-board-badge fsl">FSL / 프로게이머 탭 · TODAY</div>
+      <div class="hl-sent-row">
+        <div class="hl-sent-item"><div class="hl-sent-val" style="color:var(--positive)">${sf.positive}%</div><div class="hl-sent-lbl">긍정</div></div>
+        <div class="hl-sent-item"><div class="hl-sent-val" style="color:var(--neutral)">${sf.neutral}%</div><div class="hl-sent-lbl">중립</div></div>
+        <div class="hl-sent-item"><div class="hl-sent-val" style="color:var(--negative)">${sf.negative}%</div><div class="hl-sent-lbl">부정</div></div>
+      </div>
+      <ul class="hl-issue-list">
+        ${tf.positive?`<li style="color:#90a4ae"><span style="color:var(--positive)">↑</span> ${tf.positive}</li>`:''}
+        ${tf.negative?`<li style="color:#90a4ae"><span style="color:var(--negative)">↓</span> ${tf.negative}</li>`:''}
+        ${tf.neutral?`<li style="color:#90a4ae"><span style="color:var(--neutral)">→</span> ${tf.neutral}</li>`:''}
+      </ul>
+    </div>`;
+
+  // 하단 3개 비교 카드
+  const sentGap=(sf.positive-sa.positive);
+  const avgViewsAll=DATA.all.avg_views_per_post||0;
+  const avgViewsFsl=DATA.fsl.avg_views_per_post||0;
+  const viewsGap=avgViewsFsl-avgViewsAll;
+  const {t1,t2,total}=ESI;
+  const esportsPct=((t1+t2)/Math.max(total,1)*100).toFixed(1);
+
+  document.getElementById('hl-compare').innerHTML=`
+    <div class="hl-cmp-card">
+      <div class="hl-cmp-title">① 감성 격차 · FSL vs 전체</div>
+      <div class="hl-cmp-row">
+        <div class="hl-cmp-item"><div class="hl-cmp-val" style="color:var(--fsl)">${sf.positive}%</div><div class="hl-cmp-lbl">FSL 긍정률</div></div>
+        <div class="hl-cmp-vs">VS</div>
+        <div class="hl-cmp-item"><div class="hl-cmp-val" style="color:var(--text-muted)">${sa.positive}%</div><div class="hl-cmp-lbl">전체 긍정률</div></div>
+      </div>
+      <div class="hl-cmp-insight ${sentGap>0?'positive':''}">
+        ${sentGap>0?`FSL 탭 긍정률이 전체 대비 +${sentGap}%p 높음. 이스포츠 시청이 긍정 감성 유도에 기여.`:`전체 긍정률이 FSL 탭과 유사한 수준.`}
+      </div>
+    </div>
+    <div class="hl-cmp-card">
+      <div class="hl-cmp-title">② 참여도 격차 · 평균 조회수</div>
+      <div class="hl-cmp-row">
+        <div class="hl-cmp-item"><div class="hl-cmp-val" style="color:var(--fsl)">${avgViewsFsl.toLocaleString()}</div><div class="hl-cmp-lbl">FSL 평균 조회</div></div>
+        <div class="hl-cmp-vs">VS</div>
+        <div class="hl-cmp-item"><div class="hl-cmp-val" style="color:var(--text-muted)">${avgViewsAll.toLocaleString()}</div><div class="hl-cmp-lbl">전체 평균 조회</div></div>
+      </div>
+      <div class="hl-cmp-insight ${viewsGap>0?'positive':''}">
+        ${viewsGap>0?`FSL 게시글 평균 조회수가 전체 대비 ${viewsGap.toLocaleString()} 높음. 이스포츠 콘텐츠 참여도 우위 확인.`:`데이터 누적 시 참여도 격차 분석 가능.`}
+      </div>
+    </div>
+    <div class="hl-cmp-card">
+      <div class="hl-cmp-title">③ 이스포츠 버즈 기여도</div>
+      <div class="hl-cmp-row">
+        <div class="hl-cmp-item"><div class="hl-cmp-val" style="color:var(--gold)">${esportsPct}%</div><div class="hl-cmp-lbl">이스포츠 키워드 비율</div></div>
+        <div class="hl-cmp-vs" style="color:var(--border2)">→</div>
+        <div class="hl-cmp-item"><div class="hl-cmp-val" style="color:var(--text-muted)">${(DATA.all.total_posts||total).toLocaleString()}</div><div class="hl-cmp-lbl">오늘 전체 버즈</div></div>
+      </div>
+      <div class="hl-cmp-insight accumulate">
+        이스포츠 관련 키워드 게시글 비율이 높을수록 전체 버즈량이 올라가는 상관관계는 데이터 누적 시 도출 예정.
+      </div>
+    </div>`;
+}
+
+function makeSentDonut(canvasId,labelId,data){
+  const s=data.sentiment||{positive:33,neutral:34,negative:33};
+  document.getElementById(labelId).textContent=(s.positive+s.neutral+s.negative)+'%';
+  new Chart(document.getElementById(canvasId).getContext('2d'),{
+    type:'doughnut',
+    data:{labels:['긍정','중립','부정'],datasets:[{data:[s.positive,s.neutral,s.negative],backgroundColor:['#00e676','#546e7a','#ff1744'],borderWidth:0,hoverOffset:4}]},
+    options:{cutout:'72%',plugins:{legend:{display:false}},animation:{duration:700}}
+  });
+  return s;
+}
+
+function renderCompare(){
+  document.getElementById('sent-all').innerHTML=`
+    <div class="donut-box"><canvas id="d-all"></canvas><div class="donut-center"><div class="donut-val" id="dv-all">—</div><div class="donut-lbl">ANALYSED</div></div></div>
+    <div class="sent-legs">
+      <div class="sent-row"><div class="sent-left"><div class="sent-dot" style="background:#00e676"></div>긍정</div><span class="sent-val" style="color:#00e676" id="sa-p">—</span></div>
+      <div class="sent-row"><div class="sent-left"><div class="sent-dot" style="background:#546e7a"></div>중립</div><span class="sent-val" style="color:#546e7a" id="sa-n">—</span></div>
+      <div class="sent-row"><div class="sent-left"><div class="sent-dot" style="background:#ff1744"></div>부정</div><span class="sent-val" style="color:#ff1744" id="sa-neg">—</span></div>
+    </div>`;
+  const sa=makeSentDonut('d-all','dv-all',DATA.all);
+  document.getElementById('sa-p').textContent=sa.positive+'%';
+  document.getElementById('sa-n').textContent=sa.neutral+'%';
+  document.getElementById('sa-neg').textContent=sa.negative+'%';
+  const ap=DATA.all.posts||[];
+  const av=ap.reduce((a,p)=>a+(p.views||0),0);
+  const ac=ap.reduce((a,p)=>a+(p.comments||0),0);
+  document.getElementById('stats-all').innerHTML=`
+    <div><div class="stat-label">총 게시글</div><div class="stat-val c-fsl">${(DATA.all.total_posts||ap.length).toLocaleString()}</div></div>
+    <div><div class="stat-label">총 조회수</div><div class="stat-val c-accent">${av.toLocaleString()}</div></div>
+    <div><div class="stat-label">평균 조회수</div><div class="stat-val c-gold">${(DATA.all.avg_views_per_post||0).toLocaleString()}</div></div>
+    <div><div class="stat-label">총 댓글수</div><div class="stat-val c-warn">${ac.toLocaleString()}</div></div>`;
+
+  document.getElementById('sent-fsl').innerHTML=`
+    <div class="donut-box"><canvas id="d-fsl"></canvas><div class="donut-center"><div class="donut-val" id="dv-fsl">—</div><div class="donut-lbl">ANALYSED</div></div></div>
+    <div class="sent-legs">
+      <div class="sent-row"><div class="sent-left"><div class="sent-dot" style="background:#00e676"></div>긍정</div><span class="sent-val" style="color:#00e676" id="sf-p">—</span></div>
+      <div class="sent-row"><div class="sent-left"><div class="sent-dot" style="background:#546e7a"></div>중립</div><span class="sent-val" style="color:#546e7a" id="sf-n">—</span></div>
+      <div class="sent-row"><div class="sent-left"><div class="sent-dot" style="background:#ff1744"></div>부정</div><span class="sent-val" style="color:#ff1744" id="sf-neg">—</span></div>
+    </div>`;
+  const sf=makeSentDonut('d-fsl','dv-fsl',DATA.fsl);
+  document.getElementById('sf-p').textContent=sf.positive+'%';
+  document.getElementById('sf-n').textContent=sf.neutral+'%';
+  document.getElementById('sf-neg').textContent=sf.negative+'%';
+  const fp=DATA.fsl.posts||[];
+  const fv=fp.reduce((a,p)=>a+(p.views||0),0);
+  const fc=fp.reduce((a,p)=>a+(p.comments||0),0);
+  document.getElementById('stats-fsl').innerHTML=`
+    <div><div class="stat-label">총 게시글</div><div class="stat-val c-fsl">${(DATA.fsl.total_posts||fp.length).toLocaleString()}</div></div>
+    <div><div class="stat-label">총 조회수</div><div class="stat-val c-accent">${fv.toLocaleString()}</div></div>
+    <div><div class="stat-label">평균 조회수</div><div class="stat-val c-gold">${(DATA.fsl.avg_views_per_post||0).toLocaleString()}</div></div>
+    <div><div class="stat-label">총 댓글수</div><div class="stat-val c-warn">${fc.toLocaleString()}</div></div>`;
+}
+
+function renderCommunity(){
+  const issues=[
+    {topic:'스쿼드 구성 및 선수 최적화',pct:'약 20%',cls:'neu',desc:'포메이션, 선수 비교, 팀컬러, 급여 제한, 포지션 보강 논의. 가장 강력한 유저 유지 요인.'},
+    {topic:'이적시장 및 BP 가치 압박',pct:'약 7%',cls:'neg',desc:'가격 변동 시점, 공급량, 하한가 매물, 선수 구매 적정성 논의. 구매 신뢰도에 직접 영향.'},
+    {topic:'강화 및 보상 결과',pct:'약 6%',cls:'pos',desc:'강화 성공은 긍정 반응 유도. 강화 실패는 비용 부담과 확률 불만 야기.'},
+    {topic:'게임플레이 일관성 불만',pct:'약 4%',cls:'neg',desc:'커서 전환, 패스 타겟, 골키퍼 행동, ZD 슛, 경기 체감 변화 등 지속적 제기.'},
+    {topic:'신규 클래스 및 업데이트 모니터링',pct:'약 4%',cls:'neu',desc:'PTG, TK, SH, TOTS, 패치 일정 및 신규 선수 출시 관련 정보 탐색.'}
+  ];
+  document.getElementById('issue-list').innerHTML=issues.map(i=>`
+    <div>
+      <div class="issue-head"><span class="issue-topic">${i.topic}</span><span class="issue-pct ${i.cls}">${i.pct}</span></div>
+      <div class="issue-desc">${i.desc}</div>
+    </div>`).join('');
+
+  const tp=DATA.all.total_posts||24;
+  const pcounts=[
+    {color:'#00e676',label:'Top Positive Issue',val:Math.round(tp*0.18)+' posts',desc:DATA.all.top_issues?.positive||'강화 성공·이벤트 보상 긍정 반응'},
+    {color:'#ff1744',label:'Top Negative Issue',val:Math.round(tp*0.23)+' posts',desc:DATA.all.top_issues?.negative||'강화 실패·서버 불만·이적시장 압박'},
+    {color:'#546e7a',label:'Top Neutral Issue',val:Math.round(tp*0.35)+' posts',desc:DATA.all.top_issues?.neutral||'스쿼드·선수 추천·포메이션 관련 정보'},
+    {color:'#00e5ff',label:'FSL / 이스포츠 언급',val:(ESI.t1+ESI.t2)+' posts',desc:'직접(T1) + 간접(T2) 이스포츠 귀속 게시글 합산'},
+    {color:'#ffd600',label:'Retention Loop',val:Math.round(tp*0.28)+' posts',desc:'스쿼드 최적화·선수 비교·장기적 팀 육성 계획'}
+  ];
+  document.getElementById('pcount-list').innerHTML=pcounts.map(p=>`
+    <div class="pcount-item">
+      <div class="pcount-dot" style="background:${p.color}"></div>
+      <div><div class="pcount-label">${p.label}</div><div class="pcount-val" style="color:${p.color}">${p.val}</div><div class="pcount-desc">${p.desc}</div></div>
+    </div>`).join('');
+}
+
+function renderKeywords(){
+  const kws=[...(DATA.all.keywords||[]),...(DATA.fsl.keywords||[])];
+  const seen=new Set();
+  const uniq=kws.filter(k=>{if(seen.has(k.topic))return false;seen.add(k.topic);return true;});
+  const sorted=uniq.sort((a,b)=>b.count-a.count).slice(0,12);
+  const max=Math.max(...sorted.map(k=>k.count),1);
+  const tierOf=topic=>{
+    const t=topic.toLowerCase();
+    if(T1_KW.some(k=>t.includes(k.toLowerCase()))) return 'T1';
+    if(['스쿼드','선수 추천','포메이션','팀컬러','픽률','조합'].some(k=>t.includes(k))) return 'T2';
+    return 'T3';
+  };
+  const bc=t=>t==='T1'?'var(--fsl)':t==='T2'?'var(--accent)':'#37474f';
+  document.getElementById('kw-tbody').innerHTML=sorted.map(k=>{
+    const tier=tierOf(k.topic);
+    return `<tr>
+      <td class="kw-topic">${k.topic}</td>
+      <td><span class="tier-chip ${tier==='T1'?'chip-t1':tier==='T2'?'chip-t2':'chip-t3'}">${tier}</span></td>
+      <td><span class="kw-count" style="color:${bc(tier)}">${k.count.toLocaleString()}건</span> <span style="font-size:10px;color:var(--text-muted)">(${k.pct})</span></td>
+      <td><div class="kw-bar-bg"><div class="kw-bar-fill" style="width:${Math.round(k.count/max*100)}%;background:${bc(tier)}"></div></div></td>
+      <td class="kw-tags">${k.tags||''}</td>
+    </tr>`;}).join('');
+}
+
+function switchHotTab(tab){
+  document.getElementById('hot-tab-all').classList.toggle('active', tab==='all');
+  document.getElementById('hot-tab-fsl').classList.toggle('active', tab==='fsl');
+  renderHotPosts(tab);
+}
+
+function renderHotPosts(tab){
+  const src = tab==='all' ? DATA.all : DATA.fsl;
+  const posts = (src.posts||[]).map(p=>({...p, tier:classifyPost(p.title)}));
+  const scored = posts.map(p=>({
+    ...p, score:(p.views||0)*0.7+(p.comments||0)*300*0.3
+  })).sort((a,b)=>b.score-a.score).slice(0,10);
+  const maxScore = scored.length ? scored[0].score : 1;
+  const bc={positive:'badge-pos',neutral:'badge-neu',negative:'badge-neg'};
+  const bt={positive:'POS',neutral:'NEU',negative:'NEG'};
+  const tc={T1:'badge-t1',T2:'badge-t2',T3:''};
+  const tl={T1:'T1',T2:'T2',T3:'—'};
+  const rankColor=i=>i===0?'var(--gold)':i===1?'#c0c0c0':i===2?'#cd7f32':'var(--text-muted)';
+
+  document.getElementById('hot-posts-grid').innerHTML = scored.length===0
+    ? `<div class="loading-ph" style="color:#1e3028">수집된 게시글 없음</div>`
+    : `<table class="posts-table">
+      <thead><tr>
+        <th style="width:50px">Rank</th>
+        <th style="width:40%">Title</th>
         <th>귀속</th>
         <th>Sentiment</th>
         <th>Views</th>
         <th>Comments</th>
-        <th>Date</th>
-      </tr>
-    </thead>
-    <tbody id="posts-tbody"><tr><td colspan="6" class="loading-ph"><div class="spinner"></div></td></tr></tbody>
-  </table>
-  <div class="pagination" id="pagination"></div>
-</div>
-
-<!-- ⑥ 이탈 신호 -->
-<div class="signal-card" id="signal-card">
-  <div class="loading-ph"><div class="spinner"></div></div>
-</div>
-
-<!-- 푸터 -->
-<div class="footer">
-  <div class="live-row"><div class="live-dot"></div><span id="footer-updated">—</span></div>
-  <span>FC ONLINE · FSL ESPORTS MARKETING · ESI v1.0 · n8n + Claude</span>
-  <span id="footer-posts">—</span>
-</div>
-
-</div><!-- /wrap -->
-
-<script>
-// ══════════════════════════════════════════
-// FSL 키워드 (fsl_keywords.json과 동기화)
-// ══════════════════════════════════════════
-const FSL_KEYWORDS_T1 = [
-  // 리그
-  "fsl","에프에스엘","fsl spring","fsl summer","fsl winter",
-  "fsl 팀배틀","ftb","fc pro","fc pro masters","eacc","ea챔피언스컵",
-  "결승전","결승","8강","4강","그룹스테이지","녹아웃","노크아웃",
-  "직관","중계","soop","치지직","이스포츠","e스포츠","프로게이머",
-  // 팀
-  "t1","티원","gen.g","젠지","geng","drx","디알엑스",
-  "kt롤스터","kt 롤스터","bnk피어엑스","bnk fearx","bnk","피어엑스",
-  "dn수퍼스","dns","농심레드포스","농심","dplus kia","디플러스","dk",
-  // 선수 닉네임
-  "찬","박찬화","우타","이지환","원더08","고원재","jm","김정민",
-  "오펠","강준호","별","박기홍","원","이원주","류크","윤창근",
-  "라이트","김선재","디케","강무진","곽","곽준혁","엑시토","윤형석",
-  "카이저","송현수","클러치","박지민","tk777","이태경","노이즈","노영진",
-  "미니언","조민혁","호석","최호석","구끼","김시경","미밥",
-  // 게임플레이 용어 (FSL 맥락)
-  "포메이션","전술","스쿼드 공략","빌드","플레이스타일",
-  "피지컬","조작","컨트롤","하이라이트","골장면","명장면","커스텀"
-];
-
-const FSL_KEYWORDS_T2 = [
-  "스쿼드","선수 추천","선수추천","이 선수","써봤는데","써봄","씀",
-  "팀컬러","조합","어울림","전술","포메이션","픽률"
-];
-
-function classifyPost(title, date, fslEventDates) {
-  const t = title.toLowerCase();
-  if (FSL_KEYWORDS_T1.some(k => t.includes(k.toLowerCase()))) return 'T1';
-  // T2: 게시글 날짜가 FSL 경기일 ±3일 이내 && T2 키워드 포함
-  if (fslEventDates && fslEventDates.length > 0 && date) {
-    const postDate = new Date(date);
-    const nearEvent = fslEventDates.some(ed => {
-      const ev = new Date(ed);
-      const diff = Math.abs(postDate - ev) / (1000 * 60 * 60 * 24);
-      return diff <= 3;
-    });
-    if (nearEvent && FSL_KEYWORDS_T2.some(k => t.includes(k.toLowerCase()))) return 'T2';
-  }
-  return 'T3';
+        <th style="width:130px">Score</th>
+      </tr></thead>
+      <tbody>
+        ${scored.map((p,i)=>`<tr onclick="if(event.target.tagName!=='A') window.open('${p.url}','_blank')">
+          <td style="font-family:'Bebas Neue',sans-serif;font-size:28px;color:${rankColor(i)};line-height:1;padding:6px 10px;">${i+1}</td>
+          <td><a class="post-title-a" href="${p.url}" target="_blank">${p.title}</a></td>
+          <td><span class="badge ${tc[p.tier]}" style="${p.tier==='T3'?'color:var(--text-muted);background:rgba(55,71,79,0.1)':''}">${tl[p.tier]}</span></td>
+          <td><span class="badge ${bc[p.sentiment]||'badge-neu'}">${bt[p.sentiment]||'NEU'}</span></td>
+          <td class="num-cell">${(p.views||0).toLocaleString()}</td>
+          <td class="num-cell">${p.comments||0}</td>
+          <td><div style="height:6px;background:var(--border);border-radius:3px;overflow:hidden;"><div style="height:100%;width:${Math.round(p.score/maxScore*100)}%;background:${i<3?'var(--gold)':p.tier==='T1'?'var(--fsl)':'var(--accent)'};border-radius:3px;"></div></div></td>
+        </tr>`).join('')}
+      </tbody>
+    </table>`;
 }
-
-function calcESI(posts, fslEventDates) {
-  const total = posts.length;
-  if (total === 0) return { esi: 0, t1: 0, t2: 0, t3: 0 };
-
-  let t1 = 0, t2 = 0, t3 = 0;
-  const classified = posts.map(p => {
-    const tier = classifyPost(p.title, p.date, fslEventDates);
-    if (tier === 'T1') t1++;
-    else if (tier === 'T2') t2++;
-    else t3++;
-    return { ...p, tier };
-  });
-
-  // 긍정률 계산
-  const posCount = classified.filter(p => p.sentiment === 'positive').length;
-  const posRate = posCount / total * 100;
-  const sentCoeff = posRate / 50;
-
-  const raw = (t1 * 1.0 + t2 * 0.5) / total * sentCoeff * 100;
-  const esi = Math.min(10, Math.round(raw * 10) / 10);
-
-  return { esi, t1, t2, t3, total, posRate, sentCoeff, classified };
-}
-
-// ══════════════════════════════════════════
-// 폴백 더미 데이터
-// ══════════════════════════════════════════
-const DUMMY_ALL = {
-  last_updated: "2026-06-08 09:00",
-  total_posts: 58380,
-  sentiment: { positive: 42, neutral: 35, negative: 23 },
-  posts: [
-    { title: "FSL SUMMER 대진표 나왔다 ㄷㄷ", views: 7204, comments: 132, date: "2026-06-08", sentiment: "positive", url: "#" },
-    { title: "찬 이번 시즌도 우승 후보 맞지?", views: 5102, comments: 89, date: "2026-06-08", sentiment: "positive", url: "#" },
-    { title: "이번 패치 GK 너프 실화임?", views: 3821, comments: 47, date: "2026-06-08", sentiment: "negative", url: "#" },
-    { title: "강화 확률 공개해라 제발", views: 2109, comments: 83, date: "2026-06-08", sentiment: "negative", url: "#" },
-    { title: "우타 포메이션 따라해봤는데 진짜 좋음", views: 4417, comments: 68, date: "2026-06-07", sentiment: "positive", url: "#" },
-    { title: "서버 터진 거 보상이 왜 이래", views: 6890, comments: 155, date: "2026-06-07", sentiment: "negative", url: "#" },
-    { title: "T1 별 이번 시즌 스쿼드 뭐씀?", views: 3155, comments: 44, date: "2026-06-06", sentiment: "neutral", url: "#" },
-    { title: "이번 시즌 메타 완벽 정리", views: 9341, comments: 203, date: "2026-06-05", sentiment: "positive", url: "#" },
-    { title: "오늘 업데이트 카드 뭐가 나왔냐", views: 1430, comments: 29, date: "2026-06-05", sentiment: "neutral", url: "#" },
-    { title: "DRX 찬 직관 후기 레전드였음", views: 8210, comments: 178, date: "2026-06-04", sentiment: "positive", url: "#" },
-    { title: "강화 또 망함 환불 해줄거냐", views: 2800, comments: 91, date: "2026-06-04", sentiment: "negative", url: "#" },
-    { title: "FSL 중계 화질 개선됐네", views: 1920, comments: 33, date: "2026-06-03", sentiment: "positive", url: "#" },
-  ]
-};
-const DUMMY_FSL = {
-  last_updated: "2026-06-08 09:00",
-  total_posts: 2841,
-  sentiment: { positive: 61, neutral: 27, negative: 12 },
-  posts: [
-    { title: "FSL SUMMER 대진표 나왔다 ㄷㄷ", views: 7204, comments: 132, date: "2026-06-08", sentiment: "positive", url: "#" },
-    { title: "찬 이번 시즌도 우승 후보 맞지?", views: 5102, comments: 89, date: "2026-06-08", sentiment: "positive", url: "#" },
-    { title: "우타 포메이션 따라해봤는데 진짜 좋음", views: 4417, comments: 68, date: "2026-06-07", sentiment: "positive", url: "#" },
-    { title: "T1 별 이번 시즌 스쿼드 뭐씀?", views: 3155, comments: 44, date: "2026-06-06", sentiment: "neutral", url: "#" },
-    { title: "DRX 찬 직관 후기 레전드였음", views: 8210, comments: 178, date: "2026-06-04", sentiment: "positive", url: "#" },
-    { title: "FSL 중계 화질 개선됐네", views: 1920, comments: 33, date: "2026-06-03", sentiment: "positive", url: "#" },
-    { title: "원더08 포메이션 분석글", views: 3540, comments: 57, date: "2026-06-02", sentiment: "neutral", url: "#" },
-  ]
-};
-
-const FSL_EVENT_DATES = ["2026-06-04", "2026-06-05", "2026-05-28", "2026-05-21"];
-
-const ESI_TREND_DATA = [
-  { label:"W18\nApr", esi:3.2, event:null },
-  { label:"W19\nApr", esi:3.8, event:null },
-  { label:"W20\nApr", esi:2.9, event:null },
-  { label:"W21\nMay", esi:4.1, event:"FSL SPRING 개막" },
-  { label:"W22\nMay", esi:5.3, event:null },
-  { label:"W23\nMay", esi:6.8, event:"그룹스테이지" },
-  { label:"W24\nMay", esi:5.1, event:null },
-  { label:"W25\nJun", esi:7.2, event:"녹아웃 스테이지" },
-  { label:"W26\nJun", esi:4.9, event:null },
-];
-
-// ══════════════════════════════════════════
-// 상태
-// ══════════════════════════════════════════
-let DATA = { all: DUMMY_ALL, fsl: DUMMY_FSL };
-let esiResult = null;
-let currentTab = 'all';
-let filteredPosts = [];
-let currentPage = 1;
-const PAGE_SIZE = 8;
-let esiChartInst = null;
-let sentChartInst = null;
-
-// ══════════════════════════════════════════
-// 초기화
-// ══════════════════════════════════════════
-async function init() {
-  try {
-    const [r1, r2] = await Promise.all([
-      fetch('data_all.json?t=' + Date.now()),
-      fetch('data_fsl.json?t=' + Date.now())
-    ]);
-    if (r1.ok) DATA.all = await r1.json();
-    if (r2.ok) DATA.fsl = await r2.json();
-  } catch {}
-
-  esiResult = calcESI(DATA.all.posts, FSL_EVENT_DATES);
-  renderTopbar();
-  renderESI();
-  renderKPI();
-  renderESITrend();
-  renderSentiment();
-  renderKeywords();
-  renderPosts();
-  renderSignal();
-}
-
-function renderTopbar() {
-  const now = DATA.all.last_updated || '—';
-  document.getElementById('header-updated').textContent = now;
-  document.getElementById('footer-updated').textContent = '마지막 업데이트: ' + now;
-  document.getElementById('footer-posts').textContent = (DATA.all.total_posts || 0).toLocaleString() + ' posts analysed';
-}
-
-// ── ESI 히어로 ──
-function renderESI() {
-  const { esi, t1, t2, t3, total, posRate, sentCoeff } = esiResult;
-
-  document.getElementById('esi-value').textContent = esi.toFixed(1);
-  document.getElementById('esi-gauge').style.width = (esi / 10 * 100) + '%';
-
-  // WoW 더미 (실제 연동 시 이전 주 ESI 저장 필요)
-  document.getElementById('esi-wow').textContent = 'WoW +0.8';
-  document.getElementById('esi-wow').className = 'esi-wow up';
-
-  // 해석
-  let level, desc;
-  if (esi < 3)      { level = '영향 미미'; desc = '이스포츠 관련 커뮤니티 반응이 배경 노이즈 수준. FSL 일정·콘텐츠 노출 강화 필요.'; }
-  else if (esi < 6) { level = '이스포츠 영향 감지'; desc = '이스포츠 관련 게시물이 커뮤니티 전반에 유의미한 흔적을 남기고 있음. 선수·경기 중심 콘텐츠가 반응을 이끌고 있는 구간.'; }
-  else if (esi < 9) { level = '이스포츠 주도 확산'; desc = '이스포츠가 커뮤니티 담론의 주요 축으로 작동 중. 선수 플레이스타일·스쿼드 모방 행동이 게임 내 활동에 전이될 가능성 높음.'; }
-  else               { level = '버즈 피크 — 이스포츠 지배'; desc = '커뮤니티 전반이 이스포츠 중심으로 재편. 게임 내 지표와의 상관관계 확인 필요.'; }
-
-  document.getElementById('esi-interp').innerHTML = `
-    <div class="esi-interpretation-level">${level}</div>
-    <div class="esi-interpretation-desc">${desc}</div>
-  `;
-
-  // 브레이크다운
-  const maxT = Math.max(t1, t2, t3, 1);
-  document.getElementById('t1-count').textContent = t1.toLocaleString() + '건';
-  document.getElementById('t2-count').textContent = t2.toLocaleString() + '건';
-  document.getElementById('t3-count').textContent = t3.toLocaleString() + '건';
-  document.getElementById('t1-bar').style.width = (t1/maxT*100) + '%';
-  document.getElementById('t2-bar').style.width = (t2/maxT*100) + '%';
-  document.getElementById('t3-bar').style.width = (t3/maxT*100) + '%';
-}
-
-// ── KPI ──
-function renderKPI() {
-  const { esi, t1, t2, t3, total, posRate, sentCoeff } = esiResult;
-  const mentionRate = ((t1 + t2) / total * 100).toFixed(1) + '%';
-
-  document.getElementById('kpi-total').textContent = (DATA.all.total_posts || total).toLocaleString();
-  document.getElementById('kpi-total-sub').textContent = '전체 게시글 수';
-
-  document.getElementById('kpi-mention').textContent = mentionRate;
-  document.getElementById('kpi-mention-sub').className = 'kpi-cell-sub up';
-  document.getElementById('kpi-mention-sub').textContent = 'WoW +2.1%p';
-
-  document.getElementById('kpi-positive').textContent = posRate.toFixed(0) + '%';
-  document.getElementById('kpi-positive-sub').className = 'kpi-cell-sub up';
-  document.getElementById('kpi-positive-sub').textContent = 'WoW +3%p';
-
-  document.getElementById('kpi-coeff').textContent = sentCoeff.toFixed(2) + 'x';
-}
-
-// ── ESI 트렌드 ──
-function renderESITrend() {
-  const ctx = document.getElementById('esiTrendChart').getContext('2d');
-  if (esiChartInst) esiChartInst.destroy();
-  esiChartInst = new Chart(ctx, {
-    type: 'line',
-    data: {
-      labels: ESI_TREND_DATA.map(d => d.label),
-      datasets: [{
-        data: ESI_TREND_DATA.map(d => d.esi),
-        borderColor: '#00e5ff',
-        backgroundColor: 'rgba(0,229,255,0.07)',
-        borderWidth: 2.5,
-        pointBackgroundColor: ESI_TREND_DATA.map(d => d.event ? '#ffd700' : '#00e5ff'),
-        pointRadius: ESI_TREND_DATA.map(d => d.event ? 9 : 4),
-        pointHoverRadius: 7,
-        tension: 0.4,
-        fill: true
-      }]
-    },
-    options: {
-      plugins: {
-        legend: { display: false },
-        tooltip: {
-          callbacks: {
-            afterBody: ctx => {
-              const ev = ESI_TREND_DATA[ctx[0].dataIndex].event;
-              return ev ? ['📌 ' + ev] : [];
-            }
-          }
-        },
-        annotation: {}
-      },
-      scales: {
-        x: { grid: { color: '#1e2535' }, ticks: { color: '#546e7a', font: { size: 10 }, maxRotation: 0 } },
-        y: { grid: { color: '#1e2535' }, ticks: { color: '#546e7a', font: { size: 10 } }, min: 0, max: 10 }
-      },
-      animation: { duration: 800 }
-    }
-  });
-}
-
-// ── 감성 도넛 ──
-function renderSentiment() {
-  const s = DATA.fsl.sentiment || { positive: 61, neutral: 27, negative: 12 };
-  const total = s.positive + s.neutral + s.negative;
-  document.getElementById('sent-total').textContent = total + '%';
-
-  const ctx = document.getElementById('sentChart').getContext('2d');
-  if (sentChartInst) sentChartInst.destroy();
-  sentChartInst = new Chart(ctx, {
-    type: 'doughnut',
-    data: {
-      labels: ['긍정', '중립', '부정'],
-      datasets: [{ data: [s.positive, s.neutral, s.negative], backgroundColor: ['#00e676', '#546e7a', '#ff1744'], borderWidth: 0, hoverOffset: 4 }]
-    },
-    options: {
-      cutout: '72%',
-      plugins: { legend: { display: false } },
-      animation: { duration: 700 }
-    }
-  });
-
-  document.getElementById('sent-legend').innerHTML = [
-    { label: '긍정', color: '#00e676', val: s.positive },
-    { label: '중립', color: '#546e7a', val: s.neutral },
-    { label: '부정', color: '#ff1744', val: s.negative }
-  ].map(l => `
-    <div class="sent-leg-item">
-      <div class="sent-leg-left"><div class="sent-leg-dot" style="background:${l.color}"></div>${l.label}</div>
-      <span class="sent-leg-val" style="color:${l.color}">${l.val}%</span>
-    </div>
-  `).join('');
-}
-
-// ── 키워드 트렌드 (Tier 분류 표시) ──
-function renderKeywords() {
-  const keywords = [
-    { topic: 'FSL/이스포츠', tier: 'T1', count: 1204, pct: '2.9%', tags: '결승, 대진표, 직관, 중계 등' },
-    { topic: '골키퍼', tier: 'T3', count: 1389, pct: '3.4%', tags: '감아차기, ZD, 중거리슛 등' },
-    { topic: '프로게이머', tier: 'T1', count: 712, pct: '1.7%', tags: '찬, 우타, 원더08, JM 등' },
-    { topic: '현질/과금', tier: 'T3', count: 794, pct: '2.0%', tags: '패키지, 결제, 충전 등' },
-    { topic: '스쿼드 구성', tier: 'T2', count: 691, pct: '1.7%', tags: '포메이션, 팀컬러, 조합 등' },
-    { topic: '강화/승급', tier: 'T3', count: 524, pct: '1.3%', tags: '강화 실패, 비용, 확률 등' },
-    { topic: '선수 전술 분석', tier: 'T1', count: 480, pct: '1.2%', tags: '빌드, 플레이스타일, 픽률 등' },
-    { topic: '서버/렉', tier: 'T3', count: 324, pct: '0.8%', tags: '렉, 핑, 지연, 끊김 등' },
-    { topic: '이적시장', tier: 'T3', count: 273, pct: '0.7%', tags: '시세, 하한가, BP 등' },
-    { topic: 'TOTS/이벤트', tier: 'T2', count: 201, pct: '0.5%', tags: '신규 카드, 시즌 이벤트 등' },
-  ];
-  const maxC = Math.max(...keywords.map(k => k.count));
-  document.getElementById('kw-tbody').innerHTML = keywords.map(k => `
-    <tr>
-      <td class="kw-topic">${k.topic}</td>
-      <td><span class="tier-chip ${k.tier === 'T1' ? 'chip-t1' : k.tier === 'T2' ? 'chip-t2' : ''}" style="${k.tier==='T3'?'background:rgba(55,71,79,0.2);color:#546e7a;border:1px solid rgba(55,71,79,0.3)':''}">${k.tier}</span></td>
-      <td><span class="kw-count">${k.count.toLocaleString()}건</span><span class="kw-pct">(${k.pct})</span></td>
-      <td><div class="kw-bar-bg"><div class="kw-bar-fill" style="width:${Math.round(k.count/maxC*100)}%;${k.tier==='T3'?'background:var(--tier3)':k.tier==='T2'?'background:var(--tier2)':''}"></div></div></td>
-      <td class="kw-tags">${k.tags}</td>
-    </tr>
-  `).join('');
-}
-
-// ── 게시글 테이블 (Tier 분류 컬럼 추가) ──
-function renderPosts() {
-  const src = currentTab === 'all' ? DATA.all : DATA.fsl;
-  // ESI 분류 적용
-  filteredPosts = (src.posts || []).map(p => ({
-    ...p,
-    tier: classifyPost(p.title, p.date, FSL_EVENT_DATES)
-  }));
-  currentPage = 1;
-  document.getElementById('search-input').value = '';
+function renderPosts(){
+  const src=currentTab==='all'?DATA.all:DATA.fsl;
+  filteredPosts=(src.posts||[]).map(p=>({...p,tier:classifyPost(p.title)}));
+  currentPage=1;
+  document.getElementById('search-input').value='';
   renderPostTable();
 }
 
-function renderPostTable() {
-  const start = (currentPage - 1) * PAGE_SIZE;
-  const paged = filteredPosts.slice(start, start + PAGE_SIZE);
-  const bc = { positive: 'badge-pos', neutral: 'badge-neu', negative: 'badge-neg' };
-  const bt = { positive: 'POS', neutral: 'NEU', negative: 'NEG' };
-  const tc = { T1: 'badge-t1', T2: 'badge-t2', T3: '' };
-  const tl = { T1: 'T1', T2: 'T2', T3: '—' };
+function renderPostTable(){
+  const total=filteredPosts.length;
+  const start=(currentPage-1)*PAGE_SIZE;
+  const paged=filteredPosts.slice(start,start+PAGE_SIZE);
+  const bc={positive:'badge-pos',neutral:'badge-neu',negative:'badge-neg'};
+  const bt={positive:'POS',neutral:'NEU',negative:'NEG'};
+  const tc={T1:'badge-t1',T2:'badge-t2',T3:''};
+  const tl={T1:'T1',T2:'T2',T3:'—'};
+  document.getElementById('posts-tbody').innerHTML=paged.length===0
+    ?`<tr><td colspan="6" style="text-align:center;padding:28px;color:#1e3028">검색 결과 없음</td></tr>`
+    :paged.map(p=>`<tr onclick="if(event.target.tagName!=='A') window.open('${p.url}','_blank')">
+      <td><a class="post-title-a" href="${p.url}" target="_blank">${p.title}</a></td>
+      <td><span class="badge ${tc[p.tier]}" style="${p.tier==='T3'?'color:var(--text-muted);background:rgba(55,71,79,0.1)':''}">${tl[p.tier]}</span></td>
+      <td><span class="badge ${bc[p.sentiment]||'badge-neu'}">${bt[p.sentiment]||'NEU'}</span></td>
+      <td class="num-cell">${(p.views||0).toLocaleString()}</td>
+      <td class="num-cell">${p.comments||0}</td>
+      <td class="date-cell">${(p.date||'').slice(0,16)}</td>
+    </tr>`).join('');
 
-  document.getElementById('posts-tbody').innerHTML = paged.length === 0
-    ? `<tr><td colspan="6" style="text-align:center;padding:28px;color:#37474f">검색 결과 없음</td></tr>`
-    : paged.map(p => `
-      <tr>
-        <td><a class="post-title-a" href="${p.url}" target="_blank">${p.title}</a></td>
-        <td><span class="badge ${tc[p.tier]}" style="${p.tier==='T3'?'color:var(--text-dim)':''}">${tl[p.tier]}</span></td>
-        <td><span class="badge ${bc[p.sentiment]||'badge-neu'}">${bt[p.sentiment]||'NEU'}</span></td>
-        <td class="num-cell">${(p.views||0).toLocaleString()}</td>
-        <td class="num-cell">${p.comments||0}</td>
-        <td class="date-cell">${p.date||''}</td>
-      </tr>
-    `).join('');
-
-  const total = Math.ceil(filteredPosts.length / PAGE_SIZE);
-  document.getElementById('pagination').innerHTML = total <= 1 ? '' :
-    Array.from({length:total},(_,i) =>
-      `<button class="page-btn ${i+1===currentPage?'active':''}" onclick="goPage(${i+1})">${i+1}</button>`
-    ).join('');
+  const totalPages=Math.ceil(total/PAGE_SIZE);
+  document.getElementById('pagination').innerHTML=totalPages<=1?'':
+    Array.from({length:totalPages},(_,i)=>`<button class="page-btn ${i+1===currentPage?'active':''}" onclick="goPage(${i+1})">${i+1}</button>`).join('');
+  document.getElementById('page-info').textContent=total?`${start+1}–${Math.min(start+PAGE_SIZE,total)} / 총 ${total}건`:'';
 }
 
-function switchTab(tab) {
-  currentTab = tab;
-  document.querySelectorAll('.tab-btn').forEach((b,i) => {
-    b.classList.toggle('active', (i===0&&tab==='all')||(i===1&&tab==='fsl'));
-  });
+function switchTab(tab){
+  currentTab=tab;
+  document.querySelectorAll('.tab-btn').forEach((b,i)=>b.classList.toggle('active',(i===0&&tab==='all')||(i===1&&tab==='fsl')));
   renderPosts();
 }
-
-function filterPosts() {
-  const q = document.getElementById('search-input').value.toLowerCase();
-  const src = currentTab === 'all' ? DATA.all : DATA.fsl;
-  filteredPosts = (src.posts||[])
-    .map(p => ({ ...p, tier: classifyPost(p.title, p.date, FSL_EVENT_DATES) }))
-    .filter(p => p.title.toLowerCase().includes(q));
-  currentPage = 1;
-  renderPostTable();
+function filterPosts(){
+  const q=document.getElementById('search-input').value.toLowerCase();
+  const src=currentTab==='all'?DATA.all:DATA.fsl;
+  filteredPosts=(src.posts||[]).map(p=>({...p,tier:classifyPost(p.title)})).filter(p=>p.title.toLowerCase().includes(q));
+  currentPage=1; renderPostTable();
 }
-
-function goPage(p) { currentPage = p; renderPostTable(); }
-
-// ── 이탈 신호 ──
-function renderSignal() {
-  document.getElementById('signal-card').innerHTML = `
-    <div class="card-header" style="margin-bottom:16px">
-      <div class="card-title">이탈·무관심 <span>SIGNAL</span></div>
-      <div style="display:flex;gap:16px">
-        <div style="text-align:center">
-          <div style="font-family:'Barlow Condensed',sans-serif;font-size:10px;letter-spacing:1px;color:var(--text-muted);margin-bottom:4px">이탈 언급 비율</div>
-          <div style="font-family:'Bebas Neue',sans-serif;font-size:28px;color:var(--negative)">0.5%</div>
-        </div>
-        <div style="text-align:center">
-          <div style="font-family:'Barlow Condensed',sans-serif;font-size:10px;letter-spacing:1px;color:var(--text-muted);margin-bottom:4px">FSL 무관심 신호</div>
-          <div style="font-family:'Bebas Neue',sans-serif;font-size:28px;color:var(--warning)">3건</div>
-        </div>
-      </div>
-    </div>
-    <div class="signal-grid">
-      <div class="signal-box">
-        <div class="signal-box-title">게임 이탈 신호</div>
-        <ul class="signal-list">
-          <li>강화 비용 과부담 → '접고 싶다' 직접 표현 발생</li>
-          <li>FSL 시청 후 게임 접속했으나 이적시장 시세에 실망 → 이탈 전환</li>
-          <li>이스포츠 이벤트 후 복귀 유저의 재이탈 사이클 단축</li>
-        </ul>
-      </div>
-      <div class="signal-box">
-        <div class="signal-box-title">이스포츠 무관심 전환</div>
-        <ul class="signal-list">
-          <li>FSL 시청자가 게임 미접속 상태 유지 비율 증가</li>
-          <li>선수 팬덤이 게임 이용보다 커뮤니티 소비에 집중</li>
-          <li>게임 내 이스포츠 연계 보상 부재 → 관여도 하락</li>
-        </ul>
-      </div>
-    </div>
-  `;
+function goPage(p){
+  currentPage=p; renderPostTable();
+  window.scrollTo({top:document.getElementById('posts-tbody').getBoundingClientRect().top+window.scrollY-100,behavior:'smooth'});
 }
 
 init();
