@@ -43,7 +43,7 @@ TARGETS = {
     }
 }
 
-MAX_PAGES = 20  # 최대 페이지 수 (안전장치)
+MAX_PAGES = 50  # 최대 50페이지 = 최대 1,000개
 
 
 def make_session(cookie_str):
