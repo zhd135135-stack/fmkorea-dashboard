@@ -123,7 +123,7 @@ body::before{content:'';position:fixed;inset:0;background:radial-gradient(ellips
 .sent-wrap{display:flex;align-items:center;gap:24px;margin:16px 0;}
 .donut-box{position:relative;width:120px;height:120px;flex-shrink:0;}
 .donut-center{position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;}
-.donut-val{font-family:'Bebas Neue',sans-serif;font-size:24px;line-height:1;}
+.donut-val{font-family:'Bebas Neue',sans-serif;font-size:18px;line-height:1;}
 .donut-lbl{font-size:9px;color:var(--text-muted);letter-spacing:1px;margin-top:1px;}
 .sent-legs{display:flex;flex-direction:column;gap:7px;flex:1;}
 .sent-row{display:flex;align-items:center;justify-content:space-between;font-size:12px;}
@@ -779,7 +779,7 @@ function renderHighlights(){
 
 function makeSentDonut(canvasId,labelId,data){
   const s=data.sentiment||{positive:33,neutral:34,negative:33};
-  document.getElementById(labelId).textContent=(s.positive+s.neutral+s.negative)+'%';
+  document.getElementById(labelId).textContent = (data.total_posts || (data.posts||[]).length).toLocaleString();
   new Chart(document.getElementById(canvasId).getContext('2d'),{
     type:'doughnut',
     data:{labels:['긍정','중립','부정'],datasets:[{data:[s.positive,s.neutral,s.negative],backgroundColor:['#00e676','#546e7a','#ff1744'],borderWidth:0,hoverOffset:4}]},
@@ -790,7 +790,7 @@ function makeSentDonut(canvasId,labelId,data){
 
 function renderCompare(){
   document.getElementById('sent-all').innerHTML=`
-    <div class="donut-box"><canvas id="d-all"></canvas><div class="donut-center"><div class="donut-val" id="dv-all">—</div><div class="donut-lbl">ANALYSED</div></div></div>
+    <div class="donut-box"><canvas id="d-all"></canvas><div class="donut-center"><div class="donut-val" id="dv-all">—</div><div class="donut-lbl">POSTS</div></div></div>
     <div class="sent-legs">
       <div class="sent-row"><div class="sent-left"><div class="sent-dot" style="background:#00e676"></div>긍정</div><span class="sent-val" style="color:#00e676" id="sa-p">—</span></div>
       <div class="sent-row"><div class="sent-left"><div class="sent-dot" style="background:#546e7a"></div>중립</div><span class="sent-val" style="color:#546e7a" id="sa-n">—</span></div>
@@ -810,7 +810,7 @@ function renderCompare(){
     <div><div class="stat-label">총 댓글수</div><div class="stat-val c-warn">${ac.toLocaleString()}</div></div>`;
 
   document.getElementById('sent-fsl').innerHTML=`
-    <div class="donut-box"><canvas id="d-fsl"></canvas><div class="donut-center"><div class="donut-val" id="dv-fsl">—</div><div class="donut-lbl">ANALYSED</div></div></div>
+    <div class="donut-box"><canvas id="d-fsl"></canvas><div class="donut-center"><div class="donut-val" id="dv-fsl">—</div><div class="donut-lbl">POSTS</div></div></div>
     <div class="sent-legs">
       <div class="sent-row"><div class="sent-left"><div class="sent-dot" style="background:#00e676"></div>긍정</div><span class="sent-val" style="color:#00e676" id="sf-p">—</span></div>
       <div class="sent-row"><div class="sent-left"><div class="sent-dot" style="background:#546e7a"></div>중립</div><span class="sent-val" style="color:#546e7a" id="sf-n">—</span></div>
