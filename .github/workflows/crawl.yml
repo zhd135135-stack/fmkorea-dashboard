@@ -1,7 +1,7 @@
 name: FM Korea Crawler
 on:
   schedule:
-    - cron: '0 0 * * *'
+    - cron: '0 1 * * *'
   workflow_dispatch:
 jobs:
   crawl:
@@ -28,7 +28,7 @@ jobs:
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
           git remote set-url origin https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/zhd135135-stack/fmkorea-dashboard.git
-          git add data_all.json data_fsl.json debug_all.html debug_fsl.html
+          git add data_all.json data_fsl.json
           $diff = git diff --staged --quiet
           if ($LASTEXITCODE -ne 0) {
             git commit -m "[auto] crawl update $(Get-Date -Format 'yyyy-MM-dd')"
