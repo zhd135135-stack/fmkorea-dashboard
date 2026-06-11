@@ -616,16 +616,10 @@ function renderESI(){
 function renderTrend(){
   // 실제 누적 히스토리 사용 (data_all.json의 history 필드)
   const realHistory = DATA.all.history || [];
-  const hist = realHistory.length >= 2 ? realHistory : [
-    {label:"06/03",esi:3.2,posts:28400,esports:910},
-    {label:"06/04",esi:3.8,posts:31200,esports:1180},
-    {label:"06/05",esi:2.9,posts:26800,esports:780},
-    {label:"06/06",esi:4.1,posts:38900,esports:1590},
-    {label:"06/07",esi:5.3,posts:41200,esports:2180},
-    {label:"06/08",esi:6.8,posts:52400,esports:3560},
-    {label:"06/09",esi:5.1,posts:39800,esports:2030},
-    {label:"06/10",esi:7.2,posts:58300,esports:4200},
-    {label:"06/11",esi:ESI.esi,posts:DATA.all.total_posts||ESI.total,esports:ESI.t1+ESI.t2},
+
+  // 오늘 데이터로 시작 (히스토리 없으면 오늘 1개만)
+  const hist = realHistory.length >= 1 ? realHistory : [
+    {label:"06/11", esi:ESI.esi, posts:DATA.all.total_posts||ESI.total, esports:ESI.t1+ESI.t2}
   ];
 
   const ctx=document.getElementById('trendChart').getContext('2d');
@@ -691,7 +685,7 @@ function renderTrend(){
       scales:{
         x:{grid:{color:'#1a2e22'},ticks:{color:'#5a7a68',font:{size:10},maxRotation:0}},
         y1:{position:'left',grid:{color:'#1a2e22'},ticks:{color:'#00e676',font:{size:10}},min:0,max:10,title:{display:true,text:'ESI',color:'#00e676',font:{size:10,weight:'bold'}}},
-        y2:{position:'right',grid:{display:false},ticks:{color:'#5a7a68',font:{size:10},callback:v=>v>=1000?(v/1000).toFixed(0)+'K':v},title:{display:true,text:'Posts',color:'#5a7a68',font:{size:10}}}
+        y2:{position:'right',grid:{display:false},ticks:{color:'#5a7a68',font:{size:10},callback:v=>v>=1000?(v/1000).toFixed(0)+'K':v},max:10000,title:{display:true,text:'Posts',color:'#5a7a68',font:{size:10}}}
       },
       animation:{duration:800}
     }
