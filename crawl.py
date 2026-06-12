@@ -432,8 +432,42 @@ def main():
             pass
 
         # ESI 계산 (T1+T2 기반)
-        t1_count = sum(1 for p in posts if any(k.lower() in p["title"].lower() for k in ["fsl","이스포츠","프로게이머","결승","직관","중계","찬","우타","원더","noiz","노이즈"]))
-        t2_count = sum(1 for p in posts if any(k in p["title"] for k in ["포메이션","전술","스쿼드","팀컬러","조합"]))
+        # T1: 리그/대회/팀/선수 직접 귀속
+        T1_KW = [
+            # 리그/대회
+            "fsl","에프에스엘","fsl spring","fsl summer","fsl winter","fsl 팀배틀","ftb",
+            "fc pro","fc pro masters","eacc","ea챔피언스컵",
+            "결승전","8강","4강","그룹스테이지","녹아웃","이스포츠","e스포츠",
+            # 팀명
+            "t1","티원","gen city","젠시티","gct",
+            "kt rolster","kt 롤스터",
+            "kiwoom drx","키움 디알엑스","krx",
+            "bnk fearx","bnk 피어엑스","bfx",
+            "ns redforce","농심 레드포스",
+            "dn soopers","디엔 수퍼스","dns",
+            "dplus kia","디플러스 기아",
+            # 선수 콜네임
+            "byul","별빛","오펠","ofel","호석","hoseok","navy","네이비","퓨처","future","피어스","pierce",
+            "wonder08","원더08","원더공팔","crong","크롱","solid","솔리드","jiffeyjay","지피제이","titan","타이탄선수","attain","아테인",
+            "jm","제이엠","uta","우타","tk777","티케이","dike","디케",
+            "chan","박찬화","one","이원주","savior","세비어","minion","미니언","탁","tak",
+            "kaiser","카이저","noiz","노이즈","taegod","태갓","light","라이트",
+            "exito","엑시토","ryuk","류크","box","박스","ppuljebi","뿔제비","aki","아키",
+            "9kki","구끼","clutch","클러치","shype","샤이프","chase","체이스",
+            "kwak","곽준혁","mibob","미밥","check","체크","tobio","토비오",
+            # 선수 성명
+            "박기홍","강준호","최호석","김유민","박지호","조성빈",
+            "고원재","황세종","임태산","성지원","이준서",
+            "김정민","이지환","이태경","강무진",
+            "박찬화","이원주","이상민","조민혁","이강혁",
+            "송현수","노영진","김태신","김선재",
+            "윤형석","윤창근","강성훈","김경식","조영환",
+            "김시경","박지민","김승환","권창환",
+            "곽준혁","김태현","김준수",
+        ]
+        t1_count = sum(1 for p in posts if any(k.lower() in p["title"].lower() for k in T1_KW))
+        T2_KW = ["포메이션","전술","스쿼드","팀컬러","조합","픽률","선수 추천","선수추천"]
+        t2_count = sum(1 for p in posts if any(k in p["title"] for k in T2_KW))
         total = len(posts)
         pos_count = sum(1 for p in posts if p.get("sentiment") == "positive")
         pos_rate = pos_count / total * 100 if total else 0
