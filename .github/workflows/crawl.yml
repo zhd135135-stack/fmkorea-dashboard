@@ -9,17 +9,21 @@ jobs:
     steps:
       - name: Checkout repo
         uses: actions/checkout@v4
+
       - name: Set up Python
         uses: actions/setup-python@v5
         with:
           python-version: '3.11'
+
       - name: Install dependencies
         run: pip install requests beautifulsoup4 anthropic
+
       - name: Run crawler
         env:
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
           FMKOREA_COOKIE: ${{ secrets.FMKOREA_COOKIE }}
         run: python crawl.py
+
       - name: Commit and push data
         shell: powershell
         env:
@@ -28,9 +32,10 @@ jobs:
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
           git remote set-url origin https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/zhd135135-stack/fmkorea-dashboard.git
-          git add data_all.json data_fsl.json
-          $diff = git diff --staged --quiet
+          git add data_all.json data_fsl.json debug_all.html debug_fsl.html
+          git diff --staged --quiet
           if ($LASTEXITCODE -ne 0) {
             git commit -m "[auto] crawl update $(Get-Date -Format 'yyyy-MM-dd')"
           }
-          git push
+          git pull --rebase origin main
+          git push origin main
