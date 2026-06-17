@@ -610,7 +610,11 @@ function renderHeader(){
 }
 
 function renderKPI(){
-  const {esi,t1,t2,total,posRate}=ESI;
+  // history의 마지막 ESI 값 우선 사용 (crawl.py 계산값과 통일)
+  const history = DATA.all.history || [];
+  const historyEsi = history.length > 0 ? history[history.length-1].esi : null;
+  const {esi:calcEsi,t1,t2,total,posRate}=ESI;
+  const esi = historyEsi !== null ? historyEsi : calcEsi;
   const mention=((t1+t2)/Math.max(total,1)*100).toFixed(1)+'%';
   document.getElementById('kpi-esi').textContent=esi.toFixed(1);
   document.getElementById('kpi-total').textContent=(DATA.all.total_posts||total).toLocaleString();
@@ -619,7 +623,11 @@ function renderKPI(){
 }
 
 function renderESI(){
-  const {esi,t1,t2,t3,total}=ESI;
+  // history의 마지막 ESI 값 우선 사용 (crawl.py 계산값과 통일)
+  const history = DATA.all.history || [];
+  const historyEsi = history.length > 0 ? history[history.length-1].esi : null;
+  const {esi:calcEsi,t1,t2,t3,total}=ESI;
+  const esi = historyEsi !== null ? historyEsi : calcEsi;
   document.getElementById('esi-val').textContent=esi.toFixed(1);
   document.getElementById('esi-gauge').style.width=(esi/10*100)+'%';
 
