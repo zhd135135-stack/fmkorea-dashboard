@@ -73,10 +73,14 @@ def parse_date(date_str, now_kst):
     """
     date_str = date_str.strip()
 
-    # 시:분 형식 (오늘 글)
+    # 시:분 형식 (오늘 글 또는 어제 글)
     if re.match(r'^\d{1,2}:\d{2}$', date_str):
         h, m = map(int, date_str.split(":"))
-        return now_kst.replace(hour=h, minute=m, second=0, microsecond=0)
+        candidate = now_kst.replace(hour=h, minute=m, second=0, microsecond=0)
+        # 현재 시각보다 미래면 어제 날짜로 처리
+        if candidate > now_kst:
+            candidate = candidate - timedelta(days=1)
+        return candidate
 
     # 월.일 형식
     if re.match(r'^\d{2}\.\d{2}$', date_str):
