@@ -15,53 +15,41 @@
       "comments": 1,
       "date": "19:01",
       "category": "FSL/프로게이머",
-      "sentiment": "positive"
+      "sentiment": "neutral"
     }
   ],
   "sentiment": {
-    "positive": 100,
-    "neutral": 0,
+    "positive": 0,
+    "neutral": 100,
     "negative": 0
   },
   "top_issues": {
-    "positive": "신예 프로게이머 영입 소식",
-    "negative": "해당 사항 없음",
-    "neutral": "해당 사항 없음"
+    "positive": "",
+    "negative": "",
+    "neutral": "Dplus KIA 선수 영입 소식"
   },
   "keywords": [
     {
-      "topic": "팀 영입",
+      "topic": "팀 뉴스",
       "count": 1,
-      "pct": "33.3%",
-      "tags": "Dplus KIA, Nova, 선수영입, 프로팀"
-    },
-    {
-      "topic": "선수명",
-      "count": 1,
-      "pct": "33.3%",
-      "tags": "이민석, 신인선수"
-    },
-    {
-      "topic": "공식발표",
-      "count": 1,
-      "pct": "33.3%",
-      "tags": "오피셜, 공식뉴스"
+      "pct": "100.0%",
+      "tags": "Dplus KIA, 이민석, 영입, 오피셜"
     }
   ],
   "churn_signals": [],
   "esports_disengagement_signals": [],
-  "fsl_mention_rate": "100.0%",
-  "impact_score": 7.5,
-  "viewer_engagement_estimate": "25K",
-  "last_updated": "2026-06-17 11:05",
+  "fsl_mention_rate": "0.0%",
+  "impact_score": 3.5,
+  "viewer_engagement_estimate": "2.1K",
+  "last_updated": "2026-06-17 11:25",
   "history": [
     {
       "label": "06/17",
       "date": "2026-06-17",
-      "esi": 10,
+      "esi": 0.0,
       "posts": 1,
       "esports": 1,
-      "positive": 100
+      "positive": 0
     }
   ]
 }
