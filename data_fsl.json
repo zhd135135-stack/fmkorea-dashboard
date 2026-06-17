@@ -1,61 +1,24 @@
 {
   "source": "fsl",
   "collection_range": {
-    "start": "2026-06-15 10:01",
-    "end": "2026-06-16 20:28"
+    "start": "2026-06-16 10:01",
+    "end": "2026-06-17 10:24"
   },
-  "total_posts": 1,
-  "total_views": 213,
-  "avg_views_per_post": 213,
-  "posts": [
-    {
-      "title": "오피셜)Dplus KIA , Nova '이민석' 영입",
-      "url": "https://www.fmkorea.com/index.php?mid=fifa_online&category=8064047289&document_srl=9964097646",
-      "views": 213,
-      "comments": 0,
-      "date": "19:01",
-      "category": "FSL/프로게이머",
-      "sentiment": "positive"
-    }
-  ],
+  "total_posts": 0,
+  "total_views": 0,
+  "avg_views_per_post": 0,
+  "posts": [],
   "sentiment": {
-    "positive": 100,
+    "positive": 0,
     "neutral": 0,
     "negative": 0
   },
-  "top_issues": {
-    "positive": "신규 선수 영입으로 팀 강화",
-    "negative": "해당 사항 없음",
-    "neutral": "해당 사항 없음"
-  },
-  "keywords": [
-    {
-      "topic": "선수영입",
-      "count": 1,
-      "pct": "50.0%",
-      "tags": "Nova, 이민석, 영입, 트레이드"
-    },
-    {
-      "topic": "팀명",
-      "count": 1,
-      "pct": "50.0%",
-      "tags": "Dplus KIA, 디플러스 기아"
-    }
-  ],
+  "top_issues": {},
+  "keywords": [],
   "churn_signals": [],
   "esports_disengagement_signals": [],
-  "fsl_mention_rate": "100.0%",
-  "impact_score": 6.5,
-  "viewer_engagement_estimate": "8K",
-  "last_updated": "2026-06-16 20:28",
-  "history": [
-    {
-      "label": "06/16",
-      "date": "2026-06-16",
-      "esi": 10,
-      "posts": 1,
-      "esports": 1,
-      "positive": 100
-    }
-  ]
+  "fsl_mention_rate": "0%",
+  "impact_score": 0,
+  "viewer_engagement_estimate": "0K",
+  "last_updated": "2026-06-17 10:24"
 }
