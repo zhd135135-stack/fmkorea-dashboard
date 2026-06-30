@@ -51,11 +51,11 @@ DEFAULT_UA = (
 
 TARGETS = {
     "all": {
-        "url": "https://www.fmkorea.com/index.php?mid=fifa_online&listStyle=list",
+        "url": "https://www.fmkorea.com/index.php?mid=fifa_online",
         "output": "data_all.json",
     },
     "fsl": {
-        "url": "https://www.fmkorea.com/index.php?mid=fifa_online&category=8064047289&listStyle=list",
+        "url": "https://www.fmkorea.com/index.php?mid=fifa_online&category=8064047289",
         "output": "data_fsl.json",
     },
 }
@@ -307,6 +307,24 @@ def crawl_with_date_range(session, base_url, source, start_dt, end_dt, now_kst):
         if is_blocked(html):
             print("  봇 차단/챌린지 감지 → 쿠키 갱신 필요. 수집 종료")
             break
+
+        # ── 진단(1페이지 한정): 받은 HTML의 실제 구조를 로그로 남김 ──
+        if page == 1:
+            from bs4 import BeautifulSoup as _BS
+            _soup = _BS(html, "html.parser")
+            _tbl = _soup.select("table.bd_lst")
+            _rows = _soup.select("table.bd_lst tr")
+            _titles = _soup.select("table.bd_lst td.title a")
+            print(f"  [진단] HTML 길이={len(html)} / "
+                  f"table.bd_lst={len(_tbl)}개 / tr={len(_rows)}개 / td.title a={len(_titles)}개")
+            # 받은 HTML을 파일로 저장 (커밋되어 직접 열어볼 수 있게)
+            try:
+                with open(f"debug_{source}.html", "w", encoding="utf-8") as _f:
+                    _f.write(html)
+                print(f"  [진단] debug_{source}.html 저장")
+            except Exception as _e:
+                print(f"  [진단] 저장 실패: {_e}")
+        # ───────────────────────────────────────────────────────
 
         posts, oor = parse_posts_from_html(html, now_kst, start_dt, end_dt)
         all_posts.extend(posts)
