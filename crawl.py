@@ -51,11 +51,11 @@ DEFAULT_UA = (
 
 TARGETS = {
     "all": {
-        "url": "https://www.fmkorea.com/fifa_online",
+        "url": "https://www.fmkorea.com/index.php?mid=fifa_online&listStyle=list",
         "output": "data_all.json",
     },
     "fsl": {
-        "url": "https://www.fmkorea.com/index.php?mid=fifa_online&category=8064047289",
+        "url": "https://www.fmkorea.com/index.php?mid=fifa_online&category=8064047289&listStyle=list",
         "output": "data_fsl.json",
     },
 }
@@ -150,9 +150,9 @@ def validate_cookie(session):
     if is_blocked(html):
         print("  [FAIL] 봇 차단/챌린지 감지 → 쿠키 갱신 필요")
         return False
-    # 게시판 목록 마커가 보이는지 확인
+    # 게시판 목록 마커가 보이는지 확인 (tbody 비의존)
     soup = BeautifulSoup(html, "html.parser")
-    if not soup.select("table.bd_lst tbody tr"):
+    if not soup.select("table.bd_lst tr"):
         print("  [FAIL] 게시글 목록 셀렉터 매칭 실패 (구조 변경 또는 차단 의심)")
         return False
     print("  [OK] 쿠키 정상")
@@ -206,11 +206,24 @@ def parse_posts_from_html(html, now_kst, start_dt, end_dt):
     posts = []
     out_of_range_count = 0
 
-    for tr in soup.select("table.bd_lst tbody tr"):
-        if "notice" in tr.get("class", []):
+    # tbody에 의존하지 않음 — fmkorea의 일부 페이지(특히 메인 진입 /fifa_online)는
+    # 광고·위젯이 섞이며 html.parser가 tbody 경계를 깨뜨려서 'tbody tr'이 0개가 됨.
+    # 'table.bd_lst tr'로 모든 행을 잡고, 제목 링크가 글 패턴(/숫자)인지로 필터링.
+    for tr in soup.select("table.bd_lst tr"):
+        cls = tr.get("class", [])
+        # 공지 / 공지더보기 / 헤더(th 포함) 행 제외
+        if "notice" in cls or "show_folded_notice" in cls:
+            continue
+        if tr.find("th"):
             continue
 
-        title_el = tr.select_one("td.title a")
+        # 제목 링크: td.title 안에서 href가 '/숫자' 형태인 a (글 본문 링크)
+        title_el = None
+        for a in tr.select("td.title a[href]"):
+            href = a.get("href", "")
+            if re.match(r"^/\d+$", href):  # 글 링크는 /10022784598 처럼 /숫자
+                title_el = a
+                break
         if not title_el:
             continue
 
