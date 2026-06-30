@@ -26,6 +26,14 @@ import anthropic
 
 urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
 
+# Windows self-hosted 러너(cp949 콘솔)에서 한글/기호 출력 시
+# UnicodeEncodeError가 나는 것을 방지 — stdout/stderr를 UTF-8로 강제.
+try:
+    sys.stdout.reconfigure(encoding="utf-8")
+    sys.stderr.reconfigure(encoding="utf-8")
+except Exception:
+    pass
+
 # ──────────────────────────────────────────────────────────
 # 설정
 # ──────────────────────────────────────────────────────────
@@ -137,17 +145,17 @@ def validate_cookie(session):
     print("쿠키 유효성 검증 중...")
     html = fetch(session, TARGETS["all"]["url"])
     if html is None:
-        print("  ✗ 첫 페이지 응답 실패")
+        print("  [FAIL] 첫 페이지 응답 실패")
         return False
     if is_blocked(html):
-        print("  ✗ 봇 차단/챌린지 감지 → 쿠키 갱신 필요")
+        print("  [FAIL] 봇 차단/챌린지 감지 → 쿠키 갱신 필요")
         return False
     # 게시판 목록 마커가 보이는지 확인
     soup = BeautifulSoup(html, "html.parser")
     if not soup.select("table.bd_lst tbody tr"):
-        print("  ✗ 게시글 목록 셀렉터 매칭 실패 (구조 변경 또는 차단 의심)")
+        print("  [FAIL] 게시글 목록 셀렉터 매칭 실패 (구조 변경 또는 차단 의심)")
         return False
-    print("  ✓ 쿠키 정상")
+    print("  [OK] 쿠키 정상")
     return True
 
 
