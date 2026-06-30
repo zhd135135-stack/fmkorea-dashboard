@@ -173,7 +173,9 @@ def parse_date(date_str, now_kst):
     if re.match(r"^\d{1,2}:\d{2}$", date_str):
         h, m = map(int, date_str.split(":"))
         candidate = now_kst.replace(hour=h, minute=m, second=0, microsecond=0)
-        if candidate > now_kst:
+        # 게시판 표기 시각과 크롤 시각의 미세한 오차(분 단위)로 글이 살짝 '미래'로
+        # 보일 수 있음. 10분까지는 오늘로 인정하고, 그 이상 미래면 어제 글로 처리.
+        if candidate > now_kst + timedelta(minutes=10):
             candidate -= timedelta(days=1)
         return candidate
 
@@ -607,8 +609,12 @@ def main():
     now_str = now_kst.strftime("%Y-%m-%d %H:%M")
     print(f"크롤링 시작: {now_str}")
 
-    end_dt = now_kst.replace(hour=9, minute=59, second=59, microsecond=0)
-    start_dt = (now_kst - timedelta(days=1)).replace(hour=10, minute=1, second=0, microsecond=0)
+    # 수집 범위: 실행 시점 기준 최근 24시간.
+    # 아침 10시 자동 실행이든, 낮 수동 실행이든 항상 직전 24시간 글을 수집.
+    # end_dt에 10분 여유 — 게시판 표기 시각이 크롤 시각보다 몇 분 앞설 수 있어
+    # 직전 글이 누락되는 것을 방지.
+    end_dt = now_kst + timedelta(minutes=10)
+    start_dt = now_kst - timedelta(hours=24)
     print(f"수집 범위: {start_dt:%Y-%m-%d %H:%M} ~ {end_dt:%Y-%m-%d %H:%M}")
 
     if not FMKOREA_COOKIE:
