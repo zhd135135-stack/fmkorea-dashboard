@@ -1,25 +1,100 @@
 {
   "source": "fsl",
   "collection_range": {
-    "start": "2026-06-29 13:42",
-    "end": "2026-06-30 13:52"
+    "start": "2026-06-29 19:36",
+    "end": "2026-06-30 19:46"
   },
-  "total_posts": 0,
-  "total_views": 0,
-  "avg_views_per_post": 0,
-  "posts": [],
+  "total_posts": 4,
+  "total_views": 4394,
+  "avg_views_per_post": 1098,
+  "posts": [
+    {
+      "title": "원더08의 신규특성 정리",
+      "url": "https://www.fmkorea.com/index.php?mid=fifa_online&category=8064047289&document_srl=10020708252",
+      "views": 2383,
+      "comments": 2,
+      "date": "22:51",
+      "category": "FSL/프로게이머",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "26 fsl summer 조편성 완료",
+      "url": "https://www.fmkorea.com/index.php?mid=fifa_online&category=8064047289&document_srl=10020009756",
+      "views": 961,
+      "comments": 2,
+      "date": "19:40",
+      "category": "FSL/프로게이머",
+      "sentiment": "positive"
+    },
+    {
+      "title": "2026 FSL SUMMER 조지명식 결과",
+      "url": "https://www.fmkorea.com/index.php?mid=fifa_online&category=8064047289&document_srl=10020003473",
+      "views": 224,
+      "comments": 0,
+      "date": "19:40",
+      "category": "FSL/프로게이머",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "FSL 베르캄프 왜 벨기에임?",
+      "url": "https://www.fmkorea.com/index.php?mid=fifa_online&category=8064047289&document_srl=10019993576",
+      "views": 826,
+      "comments": 8,
+      "date": "19:37",
+      "category": "FSL/프로게이머",
+      "sentiment": "neutral"
+    }
+  ],
   "sentiment": {
-    "positive": 0,
-    "neutral": 0,
+    "positive": 25,
+    "neutral": 75,
     "negative": 0
   },
-  "top_issues": {},
-  "keywords": [],
+  "top_issues": {
+    "positive": "시즌 조편성 완료",
+    "negative": "해당 사항 없음",
+    "neutral": "선수정보·규칙 문의"
+  },
+  "keywords": [
+    {
+      "topic": "FSL",
+      "count": 3,
+      "pct": "75.0%",
+      "tags": "SUMMER, 조편성, 조지명식"
+    },
+    {
+      "topic": "선수/특성",
+      "count": 2,
+      "pct": "50.0%",
+      "tags": "원더08, 베르캄프, 신규특성"
+    },
+    {
+      "topic": "조편성",
+      "count": 2,
+      "pct": "50.0%",
+      "tags": "완료, 결과"
+    },
+    {
+      "topic": "규칙/정보",
+      "count": 1,
+      "pct": "25.0%",
+      "tags": "국가표기, 베르기에"
+    }
+  ],
   "churn_signals": [],
   "esports_disengagement_signals": [],
-  "fsl_mention_rate": "0%",
-  "impact_score": 0,
-  "viewer_engagement_estimate": "0K",
-  "history": [],
-  "last_updated": "2026-06-30 13:42"
+  "fsl_mention_rate": "75.0%",
+  "impact_score": 4.2,
+  "viewer_engagement_estimate": "2.3K",
+  "history": [
+    {
+      "label": "06/30",
+      "date": "2026-06-30",
+      "esi": 10,
+      "posts": 4,
+      "esports": 4,
+      "positive": 25
+    }
+  ],
+  "last_updated": "2026-06-30 19:36"
 }
