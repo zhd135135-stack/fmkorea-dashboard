@@ -50,21 +50,22 @@ DEFAULT_UA = (
 )
 
 TARGETS = {
-    "all": {
-        "url": "https://www.fmkorea.com/index.php?mid=fifa_online",
-        "output": "data_all.json",
-    },
     "fsl": {
         "url": "https://www.fmkorea.com/index.php?mid=fifa_online&category=8064047289",
         "output": "data_fsl.json",
+    },
+    "all": {
+        "url": "https://www.fmkorea.com/index.php?mid=fifa_online",
+        "output": "data_all.json",
     },
 }
 
 MAX_PAGES = 150          # 최대 150페이지 = 최대 3,000개
 REQUEST_TIMEOUT = 30
-MAX_RETRY = 3            # 요청 실패 시 재시도 횟수
-RETRY_BACKOFF = 3        # 재시도 간 대기(초) — 시도마다 곱연산
-PAGE_DELAY = 1.2         # 페이지 간 딜레이(초)
+MAX_RETRY = 4            # 요청 실패 시 재시도 횟수
+RETRY_BACKOFF = 8        # 429 등 재시도 간 대기(초) — 시도마다 곱연산 (8→16→24→32)
+PAGE_DELAY = 2.5         # 페이지 간 딜레이(초) — 레이트리밋(429) 방지
+SOURCE_DELAY = 12        # ALL↔FSL 등 소스 전환 사이 대기(초)
 
 
 # ──────────────────────────────────────────────────────────
@@ -638,9 +639,16 @@ def main():
               "FMKOREA_COOKIE Secret을 갱신하세요.")
         sys.exit(1)
 
-    for source, config in TARGETS.items():
+    for idx, (source, config) in enumerate(TARGETS.items()):
         base_url = config["url"]
         output = config["output"]
+
+        # 첫 소스가 아니면, 직전 소스에서 많은 페이지를 긁어 레이트리밋이 쌓였을 수
+        # 있으므로 충분히 쉬었다가 다음 소스를 시작 (ALL 직후 FSL이 429로 막히는 것 방지).
+        if idx > 0:
+            print(f"\n소스 전환 대기 {SOURCE_DELAY}초...")
+            time.sleep(SOURCE_DELAY)
+
         print(f"\n[{source.upper()}] 크롤링 시작")
 
         posts = crawl_with_date_range(session, base_url, source, start_dt, end_dt, now_kst)
