@@ -219,11 +219,13 @@ def parse_posts_from_html(html, now_kst, start_dt, end_dt):
         if tr.find("th"):
             continue
 
-        # 제목 링크: td.title 안에서 href가 '/숫자' 형태인 a (글 본문 링크)
+        # 제목 링크: td.title 안에서 글 본문을 가리키는 a.
+        # ALL 페이지는 href="/10022784598" (/숫자), FSL 등 카테고리 페이지는
+        # href="/index.php?...&document_srl=10020708252" 형식 → 둘 다 인식.
         title_el = None
         for a in tr.select("td.title a[href]"):
             href = a.get("href", "")
-            if re.match(r"^/\d+$", href):  # 글 링크는 /10022784598 처럼 /숫자
+            if re.match(r"^/\d+$", href) or "document_srl=" in href:
                 title_el = a
                 break
         if not title_el:
@@ -234,7 +236,13 @@ def parse_posts_from_html(html, now_kst, start_dt, end_dt):
             continue
 
         href = title_el.get("href", "")
-        url = "https://www.fmkorea.com" + href if href.startswith("/") else href
+        # 절대 URL 정규화
+        if href.startswith("/"):
+            url = "https://www.fmkorea.com" + href
+        elif href.startswith("http"):
+            url = href
+        else:
+            url = "https://www.fmkorea.com/" + href
 
         date_el = tr.select_one("td.time")
         date_str = date_el.get_text(strip=True) if date_el else ""
