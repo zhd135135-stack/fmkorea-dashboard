@@ -1,91 +1,46 @@
 {
   "source": "fsl",
   "collection_range": {
-    "start": "2026-06-29 19:36",
-    "end": "2026-06-30 19:46"
+    "start": "2026-06-30 14:15",
+    "end": "2026-07-01 14:25"
   },
-  "total_posts": 4,
-  "total_views": 4394,
-  "avg_views_per_post": 1098,
+  "total_posts": 1,
+  "total_views": 150,
+  "avg_views_per_post": 150,
   "posts": [
     {
-      "title": "원더08의 신규특성 정리",
-      "url": "https://www.fmkorea.com/index.php?mid=fifa_online&category=8064047289&document_srl=10020708252",
-      "views": 2383,
-      "comments": 2,
-      "date": "22:51",
-      "category": "FSL/프로게이머",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "26 fsl summer 조편성 완료",
-      "url": "https://www.fmkorea.com/index.php?mid=fifa_online&category=8064047289&document_srl=10020009756",
-      "views": 961,
-      "comments": 2,
-      "date": "19:40",
-      "category": "FSL/프로게이머",
-      "sentiment": "positive"
-    },
-    {
-      "title": "2026 FSL SUMMER 조지명식 결과",
-      "url": "https://www.fmkorea.com/index.php?mid=fifa_online&category=8064047289&document_srl=10020003473",
-      "views": 224,
-      "comments": 0,
-      "date": "19:40",
-      "category": "FSL/프로게이머",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "FSL 베르캄프 왜 벨기에임?",
-      "url": "https://www.fmkorea.com/index.php?mid=fifa_online&category=8064047289&document_srl=10019993576",
-      "views": 826,
-      "comments": 8,
-      "date": "19:37",
+      "title": "혹시 농심 박스 선수 관해서 루머나 뭐 그런거 없음?",
+      "url": "https://www.fmkorea.com/index.php?mid=fifa_online&category=8064047289&document_srl=10027728296",
+      "views": 150,
+      "comments": 3,
+      "date": "13:36",
       "category": "FSL/프로게이머",
       "sentiment": "neutral"
     }
   ],
   "sentiment": {
-    "positive": 25,
-    "neutral": 75,
+    "positive": 0,
+    "neutral": 100,
     "negative": 0
   },
   "top_issues": {
-    "positive": "시즌 조편성 완료",
-    "negative": "해당 사항 없음",
-    "neutral": "선수정보·규칙 문의"
+    "positive": "-",
+    "negative": "-",
+    "neutral": "농심 박스 선수 루머/정보 질문"
   },
   "keywords": [
     {
-      "topic": "FSL",
-      "count": 3,
-      "pct": "75.0%",
-      "tags": "SUMMER, 조편성, 조지명식"
-    },
-    {
-      "topic": "선수/특성",
-      "count": 2,
-      "pct": "50.0%",
-      "tags": "원더08, 베르캄프, 신규특성"
-    },
-    {
-      "topic": "조편성",
-      "count": 2,
-      "pct": "50.0%",
-      "tags": "완료, 결과"
-    },
-    {
-      "topic": "규칙/정보",
+      "topic": "선수 정보",
       "count": 1,
-      "pct": "25.0%",
-      "tags": "국가표기, 베르기에"
+      "pct": "100.0%",
+      "tags": "농심 박스, 루머, 선수 관련"
     }
   ],
   "churn_signals": [],
   "esports_disengagement_signals": [],
-  "fsl_mention_rate": "75.0%",
-  "impact_score": 4.2,
-  "viewer_engagement_estimate": "2.3K",
+  "fsl_mention_rate": "0.0%",
+  "impact_score": 2.5,
+  "viewer_engagement_estimate": "0.5K",
   "history": [
     {
       "label": "06/30",
@@ -94,7 +49,15 @@
       "posts": 4,
       "esports": 4,
       "positive": 25
+    },
+    {
+      "label": "07/01",
+      "date": "2026-07-01",
+      "esi": 0.0,
+      "posts": 1,
+      "esports": 1,
+      "positive": 0
     }
   ],
-  "last_updated": "2026-06-30 19:36"
+  "last_updated": "2026-07-01 14:15"
 }
