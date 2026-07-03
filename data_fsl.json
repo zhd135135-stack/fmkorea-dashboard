@@ -1,97 +1,79 @@
 {
   "source": "fsl",
   "collection_range": {
-    "start": "2026-07-01 13:53",
-    "end": "2026-07-02 14:03"
+    "start": "2026-07-02 13:36",
+    "end": "2026-07-03 13:46"
   },
-  "total_posts": 5,
-  "total_views": 289598,
-  "avg_views_per_post": 57919,
+  "total_posts": 3,
+  "total_views": 734,
+  "avg_views_per_post": 244,
   "posts": [
     {
-      "title": "그래서 농심레드포스 징계 이 넷중에 1명이라는 거?",
-      "url": "https://www.fmkorea.com/index.php?mid=fifa_online&category=8064047289&document_srl=10031039278",
-      "views": 8224,
-      "comments": 6,
-      "date": "05:35",
-      "category": "FSL/프로게이머",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "승부 예측 열림",
-      "url": "https://www.fmkorea.com/index.php?mid=fifa_online&category=8064047289&document_srl=10029629886",
-      "views": 1374,
+      "title": "이번에도 믿어본다",
+      "url": "https://www.fmkorea.com/index.php?mid=fifa_online&category=8064047289&document_srl=10034528619",
+      "views": 240,
       "comments": 2,
-      "date": "21:38",
+      "date": "23:24",
+      "category": "FSL/프로게이머",
+      "sentiment": "positive"
+    },
+    {
+      "title": "다들 이거 투표하셨나요?",
+      "url": "https://www.fmkorea.com/index.php?mid=fifa_online&category=8064047289&document_srl=10033079503",
+      "views": 257,
+      "comments": 2,
+      "date": "17:22",
       "category": "FSL/프로게이머",
       "sentiment": "neutral"
     },
     {
-      "title": "실력으로 밀린줄 알았지 저런 사유로 빠졌을꺼라고 누가 생각했겠어",
-      "url": "https://www.fmkorea.com/index.php?mid=fifa_online&category=8064047289&document_srl=10029339666",
-      "views": 10000,
-      "comments": 6,
-      "date": "20:32",
-      "category": "FSL/프로게이머",
-      "sentiment": "negative"
-    },
-    {
-      "title": "농심 레드포스 프로게이머 징계..?",
-      "url": "https://www.fmkorea.com/index.php?mid=fifa_online&category=8064047289&document_srl=10029282641",
-      "views": 260000,
-      "comments": 179,
-      "date": "20:19",
-      "category": "FSL/프로게이머",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "농심 레드포스 입장문",
-      "url": "https://www.fmkorea.com/index.php?mid=fifa_online&category=8064047289&document_srl=10029269911",
-      "views": 10000,
-      "comments": 1,
-      "date": "20:16",
+      "title": "구굴플레이 옆동네 스타리그 후원보면 구글캐시도 엄청 뿌려대던대",
+      "url": "https://www.fmkorea.com/index.php?mid=fifa_online&category=8064047289&document_srl=10032698917",
+      "views": 237,
+      "comments": 0,
+      "date": "15:48",
       "category": "FSL/프로게이머",
       "sentiment": "neutral"
     }
   ],
   "sentiment": {
-    "positive": 0,
-    "neutral": 80,
-    "negative": 20
+    "positive": 33,
+    "neutral": 67,
+    "negative": 0
   },
   "top_issues": {
-    "positive": "해당 없음",
-    "negative": "농심레드포스 징계 논란",
-    "neutral": "징계 사유 및 선수 정보"
+    "positive": "게임 진행에 대한 기대감",
+    "negative": "없음",
+    "neutral": "투표 참여 및 후원 정책"
   },
   "keywords": [
     {
-      "topic": "농심레드포스 징계",
-      "count": 5,
-      "pct": "100%",
-      "tags": "프로게이머, 징계 사유, 선수 제외"
-    },
-    {
-      "topic": "규정/공식 발표",
-      "count": 2,
-      "pct": "40%",
-      "tags": "입장문, 공식 안내"
-    },
-    {
-      "topic": "선수 실력 논쟁",
+      "topic": "기대감/신뢰",
       "count": 1,
-      "pct": "20%",
-      "tags": "실력 평가, 제외 사유"
+      "pct": "33.3%",
+      "tags": "믿음, 도전정신, 재도전"
+    },
+    {
+      "topic": "투표/참여",
+      "count": 1,
+      "pct": "33.3%",
+      "tags": "커뮤니티 투표, 선택"
+    },
+    {
+      "topic": "후원/캐시 정책",
+      "count": 1,
+      "pct": "33.3%",
+      "tags": "구글플레이, 넥슨 보상, 경쟁사 비교"
     }
   ],
   "churn_signals": [],
   "esports_disengagement_signals": [
-    "징계 논란으로 인한 팬심 흔들림",
-    "공식 발표에만 의존하는 수동적 정보 수집"
+    "경쟁 게임사 후원 정책에 대한 비교 언급",
+    "자사 후원/보상 체계에 대한 의문 제시"
   ],
-  "fsl_mention_rate": "100%",
-  "impact_score": 6.5,
-  "viewer_engagement_estimate": "2.3K",
+  "fsl_mention_rate": "0.0%",
+  "impact_score": 3.2,
+  "viewer_engagement_estimate": "2.1K",
   "history": [
     {
       "label": "06/30",
@@ -116,7 +98,15 @@
       "posts": 5,
       "esports": 2,
       "positive": 0
+    },
+    {
+      "label": "07/03",
+      "date": "2026-07-03",
+      "esi": 0.0,
+      "posts": 3,
+      "esports": 0,
+      "positive": 33
     }
   ],
-  "last_updated": "2026-07-02 13:53"
+  "last_updated": "2026-07-03 13:36"
 }
