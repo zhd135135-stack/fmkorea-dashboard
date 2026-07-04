@@ -1,78 +1,62 @@
 {
   "source": "fsl",
   "collection_range": {
-    "start": "2026-07-02 13:36",
-    "end": "2026-07-03 13:46"
+    "start": "2026-07-03 13:28",
+    "end": "2026-07-04 13:38"
   },
-  "total_posts": 3,
-  "total_views": 734,
-  "avg_views_per_post": 244,
+  "total_posts": 2,
+  "total_views": 1760,
+  "avg_views_per_post": 880,
   "posts": [
     {
-      "title": "이번에도 믿어본다",
-      "url": "https://www.fmkorea.com/index.php?mid=fifa_online&category=8064047289&document_srl=10034528619",
-      "views": 240,
-      "comments": 2,
-      "date": "23:24",
+      "title": "이번에 원더08 돌앗네 ㅋㅋㅋ",
+      "url": "https://www.fmkorea.com/index.php?mid=fifa_online&category=8064047289&document_srl=10039431644",
+      "views": 1586,
+      "comments": 0,
+      "date": "06:42",
       "category": "FSL/프로게이머",
       "sentiment": "positive"
     },
     {
-      "title": "다들 이거 투표하셨나요?",
-      "url": "https://www.fmkorea.com/index.php?mid=fifa_online&category=8064047289&document_srl=10033079503",
-      "views": 257,
-      "comments": 2,
-      "date": "17:22",
-      "category": "FSL/프로게이머",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "구굴플레이 옆동네 스타리그 후원보면 구글캐시도 엄청 뿌려대던대",
-      "url": "https://www.fmkorea.com/index.php?mid=fifa_online&category=8064047289&document_srl=10032698917",
-      "views": 237,
+      "title": "Last Spring, Next Summer I 키움 DRX 다큐멘터리",
+      "url": "https://www.fmkorea.com/index.php?mid=fifa_online&category=8064047289&document_srl=10038098043",
+      "views": 174,
       "comments": 0,
-      "date": "15:48",
+      "date": "20:20",
       "category": "FSL/프로게이머",
       "sentiment": "neutral"
     }
   ],
   "sentiment": {
-    "positive": 33,
-    "neutral": 67,
+    "positive": 50,
+    "neutral": 50,
     "negative": 0
   },
   "top_issues": {
-    "positive": "게임 진행에 대한 기대감",
-    "negative": "없음",
-    "neutral": "투표 참여 및 후원 정책"
+    "positive": "원더08 획득 성공",
+    "negative": "해당사항없음",
+    "neutral": "e스포츠 팀 다큐 콘텐츠"
   },
   "keywords": [
     {
-      "topic": "기대감/신뢰",
+      "topic": "카드획득/가챠",
       "count": 1,
-      "pct": "33.3%",
-      "tags": "믿음, 도전정신, 재도전"
+      "pct": "50.0%",
+      "tags": "원더08,성공,돌았다"
     },
     {
-      "topic": "투표/참여",
+      "topic": "e스포츠콘텐츠",
       "count": 1,
-      "pct": "33.3%",
-      "tags": "커뮤니티 투표, 선택"
-    },
-    {
-      "topic": "후원/캐시 정책",
-      "count": 1,
-      "pct": "33.3%",
-      "tags": "구글플레이, 넥슨 보상, 경쟁사 비교"
+      "pct": "50.0%",
+      "tags": "키움,DRX,다큐멘터리"
     }
   ],
   "churn_signals": [],
   "esports_disengagement_signals": [
-    "경쟁 게임사 후원 정책에 대한 비교 언급",
-    "자사 후원/보상 체계에 대한 의문 제시"
+    "e스포츠 팀 다큐 콘텐츠로의 관심 분산"
   ],
   "fsl_mention_rate": "0.0%",
-  "impact_score": 3.2,
+  "impact_score": 3.5,
   "viewer_engagement_estimate": "2.1K",
   "history": [
     {
@@ -106,7 +90,15 @@
       "posts": 3,
       "esports": 0,
       "positive": 33
+    },
+    {
+      "label": "07/04",
+      "date": "2026-07-04",
+      "esi": 10,
+      "posts": 2,
+      "esports": 1,
+      "positive": 50
     }
   ],
-  "last_updated": "2026-07-03 13:36"
+  "last_updated": "2026-07-04 13:28"
 }
