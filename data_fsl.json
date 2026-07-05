@@ -1,63 +1,109 @@
 {
   "source": "fsl",
   "collection_range": {
-    "start": "2026-07-03 13:28",
-    "end": "2026-07-04 13:38"
+    "start": "2026-07-04 13:50",
+    "end": "2026-07-05 14:00"
   },
-  "total_posts": 2,
-  "total_views": 1760,
-  "avg_views_per_post": 880,
+  "total_posts": 6,
+  "total_views": 3325,
+  "avg_views_per_post": 554,
   "posts": [
     {
-      "title": "이번에 원더08 돌앗네 ㅋㅋㅋ",
-      "url": "https://www.fmkorea.com/index.php?mid=fifa_online&category=8064047289&document_srl=10039431644",
-      "views": 1586,
+      "title": "오늘 FSL 노이즈 ㅈㄴ기대되네",
+      "url": "https://www.fmkorea.com/index.php?mid=fifa_online&category=8064047289&document_srl=10043995762",
+      "views": 96,
       "comments": 0,
-      "date": "06:42",
+      "date": "13:13",
       "category": "FSL/프로게이머",
       "sentiment": "positive"
     },
     {
-      "title": "Last Spring, Next Summer I 키움 DRX 다큐멘터리",
-      "url": "https://www.fmkorea.com/index.php?mid=fifa_online&category=8064047289&document_srl=10038098043",
-      "views": 174,
-      "comments": 0,
-      "date": "20:20",
+      "title": "[ 2026 FSL SUMMER 그룹스테이지 DAY1 ] 빅매치 프리뷰",
+      "url": "https://www.fmkorea.com/index.php?mid=fifa_online&category=8064047289&document_srl=10043740608",
+      "views": 175,
+      "comments": 5,
+      "date": "11:33",
       "category": "FSL/프로게이머",
       "sentiment": "neutral"
+    },
+    {
+      "title": "[신규 업데이트] SOOP X FSL 데이터 뷰어 안내",
+      "url": "https://www.fmkorea.com/index.php?mid=fifa_online&category=8064047289&document_srl=10040777082",
+      "views": 692,
+      "comments": 1,
+      "date": "16:00",
+      "category": "FSL/프로게이머",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "[WEEK 1 매치업] 2026 FSL SUMMER",
+      "url": "https://www.fmkorea.com/index.php?mid=fifa_online&category=8064047289&document_srl=10040773352",
+      "views": 729,
+      "comments": 0,
+      "date": "15:59",
+      "category": "FSL/프로게이머",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "님들 냉정하게 이번 시즌 누가 우승 봄?",
+      "url": "https://www.fmkorea.com/index.php?mid=fifa_online&category=8064047289&document_srl=10040766907",
+      "views": 1480,
+      "comments": 20,
+      "date": "15:55",
+      "category": "FSL/프로게이머",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "와 FSL 경기 시작이네 내일",
+      "url": "https://www.fmkorea.com/index.php?mid=fifa_online&category=8064047289&document_srl=10040675553",
+      "views": 153,
+      "comments": 0,
+      "date": "15:19",
+      "category": "FSL/프로게이머",
+      "sentiment": "positive"
     }
   ],
   "sentiment": {
-    "positive": 50,
-    "neutral": 50,
+    "positive": 33,
+    "neutral": 67,
     "negative": 0
   },
   "top_issues": {
-    "positive": "원더08 획득 성공",
-    "negative": "해당사항없음",
-    "neutral": "e스포츠 팀 다큐 콘텐츠"
+    "positive": "FSL 경기 기대감 높음",
+    "negative": "없음",
+    "neutral": "경기 일정/정보 공유"
   },
   "keywords": [
     {
-      "topic": "카드획득/가챠",
-      "count": 1,
-      "pct": "50.0%",
-      "tags": "원더08,성공,돌았다"
+      "topic": "FSL 경기 기대감",
+      "count": 2,
+      "pct": "33.3%",
+      "tags": "노이즈,시작,기대"
     },
     {
-      "topic": "e스포츠콘텐츠",
-      "count": 1,
+      "topic": "FSL 경기 정보/일정",
+      "count": 3,
       "pct": "50.0%",
-      "tags": "키움,DRX,다큐멘터리"
+      "tags": "그룹스테이지,매치업,프리뷰"
+    },
+    {
+      "topic": "우승 팀 예측",
+      "count": 1,
+      "pct": "16.7%",
+      "tags": "우승,팀"
+    },
+    {
+      "topic": "시스템/업데이트",
+      "count": 1,
+      "pct": "16.7%",
+      "tags": "데이터뷰어,SOOP"
     }
   ],
   "churn_signals": [],
-  "esports_disengagement_signals": [
-    "e스포츠 팀 다큐 콘텐츠로의 관심 분산"
-  ],
-  "fsl_mention_rate": "0.0%",
-  "impact_score": 3.5,
-  "viewer_engagement_estimate": "2.1K",
+  "esports_disengagement_signals": [],
+  "fsl_mention_rate": "100.0%",
+  "impact_score": 6.2,
+  "viewer_engagement_estimate": "12K",
   "history": [
     {
       "label": "06/30",
@@ -98,7 +144,15 @@
       "posts": 2,
       "esports": 1,
       "positive": 50
+    },
+    {
+      "label": "07/05",
+      "date": "2026-07-05",
+      "esi": 10,
+      "posts": 6,
+      "esports": 5,
+      "positive": 33
     }
   ],
-  "last_updated": "2026-07-04 13:28"
+  "last_updated": "2026-07-05 13:50"
 }
