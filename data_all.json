@@ -4,19 +4,10 @@
     "start": "2026-07-05 10:01",
     "end": "2026-07-06 09:59"
   },
-  "total_posts": 1380,
-  "total_views": 606271,
-  "avg_views_per_post": 439,
+  "total_posts": 1305,
+  "total_views": 596971,
+  "avg_views_per_post": 457,
   "posts": [
-    {
-      "title": "새벽 강등후에",
-      "url": "https://www.fmkorea.com/10048177260",
-      "views": 0,
-      "comments": 0,
-      "date": "13:22",
-      "category": "감독모드",
-      "sentiment": "negative"
-    },
     {
       "title": "var 심판 또 정신 못 차리네",
       "url": "https://www.fmkorea.com/10047423392",
@@ -33,7 +24,7 @@
       "comments": 0,
       "date": "09:58",
       "category": "FC온라인",
-      "sentiment": "neutral"
+      "sentiment": "negative"
     },
     {
       "title": "10경 dcb 단일 급여 1 어디서 낮춰야할까요?",
@@ -141,7 +132,7 @@
       "comments": 0,
       "date": "09:53",
       "category": "잡담",
-      "sentiment": "neutral"
+      "sentiment": "negative"
     },
     {
       "title": "와 노르웨이 하이라이트 보는데",
@@ -150,7 +141,7 @@
       "comments": 0,
       "date": "09:52",
       "category": "잡담",
-      "sentiment": "neutral"
+      "sentiment": "positive"
     },
     {
       "title": "지금 메타에서 잘 하는 법",
@@ -186,7 +177,7 @@
       "comments": 0,
       "date": "09:49",
       "category": "질문",
-      "sentiment": "neutral"
+      "sentiment": "negative"
     },
     {
       "title": "피파는 공간 땅다먹기라는데",
@@ -204,7 +195,7 @@
       "comments": 0,
       "date": "09:48",
       "category": "FC온라인",
-      "sentiment": "positive"
+      "sentiment": "neutral"
     },
     {
       "title": "레이저 완전 맛도리네 ㄷㄷ",
@@ -249,7 +240,7 @@
       "comments": 1,
       "date": "09:44",
       "category": "FC온라인",
-      "sentiment": "neutral"
+      "sentiment": "negative"
     },
     {
       "title": "오늘 주페 왜 안뽑았냐 얘기 나오는데",
@@ -282,7 +273,7 @@
       "title": "진짜 현타 ㅈㄴ온다",
       "url": "https://www.fmkorea.com/10047372225",
       "views": 230,
-      "comments": 6,
+      "comments": 7,
       "date": "09:41",
       "category": "잡담",
       "sentiment": "negative"
@@ -398,7 +389,7 @@
     {
       "title": "날두 사려는데..아 고민중..그루금카 vs ut백금",
       "url": "https://www.fmkorea.com/10047343153",
-      "views": 190,
+      "views": 228,
       "comments": 4,
       "date": "09:33",
       "category": "FC온라인",
@@ -407,7 +398,7 @@
     {
       "title": "이번주에 99000원처럼 현금으로 사는거 나올까요?",
       "url": "https://www.fmkorea.com/10047341849",
-      "views": 237,
+      "views": 473,
       "comments": 3,
       "date": "09:32",
       "category": "질문",
@@ -564,7 +555,7 @@
       "comments": 0,
       "date": "09:20",
       "category": "FC온라인",
-      "sentiment": "positive"
+      "sentiment": "neutral"
     },
     {
       "title": "Ptg홀란은 이기고 바로 상한 ptg 음바페는 왜..?!?",
@@ -699,13 +690,13 @@
       "comments": 2,
       "date": "09:08",
       "category": "FC온라인",
-      "sentiment": "positive"
+      "sentiment": "neutral"
     },
     {
       "title": "나눔글에 조건 달아두는건 조건을 충족해야 나눈다는 뜻 아님?",
       "url": "https://www.fmkorea.com/10047265808",
       "views": 189,
-      "comments": 9,
+      "comments": 10,
       "date": "09:07",
       "category": "FC온라인",
       "sentiment": "neutral"
@@ -722,8 +713,8 @@
     {
       "title": "압도적 뚝배기 1티어 누구에요??",
       "url": "https://www.fmkorea.com/10047257401",
-      "views": 726,
-      "comments": 44,
+      "views": 1626,
+      "comments": 45,
       "date": "09:05",
       "category": "FC온라인",
       "sentiment": "neutral"
@@ -744,7 +735,7 @@
       "comments": 6,
       "date": "09:04",
       "category": "FC온라인",
-      "sentiment": "neutral"
+      "sentiment": "negative"
     },
     {
       "title": "백금수미에 백금훈코 보통 뭐달아줘요?",
@@ -852,7 +843,7 @@
       "comments": 10,
       "date": "08:52",
       "category": "FC온라인",
-      "sentiment": "neutral"
+      "sentiment": "negative"
     },
     {
       "title": "노르웨이 8강 상대가 잉글인가",
@@ -893,8 +884,8 @@
     {
       "title": "두심<-----버프해야 됨",
       "url": "https://www.fmkorea.com/10047219190",
-      "views": 5226,
-      "comments": 17,
+      "views": 5437,
+      "comments": 18,
       "date": "08:49",
       "category": "FC온라인",
       "sentiment": "negative"
@@ -907,24 +898,6 @@
       "date": "08:49",
       "category": "FC온라인",
       "sentiment": "positive"
-    },
-    {
-      "title": "근데 덕배는 커맨더가 하나도 안달려있네",
-      "url": "https://www.fmkorea.com/10047215566",
-      "views": 585,
-      "comments": 15,
-      "date": "08:48",
-      "category": "FC온라인",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "2경 단일 맛도리팀 추천좀요",
-      "url": "https://www.fmkorea.com/10047215336",
-      "views": 27,
-      "comments": 0,
-      "date": "08:48",
-      "category": "FC온라인",
-      "sentiment": "neutral"
     },
     {
       "title": "근데 덕배는 커맨더가 하나도 안달려있네",
@@ -974,7 +947,7 @@
     {
       "title": "지금시즌이 역대급 부캐양학시즌임",
       "url": "https://www.fmkorea.com/10047201507",
-      "views": 1132,
+      "views": 2554,
       "comments": 10,
       "date": "08:42",
       "category": "불평불만",
@@ -1179,6 +1152,15 @@
       "sentiment": "neutral"
     },
     {
+      "title": "Sss 결과",
+      "url": "https://www.fmkorea.com/10047148124",
+      "views": 112,
+      "comments": 0,
+      "date": "08:23",
+      "category": "망했어요",
+      "sentiment": "neutral"
+    },
+    {
       "title": "홀란갤이라 한번 자세히 봤더니",
       "url": "https://www.fmkorea.com/10047147615",
       "views": 206,
@@ -1257,7 +1239,7 @@
       "comments": 9,
       "date": "08:14",
       "category": "잡담",
-      "sentiment": "positive"
+      "sentiment": "neutral"
     },
     {
       "title": "온 동네 홀란 사둔 사람들이 다 나오는구나...",
@@ -1275,7 +1257,7 @@
       "comments": 0,
       "date": "08:11",
       "category": "FC온라인",
-      "sentiment": "positive"
+      "sentiment": "neutral"
     },
     {
       "title": "노르웨이..!",
@@ -1284,7 +1266,7 @@
       "comments": 0,
       "date": "08:11",
       "category": "FC온라인",
-      "sentiment": "neutral"
+      "sentiment": "positive"
     },
     {
       "title": "맥시코 잉글은 진짜 모르겠다.....",
@@ -1293,7 +1275,7 @@
       "comments": 0,
       "date": "08:09",
       "category": "FC온라인",
-      "sentiment": "negative"
+      "sentiment": "neutral"
     },
     {
       "title": "홀붕이 코인 성공했다",
@@ -1352,7 +1334,7 @@
     {
       "title": "빠칭코 한바퀴는",
       "url": "https://www.fmkorea.com/10047095821",
-      "views": 158,
+      "views": 216,
       "comments": 2,
       "date": "08:01",
       "category": "질문",
@@ -1365,7 +1347,7 @@
       "comments": 0,
       "date": "08:01",
       "category": "스쿼드",
-      "sentiment": "positive"
+      "sentiment": "neutral"
     },
     {
       "title": "솔직히 팀갈할려고 팀 팔았다가 안팔린거 있어서 홀란 못사긴 했는데",
@@ -1374,7 +1356,7 @@
       "comments": 2,
       "date": "08:00",
       "category": "FC온라인",
-      "sentiment": "neutral"
+      "sentiment": "negative"
     },
     {
       "title": "4123 깨달았다",
@@ -1398,7 +1380,7 @@
       "title": "하.. 바보짓한 스노우볼 잔인하게 구르는구나",
       "url": "https://www.fmkorea.com/10047088055",
       "views": 615,
-      "comments": 2,
+      "comments": 3,
       "date": "07:58",
       "category": "FC온라인",
       "sentiment": "negative"
@@ -1451,8 +1433,8 @@
     {
       "title": "믿고 있었다고",
       "url": "https://www.fmkorea.com/10047076521",
-      "views": 817,
-      "comments": 5,
+      "views": 1300,
+      "comments": 6,
       "date": "07:54",
       "category": "FC온라인",
       "sentiment": "positive"
@@ -1559,7 +1541,7 @@
     {
       "title": "독일 (10)",
       "url": "https://www.fmkorea.com/10047042467",
-      "views": 11,
+      "views": 17,
       "comments": 0,
       "date": "07:43",
       "category": "El Tornado",
@@ -1806,7 +1788,7 @@
       "comments": 0,
       "date": "07:23",
       "category": "FC온라인",
-      "sentiment": "neutral"
+      "sentiment": "positive"
     },
     {
       "title": "벨기에도 미국 이겨주면 좋겠네",
@@ -1892,7 +1874,7 @@
     {
       "title": "맨시티로 팀갈할려고 팀 팔았는데 홀란 걍 25챔 노려야되나요..",
       "url": "https://www.fmkorea.com/10046972572",
-      "views": 322,
+      "views": 588,
       "comments": 4,
       "date": "07:17",
       "category": "FC온라인",
@@ -1919,7 +1901,7 @@
     {
       "title": "쇨로트도 ws따였네 ㅅㅅ",
       "url": "https://www.fmkorea.com/10046968366",
-      "views": 61,
+      "views": 80,
       "comments": 0,
       "date": "07:16",
       "category": "FC온라인",
@@ -2076,7 +2058,7 @@
       "comments": 2,
       "date": "07:06",
       "category": "잡담",
-      "sentiment": "positive"
+      "sentiment": "negative"
     },
     {
       "title": "와 네이마르",
@@ -2121,7 +2103,7 @@
       "comments": 0,
       "date": "07:04",
       "category": "잡담",
-      "sentiment": "positive"
+      "sentiment": "neutral"
     },
     {
       "title": "17연패 레전드..",
@@ -2139,7 +2121,7 @@
       "comments": 2,
       "date": "07:03",
       "category": "FC온라인",
-      "sentiment": "neutral"
+      "sentiment": "negative"
     },
     {
       "title": "맨시티 7천조 보강 추천해주세요",
@@ -2247,7 +2229,7 @@
       "comments": 0,
       "date": "06:57",
       "category": "FC온라인",
-      "sentiment": "neutral"
+      "sentiment": "positive"
     },
     {
       "title": "엔드릭 xg 0.67+pk실축이면",
@@ -2256,7 +2238,7 @@
       "comments": 0,
       "date": "06:57",
       "category": "잡담",
-      "sentiment": "negative"
+      "sentiment": "neutral"
     },
     {
       "title": "홀란 족간진데 10경으로 시즌 추천가능할까요",
@@ -2418,7 +2400,7 @@
       "comments": 0,
       "date": "06:52",
       "category": "잡담",
-      "sentiment": "positive"
+      "sentiment": "negative"
     },
     {
       "title": "ㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋ와 홀란드 미쳤다진짜 이게뭐야",
@@ -2432,7 +2414,7 @@
     {
       "title": "17경 롬바르헨티나",
       "url": "https://www.fmkorea.com/10046880352",
-      "views": 162,
+      "views": 174,
       "comments": 0,
       "date": "06:52",
       "category": "FC온라인",
@@ -2445,7 +2427,7 @@
       "comments": 0,
       "date": "06:52",
       "category": "잡담",
-      "sentiment": "positive"
+      "sentiment": "neutral"
     },
     {
       "title": "브라질 사실상 탈락 ㅋㅋㅋㅋ",
@@ -2499,7 +2481,7 @@
       "comments": 2,
       "date": "06:47",
       "category": "FC온라인",
-      "sentiment": "positive"
+      "sentiment": "neutral"
     },
     {
       "title": "비닐이가 네좆 챙겨주려다",
@@ -2625,7 +2607,7 @@
       "comments": 0,
       "date": "06:41",
       "category": "FC온라인",
-      "sentiment": "positive"
+      "sentiment": "neutral"
     },
     {
       "title": "홀란 골!!!!!!",
@@ -2850,7 +2832,7 @@
       "comments": 3,
       "date": "06:00",
       "category": "감독모드",
-      "sentiment": "neutral"
+      "sentiment": "negative"
     },
     {
       "title": "꼭 내가 구매 1등 먹으면 안사지네 시팔..",
@@ -2949,12 +2931,12 @@
       "comments": 0,
       "date": "05:31",
       "category": "팁/정보",
-      "sentiment": "neutral"
+      "sentiment": "positive"
     },
     {
       "title": "박상원 피드백 확실하네 병신 같은 EA리그 때문에 공경에서 챔스 만나기 싫다니까 순수 공경으로 챔스 매칭을 시켜줘",
       "url": "https://www.fmkorea.com/10046791952",
-      "views": 5068,
+      "views": 5276,
       "comments": 2,
       "date": "05:29",
       "category": "불평불만",
@@ -3003,7 +2985,7 @@
       "comments": 0,
       "date": "05:14",
       "category": "FC온라인",
-      "sentiment": "negative"
+      "sentiment": "positive"
     },
     {
       "title": "ㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋ표정이 실축할거같더라",
@@ -3129,7 +3111,7 @@
       "comments": 0,
       "date": "04:57",
       "category": "잡담",
-      "sentiment": "neutral"
+      "sentiment": "negative"
     },
     {
       "title": "레알 팀 어떤 것 같음??",
@@ -3147,7 +3129,7 @@
       "comments": 6,
       "date": "04:53",
       "category": "FC온라인",
-      "sentiment": "neutral"
+      "sentiment": "negative"
     },
     {
       "title": "요즘 2경정도 얻을려면 얼마 현질해야되나요?",
@@ -3381,7 +3363,7 @@
       "comments": 0,
       "date": "04:02",
       "category": "FC온라인",
-      "sentiment": "neutral"
+      "sentiment": "positive"
     },
     {
       "title": "이적시장이 멈춘거 같냐...",
@@ -3548,7 +3530,7 @@
     {
       "title": "언젠가 누군가가 쓸 일 있길 바라는 26토츠 갱신시간",
       "url": "https://www.fmkorea.com/10046703340",
-      "views": 4735,
+      "views": 5990,
       "comments": 11,
       "date": "03:13",
       "category": "FC온라인",
@@ -3561,7 +3543,7 @@
       "comments": 2,
       "date": "03:12",
       "category": "스쿼드",
-      "sentiment": "neutral"
+      "sentiment": "positive"
     },
     {
       "title": "뎀벨레 매크로 씨발 ㅋㅋㅋㅋ",
@@ -3570,7 +3552,7 @@
       "comments": 13,
       "date": "03:11",
       "category": "FC온라인",
-      "sentiment": "negative"
+      "sentiment": "positive"
     },
     {
       "title": "원래 하던대로 이적시장 접근해야했는데...",
@@ -3624,7 +3606,7 @@
       "comments": 0,
       "date": "03:08",
       "category": "FC온라인",
-      "sentiment": "positive"
+      "sentiment": "neutral"
     },
     {
       "title": "dp단일은 진짜 법도가 무너진거다",
@@ -3777,7 +3759,7 @@
       "comments": 3,
       "date": "02:46",
       "category": "강화/득템",
-      "sentiment": "neutral"
+      "sentiment": "negative"
     },
     {
       "title": "빠칭코 레전더리에서 뽑았는데",
@@ -3822,7 +3804,7 @@
       "comments": 6,
       "date": "02:41",
       "category": "FC온라인",
-      "sentiment": "neutral"
+      "sentiment": "negative"
     },
     {
       "title": "72경 리버풀 조언좀",
@@ -3840,7 +3822,7 @@
       "comments": 0,
       "date": "02:38",
       "category": "FC온라인",
-      "sentiment": "positive"
+      "sentiment": "negative"
     },
     {
       "title": "뮌헨 vs 맨시티",
@@ -3912,7 +3894,7 @@
       "comments": 0,
       "date": "02:29",
       "category": "FC온라인",
-      "sentiment": "neutral"
+      "sentiment": "negative"
     },
     {
       "title": "wg 가린샤",
@@ -3921,7 +3903,7 @@
       "comments": 0,
       "date": "02:28",
       "category": "FC온라인",
-      "sentiment": "negative"
+      "sentiment": "neutral"
     },
     {
       "title": "하는 사람은 줄었는데 서버는 더 쓰레기가 되는",
@@ -4074,7 +4056,7 @@
       "comments": 0,
       "date": "02:13",
       "category": "FC온라인",
-      "sentiment": "neutral"
+      "sentiment": "negative"
     },
     {
       "title": "한국 축구의 가장 큰 문제점 중 하나",
@@ -4196,8 +4178,8 @@
     {
       "title": "개씹 패작귀 발견함",
       "url": "https://www.fmkorea.com/10046620332",
-      "views": 3699,
-      "comments": 23,
+      "views": 6131,
+      "comments": 30,
       "date": "02:03",
       "category": "FC온라인",
       "sentiment": "negative"
@@ -4295,7 +4277,7 @@
     {
       "title": "맨시티 셰르키 넣고 수정해봤는데 ㄱㅊ?",
       "url": "https://www.fmkorea.com/10046609717",
-      "views": 400,
+      "views": 759,
       "comments": 4,
       "date": "01:55",
       "category": "스쿼드",
@@ -4569,7 +4551,7 @@
       "comments": 0,
       "date": "01:36",
       "category": "FC온라인",
-      "sentiment": "negative"
+      "sentiment": "neutral"
     },
     {
       "title": "성능은 모르겠고 오버롤만 150론 스페인  완성",
@@ -4619,7 +4601,7 @@
     {
       "title": "시세가 내려가도 7/2전 가격은 쉽지않을거 같음",
       "url": "https://www.fmkorea.com/10046566249",
-      "views": 444,
+      "views": 752,
       "comments": 6,
       "date": "01:33",
       "category": "FC온라인",
@@ -4650,7 +4632,7 @@
       "comments": 2,
       "date": "01:32",
       "category": "밴",
-      "sentiment": "negative"
+      "sentiment": "neutral"
     },
     {
       "title": "손겜 500등 달성 ! 이번시즌은 진짜 다르다",
@@ -4749,7 +4731,7 @@
       "comments": 3,
       "date": "01:27",
       "category": "선수후기",
-      "sentiment": "neutral"
+      "sentiment": "positive"
     },
     {
       "title": "bwc 실러선 심정지 매물인가",
@@ -4772,8 +4754,8 @@
     {
       "title": "이적시장 좆고수 등장ㅋㅋ",
       "url": "https://www.fmkorea.com/10046545311",
-      "views": 9601,
-      "comments": 20,
+      "views": 10000,
+      "comments": 22,
       "date": "01:24",
       "category": "FC온라인",
       "sentiment": "positive"
@@ -4781,7 +4763,7 @@
     {
       "title": "이상하게 시세가 내려갈거같음",
       "url": "https://www.fmkorea.com/10046538659",
-      "views": 2153,
+      "views": 2210,
       "comments": 9,
       "date": "01:20",
       "category": "FC온라인",
@@ -4794,7 +4776,7 @@
       "comments": 0,
       "date": "01:20",
       "category": "감독모드",
-      "sentiment": "neutral"
+      "sentiment": "positive"
     },
     {
       "title": "윙보다 톱공미가 트릭스터 더 좋은 것같음",
@@ -4826,7 +4808,7 @@
     {
       "title": "발롱두 어떨까요",
       "url": "https://www.fmkorea.com/10046535035",
-      "views": 77,
+      "views": 134,
       "comments": 1,
       "date": "01:19",
       "category": "질문",
@@ -4938,7 +4920,7 @@
       "comments": 3,
       "date": "01:09",
       "category": "강화/득템",
-      "sentiment": "neutral"
+      "sentiment": "positive"
     },
     {
       "title": "목요일에 100% 쿠폰 들어오면요",
@@ -4956,16 +4938,16 @@
       "comments": 0,
       "date": "01:07",
       "category": "잡담",
-      "sentiment": "neutral"
+      "sentiment": "positive"
     },
     {
       "title": "무료패스, 구매패스 8렙 선수팩 후기",
       "url": "https://www.fmkorea.com/10046498722",
-      "views": 1050,
+      "views": 1156,
       "comments": 5,
       "date": "01:05",
       "category": "강화/득템",
-      "sentiment": "neutral"
+      "sentiment": "positive"
     },
     {
       "title": "선수 구매",
@@ -5019,7 +5001,7 @@
       "comments": 9,
       "date": "01:03",
       "category": "강화/득템",
-      "sentiment": "positive"
+      "sentiment": "neutral"
     },
     {
       "title": "공경 20판돌렸음  이걸 강득텝에올려야하는지모르겠는데.",
@@ -5186,7 +5168,7 @@
     {
       "title": "25챔 홀란 백금 사졌다 ㅅㅅㅅ",
       "url": "https://www.fmkorea.com/10046438579",
-      "views": 9451,
+      "views": 9562,
       "comments": 11,
       "date": "00:52",
       "category": "선수구매",
@@ -5229,15 +5211,6 @@
       "sentiment": "neutral"
     },
     {
-      "title": "개인적으로 이런매물볼때 약간 ?? 한 부분..",
-      "url": "https://www.fmkorea.com/10046450981",
-      "views": 254,
-      "comments": 11,
-      "date": "00:50",
-      "category": "FC온라인",
-      "sentiment": "neutral"
-    },
-    {
       "title": "모두받기하지않기모두받기하지않기모두받기하지않기모두받기하지않기",
       "url": "https://www.fmkorea.com/10046453453",
       "views": 223,
@@ -5253,7 +5226,7 @@
       "comments": 5,
       "date": "00:50",
       "category": "강화/득템",
-      "sentiment": "positive"
+      "sentiment": "neutral"
     },
     {
       "title": "와씨 뭐지 스쿼드메이커로 짜놓은 브라질 가격이 2배가 됐길래 보니까",
@@ -5505,7 +5478,7 @@
       "comments": 2,
       "date": "00:32",
       "category": "FC온라인",
-      "sentiment": "positive"
+      "sentiment": "neutral"
     },
     {
       "title": "오 수비가 앞에 서있는데",
@@ -5568,7 +5541,7 @@
       "comments": 9,
       "date": "00:25",
       "category": "불평불만",
-      "sentiment": "negative"
+      "sentiment": "neutral"
     },
     {
       "title": "100퍼 수쿠 2개 생겨도 안 팔 자신 있으면",
@@ -5604,7 +5577,7 @@
       "comments": 0,
       "date": "00:23",
       "category": "잡담",
-      "sentiment": "negative"
+      "sentiment": "neutral"
     },
     {
       "title": "유봉훈은 진짜 선수 평가에 대한 본인만의 기준이 딱 있는듯",
@@ -5631,7 +5604,7 @@
       "comments": 1,
       "date": "00:20",
       "category": "잡담",
-      "sentiment": "positive"
+      "sentiment": "neutral"
     },
     {
       "title": "나만 피파할때 e키가 잘 작동이 안되나요?",
@@ -5672,7 +5645,7 @@
     {
       "title": "이제야 시세가 조금 꺾이는 느낌이네",
       "url": "https://www.fmkorea.com/10046315146",
-      "views": 3148,
+      "views": 3395,
       "comments": 10,
       "date": "00:16",
       "category": "FC온라인",
@@ -5744,7 +5717,7 @@
     {
       "title": "리버풀 추천좀",
       "url": "https://www.fmkorea.com/10046289369",
-      "views": 195,
+      "views": 223,
       "comments": 3,
       "date": "00:14",
       "category": "스쿼드",
@@ -5820,7 +5793,7 @@
       "comments": 1,
       "date": "00:10",
       "category": "강화/득템",
-      "sentiment": "neutral"
+      "sentiment": "positive"
     },
     {
       "title": "워커 쓰면 트레블 1단계 , 리그 4연패 1단계 켜지는데 써야할까?",
@@ -5883,7 +5856,7 @@
       "comments": 0,
       "date": "00:09",
       "category": "FC온라인",
-      "sentiment": "positive"
+      "sentiment": "neutral"
     },
     {
       "title": "유벤투스는 24-25 미페가 제일 예쁘네 ㅜㅜ",
@@ -6051,7 +6024,7 @@
       "title": "마르세유 1경짜리 공격수 추천좀 햐주세욜",
       "url": "https://www.fmkorea.com/10046225088",
       "views": 21,
-      "comments": 7,
+      "comments": 10,
       "date": "23:58",
       "category": "질문",
       "sentiment": "neutral"
@@ -6252,7 +6225,7 @@
       "comments": 6,
       "date": "23:47",
       "category": "FC온라인",
-      "sentiment": "positive"
+      "sentiment": "negative"
     },
     {
       "title": "dp 바리 백금 vs fac 지루 백금",
@@ -6288,7 +6261,7 @@
       "comments": 0,
       "date": "23:45",
       "category": "FC온라인",
-      "sentiment": "neutral"
+      "sentiment": "negative"
     },
     {
       "title": "야~옹 야~옹 야~옹 야~옹 야~옹 야~옹 야~옹 야~옹 야~옹 야~옹 야~옹 야~옹 야~옹 야~옹 야~옹 야~옹 야~옹 야~옹 야~옹 야~옹",
@@ -6297,7 +6270,7 @@
       "comments": 13,
       "date": "23:44",
       "category": "El Tornado",
-      "sentiment": "positive"
+      "sentiment": "neutral"
     },
     {
       "title": "ㅅㅂ 트릭스터 나오고 인류애가 진짜 박살났다",
@@ -6324,7 +6297,7 @@
       "comments": 4,
       "date": "23:43",
       "category": "FC온라인",
-      "sentiment": "negative"
+      "sentiment": "neutral"
     },
     {
       "title": "흐음.. 이번에 현역케미",
@@ -6465,7 +6438,7 @@
       "title": "베르너 팔렸네 ㄷ ㄷ",
       "url": "https://www.fmkorea.com/10046122833",
       "views": 214,
-      "comments": 8,
+      "comments": 9,
       "date": "23:36",
       "category": "잡담",
       "sentiment": "positive"
@@ -6540,7 +6513,7 @@
       "comments": 9,
       "date": "23:33",
       "category": "FC온라인",
-      "sentiment": "neutral"
+      "sentiment": "positive"
     },
     {
       "title": "진짜 비주류 선수지만 인생선수 구한것같습니다..!",
@@ -6702,7 +6675,7 @@
       "comments": 0,
       "date": "23:22",
       "category": "불평불만",
-      "sentiment": "neutral"
+      "sentiment": "positive"
     },
     {
       "title": "4000fc로 두꺼비집 괜찮나요?",
@@ -6711,7 +6684,7 @@
       "comments": 5,
       "date": "23:20",
       "category": "FC온라인",
-      "sentiment": "positive"
+      "sentiment": "neutral"
     },
     {
       "title": "제 개인적으로 느끼는 연패 연승 시작포인트",
@@ -6720,7 +6693,7 @@
       "comments": 0,
       "date": "23:20",
       "category": "감독모드",
-      "sentiment": "positive"
+      "sentiment": "neutral"
     },
     {
       "title": "공경 처음으로 최고 2486점 찍고 껐는데 생일선물도 주네요",
@@ -6729,7 +6702,7 @@
       "comments": 2,
       "date": "23:19",
       "category": "FC온라인",
-      "sentiment": "negative"
+      "sentiment": "positive"
     },
     {
       "title": "다들 팀 맞추셨는지 파셨는지 궁금하네요..",
@@ -6747,7 +6720,7 @@
       "comments": 4,
       "date": "23:19",
       "category": "FC온라인",
-      "sentiment": "neutral"
+      "sentiment": "positive"
     },
     {
       "title": "어 사졌다",
@@ -6756,7 +6729,7 @@
       "comments": 3,
       "date": "23:19",
       "category": "강화/득템",
-      "sentiment": "neutral"
+      "sentiment": "positive"
     },
     {
       "title": "쿤데 개좋다 미친",
@@ -6774,7 +6747,7 @@
       "comments": 0,
       "date": "23:18",
       "category": "잡담",
-      "sentiment": "neutral"
+      "sentiment": "negative"
     },
     {
       "title": "익스프레스 패스",
@@ -6783,7 +6756,7 @@
       "comments": 0,
       "date": "23:17",
       "category": "질문",
-      "sentiment": "positive"
+      "sentiment": "neutral"
     },
     {
       "title": "강장으로 40경만들기 프로젝트 참여하실분",
@@ -6792,7 +6765,7 @@
       "comments": 13,
       "date": "23:17",
       "category": "잡담",
-      "sentiment": "positive"
+      "sentiment": "neutral"
     },
     {
       "title": "형님들 10경 먹을려면 현질 얼마나 해야 되나요?",
@@ -6801,7 +6774,7 @@
       "comments": 8,
       "date": "23:16",
       "category": "FC온라인",
-      "sentiment": "positive"
+      "sentiment": "neutral"
     },
     {
       "title": "큰거 하나 박고 시작합니다..",
@@ -6828,7 +6801,7 @@
       "comments": 20,
       "date": "23:15",
       "category": "FC온라인",
-      "sentiment": "neutral"
+      "sentiment": "positive"
     },
     {
       "title": "뉴캐슬 존나 마싯다...",
@@ -6837,7 +6810,7 @@
       "comments": 5,
       "date": "23:15",
       "category": "FC온라인",
-      "sentiment": "neutral"
+      "sentiment": "positive"
     },
     {
       "title": "20년도에 못 이뤘던 꿈을 지금 펼쳤습니다",
@@ -6846,7 +6819,7 @@
       "comments": 4,
       "date": "23:15",
       "category": "FC온라인",
-      "sentiment": "neutral"
+      "sentiment": "positive"
     },
     {
       "title": "키보드 챔스 왔습니다 !!",
@@ -6855,7 +6828,7 @@
       "comments": 33,
       "date": "23:15",
       "category": "FC온라인",
-      "sentiment": "neutral"
+      "sentiment": "positive"
     },
     {
       "title": "부트라 라울 백금? 진짜 재밌을거같긴한데",
@@ -6882,7 +6855,7 @@
       "comments": 21,
       "date": "23:13",
       "category": "FC온라인",
-      "sentiment": "positive"
+      "sentiment": "neutral"
     },
     {
       "title": "흠 하루종일 애무하고 이게 본인 스타일이라면 뭐라해야되지",
@@ -6900,7 +6873,7 @@
       "comments": 0,
       "date": "23:12",
       "category": "질문",
-      "sentiment": "positive"
+      "sentiment": "neutral"
     },
     {
       "title": "아직 안풀린 WG백금 푸는 팁",
@@ -6909,7 +6882,7 @@
       "comments": 2,
       "date": "23:12",
       "category": "FC온라인",
-      "sentiment": "positive"
+      "sentiment": "neutral"
     },
     {
       "title": "20경 이였던 시티",
@@ -6945,7 +6918,7 @@
       "comments": 0,
       "date": "23:11",
       "category": "FC온라인",
-      "sentiment": "neutral"
+      "sentiment": "positive"
     },
     {
       "title": "그래 상한가에 사줄게",
@@ -6972,7 +6945,7 @@
       "comments": 7,
       "date": "23:09",
       "category": "FC온라인",
-      "sentiment": "negative"
+      "sentiment": "neutral"
     },
     {
       "title": "마누엘 12카",
@@ -6981,7 +6954,7 @@
       "comments": 4,
       "date": "23:09",
       "category": "매물 정보통",
-      "sentiment": "negative"
+      "sentiment": "neutral"
     },
     {
       "title": "3경 맨유 이륙 가능할까요?",
@@ -7008,7 +6981,7 @@
       "comments": 5,
       "date": "23:08",
       "category": "FC온라인",
-      "sentiment": "positive"
+      "sentiment": "neutral"
     },
     {
       "title": "1-2경대 서민 라인은 안오르네",
@@ -7017,16 +6990,16 @@
       "comments": 1,
       "date": "23:08",
       "category": "FC온라인",
-      "sentiment": "positive"
+      "sentiment": "neutral"
     },
     {
       "title": "이까짓 놈한테 1경 빨린 새끼 왔나요",
       "url": "https://www.fmkorea.com/10046042926",
-      "views": 2786,
+      "views": 3768,
       "comments": 13,
       "date": "23:08",
       "category": "강화/득템",
-      "sentiment": "positive"
+      "sentiment": "negative"
     },
     {
       "title": "골키퍼 12카 영입",
@@ -7053,12 +7026,12 @@
       "comments": 3,
       "date": "23:07",
       "category": "FC온라인",
-      "sentiment": "neutral"
+      "sentiment": "positive"
     },
     {
       "title": "프로에서 챌까지 보내준 공식경기용 텐백 전술 공유",
       "url": "https://www.fmkorea.com/10046007510",
-      "views": 1589,
+      "views": 1841,
       "comments": 9,
       "date": "23:06",
       "category": "전략/전술",
@@ -7071,7 +7044,7 @@
       "comments": 1,
       "date": "23:06",
       "category": "FC온라인",
-      "sentiment": "neutral"
+      "sentiment": "positive"
     },
     {
       "title": "5.5 로마 vs 마르세유 고민되네",
@@ -7089,7 +7062,7 @@
       "comments": 0,
       "date": "23:06",
       "category": "FC온라인",
-      "sentiment": "positive"
+      "sentiment": "neutral"
     },
     {
       "title": "노미 게히 써보신분",
@@ -7107,7 +7080,7 @@
       "comments": 2,
       "date": "23:05",
       "category": "El Tornado",
-      "sentiment": "neutral"
+      "sentiment": "positive"
     },
     {
       "title": "다음번엔 준만능형 톱을써볼까",
@@ -7125,7 +7098,7 @@
       "comments": 0,
       "date": "23:04",
       "category": "FC온라인",
-      "sentiment": "neutral"
+      "sentiment": "negative"
     },
     {
       "title": "오프사이드 트랩 허물기 성공",
@@ -7134,7 +7107,7 @@
       "comments": 0,
       "date": "23:04",
       "category": "El Tornado",
-      "sentiment": "neutral"
+      "sentiment": "positive"
     },
     {
       "title": "상대 khd 단일도 아니고 오버롤도 제대로 안나오는데 풀백이 더럽게 수비 잘하길래 파이터인줄 알았더니",
@@ -7143,7 +7116,7 @@
       "comments": 0,
       "date": "23:04",
       "category": "불평불만",
-      "sentiment": "positive"
+      "sentiment": "neutral"
     },
     {
       "title": "이거 적정가 얼마 보시나요?",
@@ -7152,7 +7125,7 @@
       "comments": 2,
       "date": "23:03",
       "category": "잡담",
-      "sentiment": "negative"
+      "sentiment": "neutral"
     },
     {
       "title": "선수키우기 챔스 질문",
@@ -7179,7 +7152,7 @@
       "comments": 0,
       "date": "23:02",
       "category": "FC온라인",
-      "sentiment": "negative"
+      "sentiment": "neutral"
     },
     {
       "title": "오 FAC 반니 써보고 싶었는데 떴네 ㅋㅋㅋㅋ",
@@ -7197,7 +7170,7 @@
       "comments": 4,
       "date": "23:01",
       "category": "불평불만",
-      "sentiment": "neutral"
+      "sentiment": "negative"
     },
     {
       "title": "개인적으로 배율은 계속 올라가는데 시세 유지했던게 오히려 신기했는데",
@@ -7206,16 +7179,16 @@
       "comments": 26,
       "date": "23:00",
       "category": "FC온라인",
-      "sentiment": "positive"
+      "sentiment": "neutral"
     },
     {
       "title": "완벽한 삼각 삼자패스 플레이 였는데 한번에 마무리를 못했네...",
       "url": "https://www.fmkorea.com/10046013608",
-      "views": 23,
+      "views": 65,
       "comments": 0,
       "date": "23:00",
       "category": "El Tornado",
-      "sentiment": "positive"
+      "sentiment": "negative"
     },
     {
       "title": "오버롤이 132인데 몸싸움이 노집훈 153인 수비수가 있다???",
@@ -7233,7 +7206,7 @@
       "comments": 0,
       "date": "22:59",
       "category": "FC온라인",
-      "sentiment": "positive"
+      "sentiment": "neutral"
     },
     {
       "title": "손흥민 시세 궁금",
@@ -7251,7 +7224,7 @@
       "comments": 7,
       "date": "22:58",
       "category": "잡담",
-      "sentiment": "neutral"
+      "sentiment": "positive"
     },
     {
       "title": "진짜 영끌인데 격하게 사고싶다 피파특 못가지면 안달 나는게 거의 중독자 수준",
@@ -7260,7 +7233,7 @@
       "comments": 0,
       "date": "22:58",
       "category": "FC온라인",
-      "sentiment": "negative"
+      "sentiment": "positive"
     },
     {
       "title": "감모 훈코 중요한가요?",
@@ -7278,7 +7251,7 @@
       "comments": 4,
       "date": "22:58",
       "category": "FC온라인",
-      "sentiment": "positive"
+      "sentiment": "neutral"
     },
     {
       "title": "맨시티 감모픽 선수들 있나요 ?",
@@ -7287,7 +7260,7 @@
       "comments": 26,
       "date": "22:57",
       "category": "감독모드",
-      "sentiment": "positive"
+      "sentiment": "neutral"
     },
     {
       "title": "TK 손흥민 vs TK 안정환",
@@ -7314,7 +7287,7 @@
       "comments": 1,
       "date": "22:57",
       "category": "El Tornado",
-      "sentiment": "positive"
+      "sentiment": "neutral"
     },
     {
       "title": "속력 160찍히는 홀란은 미친놈이였어",
@@ -7323,7 +7296,7 @@
       "comments": 8,
       "date": "22:56",
       "category": "FC온라인",
-      "sentiment": "negative"
+      "sentiment": "positive"
     },
     {
       "title": "나능 내가~ 붙을줄 아라써요~",
@@ -7332,7 +7305,7 @@
       "comments": 7,
       "date": "22:56",
       "category": "FC온라인",
-      "sentiment": "neutral"
+      "sentiment": "positive"
     },
     {
       "title": "와 ㅋㅋㅋㅋㅋ",
@@ -7341,7 +7314,7 @@
       "comments": 4,
       "date": "22:56",
       "category": "불평불만",
-      "sentiment": "positive"
+      "sentiment": "neutral"
     },
     {
       "title": "래리 이거걍 삭제하고 공경보상 늘리면 안되나",
@@ -7350,7 +7323,7 @@
       "comments": 8,
       "date": "22:55",
       "category": "FC온라인",
-      "sentiment": "neutral"
+      "sentiment": "negative"
     },
     {
       "title": "다음 백금작 프로젝트도 순항중입니다!",
@@ -7359,7 +7332,7 @@
       "comments": 0,
       "date": "22:55",
       "category": "강화/득템",
-      "sentiment": "neutral"
+      "sentiment": "positive"
     },
     {
       "title": "3000조 dp단일 개사기네",
@@ -7368,7 +7341,7 @@
       "comments": 1,
       "date": "22:54",
       "category": "FC온라인",
-      "sentiment": "neutral"
+      "sentiment": "negative"
     },
     {
       "title": "호날두 백금 가격왜이럼? ㅋㅋ",
@@ -7386,7 +7359,7 @@
       "comments": 1,
       "date": "22:54",
       "category": "매물 정보통",
-      "sentiment": "neutral"
+      "sentiment": "positive"
     },
     {
       "title": "마요 하프라인 뒤에서부터 침투 시작해서 ZDD로 마무리까지",
@@ -7404,7 +7377,7 @@
       "comments": 4,
       "date": "22:53",
       "category": "FC온라인",
-      "sentiment": "negative"
+      "sentiment": "neutral"
     },
     {
       "title": "복귀유저인데 구단가치 몇부터 요즘 공경 뛸만한가영?",
@@ -7413,7 +7386,7 @@
       "comments": 8,
       "date": "22:53",
       "category": "FC온라인",
-      "sentiment": "positive"
+      "sentiment": "neutral"
     },
     {
       "title": "제자리 eas 개인기처럼 패스 페이크같은건데",
@@ -7440,7 +7413,7 @@
       "comments": 6,
       "date": "22:52",
       "category": "FC온라인",
-      "sentiment": "positive"
+      "sentiment": "neutral"
     },
     {
       "title": "와 신특땜에 현질이 의미가 없는듯",
@@ -7449,7 +7422,7 @@
       "comments": 40,
       "date": "22:52",
       "category": "FC온라인",
-      "sentiment": "neutral"
+      "sentiment": "negative"
     },
     {
       "title": "LOL 딘 헨더슨 10카 ㄹㅇ 막을거 다 막고 이걸 막아??? 모먼트 많이 뜨네 ㄷㄷㄷㄷㄷㄷ",
@@ -7458,7 +7431,7 @@
       "comments": 4,
       "date": "22:52",
       "category": "FC온라인",
-      "sentiment": "neutral"
+      "sentiment": "positive"
     },
     {
       "title": "감모 입문 하는방법 알려 드림.",
@@ -7485,7 +7458,7 @@
       "comments": 0,
       "date": "22:51",
       "category": "잡담",
-      "sentiment": "negative"
+      "sentiment": "positive"
     },
     {
       "title": "시세 안떨어지네 ㅎㅎ",
@@ -7494,7 +7467,7 @@
       "comments": 2,
       "date": "22:51",
       "category": "FC온라인",
-      "sentiment": "negative"
+      "sentiment": "neutral"
     },
     {
       "title": "26토츠 야말 후기 및 시세",
@@ -7521,7 +7494,7 @@
       "comments": 1,
       "date": "22:50",
       "category": "선수구매",
-      "sentiment": "neutral"
+      "sentiment": "positive"
     },
     {
       "title": "부캐 양학이 ㄹㅇ 뉴비들 전달기인듯",
@@ -7530,7 +7503,7 @@
       "comments": 1,
       "date": "22:50",
       "category": "FC온라인",
-      "sentiment": "neutral"
+      "sentiment": "negative"
     },
     {
       "title": "와....이딴게 축구게임..?",
@@ -7539,7 +7512,7 @@
       "comments": 0,
       "date": "22:50",
       "category": "El Tornado",
-      "sentiment": "neutral"
+      "sentiment": "negative"
     },
     {
       "title": "마이콘 자리 CH 로드리 10카 어떨까요?...",
@@ -7548,7 +7521,7 @@
       "comments": 5,
       "date": "22:50",
       "category": "질문",
-      "sentiment": "positive"
+      "sentiment": "neutral"
     },
     {
       "title": "와 이번 시즌 손에 꼽을정도로 공경 많이 한거같은데",
@@ -7557,7 +7530,7 @@
       "comments": 0,
       "date": "22:50",
       "category": "잡담",
-      "sentiment": "neutral"
+      "sentiment": "positive"
     },
     {
       "title": "메리노 침투 이후 ZW 크로스 야말 골",
@@ -7566,7 +7539,7 @@
       "comments": 0,
       "date": "22:50",
       "category": "El Tornado",
-      "sentiment": "neutral"
+      "sentiment": "positive"
     },
     {
       "title": "2수미 말고 2중미 쓰시는분들 수비 괜찮나요?",
@@ -7575,7 +7548,7 @@
       "comments": 0,
       "date": "22:49",
       "category": "FC온라인",
-      "sentiment": "negative"
+      "sentiment": "neutral"
     },
     {
       "title": "뮌헨 마지막 한자리 센터백 추천 받습니다",
@@ -7593,7 +7566,7 @@
       "comments": 0,
       "date": "22:47",
       "category": "El Tornado",
-      "sentiment": "neutral"
+      "sentiment": "positive"
     },
     {
       "title": "체감 드리블 티키타카 좋은 스쿼드 추천해주실수 있나요?",
@@ -7620,7 +7593,7 @@
       "comments": 13,
       "date": "22:45",
       "category": "FC온라인",
-      "sentiment": "positive"
+      "sentiment": "negative"
     },
     {
       "title": "가투소 써보신분 계실까요?",
@@ -7629,7 +7602,7 @@
       "comments": 0,
       "date": "22:45",
       "category": "FC온라인",
-      "sentiment": "positive"
+      "sentiment": "neutral"
     },
     {
       "title": "파리로 가는 첫 영입..",
@@ -7647,7 +7620,7 @@
       "comments": 0,
       "date": "22:45",
       "category": "El Tornado",
-      "sentiment": "positive"
+      "sentiment": "neutral"
     },
     {
       "title": "한국팀 급여땜에 이용 센백으로 쓰는데",
@@ -7665,7 +7638,7 @@
       "comments": 1,
       "date": "22:44",
       "category": "FC온라인",
-      "sentiment": "neutral"
+      "sentiment": "positive"
     },
     {
       "title": "12카 10분만에 왔네 8카에서",
@@ -7674,7 +7647,7 @@
       "comments": 2,
       "date": "22:44",
       "category": "강화/득템",
-      "sentiment": "neutral"
+      "sentiment": "positive"
     },
     {
       "title": "베켄 공미의 최고장점",
@@ -7683,7 +7656,7 @@
       "comments": 0,
       "date": "22:43",
       "category": "FC온라인",
-      "sentiment": "positive"
+      "sentiment": "neutral"
     },
     {
       "title": "세네갈 캉테 영입완료.",
@@ -7692,7 +7665,7 @@
       "comments": 0,
       "date": "22:43",
       "category": "선수구매",
-      "sentiment": "neutral"
+      "sentiment": "positive"
     },
     {
       "title": "오늘 밤쯤으로 시세 떨어질줄 알았는데...",
@@ -7701,7 +7674,7 @@
       "comments": 9,
       "date": "22:42",
       "category": "FC온라인",
-      "sentiment": "negative"
+      "sentiment": "neutral"
     },
     {
       "title": "tb 트라프 써보신분?",
@@ -7710,7 +7683,7 @@
       "comments": 0,
       "date": "22:42",
       "category": "질문",
-      "sentiment": "positive"
+      "sentiment": "neutral"
     },
     {
       "title": "상대 키퍼 스파이인가 ㅋㅋ",
@@ -7728,7 +7701,7 @@
       "comments": 4,
       "date": "22:42",
       "category": "강화/득템",
-      "sentiment": "neutral"
+      "sentiment": "positive"
     },
     {
       "title": "레앙 라브차이로 2경 더줄만한가요?",
@@ -7755,7 +7728,7 @@
       "comments": 0,
       "date": "22:41",
       "category": "FC온라인",
-      "sentiment": "neutral"
+      "sentiment": "positive"
     },
     {
       "title": "토츠 셰르키 떡락중이네",
@@ -7773,7 +7746,7 @@
       "comments": 9,
       "date": "22:40",
       "category": "이벤트",
-      "sentiment": "positive"
+      "sentiment": "neutral"
     },
     {
       "title": "급식포드 얼마쯤에 풀릴깝쇼",
@@ -7782,7 +7755,7 @@
       "comments": 1,
       "date": "22:40",
       "category": "FC온라인",
-      "sentiment": "positive"
+      "sentiment": "neutral"
     },
     {
       "title": "와 le호돈 9카한테 개털림",
@@ -7814,11 +7787,11 @@
     {
       "title": "2대2) 피생 다신 없을 개쳐뽀록 개인기 ㅅㅅㅅㅅㅅㅅㅅ",
       "url": "https://www.fmkorea.com/10045935122",
-      "views": 197,
+      "views": 253,
       "comments": 7,
       "date": "22:38",
       "category": "El Tornado",
-      "sentiment": "neutral"
+      "sentiment": "positive"
     },
     {
       "title": "공경 하는데 미친팀 만남",
@@ -7827,12 +7800,12 @@
       "comments": 2,
       "date": "22:38",
       "category": "FC온라인",
-      "sentiment": "negative"
+      "sentiment": "positive"
     },
     {
       "title": "Dp단일로 감모 입문하려고합니다",
       "url": "https://www.fmkorea.com/10045933985",
-      "views": 143,
+      "views": 172,
       "comments": 19,
       "date": "22:37",
       "category": "감독모드",
@@ -7845,7 +7818,7 @@
       "comments": 5,
       "date": "22:37",
       "category": "FC온라인",
-      "sentiment": "neutral"
+      "sentiment": "positive"
     },
     {
       "title": "2대2) 전방압박 + 계단타기 정석",
@@ -7863,7 +7836,7 @@
       "comments": 1,
       "date": "22:36",
       "category": "FC온라인",
-      "sentiment": "neutral"
+      "sentiment": "negative"
     },
     {
       "title": "공경 20판때문에",
@@ -7872,7 +7845,7 @@
       "comments": 1,
       "date": "22:36",
       "category": "불평불만",
-      "sentiment": "neutral"
+      "sentiment": "negative"
     },
     {
       "title": "근데 홀란은 왤케 안오름",
@@ -7881,7 +7854,7 @@
       "comments": 0,
       "date": "22:36",
       "category": "FC온라인",
-      "sentiment": "negative"
+      "sentiment": "neutral"
     },
     {
       "title": "키퍼는 오버롤 130만 넘으면 다 비슷한거같음",
@@ -7890,7 +7863,7 @@
       "comments": 0,
       "date": "22:36",
       "category": "FC온라인",
-      "sentiment": "positive"
+      "sentiment": "neutral"
     },
     {
       "title": "파리 고수 선생님들 선수 구성 한번 봐주십셔ㅕㅕ",
@@ -7908,7 +7881,7 @@
       "comments": 2,
       "date": "22:35",
       "category": "FC온라인",
-      "sentiment": "negative"
+      "sentiment": "neutral"
     },
     {
       "title": "잠 안와서 써보는 벤피카 후기",
@@ -7917,7 +7890,7 @@
       "comments": 0,
       "date": "22:35",
       "category": "잡담",
-      "sentiment": "negative"
+      "sentiment": "neutral"
     },
     {
       "title": "공경하면서 패드빨패드빨 이러는 애들은 무슨심리일까요",
@@ -7926,7 +7899,7 @@
       "comments": 10,
       "date": "22:34",
       "category": "잡담",
-      "sentiment": "neutral"
+      "sentiment": "negative"
     },
     {
       "title": "와타나베 토츠 8카 기어코 1경을 찍네요",
@@ -7935,7 +7908,7 @@
       "comments": 0,
       "date": "22:32",
       "category": "FC온라인",
-      "sentiment": "neutral"
+      "sentiment": "positive"
     },
     {
       "title": "ptg도 공제되나..?",
@@ -7944,7 +7917,7 @@
       "comments": 7,
       "date": "22:32",
       "category": "잡담",
-      "sentiment": "positive"
+      "sentiment": "neutral"
     },
     {
       "title": "하 오늘부터 반다이크 모든 카드 한장씩 소각시킨다",
@@ -7953,7 +7926,7 @@
       "comments": 2,
       "date": "22:31",
       "category": "FC온라인",
-      "sentiment": "neutral"
+      "sentiment": "negative"
     },
     {
       "title": "강화는 안붙고 제물 피규어들만 성공 ㅠㅠ",
@@ -7962,7 +7935,7 @@
       "comments": 0,
       "date": "22:30",
       "category": "강화/득템",
-      "sentiment": "positive"
+      "sentiment": "negative"
     },
     {
       "title": "브라질 노르웨이 5시 실환가",
@@ -7980,7 +7953,7 @@
       "comments": 15,
       "date": "22:30",
       "category": "질문",
-      "sentiment": "positive"
+      "sentiment": "neutral"
     },
     {
       "title": "소소한 모먼트 금카 영입",
@@ -7989,7 +7962,7 @@
       "comments": 6,
       "date": "22:29",
       "category": "강화/득템",
-      "sentiment": "neutral"
+      "sentiment": "positive"
     },
     {
       "title": "하 씁 감성 살려서 스냅백 토레스 금카 살까요",
@@ -7998,7 +7971,7 @@
       "comments": 18,
       "date": "22:29",
       "category": "FC온라인",
-      "sentiment": "neutral"
+      "sentiment": "positive"
     },
     {
       "title": "강화가 나름 흐름이라고 느껴져서",
@@ -8007,7 +7980,7 @@
       "comments": 0,
       "date": "22:29",
       "category": "FC온라인",
-      "sentiment": "neutral"
+      "sentiment": "positive"
     },
     {
       "title": "7경 현역 위주 맨유인데 어떤가요?",
@@ -8052,7 +8025,7 @@
       "comments": 0,
       "date": "22:26",
       "category": "잡담",
-      "sentiment": "positive"
+      "sentiment": "neutral"
     },
     {
       "title": "나 진짜 몰라서 물어보는건데 나 혼자 SSS에서 TK 이운재 9카 뜨면 보통인가?",
@@ -8079,7 +8052,7 @@
       "comments": 4,
       "date": "22:26",
       "category": "FC온라인",
-      "sentiment": "negative"
+      "sentiment": "neutral"
     },
     {
       "title": "3천조로 라이프치히 해볼까",
@@ -8088,7 +8061,7 @@
       "comments": 4,
       "date": "22:25",
       "category": "FC온라인",
-      "sentiment": "negative"
+      "sentiment": "neutral"
     },
     {
       "title": "재꼈두",
@@ -8106,7 +8079,7 @@
       "comments": 6,
       "date": "22:24",
       "category": "FC온라인",
-      "sentiment": "neutral"
+      "sentiment": "negative"
     },
     {
       "title": "WS단테백금 나오거나 구매하신 분들은 진짜 머리 뜨겁겠네유",
@@ -8115,7 +8088,7 @@
       "comments": 4,
       "date": "22:24",
       "category": "FC온라인",
-      "sentiment": "neutral"
+      "sentiment": "negative"
     },
     {
       "title": "이 ㅅㅂ 공경 20판",
@@ -8124,7 +8097,7 @@
       "comments": 0,
       "date": "22:24",
       "category": "불평불만",
-      "sentiment": "neutral"
+      "sentiment": "negative"
     },
     {
       "title": "이새끼들은 감속이 뭔지 잘 모르는거 아님?",
@@ -8133,7 +8106,7 @@
       "comments": 0,
       "date": "22:23",
       "category": "불평불만",
-      "sentiment": "positive"
+      "sentiment": "negative"
     },
     {
       "title": "확실히지금 고급여키퍼 존나 의미있따 ㅇ.ㅇ",
@@ -8142,7 +8115,7 @@
       "comments": 7,
       "date": "22:23",
       "category": "FC온라인",
-      "sentiment": "negative"
+      "sentiment": "positive"
     },
     {
       "title": "ptg 마갈량 8카 1900조면 라부뽕 차치해도 살만한 가격인거?",
@@ -8151,7 +8124,7 @@
       "comments": 3,
       "date": "22:23",
       "category": "질문",
-      "sentiment": "positive"
+      "sentiment": "neutral"
     },
     {
       "title": "sss 결과!!",
@@ -8160,7 +8133,7 @@
       "comments": 5,
       "date": "22:21",
       "category": "강화/득템",
-      "sentiment": "neutral"
+      "sentiment": "positive"
     },
     {
       "title": "공경 20판 보상 결과",
@@ -8169,7 +8142,7 @@
       "comments": 5,
       "date": "22:21",
       "category": "강화/득템",
-      "sentiment": "positive"
+      "sentiment": "neutral"
     },
     {
       "title": "왔다  두심의 그남자가...",
@@ -8178,7 +8151,7 @@
       "comments": 10,
       "date": "22:21",
       "category": "강화/득템",
-      "sentiment": "neutral"
+      "sentiment": "positive"
     },
     {
       "title": "와 이건 뭐 아직도 빨간불이 8개인거냐",
@@ -8187,7 +8160,7 @@
       "comments": 7,
       "date": "22:21",
       "category": "FC온라인",
-      "sentiment": "neutral"
+      "sentiment": "negative"
     },
     {
       "title": "위아 스틸러스 위아 스틸러스 !",
@@ -8196,7 +8169,7 @@
       "comments": 11,
       "date": "22:20",
       "category": "스쿼드",
-      "sentiment": "neutral"
+      "sentiment": "positive"
     },
     {
       "title": "3경 뮌헨 보강 추천 좀요",
@@ -8219,16 +8192,16 @@
     {
       "title": "인테르 도움!!! 여러분이라면 8500조 정도로 어떻게 하실건가요",
       "url": "https://www.fmkorea.com/10045839902",
-      "views": 22,
+      "views": 74,
       "comments": 1,
       "date": "22:19",
       "category": "질문",
-      "sentiment": "positive"
+      "sentiment": "neutral"
     },
     {
       "title": "둠프리스 레알 케미 받으려면 한달 더 걸리려나.......",
       "url": "https://www.fmkorea.com/10045860050",
-      "views": 198,
+      "views": 265,
       "comments": 5,
       "date": "22:19",
       "category": "FC온라인",
@@ -8241,7 +8214,7 @@
       "comments": 1,
       "date": "22:19",
       "category": "질문",
-      "sentiment": "positive"
+      "sentiment": "neutral"
     },
     {
       "title": "뿌꾸 엡온 접은거아니엇나요?",
@@ -8259,7 +8232,7 @@
       "comments": 9,
       "date": "22:18",
       "category": "선수후기",
-      "sentiment": "neutral"
+      "sentiment": "positive"
     },
     {
       "title": "와 sss 먹었다",
@@ -8268,7 +8241,7 @@
       "comments": 3,
       "date": "22:17",
       "category": "강화/득템",
-      "sentiment": "negative"
+      "sentiment": "positive"
     },
     {
       "title": "저 1경 가까운 선수 처음 사봅니다",
@@ -8286,7 +8259,7 @@
       "comments": 6,
       "date": "22:17",
       "category": "잡담",
-      "sentiment": "neutral"
+      "sentiment": "positive"
     },
     {
       "title": "포르투 미친새끼",
@@ -8295,7 +8268,7 @@
       "comments": 1,
       "date": "22:16",
       "category": "대문가능?",
-      "sentiment": "neutral"
+      "sentiment": "positive"
     },
     {
       "title": "심심하면 10분정도 킬링타임 될만한거 알려드림",
@@ -8313,7 +8286,7 @@
       "comments": 0,
       "date": "22:16",
       "category": "FC온라인",
-      "sentiment": "neutral"
+      "sentiment": "negative"
     },
     {
       "title": "13경 정도 있는데",
@@ -8331,12 +8304,12 @@
       "comments": 2,
       "date": "22:15",
       "category": "FC온라인",
-      "sentiment": "positive"
+      "sentiment": "neutral"
     },
     {
       "title": "직접 강화  가능하면 하면 안되는이유",
       "url": "https://www.fmkorea.com/10045843008",
-      "views": 69,
+      "views": 208,
       "comments": 0,
       "date": "22:15",
       "category": "FC온라인",
@@ -8376,7 +8349,7 @@
       "comments": 7,
       "date": "22:12",
       "category": "FC온라인",
-      "sentiment": "neutral"
+      "sentiment": "positive"
     },
     {
       "title": "본인이 시간이 많다면 강장매물 하나 추천해줄게",
@@ -8403,7 +8376,7 @@
       "comments": 5,
       "date": "22:10",
       "category": "스쿼드",
-      "sentiment": "positive"
+      "sentiment": "neutral"
     },
     {
       "title": "클럽경력 업데이트 언제쯤해줄까요??",
@@ -8412,7 +8385,7 @@
       "comments": 1,
       "date": "22:10",
       "category": "FC온라인",
-      "sentiment": "positive"
+      "sentiment": "negative"
     },
     {
       "title": "중버롤 13카 작 해보신분...?",
@@ -8439,7 +8412,7 @@
       "comments": 2,
       "date": "22:09",
       "category": "FC온라인",
-      "sentiment": "neutral"
+      "sentiment": "positive"
     },
     {
       "title": "10만원 현질 떳냐?!!!!",
@@ -8448,7 +8421,7 @@
       "comments": 0,
       "date": "22:08",
       "category": "잡담",
-      "sentiment": "neutral"
+      "sentiment": "positive"
     },
     {
       "title": "와 이게 5트만에 붙다니!!!!!!!!!!!!!",
@@ -8457,7 +8430,7 @@
       "comments": 0,
       "date": "22:08",
       "category": "강화/득템",
-      "sentiment": "neutral"
+      "sentiment": "positive"
     },
     {
       "title": "금일 마음에 드는 득점 장면 3개 + 나머지 득점 장멷들",
@@ -8484,7 +8457,7 @@
       "comments": 10,
       "date": "22:07",
       "category": "감독모드",
-      "sentiment": "negative"
+      "sentiment": "neutral"
     },
     {
       "title": "발롱메시 백금..",
@@ -8502,7 +8475,7 @@
       "comments": 0,
       "date": "22:06",
       "category": "질문",
-      "sentiment": "positive"
+      "sentiment": "neutral"
     },
     {
       "title": "18ty 데헤아 1카 사졌습니다",
@@ -8511,7 +8484,7 @@
       "comments": 5,
       "date": "22:06",
       "category": "강화/득템",
-      "sentiment": "neutral"
+      "sentiment": "positive"
     },
     {
       "title": "뮌헨 3경팀인데 조언 부탁드리겠습니다.",
@@ -8529,7 +8502,7 @@
       "comments": 2,
       "date": "22:04",
       "category": "FC온라인",
-      "sentiment": "positive"
+      "sentiment": "negative"
     },
     {
       "title": "리오넬 메시 스페샬",
@@ -8547,7 +8520,7 @@
       "comments": 9,
       "date": "22:04",
       "category": "강화/득템",
-      "sentiment": "neutral"
+      "sentiment": "positive"
     },
     {
       "title": "썩백금팀 장점...",
@@ -8561,7 +8534,7 @@
     {
       "title": "바르셀로나 톱 fac레반 어떰??",
       "url": "https://www.fmkorea.com/10045799140",
-      "views": 169,
+      "views": 234,
       "comments": 4,
       "date": "22:03",
       "category": "FC온라인",
@@ -8574,7 +8547,7 @@
       "comments": 0,
       "date": "22:03",
       "category": "강화/득템",
-      "sentiment": "neutral"
+      "sentiment": "positive"
     },
     {
       "title": "맥중사 톱에 쓰는 사람 많이 보이네",
@@ -8583,7 +8556,7 @@
       "comments": 2,
       "date": "22:03",
       "category": "FC온라인",
-      "sentiment": "positive"
+      "sentiment": "neutral"
     },
     {
       "title": "훌리안 알바레스 첫 포트트릭 경기",
@@ -8592,7 +8565,7 @@
       "comments": 0,
       "date": "22:02",
       "category": "El Tornado",
-      "sentiment": "neutral"
+      "sentiment": "positive"
     },
     {
       "title": "아르헨티나, ZS도 있고 ZA도 있고 CS도 있어요.",
@@ -8628,7 +8601,7 @@
       "comments": 0,
       "date": "21:59",
       "category": "선수구매",
-      "sentiment": "neutral"
+      "sentiment": "positive"
     },
     {
       "title": "AI 승리 확률은 겜하기 전부터 정해져있는거임?",
@@ -8637,7 +8610,7 @@
       "comments": 3,
       "date": "21:59",
       "category": "불평불만",
-      "sentiment": "negative"
+      "sentiment": "neutral"
     },
     {
       "title": "오 관심등록 매물 쌓이기 시작",
@@ -8646,7 +8619,7 @@
       "comments": 2,
       "date": "21:59",
       "category": "FC온라인",
-      "sentiment": "neutral"
+      "sentiment": "positive"
     },
     {
       "title": "시세 서민매물기준으로 3~5천조 정도 오른거 같은데",
@@ -8655,7 +8628,7 @@
       "comments": 2,
       "date": "21:58",
       "category": "FC온라인",
-      "sentiment": "negative"
+      "sentiment": "neutral"
     },
     {
       "title": "벤피카 혼또니 우마이구만",
@@ -8664,7 +8637,7 @@
       "comments": 0,
       "date": "21:58",
       "category": "잡담",
-      "sentiment": "neutral"
+      "sentiment": "positive"
     },
     {
       "title": "[공홈] 레알 마드리드, 덴젤 둠프리스 영입",
@@ -8682,7 +8655,7 @@
       "comments": 2,
       "date": "21:56",
       "category": "FC온라인",
-      "sentiment": "positive"
+      "sentiment": "negative"
     },
     {
       "title": "요나탄타 노미 공제로 가격 역전되기도 하나..?",
@@ -8691,7 +8664,7 @@
       "comments": 3,
       "date": "21:56",
       "category": "FC온라인",
-      "sentiment": "negative"
+      "sentiment": "neutral"
     },
     {
       "title": "셰르키 사긴 사야하는데 사고싶지가 않네..",
@@ -8700,7 +8673,7 @@
       "comments": 9,
       "date": "21:55",
       "category": "FC온라인",
-      "sentiment": "neutral"
+      "sentiment": "negative"
     },
     {
       "title": "브라질 노르웨이",
@@ -8709,7 +8682,7 @@
       "comments": 7,
       "date": "21:55",
       "category": "FC온라인",
-      "sentiment": "positive"
+      "sentiment": "neutral"
     },
     {
       "title": "님들 26토티 홀란은 서버에 딱 한장 풀린거임?",
@@ -8727,7 +8700,7 @@
       "comments": 7,
       "date": "21:55",
       "category": "선수구매",
-      "sentiment": "neutral"
+      "sentiment": "positive"
     },
     {
       "title": "일욜인데 시세 안빠지네..",
@@ -8745,7 +8718,7 @@
       "comments": 4,
       "date": "21:54",
       "category": "감독모드",
-      "sentiment": "positive"
+      "sentiment": "neutral"
     },
     {
       "title": "감모 자동20판 지렸다",
@@ -8754,7 +8727,7 @@
       "comments": 3,
       "date": "21:54",
       "category": "감독모드",
-      "sentiment": "neutral"
+      "sentiment": "positive"
     },
     {
       "title": "일반 빠칭코",
@@ -8763,7 +8736,7 @@
       "comments": 2,
       "date": "21:54",
       "category": "FC온라인",
-      "sentiment": "negative"
+      "sentiment": "neutral"
     },
     {
       "title": "패스 6900짜리 몇조가 평균임??",
@@ -8781,7 +8754,7 @@
       "comments": 0,
       "date": "21:53",
       "category": "이벤트",
-      "sentiment": "neutral"
+      "sentiment": "negative"
     },
     {
       "title": "진짜 대한민국은 레전드다 ㅋㅋㅋㅋ",
@@ -8790,7 +8763,7 @@
       "comments": 0,
       "date": "21:52",
       "category": "FC온라인",
-      "sentiment": "neutral"
+      "sentiment": "positive"
     },
     {
       "title": "정정합니다 톱은 헤딩 되는놈 써야한다 명심하겠습니다.",
@@ -8808,7 +8781,7 @@
       "comments": 5,
       "date": "21:52",
       "category": "FC온라인",
-      "sentiment": "neutral"
+      "sentiment": "negative"
     },
     {
       "title": "앙 말네스깡~",
@@ -8817,7 +8790,7 @@
       "comments": 0,
       "date": "21:52",
       "category": "FC온라인",
-      "sentiment": "negative"
+      "sentiment": "positive"
     },
     {
       "title": "혹시 치지직 드롭스도 숲처럼 몇개씩 켜놔야 하나요?",
@@ -8831,11 +8804,11 @@
     {
       "title": "아펙스5 왼쪽스틱 뭔가 뻑뻑한데",
       "url": "https://www.fmkorea.com/10045746523",
-      "views": 18,
+      "views": 21,
       "comments": 0,
       "date": "21:51",
       "category": "FC온라인",
-      "sentiment": "negative"
+      "sentiment": "neutral"
     },
     {
       "title": "브라질 수비 조언좀요",
@@ -8862,7 +8835,7 @@
       "comments": 6,
       "date": "21:49",
       "category": "FC온라인",
-      "sentiment": "neutral"
+      "sentiment": "negative"
     },
     {
       "title": "fsl 쿠폰도 에반데",
@@ -8880,7 +8853,7 @@
       "comments": 0,
       "date": "21:49",
       "category": "강화/득템",
-      "sentiment": "neutral"
+      "sentiment": "positive"
     },
     {
       "title": "자랑 한번만 하겠습니다 죄송합니다",
@@ -8889,16 +8862,16 @@
       "comments": 3,
       "date": "21:47",
       "category": "강화/득템",
-      "sentiment": "neutral"
+      "sentiment": "positive"
     },
     {
       "title": "수아레스 vs 주앙펠릭스",
       "url": "https://www.fmkorea.com/10045731730",
       "views": 164,
-      "comments": 4,
+      "comments": 5,
       "date": "21:47",
       "category": "FC온라인",
-      "sentiment": "negative"
+      "sentiment": "neutral"
     },
     {
       "title": "SQ패스랑 Q공흘리기 on/off 좀 해주면 안되나",
@@ -8925,7 +8898,7 @@
       "comments": 6,
       "date": "21:46",
       "category": "FC온라인",
-      "sentiment": "negative"
+      "sentiment": "neutral"
     },
     {
       "title": "쿠만이 그렇게 구린가요?",
@@ -8943,7 +8916,7 @@
       "comments": 4,
       "date": "21:46",
       "category": "FC온라인",
-      "sentiment": "positive"
+      "sentiment": "negative"
     },
     {
       "title": "이번 주는 이렇게 마무리합니다.",
@@ -8952,16 +8925,16 @@
       "comments": 0,
       "date": "21:45",
       "category": "FC온라인",
-      "sentiment": "negative"
+      "sentiment": "neutral"
     },
     {
       "title": "감모에서 DP가 쌘건 라야가 존나 개사기인거 같기도함",
       "url": "https://www.fmkorea.com/10045724708",
-      "views": 1321,
+      "views": 1681,
       "comments": 4,
       "date": "21:45",
       "category": "감독모드",
-      "sentiment": "neutral"
+      "sentiment": "negative"
     },
     {
       "title": "뭐지 개 좋아보이는데 1경1천조네?",
@@ -8970,7 +8943,7 @@
       "comments": 2,
       "date": "21:44",
       "category": "스쿼드",
-      "sentiment": "negative"
+      "sentiment": "positive"
     },
     {
       "title": "나폴리 이륙 가능?",
@@ -8988,7 +8961,7 @@
       "comments": 2,
       "date": "21:43",
       "category": "FC온라인",
-      "sentiment": "negative"
+      "sentiment": "positive"
     },
     {
       "title": "FSL 쿠폰 병신 같네",
@@ -8997,7 +8970,7 @@
       "comments": 4,
       "date": "21:43",
       "category": "불평불만",
-      "sentiment": "neutral"
+      "sentiment": "negative"
     },
     {
       "title": "아스날 업그레이드 추천 부탁드립니다!",
@@ -9006,7 +8979,7 @@
       "comments": 1,
       "date": "21:42",
       "category": "감독모드",
-      "sentiment": "positive"
+      "sentiment": "neutral"
     },
     {
       "title": "치지직도 빡세졌네",
@@ -9015,7 +8988,7 @@
       "comments": 0,
       "date": "21:42",
       "category": "FC온라인",
-      "sentiment": "neutral"
+      "sentiment": "negative"
     },
     {
       "title": "고급여 독일 해보고싶은데 급여 어케짜내죠 어렵다",
@@ -9033,7 +9006,7 @@
       "comments": 11,
       "date": "21:42",
       "category": "잡담",
-      "sentiment": "positive"
+      "sentiment": "negative"
     },
     {
       "title": "4123 원볼 백금 수미 훈코 추천좀요",
@@ -9042,7 +9015,7 @@
       "comments": 1,
       "date": "21:42",
       "category": "질문",
-      "sentiment": "positive"
+      "sentiment": "neutral"
     },
     {
       "title": "본프레레식 축구하는중",
@@ -9051,7 +9024,7 @@
       "comments": 0,
       "date": "21:41",
       "category": "FC온라인",
-      "sentiment": "positive"
+      "sentiment": "neutral"
     },
     {
       "title": "42211 전술 추천 좀 부탁드립니다",
@@ -9075,10 +9048,10 @@
       "title": "(장문주의) 아무튼 마르세유 평균 승률 1위의 감모 4톱 전술 공유",
       "url": "https://www.fmkorea.com/10045373180",
       "views": 1466,
-      "comments": 9,
+      "comments": 14,
       "date": "21:38",
       "category": "감독모드",
-      "sentiment": "positive"
+      "sentiment": "neutral"
     },
     {
       "title": "리버풀 이게 12경 ㄷㄷ",
@@ -9114,7 +9087,7 @@
       "comments": 11,
       "date": "21:34",
       "category": "FC온라인",
-      "sentiment": "positive"
+      "sentiment": "neutral"
     },
     {
       "title": "나에겐 높은곳이야~~",
@@ -9141,7 +9114,7 @@
       "comments": 0,
       "date": "21:33",
       "category": "FC온라인",
-      "sentiment": "negative"
+      "sentiment": "neutral"
     },
     {
       "title": "5천조짜리 키퍼",
@@ -9159,7 +9132,7 @@
       "comments": 4,
       "date": "21:33",
       "category": "강화/득템",
-      "sentiment": "neutral"
+      "sentiment": "positive"
     },
     {
       "title": "선생님들 오랜만에 복귀유저 질러서 열쇠 120개로 탑프 470+11카 카드팩 먹었는데",
@@ -9168,7 +9141,7 @@
       "comments": 4,
       "date": "21:32",
       "category": "질문",
-      "sentiment": "neutral"
+      "sentiment": "positive"
     },
     {
       "title": "재료값 정상화되서",
@@ -9177,7 +9150,7 @@
       "comments": 0,
       "date": "21:32",
       "category": "FC온라인",
-      "sentiment": "positive"
+      "sentiment": "neutral"
     },
     {
       "title": "엥 지뉴 가격 뭔일임 ? ㅋㅋㅋㅋㅋㅋㅋㅋ",
@@ -9186,12 +9159,12 @@
       "comments": 5,
       "date": "21:31",
       "category": "FC온라인",
-      "sentiment": "neutral"
+      "sentiment": "positive"
     },
     {
       "title": "익스프레스 패스 질문",
       "url": "https://www.fmkorea.com/10045670948",
-      "views": 87,
+      "views": 127,
       "comments": 0,
       "date": "21:31",
       "category": "FC온라인",
@@ -9204,7 +9177,7 @@
       "comments": 3,
       "date": "21:31",
       "category": "FC온라인",
-      "sentiment": "negative"
+      "sentiment": "neutral"
     },
     {
       "title": "라브 vs 스탯",
@@ -9222,16 +9195,16 @@
       "comments": 4,
       "date": "21:30",
       "category": "FC온라인",
-      "sentiment": "neutral"
+      "sentiment": "positive"
     },
     {
       "title": "그리말도 시즌추천좀요! LE백금 vs 25챔10카(와태)",
       "url": "https://www.fmkorea.com/10045663301",
-      "views": 20,
+      "views": 28,
       "comments": 0,
       "date": "21:30",
       "category": "질문",
-      "sentiment": "positive"
+      "sentiment": "neutral"
     },
     {
       "title": "모바일에서 선수받아도",
@@ -9240,7 +9213,7 @@
       "comments": 2,
       "date": "21:30",
       "category": "FC온라인",
-      "sentiment": "positive"
+      "sentiment": "neutral"
     },
     {
       "title": "다들 시세 빠진다고요??",
@@ -9267,7 +9240,7 @@
       "comments": 1,
       "date": "21:28",
       "category": "스쿼드",
-      "sentiment": "negative"
+      "sentiment": "neutral"
     },
     {
       "title": "오라일리 개꾸지노",
@@ -9276,7 +9249,7 @@
       "comments": 8,
       "date": "21:28",
       "category": "FC온라인",
-      "sentiment": "neutral"
+      "sentiment": "positive"
     },
     {
       "title": "간만에 프리킥 득점",
@@ -9312,7 +9285,7 @@
       "comments": 11,
       "date": "21:27",
       "category": "FC온라인",
-      "sentiment": "positive"
+      "sentiment": "negative"
     },
     {
       "title": "6경 꼬마 어떤가요?",
@@ -9330,7 +9303,7 @@
       "comments": 10,
       "date": "21:26",
       "category": "FC온라인",
-      "sentiment": "neutral"
+      "sentiment": "positive"
     },
     {
       "title": "4~5경으로 리버풀 vs 인테르 어디를 더 추천하시나요?",
@@ -9357,7 +9330,7 @@
       "comments": 0,
       "date": "21:26",
       "category": "FC온라인",
-      "sentiment": "negative"
+      "sentiment": "positive"
     },
     {
       "title": "이런 돈 처음 만져봐요..",
@@ -9366,7 +9339,7 @@
       "comments": 13,
       "date": "21:25",
       "category": "잡담",
-      "sentiment": "neutral"
+      "sentiment": "positive"
     },
     {
       "title": "이상하게 피방퀵스쿼드 국대쓰면 상대팀도 국대임",
@@ -9384,12 +9357,12 @@
       "comments": 7,
       "date": "21:24",
       "category": "FC온라인",
-      "sentiment": "positive"
+      "sentiment": "neutral"
     },
     {
       "title": "호돈 짝 한자리 채워주실 분 계신가요...?",
       "url": "https://www.fmkorea.com/10045632359",
-      "views": 106,
+      "views": 158,
       "comments": 5,
       "date": "21:24",
       "category": "FC온라인",
@@ -9429,16 +9402,16 @@
       "comments": 0,
       "date": "21:21",
       "category": "El Tornado",
-      "sentiment": "negative"
+      "sentiment": "positive"
     },
     {
       "title": "모먼트 리네커 써보신 분 계신가요",
       "url": "https://www.fmkorea.com/10045622208",
-      "views": 57,
+      "views": 96,
       "comments": 0,
       "date": "21:21",
       "category": "질문",
-      "sentiment": "negative"
+      "sentiment": "neutral"
     },
     {
       "title": "라브 간접 너프 시키는 ㅈㄴ쉬운방법 불쾌함은 몰?루",
@@ -9447,7 +9420,7 @@
       "comments": 0,
       "date": "21:21",
       "category": "FC온라인",
-      "sentiment": "neutral"
+      "sentiment": "negative"
     },
     {
       "title": "사이바리 시세 어케될까요",
@@ -9465,7 +9438,7 @@
       "comments": 7,
       "date": "21:20",
       "category": "FC온라인",
-      "sentiment": "negative"
+      "sentiment": "neutral"
     },
     {
       "title": "뭔 챌린저 오니까 죄다 볼돌이야",
@@ -9474,7 +9447,7 @@
       "comments": 2,
       "date": "21:20",
       "category": "FC온라인",
-      "sentiment": "neutral"
+      "sentiment": "negative"
     },
     {
       "title": "대회한다고 서버 몰빵했나 시발",
@@ -9483,7 +9456,7 @@
       "comments": 3,
       "date": "21:19",
       "category": "FC온라인",
-      "sentiment": "neutral"
+      "sentiment": "negative"
     },
     {
       "title": "라우타로는 인게임에서 장점이 뭐예요?",
@@ -9510,7 +9483,7 @@
       "comments": 0,
       "date": "21:16",
       "category": "불평불만",
-      "sentiment": "positive"
+      "sentiment": "negative"
     },
     {
       "title": "다비트 라움 볼란치는 별로일라나요",
@@ -9537,7 +9510,7 @@
       "comments": 0,
       "date": "21:15",
       "category": "FC온라인",
-      "sentiment": "negative"
+      "sentiment": "neutral"
     },
     {
       "title": "고급여 쓰면 확실히 다른가요??",
@@ -9551,11 +9524,11 @@
     {
       "title": "피규어 12카 올라와이슴",
       "url": "https://www.fmkorea.com/10045599179",
-      "views": 205,
+      "views": 318,
       "comments": 0,
       "date": "21:15",
       "category": "매물 정보통",
-      "sentiment": "negative"
+      "sentiment": "positive"
     },
     {
       "title": "빠른남자 샀습니다",
@@ -9564,7 +9537,7 @@
       "comments": 0,
       "date": "21:15",
       "category": "선수구매",
-      "sentiment": "positive"
+      "sentiment": "neutral"
     },
     {
       "title": "형들 이거 조루두 쓸만할까?",
@@ -9582,7 +9555,7 @@
       "comments": 3,
       "date": "21:13",
       "category": "FC온라인",
-      "sentiment": "positive"
+      "sentiment": "negative"
     },
     {
       "title": "볼란치에 2경쓰기 vs 윙에 2경쓰기 선택장애",
@@ -9600,7 +9573,7 @@
       "comments": 0,
       "date": "21:12",
       "category": "감독모드",
-      "sentiment": "neutral"
+      "sentiment": "negative"
     },
     {
       "title": "마팁 13강 도전 5일차 2,3,4,5회차 ...",
@@ -9609,7 +9582,7 @@
       "comments": 6,
       "date": "21:12",
       "category": "FC온라인",
-      "sentiment": "negative"
+      "sentiment": "positive"
     },
     {
       "title": "세비어 프티 풀백???",
@@ -9627,7 +9600,7 @@
       "comments": 1,
       "date": "21:11",
       "category": "FSL/프로게이머",
-      "sentiment": "neutral"
+      "sentiment": "positive"
     },
     {
       "title": "리처즈 , 스털링 구매대기중.., 빨리와라잇",
@@ -9636,7 +9609,7 @@
       "comments": 4,
       "date": "21:11",
       "category": "스쿼드",
-      "sentiment": "neutral"
+      "sentiment": "positive"
     },
     {
       "title": "일디즈 어디까지올라가는거예요?",
@@ -9654,7 +9627,7 @@
       "comments": 4,
       "date": "21:11",
       "category": "FC온라인",
-      "sentiment": "neutral"
+      "sentiment": "negative"
     },
     {
       "title": "차기 뮌헨 공미 10카 왔냐?",
@@ -9663,7 +9636,7 @@
       "comments": 5,
       "date": "21:11",
       "category": "선수구매",
-      "sentiment": "negative"
+      "sentiment": "neutral"
     },
     {
       "title": "의도치 않게 이런 패스 나가서 좀 놀랐네요",
@@ -9699,7 +9672,7 @@
       "comments": 0,
       "date": "21:11",
       "category": "FC온라인",
-      "sentiment": "positive"
+      "sentiment": "neutral"
     },
     {
       "title": "챔스 승격전에 슈챔 6등 만남 ㅋㅋ..",
@@ -9708,7 +9681,7 @@
       "comments": 4,
       "date": "21:10",
       "category": "불평불만",
-      "sentiment": "neutral"
+      "sentiment": "negative"
     },
     {
       "title": "한국에 뭔가 있는건가요?",
@@ -9744,7 +9717,7 @@
       "comments": 5,
       "date": "21:07",
       "category": "스쿼드",
-      "sentiment": "neutral"
+      "sentiment": "positive"
     },
     {
       "title": "스텟 150이상으론 차이안나요~",
@@ -9753,7 +9726,7 @@
       "comments": 0,
       "date": "21:07",
       "category": "불평불만",
-      "sentiment": "positive"
+      "sentiment": "neutral"
     },
     {
       "title": "치지직 쿠폰",
@@ -9762,7 +9735,7 @@
       "comments": 7,
       "date": "21:07",
       "category": "FC온라인",
-      "sentiment": "positive"
+      "sentiment": "neutral"
     },
     {
       "title": "3차쿠폰",
@@ -9776,8 +9749,8 @@
     {
       "title": "세비어 이번 시즌 몇강 갈것같나요?",
       "url": "https://www.fmkorea.com/10045562904",
-      "views": 175,
-      "comments": 2,
+      "views": 178,
+      "comments": 3,
       "date": "21:06",
       "category": "FSL/프로게이머",
       "sentiment": "neutral"
@@ -9798,7 +9771,7 @@
       "comments": 0,
       "date": "21:06",
       "category": "FC온라인",
-      "sentiment": "neutral"
+      "sentiment": "positive"
     },
     {
       "title": "세비어 라브 야무지게 잘쓰네요",
@@ -9807,7 +9780,7 @@
       "comments": 0,
       "date": "21:06",
       "category": "FSL/프로게이머",
-      "sentiment": "neutral"
+      "sentiment": "positive"
     },
     {
       "title": "jm은 여기까지 같은데",
@@ -9834,7 +9807,7 @@
       "comments": 35,
       "date": "21:05",
       "category": "감독모드",
-      "sentiment": "negative"
+      "sentiment": "neutral"
     },
     {
       "title": "공격진 올신특 가지고있는데...",
@@ -9848,7 +9821,7 @@
     {
       "title": "36만FC면 빠칭코 2바퀴 가능한가요?",
       "url": "https://www.fmkorea.com/10045553582",
-      "views": 595,
+      "views": 743,
       "comments": 9,
       "date": "21:04",
       "category": "질문",
@@ -9870,7 +9843,7 @@
       "comments": 15,
       "date": "21:01",
       "category": "FC온라인",
-      "sentiment": "positive"
+      "sentiment": "neutral"
     },
     {
       "title": "보정이고 뭐고간에 스텟체감확되네요",
@@ -9879,7 +9852,7 @@
       "comments": 2,
       "date": "21:00",
       "category": "FC온라인",
-      "sentiment": "positive"
+      "sentiment": "negative"
     },
     {
       "title": "좀 지면 포메 바꿀거 같긴 했는데 ㅋㅋㅋ",
@@ -9888,7 +9861,7 @@
       "comments": 2,
       "date": "20:59",
       "category": "FSL/프로게이머",
-      "sentiment": "negative"
+      "sentiment": "neutral"
     },
     {
       "title": "(비틱주의) 멤버십 후기 .. jpg",
@@ -9933,7 +9906,7 @@
       "comments": 2,
       "date": "20:57",
       "category": "불평불만",
-      "sentiment": "neutral"
+      "sentiment": "negative"
     },
     {
       "title": "이거 기다리면 챔스 찍게 해주나..?",
@@ -9942,7 +9915,7 @@
       "comments": 3,
       "date": "20:57",
       "category": "FC온라인",
-      "sentiment": "positive"
+      "sentiment": "neutral"
     },
     {
       "title": "유물 추가 발견",
@@ -9956,7 +9929,7 @@
     {
       "title": "토츠 흐비차 풀렸을 때 물량 소화 많이 됐었나요?",
       "url": "https://www.fmkorea.com/10045524132",
-      "views": 105,
+      "views": 176,
       "comments": 3,
       "date": "20:57",
       "category": "FC온라인",
@@ -9965,7 +9938,7 @@
     {
       "title": "이재성 1골 1도움",
       "url": "https://www.fmkorea.com/10045521785",
-      "views": 54,
+      "views": 91,
       "comments": 0,
       "date": "20:57",
       "category": "El Tornado",
@@ -9996,7 +9969,7 @@
       "comments": 4,
       "date": "20:56",
       "category": "스쿼드",
-      "sentiment": "positive"
+      "sentiment": "neutral"
     },
     {
       "title": "얘는 왜 떨어지는거지?",
@@ -10005,7 +9978,7 @@
       "comments": 2,
       "date": "20:56",
       "category": "FC온라인",
-      "sentiment": "positive"
+      "sentiment": "neutral"
     },
     {
       "title": "피온북 같은 사이트는",
@@ -10014,7 +9987,7 @@
       "comments": 1,
       "date": "20:55",
       "category": "FC온라인",
-      "sentiment": "positive"
+      "sentiment": "neutral"
     },
     {
       "title": "두심 손겜 무쓸모같은데  이렇게 바꾸면 어떰???",
@@ -10023,7 +9996,7 @@
       "comments": 8,
       "date": "20:54",
       "category": "FC온라인",
-      "sentiment": "positive"
+      "sentiment": "neutral"
     },
     {
       "title": "패치이후로 24챔 돈나룸마 존나 좋네요",
@@ -10032,7 +10005,7 @@
       "comments": 0,
       "date": "20:54",
       "category": "FC온라인",
-      "sentiment": "neutral"
+      "sentiment": "positive"
     },
     {
       "title": "운다브 깡패네",
@@ -10041,7 +10014,7 @@
       "comments": 0,
       "date": "20:54",
       "category": "FC온라인",
-      "sentiment": "neutral"
+      "sentiment": "positive"
     },
     {
       "title": "트릭스터 맛있게 들어갔다 ㅅㅅ",
@@ -10050,7 +10023,7 @@
       "comments": 2,
       "date": "20:53",
       "category": "El Tornado",
-      "sentiment": "neutral"
+      "sentiment": "positive"
     },
     {
       "title": "날개 한골씩",
@@ -10059,7 +10032,7 @@
       "comments": 0,
       "date": "20:53",
       "category": "El Tornado",
-      "sentiment": "positive"
+      "sentiment": "neutral"
     },
     {
       "title": "[SAVIOR VS JM] 황제 방향키 심리전 ㄷㄷㄷㄷㄷㄷㄷㄷㄷㄷㄷㄷㄷ",
@@ -10068,7 +10041,7 @@
       "comments": 1,
       "date": "20:52",
       "category": "FSL/프로게이머",
-      "sentiment": "neutral"
+      "sentiment": "positive"
     },
     {
       "title": "한국 2천조 이하 윙으로 누구 쓰시나요?",
@@ -10095,7 +10068,7 @@
       "comments": 3,
       "date": "20:51",
       "category": "질문",
-      "sentiment": "positive"
+      "sentiment": "neutral"
     },
     {
       "title": "이번fsl 재밌네 ㅋㅋ",
@@ -10113,7 +10086,7 @@
       "comments": 1,
       "date": "20:50",
       "category": "FC온라인",
-      "sentiment": "positive"
+      "sentiment": "neutral"
     },
     {
       "title": "2경짜리 걍 얌전히 100퍼 쓰고 받는게 맞지?",
@@ -10136,7 +10109,7 @@
     {
       "title": "솔랑키 해트트릭",
       "url": "https://www.fmkorea.com/10045488911",
-      "views": 74,
+      "views": 108,
       "comments": 0,
       "date": "20:48",
       "category": "El Tornado",
@@ -10149,7 +10122,7 @@
       "comments": 1,
       "date": "20:48",
       "category": "FC온라인",
-      "sentiment": "negative"
+      "sentiment": "positive"
     },
     {
       "title": "20판 다했다 떴나!!!????",
@@ -10158,7 +10131,7 @@
       "comments": 9,
       "date": "20:48",
       "category": "강화/득템",
-      "sentiment": "negative"
+      "sentiment": "positive"
     },
     {
       "title": "글로리 패스 8렙 아직도 선수팩이 좋나요?",
@@ -10194,7 +10167,7 @@
       "comments": 16,
       "date": "20:47",
       "category": "불평불만",
-      "sentiment": "neutral"
+      "sentiment": "negative"
     },
     {
       "title": "이 게임 접는게 생각보다 쉬운게 아님 ㅋㅋ",
@@ -10203,7 +10176,7 @@
       "comments": 46,
       "date": "20:47",
       "category": "FC온라인",
-      "sentiment": "neutral"
+      "sentiment": "negative"
     },
     {
       "title": "이거 센백으로 쓰면 재앙이겠죠?",
@@ -10221,7 +10194,7 @@
       "comments": 3,
       "date": "20:46",
       "category": "잡담",
-      "sentiment": "positive"
+      "sentiment": "neutral"
     },
     {
       "title": "전시즌 챔피언스 주차 유저..",
@@ -10257,7 +10230,7 @@
       "comments": 1,
       "date": "20:44",
       "category": "FC온라인",
-      "sentiment": "negative"
+      "sentiment": "neutral"
     },
     {
       "title": "오 뭐야 tt칸 13카 누가 한장 던졋네요",
@@ -10266,7 +10239,7 @@
       "comments": 2,
       "date": "20:44",
       "category": "FC온라인",
-      "sentiment": "neutral"
+      "sentiment": "positive"
     },
     {
       "title": "대회에선 아스날이 대센가보네요",
@@ -10302,7 +10275,7 @@
       "comments": 0,
       "date": "20:43",
       "category": "FC온라인",
-      "sentiment": "neutral"
+      "sentiment": "negative"
     },
     {
       "title": "26tots 애들은 성능이 다 좋은건가?",
@@ -10311,7 +10284,7 @@
       "comments": 2,
       "date": "20:43",
       "category": "FC온라인",
-      "sentiment": "positive"
+      "sentiment": "neutral"
     },
     {
       "title": "구걸충 설레이게 만들기",
@@ -10320,7 +10293,7 @@
       "comments": 2,
       "date": "20:42",
       "category": "FC온라인",
-      "sentiment": "negative"
+      "sentiment": "neutral"
     },
     {
       "title": "4000fc 남았는데 어따 써야 할까유?",
@@ -10338,7 +10311,7 @@
       "comments": 0,
       "date": "20:41",
       "category": "FSL/프로게이머",
-      "sentiment": "positive"
+      "sentiment": "neutral"
     },
     {
       "title": "리버풀 공미 선택좀용",
@@ -10356,7 +10329,7 @@
       "comments": 0,
       "date": "20:37",
       "category": "감독모드",
-      "sentiment": "negative"
+      "sentiment": "positive"
     },
     {
       "title": "와 지금 째려보고있는 것들 거래량 없는거 두렵네",
@@ -10365,7 +10338,7 @@
       "comments": 0,
       "date": "20:37",
       "category": "FC온라인",
-      "sentiment": "neutral"
+      "sentiment": "negative"
     },
     {
       "title": "호돈 라우타로 고민인데",
@@ -10392,7 +10365,7 @@
       "comments": 9,
       "date": "20:35",
       "category": "FC온라인",
-      "sentiment": "negative"
+      "sentiment": "neutral"
     },
     {
       "title": "관심 매물 빠지기 시작 하네",
@@ -10410,7 +10383,7 @@
       "comments": 5,
       "date": "20:35",
       "category": "질문",
-      "sentiment": "positive"
+      "sentiment": "neutral"
     },
     {
       "title": "맨시티 키큰 센백중에 은메차보다 좋은선택지가있나요?",
@@ -10437,7 +10410,7 @@
       "comments": 0,
       "date": "20:34",
       "category": "FC온라인",
-      "sentiment": "neutral"
+      "sentiment": "negative"
     },
     {
       "title": "금특 너프",
@@ -10446,7 +10419,7 @@
       "comments": 23,
       "date": "20:33",
       "category": "FC온라인",
-      "sentiment": "neutral"
+      "sentiment": "negative"
     },
     {
       "title": "매치데이 버닝 팩에서 이거뜸 ㄷㄷ",
@@ -10455,7 +10428,7 @@
       "comments": 5,
       "date": "20:33",
       "category": "강화/득템",
-      "sentiment": "negative"
+      "sentiment": "positive"
     },
     {
       "title": "그리말도랑 수비멘디중에 뭘 쓸지 고민이넹",
@@ -10473,7 +10446,7 @@
       "comments": 3,
       "date": "20:31",
       "category": "FC온라인",
-      "sentiment": "positive"
+      "sentiment": "neutral"
     },
     {
       "title": "프랑스 센백 듀오 튀랑 살리바 쓰는데 튀랑이 뭔가 안좋네여.. 풀백 출신이라 그런가 드사이 어떤가요?",
@@ -10482,7 +10455,7 @@
       "comments": 3,
       "date": "20:31",
       "category": "FC온라인",
-      "sentiment": "positive"
+      "sentiment": "neutral"
     },
     {
       "title": "님들 원래 버닝 대리는",
@@ -10491,16 +10464,16 @@
       "comments": 4,
       "date": "20:31",
       "category": "FC온라인",
-      "sentiment": "positive"
+      "sentiment": "neutral"
     },
     {
       "title": "트릭스터 성능적으로 안좋은 이유.",
       "url": "https://www.fmkorea.com/10045417487",
-      "views": 1316,
+      "views": 1674,
       "comments": 4,
       "date": "20:31",
       "category": "FC온라인",
-      "sentiment": "neutral"
+      "sentiment": "negative"
     },
     {
       "title": "열쇠 63개 있는데 60개 상자 열기 하면 되나요?",
@@ -10509,7 +10482,7 @@
       "comments": 2,
       "date": "20:31",
       "category": "FC온라인",
-      "sentiment": "positive"
+      "sentiment": "neutral"
     },
     {
       "title": "와 8현역 바셀 짜보는데 진짜 고민이네",
@@ -10518,7 +10491,7 @@
       "comments": 2,
       "date": "20:31",
       "category": "FC온라인",
-      "sentiment": "neutral"
+      "sentiment": "positive"
     },
     {
       "title": "ㅇㅊ) 레알마드리드 호나우두, 카세미루, 부트라게뇨",
@@ -10527,7 +10500,7 @@
       "comments": 2,
       "date": "20:31",
       "category": "페이스팩",
-      "sentiment": "neutral"
+      "sentiment": "positive"
     },
     {
       "title": "킹한민국 앞에선 홀란도 별거없네",
@@ -10536,7 +10509,7 @@
       "comments": 0,
       "date": "20:30",
       "category": "불평불만",
-      "sentiment": "neutral"
+      "sentiment": "positive"
     },
     {
       "title": "꼬마 이대로 괜찮을까요??",
@@ -10545,7 +10518,7 @@
       "comments": 1,
       "date": "20:30",
       "category": "FC온라인",
-      "sentiment": "positive"
+      "sentiment": "neutral"
     },
     {
       "title": "라금 한국팀의 백금 만들기 1일차 6,7,8 번째 선수등장",
@@ -10563,7 +10536,7 @@
       "comments": 10,
       "date": "20:29",
       "category": "El Tornado",
-      "sentiment": "positive"
+      "sentiment": "neutral"
     },
     {
       "title": "라브나 코너킥은 대회 특성상 리스크 대비 이득이 크긴함",
@@ -10572,7 +10545,7 @@
       "comments": 6,
       "date": "20:29",
       "category": "FSL/프로게이머",
-      "sentiment": "positive"
+      "sentiment": "neutral"
     },
     {
       "title": "대회보니 대체 불가 신특 딱 2개네",
@@ -10590,7 +10563,7 @@
       "comments": 1,
       "date": "20:28",
       "category": "잡담",
-      "sentiment": "negative"
+      "sentiment": "positive"
     },
     {
       "title": "집왔는데 대회 라브가 1황인가 보네요 그냥 라브 트릭 너프말고 스스 씹버프가죠",
@@ -10599,7 +10572,7 @@
       "comments": 4,
       "date": "20:27",
       "category": "FC온라인",
-      "sentiment": "neutral"
+      "sentiment": "positive"
     },
     {
       "title": "솔까 트릭쓰면 개인기 못쓰는 틀딱도 한놈은 무조건 재끼는데 필수 아니냐?",
@@ -10608,7 +10581,7 @@
       "comments": 3,
       "date": "20:27",
       "category": "FC온라인",
-      "sentiment": "negative"
+      "sentiment": "positive"
     },
     {
       "title": "원더08 누멘쓰는거 개지린당",
@@ -10617,7 +10590,7 @@
       "comments": 5,
       "date": "20:27",
       "category": "FSL/프로게이머",
-      "sentiment": "negative"
+      "sentiment": "positive"
     },
     {
       "title": "본가) Glory Hunters 전체 명단 국대미페 링크",
@@ -10635,7 +10608,7 @@
       "comments": 2,
       "date": "20:26",
       "category": "FSL/프로게이머",
-      "sentiment": "negative"
+      "sentiment": "positive"
     },
     {
       "title": "독일은 우측수비가 문제네",
@@ -10644,7 +10617,7 @@
       "comments": 15,
       "date": "20:26",
       "category": "FC온라인",
-      "sentiment": "positive"
+      "sentiment": "neutral"
     },
     {
       "title": "원더08 “트릭스터 사기다”",
@@ -10653,7 +10626,7 @@
       "comments": 9,
       "date": "20:25",
       "category": "FC온라인",
-      "sentiment": "neutral"
+      "sentiment": "positive"
     },
     {
       "title": "말은 트릭 사기라 해주네",
@@ -10671,7 +10644,7 @@
       "comments": 0,
       "date": "20:25",
       "category": "FC온라인",
-      "sentiment": "positive"
+      "sentiment": "neutral"
     },
     {
       "title": "13카 5천조째 안붙는중",
@@ -10680,7 +10653,7 @@
       "comments": 2,
       "date": "20:25",
       "category": "FC온라인",
-      "sentiment": "neutral"
+      "sentiment": "negative"
     },
     {
       "title": "리중딱 크로스 ㅋㅋ",
@@ -10689,7 +10662,7 @@
       "comments": 0,
       "date": "20:25",
       "category": "El Tornado",
-      "sentiment": "positive"
+      "sentiment": "neutral"
     },
     {
       "title": "원더08 “트릭스터 꼭 쓰세요 사기임”",
@@ -10734,7 +10707,7 @@
       "comments": 2,
       "date": "20:23",
       "category": "FC온라인",
-      "sentiment": "neutral"
+      "sentiment": "positive"
     },
     {
       "title": "너무 고민된다",
@@ -10752,7 +10725,7 @@
       "comments": 2,
       "date": "20:22",
       "category": "FC온라인",
-      "sentiment": "positive"
+      "sentiment": "neutral"
     },
     {
       "title": "이적시장 8카랑 9카가 싸거나 같은게 맞음...?",
@@ -10770,7 +10743,7 @@
       "comments": 1,
       "date": "20:21",
       "category": "FC온라인",
-      "sentiment": "negative"
+      "sentiment": "neutral"
     },
     {
       "title": "4경 스쿼드 추천",
@@ -10779,7 +10752,7 @@
       "comments": 0,
       "date": "20:20",
       "category": "스쿼드",
-      "sentiment": "positive"
+      "sentiment": "neutral"
     },
     {
       "title": "에휴 ㅋㅋ",
@@ -10788,7 +10761,7 @@
       "comments": 5,
       "date": "20:20",
       "category": "불평불만",
-      "sentiment": "neutral"
+      "sentiment": "negative"
     },
     {
       "title": "마지막 인생강화 조졌습니다 확인 부탁드려요",
@@ -10797,7 +10770,7 @@
       "comments": 5,
       "date": "20:20",
       "category": "FC온라인",
-      "sentiment": "negative"
+      "sentiment": "positive"
     },
     {
       "title": "25경 토트넘 궁금한 선수 질문 주세용",
@@ -10806,7 +10779,7 @@
       "comments": 5,
       "date": "20:20",
       "category": "FC온라인",
-      "sentiment": "positive"
+      "sentiment": "neutral"
     },
     {
       "title": "원더08때매 팀갈병 또 도지네",
@@ -10815,7 +10788,7 @@
       "comments": 1,
       "date": "20:20",
       "category": "FSL/프로게이머",
-      "sentiment": "neutral"
+      "sentiment": "negative"
     },
     {
       "title": "스페인 리빌딩 방향 잡았음",
@@ -10824,7 +10797,7 @@
       "comments": 0,
       "date": "20:20",
       "category": "FC온라인",
-      "sentiment": "neutral"
+      "sentiment": "positive"
     },
     {
       "title": "트릭스터 결론",
@@ -10833,7 +10806,7 @@
       "comments": 0,
       "date": "20:20",
       "category": "FC온라인",
-      "sentiment": "positive"
+      "sentiment": "neutral"
     },
     {
       "title": "하 시세때문에 고민 ㅈㄴ된다",
@@ -10842,7 +10815,7 @@
       "comments": 0,
       "date": "20:20",
       "category": "FC온라인",
-      "sentiment": "positive"
+      "sentiment": "negative"
     },
     {
       "title": "올미페 울버햄튼으로 싹 바꾸면서 구단가치가 이쁘길래 찰칵",
@@ -10851,7 +10824,7 @@
       "comments": 2,
       "date": "20:20",
       "category": "FC온라인",
-      "sentiment": "neutral"
+      "sentiment": "positive"
     },
     {
       "title": "트릭스터 : 3대0 이상일때 노는 특성",
@@ -10887,7 +10860,7 @@
       "comments": 0,
       "date": "20:18",
       "category": "FSL/프로게이머",
-      "sentiment": "neutral"
+      "sentiment": "positive"
     },
     {
       "title": "프랑스 궁금한 선수 있으시면 물어보세요",
@@ -10914,7 +10887,7 @@
       "comments": 7,
       "date": "20:17",
       "category": "FC온라인",
-      "sentiment": "positive"
+      "sentiment": "neutral"
     },
     {
       "title": "자고 일어났더니 둠프 드디어 오피셜 떳네 ㅅㅅㅅㅅㅅㅅㅅㅅ",
@@ -10923,7 +10896,7 @@
       "comments": 2,
       "date": "20:16",
       "category": "FC온라인",
-      "sentiment": "neutral"
+      "sentiment": "positive"
     },
     {
       "title": "3번째 계정은 팀 맞추기도 뭐하네",
@@ -10950,7 +10923,7 @@
       "comments": 7,
       "date": "20:12",
       "category": "질문",
-      "sentiment": "positive"
+      "sentiment": "neutral"
     },
     {
       "title": "귀찮게 하나하나 안쳐도 ai딸깍하면 편하네",
@@ -10959,7 +10932,7 @@
       "comments": 2,
       "date": "20:12",
       "category": "잡담",
-      "sentiment": "neutral"
+      "sentiment": "positive"
     },
     {
       "title": "볼란치, 우풀백 자리 칸셀루, 마이콘 각각 어디 쓸까요?",
@@ -10973,7 +10946,7 @@
     {
       "title": "원공이형",
       "url": "https://www.fmkorea.com/10045333530",
-      "views": 62,
+      "views": 87,
       "comments": 1,
       "date": "20:10",
       "category": "FC온라인",
@@ -10986,7 +10959,7 @@
       "comments": 2,
       "date": "20:10",
       "category": "감독모드",
-      "sentiment": "positive"
+      "sentiment": "neutral"
     },
     {
       "title": "귀한 카보베르데 센백 자랑",
@@ -11000,11 +10973,11 @@
     {
       "title": "스페인 4123 센터 포워드 둘중 하나 쓰려는데 추천좀요",
       "url": "https://www.fmkorea.com/10045330843",
-      "views": 116,
+      "views": 179,
       "comments": 2,
       "date": "20:10",
       "category": "FC온라인",
-      "sentiment": "positive"
+      "sentiment": "neutral"
     },
     {
       "title": "선수단 스쿼드는 총액제한있나요?",
@@ -11013,7 +10986,7 @@
       "comments": 0,
       "date": "20:10",
       "category": "FC온라인",
-      "sentiment": "positive"
+      "sentiment": "neutral"
     },
     {
       "title": "오늘따라 왤케 헤딩골 빈도가 높지",
@@ -11022,7 +10995,7 @@
       "comments": 0,
       "date": "20:10",
       "category": "FC온라인",
-      "sentiment": "positive"
+      "sentiment": "neutral"
     },
     {
       "title": "라금 한국팀의 백금 만들기 1일차 2,3,4,5번째 선수등장",
@@ -11049,7 +11022,7 @@
       "comments": 2,
       "date": "20:08",
       "category": "El Tornado",
-      "sentiment": "neutral"
+      "sentiment": "positive"
     },
     {
       "title": "BLD 타디치 +8 나눔",
@@ -11067,7 +11040,7 @@
       "comments": 0,
       "date": "20:07",
       "category": "FC온라인",
-      "sentiment": "neutral"
+      "sentiment": "positive"
     },
     {
       "title": "나는 모르겠다 토츠 금카 영입!",
@@ -11076,7 +11049,7 @@
       "comments": 4,
       "date": "20:06",
       "category": "선수구매",
-      "sentiment": "negative"
+      "sentiment": "positive"
     },
     {
       "title": "감모 뮌헨 / 호펜하임 / dp단일 GOAT 영입 ㅋㅋ",
@@ -11085,7 +11058,7 @@
       "comments": 2,
       "date": "20:06",
       "category": "선수구매",
-      "sentiment": "neutral"
+      "sentiment": "positive"
     },
     {
       "title": "42000fc를 어디에 써야 bp를 많이 먹을 수 있을까요?",
@@ -11094,7 +11067,7 @@
       "comments": 6,
       "date": "20:05",
       "category": "FC온라인",
-      "sentiment": "negative"
+      "sentiment": "neutral"
     },
     {
       "title": "리버풀 볼란치 추천좀 해주세요",
@@ -11112,7 +11085,7 @@
       "comments": 4,
       "date": "20:04",
       "category": "FC온라인",
-      "sentiment": "positive"
+      "sentiment": "neutral"
     },
     {
       "title": "범죄를 저질렀습니다...",
@@ -11121,7 +11094,7 @@
       "comments": 4,
       "date": "20:04",
       "category": "스쿼드",
-      "sentiment": "neutral"
+      "sentiment": "negative"
     },
     {
       "title": "fsl 보니까 라브 트릭스터는 기본이네요",
@@ -11130,7 +11103,7 @@
       "comments": 0,
       "date": "20:03",
       "category": "FSL/프로게이머",
-      "sentiment": "negative"
+      "sentiment": "neutral"
     },
     {
       "title": "본캐 인생강화 조졌습니다 확인 부탁드려요",
@@ -11139,7 +11112,7 @@
       "comments": 6,
       "date": "20:03",
       "category": "FC온라인",
-      "sentiment": "positive"
+      "sentiment": "negative"
     },
     {
       "title": "고수님들 wg투레 vs ws케시에",
@@ -11164,6 +11137,15 @@
       "url": "https://www.fmkorea.com/10045298165",
       "views": 206,
       "comments": 3,
+      "date": "20:02",
+      "category": "FC온라인",
+      "sentiment": "positive"
+    },
+    {
+      "title": "사람들이 왜 경단위 선수를 박아두는지 알겠네...",
+      "url": "https://www.fmkorea.com/10045295890",
+      "views": 219,
+      "comments": 0,
       "date": "20:02",
       "category": "FC온라인",
       "sentiment": "neutral"
@@ -11211,7 +11193,7 @@
       "comments": 1,
       "date": "20:00",
       "category": "FC온라인",
-      "sentiment": "positive"
+      "sentiment": "neutral"
     },
     {
       "title": "중/공미 선수 비교좀요",
@@ -11220,7 +11202,7 @@
       "comments": 1,
       "date": "20:00",
       "category": "FC온라인",
-      "sentiment": "positive"
+      "sentiment": "neutral"
     },
     {
       "title": "카이저 미쳤네...",
@@ -11229,16 +11211,16 @@
       "comments": 0,
       "date": "20:00",
       "category": "FSL/프로게이머",
-      "sentiment": "neutral"
+      "sentiment": "positive"
     },
     {
       "title": "프로들 경기 보니까 트릭스터 너프는 없을 것 같은 느낌",
       "url": "https://www.fmkorea.com/10045289890",
-      "views": 2288,
+      "views": 2526,
       "comments": 10,
       "date": "20:00",
       "category": "FSL/프로게이머",
-      "sentiment": "positive"
+      "sentiment": "neutral"
     },
     {
       "title": "와시바 카이저 개잘하네 ㅋㅋㅋㅋㅋㅋㅋㅋ 90분에저걸",
@@ -11256,7 +11238,7 @@
       "comments": 0,
       "date": "19:59",
       "category": "FSL/프로게이머",
-      "sentiment": "neutral"
+      "sentiment": "positive"
     },
     {
       "title": "13카작은 정신력의 싸움이 아니다",
@@ -11274,7 +11256,7 @@
       "comments": 2,
       "date": "19:58",
       "category": "질문",
-      "sentiment": "negative"
+      "sentiment": "neutral"
     },
     {
       "title": "FSL ㄹㅇ WS디아스 하한가 직행 삘인데ㅋㅋㅋㅋ",
@@ -11283,7 +11265,7 @@
       "comments": 3,
       "date": "19:57",
       "category": "FC온라인",
-      "sentiment": "neutral"
+      "sentiment": "negative"
     },
     {
       "title": "지금 메타가 대회보는맛은 최고네요",
@@ -11292,7 +11274,7 @@
       "comments": 1,
       "date": "19:57",
       "category": "FC온라인",
-      "sentiment": "neutral"
+      "sentiment": "positive"
     },
     {
       "title": "24챔 알렉산더 바 매물있나요??",
@@ -11319,7 +11301,7 @@
       "comments": 1,
       "date": "19:55",
       "category": "FC온라인",
-      "sentiment": "positive"
+      "sentiment": "negative"
     },
     {
       "title": "원더는 트릭스터 그냥 넛맥대용 느낌으로 쓰는건가",
@@ -11337,7 +11319,7 @@
       "comments": 3,
       "date": "19:55",
       "category": "질문",
-      "sentiment": "positive"
+      "sentiment": "neutral"
     },
     {
       "title": "방금 직선침투는 패드만되는거임?",
@@ -11346,7 +11328,7 @@
       "comments": 0,
       "date": "19:55",
       "category": "FSL/프로게이머",
-      "sentiment": "positive"
+      "sentiment": "neutral"
     },
     {
       "title": "버닝 174회 참여한 상태인데 풀참 가능할까요",
@@ -11355,7 +11337,7 @@
       "comments": 0,
       "date": "19:55",
       "category": "FC온라인",
-      "sentiment": "positive"
+      "sentiment": "neutral"
     },
     {
       "title": "지나가는 서강준 인테르 투톱 골라주고 가..",
@@ -11364,12 +11346,12 @@
       "comments": 2,
       "date": "19:54",
       "category": "FC온라인",
-      "sentiment": "negative"
+      "sentiment": "positive"
     },
     {
       "title": "PSG 우측 풀백 영입",
       "url": "https://www.fmkorea.com/10045259814",
-      "views": 147,
+      "views": 209,
       "comments": 4,
       "date": "19:54",
       "category": "선수구매",
@@ -11382,7 +11364,7 @@
       "comments": 1,
       "date": "19:54",
       "category": "매물 정보통",
-      "sentiment": "negative"
+      "sentiment": "positive"
     },
     {
       "title": "원더08 플레이 보면서 더 느낌",
@@ -11400,7 +11382,7 @@
       "comments": 0,
       "date": "19:53",
       "category": "FC온라인",
-      "sentiment": "neutral"
+      "sentiment": "positive"
     },
     {
       "title": "라브 너프하면 라브시세 폭락함?",
@@ -11409,7 +11391,7 @@
       "comments": 18,
       "date": "19:53",
       "category": "잡담",
-      "sentiment": "neutral"
+      "sentiment": "negative"
     },
     {
       "title": "원재씨 공격 스타일이 진짜 다 올리는 스타일이라 이번 라브 메타 상성이 그렇게 좋진 않은 듯",
@@ -11427,7 +11409,7 @@
       "comments": 0,
       "date": "19:52",
       "category": "FC온라인",
-      "sentiment": "neutral"
+      "sentiment": "negative"
     },
     {
       "title": "내 매물 파란불 한장에 빨간불 3명이서 10조씩 경쟁하고있네...",
@@ -11463,7 +11445,7 @@
       "comments": 0,
       "date": "19:52",
       "category": "FC온라인",
-      "sentiment": "positive"
+      "sentiment": "neutral"
     },
     {
       "title": "모든 실점은 손의 문제로 간주하겠습니다",
@@ -11472,7 +11454,7 @@
       "comments": 0,
       "date": "19:51",
       "category": "FC온라인",
-      "sentiment": "positive"
+      "sentiment": "neutral"
     },
     {
       "title": "라브+크포 박는게 고트같은데 ??",
@@ -11481,7 +11463,7 @@
       "comments": 0,
       "date": "19:50",
       "category": "FC온라인",
-      "sentiment": "neutral"
+      "sentiment": "positive"
     },
     {
       "title": "2ㄷ2 편하게 하실분?",
@@ -11499,7 +11481,7 @@
       "comments": 18,
       "date": "19:50",
       "category": "질문",
-      "sentiment": "positive"
+      "sentiment": "neutral"
     },
     {
       "title": "BFX는 언더독 도파민 지리는듯 ㅋㅋㅋㅋㅋ",
@@ -11544,7 +11526,7 @@
       "comments": 0,
       "date": "19:49",
       "category": "FC온라인",
-      "sentiment": "neutral"
+      "sentiment": "positive"
     },
     {
       "title": "저도 월클 3부 처음 가봤습니다.",
@@ -11553,7 +11535,7 @@
       "comments": 2,
       "date": "19:49",
       "category": "FC온라인",
-      "sentiment": "neutral"
+      "sentiment": "positive"
     },
     {
       "title": "경기보는데 라브가 그냥 넘사급이네.",
@@ -11580,7 +11562,7 @@
       "comments": 0,
       "date": "19:48",
       "category": "FC온라인",
-      "sentiment": "negative"
+      "sentiment": "neutral"
     },
     {
       "title": "08이 이기고있는데도 볼란치 2명 싹 다 올리고",
@@ -11589,7 +11571,7 @@
       "comments": 0,
       "date": "19:48",
       "category": "FSL/프로게이머",
-      "sentiment": "positive"
+      "sentiment": "neutral"
     },
     {
       "title": "트릭스터 as는 어쩌구 저쩌구",
@@ -11625,7 +11607,7 @@
       "comments": 4,
       "date": "19:47",
       "category": "FC온라인",
-      "sentiment": "neutral"
+      "sentiment": "negative"
     },
     {
       "title": "카이저 잘한다 ㄷㄷ",
@@ -11634,7 +11616,7 @@
       "comments": 0,
       "date": "19:47",
       "category": "FC온라인",
-      "sentiment": "neutral"
+      "sentiment": "positive"
     },
     {
       "title": "확실히 리그 수준이",
@@ -11661,7 +11643,7 @@
       "comments": 4,
       "date": "19:46",
       "category": "FC온라인",
-      "sentiment": "positive"
+      "sentiment": "neutral"
     },
     {
       "title": "토츠 흐비차 매물 많이 풀렸나요?",
@@ -11697,7 +11679,7 @@
       "comments": 2,
       "date": "19:45",
       "category": "FSL/프로게이머",
-      "sentiment": "negative"
+      "sentiment": "positive"
     },
     {
       "title": "라브나 씁시다",
@@ -11706,7 +11688,7 @@
       "comments": 2,
       "date": "19:45",
       "category": "FSL/프로게이머",
-      "sentiment": "neutral"
+      "sentiment": "positive"
     },
     {
       "title": "3경 프랑스 선수후기",
@@ -11715,7 +11697,7 @@
       "comments": 4,
       "date": "19:45",
       "category": "선수후기",
-      "sentiment": "positive"
+      "sentiment": "neutral"
     },
     {
       "title": "소신)원재한테 기대한 트릭스터는 오히려 체이서가 더 맛나게 쓰는거 같음",
@@ -11733,7 +11715,7 @@
       "comments": 0,
       "date": "19:44",
       "category": "FSL/프로게이머",
-      "sentiment": "positive"
+      "sentiment": "neutral"
     },
     {
       "title": "넥슨이 중거리를 성공적으로 멸종시켰읍니다..",
@@ -11742,7 +11724,7 @@
       "comments": 6,
       "date": "19:44",
       "category": "FC온라인",
-      "sentiment": "neutral"
+      "sentiment": "negative"
     },
     {
       "title": "100조면 그냥 사세요 ㅋㅋㅋㅋ",
@@ -11760,7 +11742,7 @@
       "comments": 4,
       "date": "19:44",
       "category": "El Tornado",
-      "sentiment": "neutral"
+      "sentiment": "positive"
     },
     {
       "title": "패치 기조가 공격 옵션 추가로 쭉 이어지니",
@@ -11769,663 +11751,6 @@
       "comments": 3,
       "date": "19:43",
       "category": "FSL/프로게이머",
-      "sentiment": "positive"
-    },
-    {
-      "title": "25챔 카이세도 11카 드디어...",
-      "url": "https://www.fmkorea.com/10045227180",
-      "views": 114,
-      "comments": 0,
-      "date": "19:43",
-      "category": "선수구매",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "구단가치 15경인데",
-      "url": "https://www.fmkorea.com/10045224521",
-      "views": 222,
-      "comments": 2,
-      "date": "19:42",
-      "category": "FC온라인",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "이런식으로 경기 흘러가면",
-      "url": "https://www.fmkorea.com/10045222973",
-      "views": 207,
-      "comments": 2,
-      "date": "19:42",
-      "category": "FSL/프로게이머",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "리버풀 2경 투자 방향 추천해주세요",
-      "url": "https://www.fmkorea.com/10045217541",
-      "views": 159,
-      "comments": 14,
-      "date": "19:41",
-      "category": "질문",
-      "sentiment": "positive"
-    },
-    {
-      "title": "카이저 원더상대로 잘하네 ㄷㄷ",
-      "url": "https://www.fmkorea.com/10045220142",
-      "views": 186,
-      "comments": 1,
-      "date": "19:41",
-      "category": "FSL/프로게이머",
-      "sentiment": "negative"
-    },
-    {
-      "title": "더브라위너 관련 닉네임 추천해주세요",
-      "url": "https://www.fmkorea.com/10045218555",
-      "views": 116,
-      "comments": 4,
-      "date": "19:41",
-      "category": "FC온라인",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "트릭스터보다 라브 활용성이 더 좋아보이네요",
-      "url": "https://www.fmkorea.com/10045218539",
-      "views": 221,
-      "comments": 3,
-      "date": "19:41",
-      "category": "FSL/프로게이머",
-      "sentiment": "positive"
-    },
-    {
-      "title": "토츠 메냥 10카 주워둘까 어떻게 생각함",
-      "url": "https://www.fmkorea.com/10045218440",
-      "views": 69,
-      "comments": 0,
-      "date": "19:41",
-      "category": "FC온라인",
-      "sentiment": "positive"
-    },
-    {
-      "title": "빠찡코 SSS",
-      "url": "https://www.fmkorea.com/10045216955",
-      "views": 600,
-      "comments": 3,
-      "date": "19:41",
-      "category": "강화/득템",
-      "sentiment": "positive"
-    },
-    {
-      "title": "이거 커뮤니티 게임 플레이 버그 제보인데",
-      "url": "https://www.fmkorea.com/10045215787",
-      "views": 212,
-      "comments": 4,
-      "date": "19:40",
-      "category": "질문",
-      "sentiment": "positive"
-    },
-    {
-      "title": "5경 스쿼드 추천 부탁드립니다!",
-      "url": "https://www.fmkorea.com/10045217223",
-      "views": 21,
-      "comments": 0,
-      "date": "19:40",
-      "category": "FC온라인",
-      "sentiment": "positive"
-    },
-    {
-      "title": "ㅋㅋㅋㅋㅋㅋㅋㅋ 아니 진짜로",
-      "url": "https://www.fmkorea.com/10045215979",
-      "views": 87,
-      "comments": 1,
-      "date": "19:40",
-      "category": "불평불만",
-      "sentiment": "negative"
-    },
-    {
-      "title": "공식에서 ㅅㅂ 아이씨는 ㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋ",
-      "url": "https://www.fmkorea.com/10045214527",
-      "views": 207,
-      "comments": 2,
-      "date": "19:39",
-      "category": "FSL/프로게이머",
-      "sentiment": "positive"
-    },
-    {
-      "title": "[WONDER08 VS KAISER] 원더 라브 수침 ㄷㄷㄷㄷㄷ",
-      "url": "https://www.fmkorea.com/10045211607",
-      "views": 3741,
-      "comments": 5,
-      "date": "19:39",
-      "category": "FSL/프로게이머",
-      "sentiment": "negative"
-    },
-    {
-      "title": "개르헨 우풀백 머쓰징",
-      "url": "https://www.fmkorea.com/10045204512",
-      "views": 189,
-      "comments": 0,
-      "date": "19:39",
-      "category": "FC온라인",
-      "sentiment": "positive"
-    },
-    {
-      "title": "둠프 드디어 오피셜!",
-      "url": "https://www.fmkorea.com/10045210436",
-      "views": 187,
-      "comments": 0,
-      "date": "19:38",
-      "category": "FC온라인",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "와 코르도바 찬양하는 글 최근에 올린 사람인데 코르도바는 모든시즌이 젛네용",
-      "url": "https://www.fmkorea.com/10045210062",
-      "views": 80,
-      "comments": 4,
-      "date": "19:38",
-      "category": "FC온라인",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "뭔 수침을 저렇게 자유자재로하냐",
-      "url": "https://www.fmkorea.com/10045208284",
-      "views": 184,
-      "comments": 0,
-      "date": "19:38",
-      "category": "FSL/프로게이머",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "와 방금 벤제마 아크로바틱때문에 골못넣네",
-      "url": "https://www.fmkorea.com/10045207704",
-      "views": 132,
-      "comments": 0,
-      "date": "19:37",
-      "category": "FSL/프로게이머",
-      "sentiment": "negative"
-    },
-    {
-      "title": "둠두리 8카 바로 상한 ㅅㅅㅅ",
-      "url": "https://www.fmkorea.com/10045206610",
-      "views": 806,
-      "comments": 0,
-      "date": "19:37",
-      "category": "FC온라인",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "패스 구매 팁?",
-      "url": "https://www.fmkorea.com/10045205572",
-      "views": 668,
-      "comments": 0,
-      "date": "19:37",
-      "category": "질문",
-      "sentiment": "positive"
-    },
-    {
-      "title": "선수키우기 10년차 선수 7명 은퇴시켰는데",
-      "url": "https://www.fmkorea.com/10045204937",
-      "views": 53,
-      "comments": 0,
-      "date": "19:37",
-      "category": "FC온라인",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "감모 시티에 토츠 레인더르스 중미 써보신분 있나요?",
-      "url": "https://www.fmkorea.com/10045204918",
-      "views": 93,
-      "comments": 2,
-      "date": "19:37",
-      "category": "감독모드",
-      "sentiment": "negative"
-    },
-    {
-      "title": "Farewell 루까꿍",
-      "url": "https://www.fmkorea.com/10045202909",
-      "views": 22,
-      "comments": 0,
-      "date": "19:36",
-      "category": "FC온라인",
-      "sentiment": "positive"
-    },
-    {
-      "title": "이정도면 백금팀 제외 대장인가?",
-      "url": "https://www.fmkorea.com/10045200068",
-      "views": 142,
-      "comments": 1,
-      "date": "19:36",
-      "category": "FC온라인",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "오늘 2번째 13카 ㅅㅅㅅㅅㅅㅅㅅㅅㅅㅅㅅㅅㅅ",
-      "url": "https://www.fmkorea.com/10045198439",
-      "views": 162,
-      "comments": 2,
-      "date": "19:36",
-      "category": "강화/득템",
-      "sentiment": "positive"
-    },
-    {
-      "title": "무료패스 8렙도 선수팩이 정배인가?",
-      "url": "https://www.fmkorea.com/10045200527",
-      "views": 1114,
-      "comments": 6,
-      "date": "19:35",
-      "category": "FC온라인",
-      "sentiment": "positive"
-    },
-    {
-      "title": "내가사려는건 전부 씹상한이고",
-      "url": "https://www.fmkorea.com/10045199658",
-      "views": 44,
-      "comments": 0,
-      "date": "19:35",
-      "category": "잡담",
-      "sentiment": "positive"
-    },
-    {
-      "title": "첼시 현역 중원의 치타 영입!!!",
-      "url": "https://www.fmkorea.com/10045193445",
-      "views": 383,
-      "comments": 1,
-      "date": "19:35",
-      "category": "강화/득템",
-      "sentiment": "negative"
-    },
-    {
-      "title": "라야 업글",
-      "url": "https://www.fmkorea.com/10045197173",
-      "views": 43,
-      "comments": 0,
-      "date": "19:35",
-      "category": "질문",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "둠프리스 시작되었나",
-      "url": "https://www.fmkorea.com/10045196657",
-      "views": 368,
-      "comments": 4,
-      "date": "19:34",
-      "category": "FC온라인",
-      "sentiment": "positive"
-    },
-    {
-      "title": "굿바이 토트넘, 웰컴 크팰",
-      "url": "https://www.fmkorea.com/10045190561",
-      "views": 223,
-      "comments": 0,
-      "date": "19:34",
-      "category": "스쿼드",
-      "sentiment": "positive"
-    },
-    {
-      "title": "아니 시바 파포 반댓발 ZD 갈긴건데 저게 들어가네 ㅋㅋㅋㅋㅋㅋ",
-      "url": "https://www.fmkorea.com/10045195006",
-      "views": 42,
-      "comments": 0,
-      "date": "19:34",
-      "category": "FSL/프로게이머",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "아니 들어갔자나여ㅡㅡ",
-      "url": "https://www.fmkorea.com/10045193130",
-      "views": 92,
-      "comments": 0,
-      "date": "19:33",
-      "category": "FSL/프로게이머",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "맨시티 질문 있습니다 고수님들",
-      "url": "https://www.fmkorea.com/10045182232",
-      "views": 624,
-      "comments": 8,
-      "date": "19:33",
-      "category": "스쿼드",
-      "sentiment": "positive"
-    },
-    {
-      "title": "저걸 다리로 막네 ㅋㅋㅋㅋㅋ",
-      "url": "https://www.fmkorea.com/10045192348",
-      "views": 25,
-      "comments": 0,
-      "date": "19:33",
-      "category": "FSL/프로게이머",
-      "sentiment": "positive"
-    },
-    {
-      "title": "갓겜ㅋㅋㅋㅋㅋㅋㅋㅋㅋ",
-      "url": "https://www.fmkorea.com/10045191854",
-      "views": 109,
-      "comments": 0,
-      "date": "19:33",
-      "category": "FSL/프로게이머",
-      "sentiment": "negative"
-    },
-    {
-      "title": "형님들 스냅백 하나 구매하려하는데",
-      "url": "https://www.fmkorea.com/10045190627",
-      "views": 221,
-      "comments": 0,
-      "date": "19:33",
-      "category": "질문",
-      "sentiment": "negative"
-    },
-    {
-      "title": "본가) FC27 신규 아이콘 + FC26 선출시 아이콘 선수들 팀컬러",
-      "url": "https://www.fmkorea.com/9835857893",
-      "views": 842,
-      "comments": 11,
-      "date": "19:32",
-      "category": "팁/정보",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "오 셰우 또 거래량 떴네",
-      "url": "https://www.fmkorea.com/10045189549",
-      "views": 238,
-      "comments": 2,
-      "date": "19:32",
-      "category": "FC온라인",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "퇴근했는데 둠프 오피셜 떳구나 ㅅㅅ",
-      "url": "https://www.fmkorea.com/10045188616",
-      "views": 231,
-      "comments": 1,
-      "date": "19:32",
-      "category": "FC온라인",
-      "sentiment": "positive"
-    },
-    {
-      "title": "RM 업글해줄려고 엔조 팔았는데",
-      "url": "https://www.fmkorea.com/10045184677",
-      "views": 64,
-      "comments": 3,
-      "date": "19:32",
-      "category": "FC온라인",
-      "sentiment": "positive"
-    },
-    {
-      "title": "둠프리스 고점 구매",
-      "url": "https://www.fmkorea.com/10045187291",
-      "views": 725,
-      "comments": 7,
-      "date": "19:32",
-      "category": "FC온라인",
-      "sentiment": "positive"
-    },
-    {
-      "title": "기본빵 와태 수비, 수미 금특 추천좀 부탁드립니다",
-      "url": "https://www.fmkorea.com/10045186569",
-      "views": 177,
-      "comments": 4,
-      "date": "19:31",
-      "category": "질문",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "스페인 수미 고민중...",
-      "url": "https://www.fmkorea.com/10045182868",
-      "views": 210,
-      "comments": 0,
-      "date": "19:31",
-      "category": "FC온라인",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "로우블록 ㅈㄴ 잘깨네 ㅋㅋㅋ",
-      "url": "https://www.fmkorea.com/10045185945",
-      "views": 22,
-      "comments": 0,
-      "date": "19:31",
-      "category": "FSL/프로게이머",
-      "sentiment": "positive"
-    },
-    {
-      "title": "[WONDER08 VS KAISER] 카이저 아름다운 선제골 ㄷㄷㄷㄷㄷㄷㄷㄷㄷㄷㄷㄷㄷ",
-      "url": "https://www.fmkorea.com/10045183489",
-      "views": 259,
-      "comments": 2,
-      "date": "19:31",
-      "category": "FSL/프로게이머",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "와 저걸 떨구네 ㅋㅋ",
-      "url": "https://www.fmkorea.com/10045180931",
-      "views": 40,
-      "comments": 0,
-      "date": "19:30",
-      "category": "FSL/프로게이머",
-      "sentiment": "positive"
-    },
-    {
-      "title": "팀 업글할만한애가 없어서 이거라도 사야하나 싶은데",
-      "url": "https://www.fmkorea.com/10045179352",
-      "views": 124,
-      "comments": 2,
-      "date": "19:30",
-      "category": "FC온라인",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "ㅋㅋㅋ브라질 현역 157오버롤 이라니",
-      "url": "https://www.fmkorea.com/10045179261",
-      "views": 250,
-      "comments": 0,
-      "date": "19:30",
-      "category": "스쿼드",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "카이저 선제골 머냐 ㄷㄷㄷㄷ",
-      "url": "https://www.fmkorea.com/10045180420",
-      "views": 21,
-      "comments": 0,
-      "date": "19:30",
-      "category": "FSL/프로게이머",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "본가) FC27 신규 명예의 전당 선수들 팀컬러",
-      "url": "https://www.fmkorea.com/9992865077",
-      "views": 399,
-      "comments": 4,
-      "date": "19:29",
-      "category": "팁/정보",
-      "sentiment": "positive"
-    },
-    {
-      "title": "WG 클라위 8카 후기",
-      "url": "https://www.fmkorea.com/10045152588",
-      "views": 128,
-      "comments": 6,
-      "date": "19:29",
-      "category": "선수후기",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "지금 한국팀인데 어딜 업글해야할까요",
-      "url": "https://www.fmkorea.com/10045175399",
-      "views": 129,
-      "comments": 2,
-      "date": "19:29",
-      "category": "FC온라인",
-      "sentiment": "positive"
-    },
-    {
-      "title": "이탈리아 이대로 출발해도 괜찮을까요??",
-      "url": "https://www.fmkorea.com/10045175909",
-      "views": 229,
-      "comments": 0,
-      "date": "19:28",
-      "category": "FC온라인",
-      "sentiment": "positive"
-    },
-    {
-      "title": "서민구단가치는 2경 언저린가요?",
-      "url": "https://www.fmkorea.com/10045170740",
-      "views": 230,
-      "comments": 11,
-      "date": "19:27",
-      "category": "FC온라인",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "카솔라 금카 써봤는데 좋긴 좋네",
-      "url": "https://www.fmkorea.com/10045170395",
-      "views": 49,
-      "comments": 2,
-      "date": "19:26",
-      "category": "FC온라인",
-      "sentiment": "negative"
-    },
-    {
-      "title": "첼시 투볼란치",
-      "url": "https://www.fmkorea.com/10045169959",
-      "views": 189,
-      "comments": 6,
-      "date": "19:26",
-      "category": "FC온라인",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "회네스 백금 상한빔",
-      "url": "https://www.fmkorea.com/10045163178",
-      "views": 562,
-      "comments": 6,
-      "date": "19:25",
-      "category": "매물 정보통",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "레알마드리드 둠프리스 영입완",
-      "url": "https://www.fmkorea.com/10045165771",
-      "views": 1113,
-      "comments": 5,
-      "date": "19:25",
-      "category": "잡담",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "PSG에 라비오 수미&슈크리니아르 센벡 괜찮나요",
-      "url": "https://www.fmkorea.com/10045159947",
-      "views": 117,
-      "comments": 6,
-      "date": "19:25",
-      "category": "FC온라인",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "아 레리 챔스한테 처맞고 흐름타서 4연패했네",
-      "url": "https://www.fmkorea.com/10045164267",
-      "views": 21,
-      "comments": 0,
-      "date": "19:25",
-      "category": "불평불만",
-      "sentiment": "positive"
-    },
-    {
-      "title": "이탈리아 토티 대신할 선수 없을까요?",
-      "url": "https://www.fmkorea.com/10045162948",
-      "views": 164,
-      "comments": 1,
-      "date": "19:24",
-      "category": "FC온라인",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "20경으로 팀체급 ㅈㄴ높게갈라면",
-      "url": "https://www.fmkorea.com/10045162069",
-      "views": 182,
-      "comments": 1,
-      "date": "19:24",
-      "category": "FC온라인",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "원더08 시작한다",
-      "url": "https://www.fmkorea.com/10045161113",
-      "views": 23,
-      "comments": 0,
-      "date": "19:24",
-      "category": "FSL/프로게이머",
-      "sentiment": "positive"
-    },
-    {
-      "title": "첼시 백금 센백 추천 부탁드립니다",
-      "url": "https://www.fmkorea.com/10045160723",
-      "views": 141,
-      "comments": 3,
-      "date": "19:24",
-      "category": "FC온라인",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "라금 한국팀의 백금 만들기 1일차 첫번째 성공은",
-      "url": "https://www.fmkorea.com/10045156248",
-      "views": 126,
-      "comments": 0,
-      "date": "19:23",
-      "category": "강화/득템",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "마튀아디 프티 중미 수미 포지션 질문좀요",
-      "url": "https://www.fmkorea.com/10045156640",
-      "views": 77,
-      "comments": 1,
-      "date": "19:23",
-      "category": "감독모드",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "8현역 바르샤 수지 vs 호돈",
-      "url": "https://www.fmkorea.com/10045153716",
-      "views": 57,
-      "comments": 1,
-      "date": "19:22",
-      "category": "FC온라인",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "둠프리스 오피셜 ㅅㅅ",
-      "url": "https://www.fmkorea.com/10045150258",
-      "views": 1685,
-      "comments": 6,
-      "date": "19:22",
-      "category": "스쿼드",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "간혹 내 클럽출신들이 빅클럽 가서 떡상한다는 소리가 있다",
-      "url": "https://www.fmkorea.com/10045146338",
-      "views": 204,
-      "comments": 20,
-      "date": "19:21",
-      "category": "FC온라인",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "거제 출신 축구선수의 발언",
-      "url": "https://www.fmkorea.com/10045150420",
-      "views": 39,
-      "comments": 1,
-      "date": "19:21",
-      "category": "FC온라인",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "토츠단일 3경으로도 좋을까요?",
-      "url": "https://www.fmkorea.com/10045146311",
-      "views": 86,
-      "comments": 1,
-      "date": "19:20",
-      "category": "질문",
       "sentiment": "neutral"
     }
   ],
@@ -12435,50 +11760,44 @@
     "negative": 14
   },
   "top_issues": {
-    "positive": "강화/선수영입 성공 기쁨",
-    "negative": "게임 흐름 타서 연패",
-    "neutral": "팀 빌딩 및 선수 조언"
+    "positive": "홀란 크로스 플레이 재미",
+    "negative": "중거리 플레이 삭제",
+    "neutral": "패치 기조 변화"
   },
   "keywords": [
     {
-      "topic": "팀 빌딩/강화",
-      "count": 12,
-      "pct": "40.0%",
-      "tags": "수미, 금특, 업글, 센백, 선수추천"
-    },
-    {
-      "topic": "선수 영입/성공",
-      "count": 8,
-      "pct": "26.7%",
-      "tags": "영입완, ㅅㅅ, 성공, 떡상"
-    },
-    {
-      "topic": "경매/거래",
-      "count": 5,
-      "pct": "16.7%",
-      "tags": "가격, 팀가치, 경매상한"
-    },
-    {
-      "topic": "게임 플레이",
-      "count": 4,
-      "pct": "13.3%",
-      "tags": "로우블록, 선제골, 연패, 흐름"
-    },
-    {
-      "topic": "선수 정보",
+      "topic": "게임 패치",
       "count": 3,
+      "pct": "30.0%",
+      "tags": "중거리멸종, 공격옵션, 기조"
+    },
+    {
+      "topic": "선수/플레이",
+      "count": 2,
+      "pct": "20.0%",
+      "tags": "홀란, 크로스"
+    },
+    {
+      "topic": "의견/평가",
+      "count": 2,
+      "pct": "20.0%",
+      "tags": "신뢰도, 재미"
+    },
+    {
+      "topic": "가격/아이템",
+      "count": 1,
       "pct": "10.0%",
-      "tags": "포지션, 비교, 대체선수"
+      "tags": "100조"
     }
   ],
   "churn_signals": [
-    "아 레리 챔스한테 처맞고 흐름타서 4연패했네"
+    "넥슨이 중거리를 성공적으로 멸종시켰읍니다.. (아이러니한 비판)"
   ],
   "esports_disengagement_signals": [],
   "fsl_mention_rate": "0%",
-  "impact_score": 6.8,
+  "impact_score": 3.5,
   "viewer_engagement_estimate": "0K",
-  "last_updated": "2026-07-06 13:21",
+  "last_updated": "2026-07-06 14:03",
   "history": [
     {
       "label": "06/30",
@@ -12531,9 +11850,9 @@
     {
       "label": "07/06",
       "date": "2026-07-06",
-      "esi": 3.9,
-      "posts": 1380,
-      "esports": 112,
+      "esi": 3.7,
+      "posts": 1305,
+      "esports": 101,
       "positive": 28
     }
   ]

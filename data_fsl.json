@@ -4,8 +4,8 @@
     "start": "2026-07-05 10:01",
     "end": "2026-07-06 09:59"
   },
-  "total_posts": 129,
-  "total_views": 75597,
+  "total_posts": 128,
+  "total_views": 75106,
   "avg_views_per_post": 586,
   "posts": [
     {
@@ -47,8 +47,8 @@
     {
       "title": "세비어 이번 시즌 몇강 갈것같나요?",
       "url": "https://www.fmkorea.com/index.php?mid=fifa_online&category=8064047289&document_srl=10045562904",
-      "views": 175,
-      "comments": 2,
+      "views": 178,
+      "comments": 3,
       "date": "21:06",
       "category": "FSL/프로게이머",
       "sentiment": "neutral"
@@ -132,7 +132,7 @@
       "comments": 2,
       "date": "20:26",
       "category": "FSL/프로게이머",
-      "sentiment": "negative"
+      "sentiment": "positive"
     },
     {
       "title": "말은 트릭 사기라 해주네",
@@ -141,7 +141,7 @@
       "comments": 0,
       "date": "20:25",
       "category": "FSL/프로게이머",
-      "sentiment": "negative"
+      "sentiment": "neutral"
     },
     {
       "title": "원더08 “트릭스터 꼭 쓰세요 사기임”",
@@ -150,7 +150,7 @@
       "comments": 0,
       "date": "20:25",
       "category": "FSL/프로게이머",
-      "sentiment": "negative"
+      "sentiment": "positive"
     },
     {
       "title": "원더08때매 팀갈병 또 도지네",
@@ -195,7 +195,7 @@
       "comments": 0,
       "date": "20:18",
       "category": "FSL/프로게이머",
-      "sentiment": "neutral"
+      "sentiment": "positive"
     },
     {
       "title": "원더08이 제일 잘하는게",
@@ -245,7 +245,7 @@
     {
       "title": "프로들 경기 보니까 트릭스터 너프는 없을 것 같은 느낌",
       "url": "https://www.fmkorea.com/index.php?mid=fifa_online&category=8064047289&document_srl=10045289890",
-      "views": 2288,
+      "views": 2526,
       "comments": 10,
       "date": "20:00",
       "category": "FSL/프로게이머",
@@ -474,7 +474,7 @@
       "comments": 0,
       "date": "19:38",
       "category": "FSL/프로게이머",
-      "sentiment": "positive"
+      "sentiment": "neutral"
     },
     {
       "title": "와 방금 벤제마 아크로바틱때문에 골못넣네",
@@ -623,7 +623,7 @@
     {
       "title": "[MINION VS CHASE] 미니언 트릭스터 활용 ㄷㄷㄷㄷㄷㄷㄷㄷㄷㄷㄷㄷㄷㄷㄷ",
       "url": "https://www.fmkorea.com/index.php?mid=fifa_online&category=8064047289&document_srl=10045065517",
-      "views": 4479,
+      "views": 4718,
       "comments": 7,
       "date": "18:57",
       "category": "FSL/프로게이머",
@@ -672,7 +672,7 @@
       "comments": 0,
       "date": "18:48",
       "category": "FSL/프로게이머",
-      "sentiment": "negative"
+      "sentiment": "neutral"
     },
     {
       "title": "방금 경기가 순수재미 그 자체 ㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋ",
@@ -780,7 +780,7 @@
       "comments": 6,
       "date": "18:20",
       "category": "FSL/프로게이머",
-      "sentiment": "negative"
+      "sentiment": "neutral"
     },
     {
       "title": "FSL 1경기 후기",
@@ -816,7 +816,7 @@
       "comments": 0,
       "date": "17:54",
       "category": "FSL/프로게이머",
-      "sentiment": "negative"
+      "sentiment": "neutral"
     },
     {
       "title": "ㅋㅋㅋㅋㅋㅋㅋ저게 결국들가네",
@@ -870,7 +870,7 @@
       "comments": 0,
       "date": "17:47",
       "category": "FSL/프로게이머",
-      "sentiment": "positive"
+      "sentiment": "neutral"
     },
     {
       "title": "2경기 코너킥 4골은 좀.",
@@ -879,7 +879,7 @@
       "comments": 10,
       "date": "17:47",
       "category": "FSL/프로게이머",
-      "sentiment": "neutral"
+      "sentiment": "negative"
     },
     {
       "title": "1세트는 벌벌이슈였나? 패삑이 이판 별로없네?",
@@ -897,7 +897,7 @@
       "comments": 5,
       "date": "17:41",
       "category": "FSL/프로게이머",
-      "sentiment": "positive"
+      "sentiment": "neutral"
     },
     {
       "title": "Fsl 드롭스 저거 네이버 전환 안해도 들어옴?",
@@ -987,7 +987,7 @@
       "comments": 0,
       "date": "17:28",
       "category": "FSL/프로게이머",
-      "sentiment": "neutral"
+      "sentiment": "positive"
     },
     {
       "title": "이거 타이탄임?",
@@ -1005,7 +1005,7 @@
       "comments": 0,
       "date": "17:28",
       "category": "FSL/프로게이머",
-      "sentiment": "neutral"
+      "sentiment": "positive"
     },
     {
       "title": "[NOIZ VS AKI] 노이즈 개막전 첫골 ㄷㄷㄷㄷㄷㄷㄷㄷㄷㄷㄷㄷ",
@@ -1140,7 +1140,7 @@
       "comments": 1,
       "date": "16:53",
       "category": "FSL/프로게이머",
-      "sentiment": "positive"
+      "sentiment": "neutral"
     },
     {
       "title": "드디어 써머 개막이네요",
@@ -1149,7 +1149,7 @@
       "comments": 4,
       "date": "16:17",
       "category": "FSL/프로게이머",
-      "sentiment": "positive"
+      "sentiment": "neutral"
     },
     {
       "title": "5시 땡 치자마자 ㄷㄷㄷㄷㄷㄷㄷ",
@@ -1159,77 +1159,67 @@
       "date": "16:15",
       "category": "FSL/프로게이머",
       "sentiment": "positive"
-    },
-    {
-      "title": "계정 연동 치지직도 추가된듯?",
-      "url": "https://www.fmkorea.com/index.php?mid=fifa_online&category=8064047289&document_srl=10044100704",
-      "views": 971,
-      "comments": 3,
-      "date": "13:53",
-      "category": "FSL/프로게이머",
-      "sentiment": "neutral"
     }
   ],
   "sentiment": {
-    "positive": 44,
-    "neutral": 47,
-    "negative": 9
+    "positive": 45,
+    "neutral": 51,
+    "negative": 5
   },
   "top_issues": {
-    "positive": "노이즈 선수단 플레이 호평",
-    "negative": "계정 연동 정책 불편",
-    "neutral": "썸머 개막 시즌 시작"
+    "positive": "노이즈 경기력 우수성 및 플레이 감탄",
+    "negative": "계정연동 및 드롭스 정책 불만",
+    "neutral": "개막식 일정 및 팀정보 관심"
   },
   "keywords": [
     {
-      "topic": "노이즈(NOIZ)",
+      "topic": "노이즈(NOIZ) 선수/팀",
       "count": 12,
-      "pct": "41.4%",
-      "tags": "우승자, 코너킥, 크로스, 골, 플레이"
+      "pct": "42.9%",
+      "tags": "코너킥, 첫골, 크로스, 안토니턴, 플레이스타일"
     },
     {
-      "topic": "FSL 경기",
+      "topic": "경기 플레이 감탄",
       "count": 8,
-      "pct": "27.6%",
-      "tags": "개막전, 시즌, 매경기"
+      "pct": "28.6%",
+      "tags": "ㄷㄷ, ㅅㅅ, 야호, 개잘한다"
     },
     {
-      "topic": "계정연동/시스템",
+      "topic": "FSL 개막전",
+      "count": 5,
+      "pct": "17.9%",
+      "tags": "개막, 써머, 첫경기"
+    },
+    {
+      "topic": "시스템/정책 문의",
       "count": 4,
-      "pct": "13.8%",
-      "tags": "선택사항, 드롭스, 치지직"
+      "pct": "14.3%",
+      "tags": "계정연동, 드롭스, 드래프트룰"
     },
     {
-      "topic": "AKI 팀",
+      "topic": "경쟁팀/선수 비교",
       "count": 3,
-      "pct": "10.3%",
-      "tags": "상대팀, 경기분석"
-    },
-    {
-      "topic": "드래프트/룰",
-      "count": 1,
-      "pct": "3.4%",
-      "tags": "시즌규칙"
+      "pct": "10.7%",
+      "tags": "AKI, 젠지, 우승자"
     }
   ],
   "churn_signals": [],
   "esports_disengagement_signals": [
-    "계정 연동 강제화에 대한 불편 제기",
-    "개막 준비 기간 길다는 소극적 평가",
-    "넥슨 정책 의도 의문 표현"
+    "개막식 기다림의 지루함 표현 ('오래걸리는 느낌')",
+    "시스템 정책 변화에 대한 의구심 ('넥슨은 진심인가')"
   ],
-  "fsl_mention_rate": "82.8%",
+  "fsl_mention_rate": "28.6%",
   "impact_score": 7.2,
-  "viewer_engagement_estimate": "18K",
-  "last_updated": "2026-07-06 13:21",
+  "viewer_engagement_estimate": "42K",
+  "last_updated": "2026-07-06 14:03",
   "history": [
     {
       "label": "07/06",
       "date": "2026-07-06",
       "esi": 10,
-      "posts": 129,
+      "posts": 128,
       "esports": 56,
-      "positive": 44
+      "positive": 45
     }
   ]
 }
