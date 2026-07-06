@@ -42,16 +42,16 @@ DEFAULT_UA = (
 BASE_URL = "https://www.fmkorea.com"
 
 TARGETS = {
+    "fsl": {
+        "url": f"{BASE_URL}/index.php?mid=fifa_online&category=8064047289",
+        "referer": f"{BASE_URL}/fifa_online",  # 전체게시판에서 넘어온 것처럼 위장
+        "output": "data_fsl.json"
+    },
     "all": {
         "url": f"{BASE_URL}/fifa_online",
         "referer": f"{BASE_URL}/",
         "output": "data_all.json"
     },
-    "fsl": {
-        "url": f"{BASE_URL}/index.php?mid=fifa_online&category=8064047289",
-        "referer": f"{BASE_URL}/fifa_online",  # 전체게시판에서 넘어온 것처럼 위장
-        "output": "data_fsl.json"
-    }
 }
 
 MAX_PAGES = 150
@@ -207,7 +207,11 @@ def crawl_with_date_range(session, base_url, referer, source, start_dt, end_dt, 
 
             resp = session.get(url, timeout=30, verify=False)
             # 인코딩 명시 (Windows runner 한글 깨짐 방지)
-            resp.encoding = 'utf-8'
+            # 사이트 실제 인코딩 자동 감지 (EUC-KR 등 대응)
+            if resp.encoding and resp.encoding.lower() in ('utf-8', 'utf8'):
+                pass  # utf-8이면 그대로
+            else:
+                resp.encoding = resp.apparent_encoding or 'utf-8'
             print(f"  응답 코드: {resp.status_code}")
 
             if resp.status_code == 430:
@@ -537,8 +541,8 @@ def main():
 
         print(f"{output} 저장 완료")
 
-        # all 크롤링 후 잠깐 대기 (FSL 요청 전 세션 안정화)
-        if source == "all":
+        # fsl 크롤링 후 잠깐 대기 (all 요청 전 세션 안정화)
+        if source == "fsl":
             print("  세션 안정화 대기 (3초)...")
             time.sleep(3)
         else:
