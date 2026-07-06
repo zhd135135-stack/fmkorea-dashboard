@@ -1,158 +1,24 @@
 {
   "source": "fsl",
   "collection_range": {
-    "start": "2026-07-04 13:50",
-    "end": "2026-07-05 14:00"
+    "start": "2026-07-05 10:01",
+    "end": "2026-07-06 09:59"
   },
-  "total_posts": 6,
-  "total_views": 3325,
-  "avg_views_per_post": 554,
-  "posts": [
-    {
-      "title": "오늘 FSL 노이즈 ㅈㄴ기대되네",
-      "url": "https://www.fmkorea.com/index.php?mid=fifa_online&category=8064047289&document_srl=10043995762",
-      "views": 96,
-      "comments": 0,
-      "date": "13:13",
-      "category": "FSL/프로게이머",
-      "sentiment": "positive"
-    },
-    {
-      "title": "[ 2026 FSL SUMMER 그룹스테이지 DAY1 ] 빅매치 프리뷰",
-      "url": "https://www.fmkorea.com/index.php?mid=fifa_online&category=8064047289&document_srl=10043740608",
-      "views": 175,
-      "comments": 5,
-      "date": "11:33",
-      "category": "FSL/프로게이머",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "[신규 업데이트] SOOP X FSL 데이터 뷰어 안내",
-      "url": "https://www.fmkorea.com/index.php?mid=fifa_online&category=8064047289&document_srl=10040777082",
-      "views": 692,
-      "comments": 1,
-      "date": "16:00",
-      "category": "FSL/프로게이머",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "[WEEK 1 매치업] 2026 FSL SUMMER",
-      "url": "https://www.fmkorea.com/index.php?mid=fifa_online&category=8064047289&document_srl=10040773352",
-      "views": 729,
-      "comments": 0,
-      "date": "15:59",
-      "category": "FSL/프로게이머",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "님들 냉정하게 이번 시즌 누가 우승 봄?",
-      "url": "https://www.fmkorea.com/index.php?mid=fifa_online&category=8064047289&document_srl=10040766907",
-      "views": 1480,
-      "comments": 20,
-      "date": "15:55",
-      "category": "FSL/프로게이머",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "와 FSL 경기 시작이네 내일",
-      "url": "https://www.fmkorea.com/index.php?mid=fifa_online&category=8064047289&document_srl=10040675553",
-      "views": 153,
-      "comments": 0,
-      "date": "15:19",
-      "category": "FSL/프로게이머",
-      "sentiment": "positive"
-    }
-  ],
+  "total_posts": 0,
+  "total_views": 0,
+  "avg_views_per_post": 0,
+  "posts": [],
   "sentiment": {
-    "positive": 33,
-    "neutral": 67,
+    "positive": 0,
+    "neutral": 0,
     "negative": 0
   },
-  "top_issues": {
-    "positive": "FSL 경기 기대감 높음",
-    "negative": "없음",
-    "neutral": "경기 일정/정보 공유"
-  },
-  "keywords": [
-    {
-      "topic": "FSL 경기 기대감",
-      "count": 2,
-      "pct": "33.3%",
-      "tags": "노이즈,시작,기대"
-    },
-    {
-      "topic": "FSL 경기 정보/일정",
-      "count": 3,
-      "pct": "50.0%",
-      "tags": "그룹스테이지,매치업,프리뷰"
-    },
-    {
-      "topic": "우승 팀 예측",
-      "count": 1,
-      "pct": "16.7%",
-      "tags": "우승,팀"
-    },
-    {
-      "topic": "시스템/업데이트",
-      "count": 1,
-      "pct": "16.7%",
-      "tags": "데이터뷰어,SOOP"
-    }
-  ],
+  "top_issues": {},
+  "keywords": [],
   "churn_signals": [],
   "esports_disengagement_signals": [],
-  "fsl_mention_rate": "100.0%",
-  "impact_score": 6.2,
-  "viewer_engagement_estimate": "12K",
-  "history": [
-    {
-      "label": "06/30",
-      "date": "2026-06-30",
-      "esi": 10,
-      "posts": 4,
-      "esports": 4,
-      "positive": 25
-    },
-    {
-      "label": "07/01",
-      "date": "2026-07-01",
-      "esi": 0.0,
-      "posts": 1,
-      "esports": 1,
-      "positive": 0
-    },
-    {
-      "label": "07/02",
-      "date": "2026-07-02",
-      "esi": 0.0,
-      "posts": 5,
-      "esports": 2,
-      "positive": 0
-    },
-    {
-      "label": "07/03",
-      "date": "2026-07-03",
-      "esi": 0.0,
-      "posts": 3,
-      "esports": 0,
-      "positive": 33
-    },
-    {
-      "label": "07/04",
-      "date": "2026-07-04",
-      "esi": 10,
-      "posts": 2,
-      "esports": 1,
-      "positive": 50
-    },
-    {
-      "label": "07/05",
-      "date": "2026-07-05",
-      "esi": 10,
-      "posts": 6,
-      "esports": 5,
-      "positive": 33
-    }
-  ],
-  "last_updated": "2026-07-05 13:50"
+  "fsl_mention_rate": "0%",
+  "impact_score": 0,
+  "viewer_engagement_estimate": "0K",
+  "last_updated": "2026-07-06 12:42"
 }
