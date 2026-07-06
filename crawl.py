@@ -12,7 +12,6 @@
 import json
 import os
 import re
-import sys
 import time
 from datetime import datetime, timezone, timedelta
 
@@ -20,12 +19,6 @@ import requests
 import urllib3
 from bs4 import BeautifulSoup
 import anthropic
-
-# Windows runner 한글 인코딩 깨짐 방지
-if sys.stdout.encoding != 'utf-8':
-    sys.stdout.reconfigure(encoding='utf-8')
-if sys.stderr.encoding != 'utf-8':
-    sys.stderr.reconfigure(encoding='utf-8')
 
 urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
 
@@ -39,22 +32,18 @@ DEFAULT_UA = (
     "Chrome/124.0.0.0 Safari/537.36"
 )
 
-BASE_URL = "https://www.fmkorea.com"
-
 TARGETS = {
-    "fsl": {
-        "url": f"{BASE_URL}/index.php?mid=fifa_online&category=8064047289",
-        "referer": f"{BASE_URL}/fifa_online",  # 전체게시판에서 넘어온 것처럼 위장
-        "output": "data_fsl.json"
-    },
     "all": {
-        "url": f"{BASE_URL}/fifa_online",
-        "referer": f"{BASE_URL}/",
+        "url": "https://www.fmkorea.com/fifa_online",
         "output": "data_all.json"
     },
+    "fsl": {
+        "url": "https://www.fmkorea.com/index.php?mid=fifa_online&category=8064047289",
+        "output": "data_fsl.json"
+    }
 }
 
-MAX_PAGES = 150
+MAX_PAGES = 150  # 최대 150페이지 = 최대 3,000개
 
 
 def make_session(cookie_str):
@@ -63,6 +52,7 @@ def make_session(cookie_str):
         "User-Agent": DEFAULT_UA,
         "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
         "Accept-Language": "ko-KR,ko;q=0.9,en;q=0.8",
+        "Referer": "https://www.fmkorea.com/",
         "Cache-Control": "no-cache"
     })
     if cookie_str:
@@ -83,26 +73,31 @@ def parse_date(date_str, now_kst):
     """
     date_str = date_str.strip()
 
+    # 시:분 형식 (오늘 글 또는 어제 글)
     if re.match(r'^\d{1,2}:\d{2}$', date_str):
         h, m = map(int, date_str.split(":"))
         candidate = now_kst.replace(hour=h, minute=m, second=0, microsecond=0)
+        # 현재 시각보다 미래면 어제 날짜로 처리
         if candidate > now_kst:
             candidate = candidate - timedelta(days=1)
         return candidate
 
+    # 월.일 형식 → 해당 날짜 전체를 포함하도록 23:59로 설정
     if re.match(r'^\d{2}\.\d{2}$', date_str):
         month, day = map(int, date_str.split("."))
         year = now_kst.year
         try:
-            return datetime(year, month, day, tzinfo=KST)
-        except Exception:
+            # 월.일 형식은 어제 이전 글 → 23:59로 설정해서 범위 체크 통과
+            return datetime(year, month, day, hour=23, minute=59, second=59, tzinfo=KST)
+        except:
             return None
 
+    # 연.월.일 형식
     if re.match(r'^\d{4}\.\d{2}\.\d{2}$', date_str):
         year, month, day = map(int, date_str.split("."))
         try:
             return datetime(year, month, day, tzinfo=KST)
-        except Exception:
+        except:
             return None
 
     return None
@@ -115,11 +110,13 @@ def is_in_range(post_dt, start_dt, end_dt):
 
 
 def parse_posts_from_html(html, now_kst, start_dt, end_dt):
+    """HTML에서 게시글 파싱, 날짜 범위 필터링"""
     soup = BeautifulSoup(html, "html.parser")
     posts = []
     out_of_range_count = 0
 
     for tr in soup.select("table.bd_lst tbody tr"):
+        # 공지글 스킵
         if "notice" in tr.get("class", []):
             continue
 
@@ -132,24 +129,29 @@ def parse_posts_from_html(html, now_kst, start_dt, end_dt):
             continue
 
         href = title_el.get("href", "")
-        url = BASE_URL + href if href.startswith("/") else href
+        url = "https://www.fmkorea.com" + href if href.startswith("/") else href
 
+        # 날짜
         date_el = tr.select_one("td.time")
         date_str = date_el.get_text(strip=True) if date_el else ""
         post_dt = parse_date(date_str, now_kst)
 
+        # 범위 밖이면 카운트
         if post_dt and post_dt < start_dt:
             out_of_range_count += 1
 
+        # 범위 내 글만 수집
         if not is_in_range(post_dt, start_dt, end_dt):
             continue
 
+        # 조회수
         views = 0
         m_no_els = tr.select("td.m_no")
         for el in m_no_els:
             if "voted" in el.get("class", []):
                 continue
             txt = el.get_text(strip=True)
+            # "10만" → 100000
             if "만" in txt:
                 num = re.search(r"[\d.]+", txt)
                 if num:
@@ -161,6 +163,7 @@ def parse_posts_from_html(html, now_kst, start_dt, end_dt):
             if views > 0:
                 break
 
+        # 댓글수
         comments = 0
         reply_el = tr.select_one(".replyNum")
         if reply_el:
@@ -168,6 +171,7 @@ def parse_posts_from_html(html, now_kst, start_dt, end_dt):
             if c:
                 comments = int(c.group())
 
+        # 카테고리
         cate_el = tr.select_one("td.cate")
         category = cate_el.get_text(strip=True) if cate_el else ""
 
@@ -184,7 +188,8 @@ def parse_posts_from_html(html, now_kst, start_dt, end_dt):
     return posts, out_of_range_count
 
 
-def crawl_with_date_range(session, base_url, referer, source, start_dt, end_dt, now_kst):
+def crawl_with_date_range(session, base_url, source, start_dt, end_dt, now_kst):
+    """날짜 범위 기반 페이지 순회 크롤링"""
     all_posts = []
 
     for page in range(1, MAX_PAGES + 1):
@@ -197,26 +202,8 @@ def crawl_with_date_range(session, base_url, referer, source, start_dt, end_dt, 
         print(f"  [{source.upper()}] 페이지 {page} 크롤링: {url}")
 
         try:
-            # 페이지마다 Referer 갱신 (이전 페이지에서 넘어온 것처럼)
-            if page == 1:
-                session.headers.update({"Referer": referer})
-            else:
-                sep = "&" if "?" in base_url else "?"
-                prev_url = base_url if page == 2 else f"{base_url}{sep}page={page-1}"
-                session.headers.update({"Referer": prev_url})
-
             resp = session.get(url, timeout=30, verify=False)
-            # 인코딩 명시 (Windows runner 한글 깨짐 방지)
-            # 사이트 실제 인코딩 자동 감지 (EUC-KR 등 대응)
-            if resp.encoding and resp.encoding.lower() in ('utf-8', 'utf8'):
-                pass  # utf-8이면 그대로
-            else:
-                resp.encoding = resp.apparent_encoding or 'utf-8'
             print(f"  응답 코드: {resp.status_code}")
-
-            if resp.status_code == 430:
-                print(f"  430 Cloudflare 차단 - 쿠키 갱신 필요")
-                break
 
             if resp.status_code != 200:
                 print(f"  실패: {resp.status_code}")
@@ -236,8 +223,9 @@ def crawl_with_date_range(session, base_url, referer, source, start_dt, end_dt, 
         all_posts.extend(posts)
         print(f"  수집된 게시글: {len(posts)}개 (누적: {len(all_posts)}개)")
 
+        # 범위 밖 글이 5개 이상이면 더 이전 페이지는 수집 불필요
         if out_of_range_count >= 5:
-            print(f"  범위 이전 글 {out_of_range_count}개 감지 -> 수집 종료")
+            print(f"  범위 이전 글 {out_of_range_count}개 감지 → 수집 종료")
             break
 
         time.sleep(1)
@@ -262,9 +250,9 @@ def analyze_sentiment(posts, source):
     all_sentiments = []
     last_result = None
 
-    # 50개씩 배치 처리
-    for batch_start in range(0, len(posts), 50):
-        batch = posts[batch_start:batch_start + 50]
+    # 100개씩 배치 처리
+    for batch_start in range(0, len(posts), 100):
+        batch = posts[batch_start:batch_start + 100]
         titles_text = "\n".join(f"{i+1}. {p['title']}" for i, p in enumerate(batch))
 
         if source == "fsl":
@@ -280,13 +268,17 @@ def analyze_sentiment(posts, source):
 - 선수 이름 + 감탄사 조합("살라 야호", "민재 ㄷㄷ")은 긍정입니다.
 - "ㅋㅋ"는 맥락에 따라 긍정 또는 중립이며 부정이 아닙니다.
 
-[Few-shot 예시]
-- "살라 야호~~" → positive
-- "와우 홀란 2골 1어시 ㄷㄷ" → positive
-- "진짜 존나 억울하네 시발" → negative
-- "설기현 어떤가요?" → neutral
-- "ws 만두찐빵 하한가 ㄷㄷ" → neutral
-- "이번 여름 넥슨의 개로 전직할듯" → positive
+[Few-shot 예시 - 반드시 이 기준을 따르세요]
+- "살라 야호~~" → positive (선수에 대한 감탄/기쁨)
+- "와우 홀란 2골 1어시 ㄷㄷ" → positive (선수 활약 감탄)
+- "진짜 존나 억울하네 시발" → negative (불만/억울함)
+- "설기현 어떤가요?" → neutral (선수 정보 질문)
+- "요즘 아놀드 볼란치 괜찮나요?" → neutral (선수 질문)
+- "ws 만두찐빵 하한가 ㄷㄷ" → neutral (시세 정보 공유)
+- "다음주 토츠 관련 시세질문입니당" → neutral (시세 질문)
+- "신특크포하나에 6천조 태울만 한가요 형님들?" → neutral (구매 상담 질문)
+- "이번 여름 넥슨의 개로 전직할듯" → positive (게임에 더 빠져들겠다는 자조적 긍정 표현)
+- 시세 질문, 선수 질문, 추천 요청은 웬만하면 중립으로 분류하세요.
 
 게시글 제목:
 {titles_text}
@@ -316,18 +308,27 @@ def analyze_sentiment(posts, source):
 - 이 커뮤니티는 20~30대 남성 게이머 중심으로 욕설·비속어가 섞인 긍정 표현이 매우 흔합니다.
 - 긍정 표현 예시: "ㅅㅅ", "ㄷㄷ", "지렸다", "미쳤다", "야호", "개좋다", "갓", "레전드", "완성", "성공", "붙였다", "떴다", "득", "ㅋㅋ(성공/기쁨 맥락)", "씨발(성공 감탄)", "개쩐다", "드디어", "왔다", "ㄱㄱ", "달성"
 - 부정 표현 예시: "망했다", "ㅈ됐다", "억까", "보정", "안붙는다", "실패", "ㅡㅡ", "개같다(불만)", "환불", "접겠다", "왜이래", "버그", "오류", "너프", "개사기(불만)", "열받", "빡침"
-- 중립 표현: 선수/팀 정보 질문, 가격 질문, 스쿼드 추천 요청, 단순 정보 공유
+- 중립 표현: 선수/팀 정보 질문, 가격 질문, 스쿼드 추천 요청, 단순 정보 공유, "~어떤가요", "~추천좀", "~얼마에요"
 - 욕설이 있어도 성공/기쁨 맥락이면 반드시 긍정으로 분류하세요.
+- 선수 이름 + 감탄사 조합("살라 야호", "민재 ㄷㄷ", "레전드 선방")은 긍정입니다.
+- "ㅋㅋ"는 맥락에 따라 긍정 또는 중립이며 단독으로 부정이 아닙니다.
 - 강화 성공("붙였다", "성공", "13카 달성")은 긍정입니다.
+- 가격/시세 질문이나 정보 공유는 중립입니다.
 
-[Few-shot 예시]
-- "살라 야호~~" → positive
-- "와우 홀란 2골 1어시 ㄷㄷ" → positive
-- "진짜 존나 억울하네 시발" → negative
-- "설기현 어떤가요?" → neutral
-- "13카 달성!!!" → positive
-- "강화 또 망했다" → negative
-- "5경 팀 추천해주세요" → neutral
+[Few-shot 예시 - 반드시 이 기준을 따르세요]
+- "살라 야호~~" → positive (선수에 대한 감탄/기쁨)
+- "와우 홀란 2골 1어시 ㄷㄷ" → positive (선수 활약 감탄)
+- "진짜 존나 억울하네 시발" → negative (불만/억울함)
+- "설기현 어떤가요?" → neutral (선수 정보 질문)
+- "요즘 아놀드 볼란치 괜찮나요?" → neutral (선수 질문)
+- "ws 만두찐빵 하한가 ㄷㄷ" → neutral (시세 정보 공유)
+- "다음주 토츠 관련 시세질문입니당" → neutral (시세 질문)
+- "신특크포하나에 6천조 태울만 한가요 형님들?" → neutral (구매 상담 질문)
+- "이번 여름 넥슨의 개로 전직할듯" → positive (게임에 더 빠져들겠다는 자조적 긍정 표현)
+- "13카 달성!!!" → positive (강화 성공 기쁨)
+- "강화 또 망했다" → negative (강화 실패 불만)
+- "5경 팀 추천해주세요" → neutral (스쿼드 추천 요청)
+- 시세 질문, 선수 질문, 추천 요청은 웬만하면 중립으로 분류하세요.
 
 게시글 제목:
 {titles_text}
@@ -351,7 +352,7 @@ def analyze_sentiment(posts, source):
         try:
             message = client.messages.create(
                 model="claude-haiku-4-5-20251001",
-                max_tokens=4096,
+                max_tokens=2000,
                 messages=[{"role": "user", "content": prompt}]
             )
             raw = message.content[0].text.strip()
@@ -360,13 +361,14 @@ def analyze_sentiment(posts, source):
             batch_sents = batch_result.get("sentiments", ["neutral"] * len(batch))
             all_sentiments.extend(batch_sents[:len(batch)])
             last_result = batch_result
-            print(f"  배치 {batch_start//50+1} 분석 완료 ({len(batch)}개)")
+            print(f"  배치 {batch_start//100+1} 분석 완료 ({len(batch)}개)")
         except Exception as e:
-            print(f"  배치 {batch_start//50+1} 분석 실패: {e}")
+            print(f"  배치 {batch_start//100+1} 분석 실패: {e}")
             all_sentiments.extend(["neutral"] * len(batch))
 
     if last_result:
         last_result["sentiments"] = all_sentiments
+        # sentiment_summary 재계산
         total = len(all_sentiments)
         if total:
             pos = all_sentiments.count("positive")
@@ -394,6 +396,7 @@ def main():
     now_str = now_kst.strftime("%Y-%m-%d %H:%M")
     print(f"크롤링 시작: {now_str}")
 
+    # 수집 범위: 전날 10:01 ~ 당일 09:59
     end_dt = now_kst.replace(hour=9, minute=59, second=59, microsecond=0)
     start_dt = (now_kst - timedelta(days=1)).replace(hour=10, minute=1, second=0, microsecond=0)
 
@@ -404,15 +407,13 @@ def main():
 
     session = make_session(FMKOREA_COOKIE)
 
-    # all 먼저 크롤링해서 쿠키/세션 워밍업 후 fsl 진행
     for source, config in TARGETS.items():
         base_url = config["url"]
-        referer = config["referer"]
         output = config["output"]
 
         print(f"\n[{source.upper()}] 크롤링 시작")
 
-        posts = crawl_with_date_range(session, base_url, referer, source, start_dt, end_dt, now_kst)
+        posts = crawl_with_date_range(session, base_url, source, start_dt, end_dt, now_kst)
         print(f"[{source.upper()}] 총 수집: {len(posts)}개")
 
         if not posts:
@@ -472,6 +473,8 @@ def main():
             "last_updated": now_str
         }
 
+        # ── 히스토리 누적 ──────────────────────────────
+        # 기존 파일에서 히스토리 읽기
         existing_history = []
         try:
             with open(output, "r", encoding="utf-8") as f:
@@ -480,10 +483,14 @@ def main():
         except (FileNotFoundError, json.JSONDecodeError):
             pass
 
+        # ESI 계산 (T1+T2 기반)
+        # T1: 리그/대회/팀/선수 직접 귀속
         T1_KW = [
+            # 리그/대회
             "fsl","에프에스엘","fsl spring","fsl summer","fsl winter","fsl 팀배틀","ftb",
             "fc pro","fc pro masters","eacc","ea챔피언스컵",
             "결승전","8강","4강","그룹스테이지","녹아웃","이스포츠","e스포츠",
+            # 팀명
             "t1","티원","gen city","젠시티","gct",
             "kt rolster","kt 롤스터",
             "kiwoom drx","키움 디알엑스","krx",
@@ -491,6 +498,7 @@ def main():
             "ns redforce","농심 레드포스",
             "dn soopers","디엔 수퍼스","dns",
             "dplus kia","디플러스 기아",
+            # 선수 콜네임
             "byul","별빛","오펠","ofel","호석","hoseok","navy","네이비","퓨처","future","피어스","pierce",
             "wonder08","원더08","원더공팔","crong","크롱","solid","솔리드","jiffeyjay","지피제이","titan","타이탄선수","attain","아테인",
             "jm","제이엠","uta","우타","tk777","티케이","dike","디케",
@@ -499,6 +507,7 @@ def main():
             "exito","엑시토","ryuk","류크","box","박스","ppuljebi","뿔제비","aki","아키",
             "9kki","구끼","clutch","클러치","shype","샤이프","chase","체이스",
             "kwak","곽준혁","mibob","미밥","check","체크","tobio","토비오",
+            # 선수 성명
             "박기홍","강준호","최호석","김유민","박지호","조성빈",
             "고원재","황세종","임태산","성지원","이준서",
             "김정민","이지환","이태경","강무진",
@@ -518,6 +527,7 @@ def main():
         raw_esi = (t1_count * 1.0 + t2_count * 0.5) / total * sent_coeff * 100 if total else 0
         esi_score = round(min(10, raw_esi), 1)
 
+        # 오늘 날짜 히스토리 항목
         today_label = now_kst.strftime("%m/%d")
         today_entry = {
             "label": today_label,
@@ -528,25 +538,23 @@ def main():
             "positive": round(pos_rate)
         }
 
+        # 같은 날짜 중복 방지 (오늘 항목 교체)
         existing_history = [h for h in existing_history if h.get("date") != today_entry["date"]]
         existing_history.append(today_entry)
+
+        # 최근 90일치만 유지
         existing_history = existing_history[-90:]
         existing_history.sort(key=lambda x: x.get("date", ""))
 
         data["history"] = existing_history
         print(f"히스토리 누적: {len(existing_history)}일치")
+        # ──────────────────────────────────────────────
 
         with open(output, "w", encoding="utf-8") as f:
             json.dump(data, f, ensure_ascii=False, indent=2)
 
         print(f"{output} 저장 완료")
-
-        # fsl 크롤링 후 잠깐 대기 (all 요청 전 세션 안정화)
-        if source == "fsl":
-            print("  세션 안정화 대기 (3초)...")
-            time.sleep(3)
-        else:
-            time.sleep(2)
+        time.sleep(2)
 
     print("\n크롤링 완료!")
 
