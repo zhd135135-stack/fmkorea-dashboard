@@ -1,24 +1,1135 @@
 {
   "source": "fsl",
   "collection_range": {
-    "start": "2026-07-05 10:01",
-    "end": "2026-07-06 09:59"
+    "start": "2026-07-06 10:01",
+    "end": "2026-07-07 09:59"
   },
-  "total_posts": 0,
-  "total_views": 0,
-  "avg_views_per_post": 0,
-  "posts": [],
+  "total_posts": 118,
+  "total_views": 111891,
+  "avg_views_per_post": 948,
+  "posts": [
+    {
+      "title": "[2026 FSL 서머  Match Day 2] 요약 리뷰",
+      "url": "https://www.fmkorea.com/index.php?mid=fifa_online&category=8064047289&document_srl=10051699389",
+      "views": 214,
+      "comments": 6,
+      "date": "10:26",
+      "category": "FSL/프로게이머",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "오펠이 뇌지컬은 진짜 탑급인듯 수침이나 패침 등 나온게",
+      "url": "https://www.fmkorea.com/index.php?mid=fifa_online&category=8064047289&document_srl=10049921377",
+      "views": 607,
+      "comments": 3,
+      "date": "21:20",
+      "category": "FSL/프로게이머",
+      "sentiment": "positive"
+    },
+    {
+      "title": "승예 2일연속 막폴낙이네 ㅋㅋ",
+      "url": "https://www.fmkorea.com/index.php?mid=fifa_online&category=8064047289&document_srl=10049904399",
+      "views": 72,
+      "comments": 0,
+      "date": "21:15",
+      "category": "FSL/프로게이머",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "[OFEL VS 9KKI] 오펠 쐐기골 ㄷㄷㄷㄷㄷㄷㄷㄷㄷㄷㄷㄷㄷㄷㄷㄷㄷㄷ",
+      "url": "https://www.fmkorea.com/index.php?mid=fifa_online&category=8064047289&document_srl=10049887793",
+      "views": 241,
+      "comments": 2,
+      "date": "21:11",
+      "category": "FSL/프로게이머",
+      "sentiment": "positive"
+    },
+    {
+      "title": "오펠 경기 볼 때마다 느끼는데 수침 주는것도 주는거지만",
+      "url": "https://www.fmkorea.com/index.php?mid=fifa_online&category=8064047289&document_srl=10049874552",
+      "views": 222,
+      "comments": 9,
+      "date": "21:08",
+      "category": "FSL/프로게이머",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "오펠 완성도가 엄청 높은듯",
+      "url": "https://www.fmkorea.com/index.php?mid=fifa_online&category=8064047289&document_srl=10049870120",
+      "views": 148,
+      "comments": 0,
+      "date": "21:07",
+      "category": "FSL/프로게이머",
+      "sentiment": "positive"
+    },
+    {
+      "title": "오펠 피지컬 개지린다.. 수침 정신나가네",
+      "url": "https://www.fmkorea.com/index.php?mid=fifa_online&category=8064047289&document_srl=10049868186",
+      "views": 162,
+      "comments": 0,
+      "date": "21:07",
+      "category": "FSL/프로게이머",
+      "sentiment": "positive"
+    },
+    {
+      "title": "오펠 수침이 미쳤네요",
+      "url": "https://www.fmkorea.com/index.php?mid=fifa_online&category=8064047289&document_srl=10049860664",
+      "views": 30,
+      "comments": 0,
+      "date": "21:05",
+      "category": "FSL/프로게이머",
+      "sentiment": "positive"
+    },
+    {
+      "title": "[OFEL VS 9KKI] 춤추고싶은 구끼의 버저비터 ㄷㄷㄷㄷㄷㄷㄷㄷㄷㄷㄷㄷㄷㄷㄷㄷㄷㄷㄷ",
+      "url": "https://www.fmkorea.com/index.php?mid=fifa_online&category=8064047289&document_srl=10049835499",
+      "views": 216,
+      "comments": 2,
+      "date": "20:58",
+      "category": "FSL/프로게이머",
+      "sentiment": "positive"
+    },
+    {
+      "title": "맘은 오펠인데 구끼의",
+      "url": "https://www.fmkorea.com/index.php?mid=fifa_online&category=8064047289&document_srl=10049834382",
+      "views": 216,
+      "comments": 1,
+      "date": "20:58",
+      "category": "FSL/프로게이머",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "해줘 구끼해줘!!",
+      "url": "https://www.fmkorea.com/index.php?mid=fifa_online&category=8064047289&document_srl=10049834337",
+      "views": 23,
+      "comments": 0,
+      "date": "20:58",
+      "category": "FSL/프로게이머",
+      "sentiment": "positive"
+    },
+    {
+      "title": "꽉 가는구나 ㅋㅋㅋㅋ",
+      "url": "https://www.fmkorea.com/index.php?mid=fifa_online&category=8064047289&document_srl=10049830441",
+      "views": 276,
+      "comments": 2,
+      "date": "20:57",
+      "category": "FSL/프로게이머",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "[OFEL VS 9KKI] 오펠 패침 크로스 설계 ㄷㄷㄷㄷㄷㄷㄷㄷㄷㄷㄷㄷㄷㄷㄷㄷㄷ",
+      "url": "https://www.fmkorea.com/index.php?mid=fifa_online&category=8064047289&document_srl=10049821135",
+      "views": 185,
+      "comments": 1,
+      "date": "20:54",
+      "category": "FSL/프로게이머",
+      "sentiment": "positive"
+    },
+    {
+      "title": "[OFEL VS 9KKI] 회춘한 오펠 라브 트릭스터 활용 ㄷㄷㄷㄷㄷㄷㄷㄷㄷㄷㄷㄷㄷㄷㄷㄷㄷㄷ",
+      "url": "https://www.fmkorea.com/index.php?mid=fifa_online&category=8064047289&document_srl=10049779497",
+      "views": 4099,
+      "comments": 3,
+      "date": "20:42",
+      "category": "FSL/프로게이머",
+      "sentiment": "positive"
+    },
+    {
+      "title": "느낌이 온다 느낌이 와 ㄹㅇ",
+      "url": "https://www.fmkorea.com/index.php?mid=fifa_online&category=8064047289&document_srl=10049762997",
+      "views": 1348,
+      "comments": 5,
+      "date": "20:37",
+      "category": "FSL/프로게이머",
+      "sentiment": "positive"
+    },
+    {
+      "title": "오펠 잘하긴한다 진짜",
+      "url": "https://www.fmkorea.com/index.php?mid=fifa_online&category=8064047289&document_srl=10049756130",
+      "views": 90,
+      "comments": 0,
+      "date": "20:36",
+      "category": "FSL/프로게이머",
+      "sentiment": "positive"
+    },
+    {
+      "title": "오펠은 플레이가 젊어졌네 ㅋㅋㅋ",
+      "url": "https://www.fmkorea.com/index.php?mid=fifa_online&category=8064047289&document_srl=10049755700",
+      "views": 192,
+      "comments": 2,
+      "date": "20:35",
+      "category": "FSL/프로게이머",
+      "sentiment": "positive"
+    },
+    {
+      "title": "[OFEL VS 9KKI] 오펠 수침활용 ㄷㄷㄷㄷㄷㄷㄷㄷㄷㄷㄷㄷㄷㄷㄷㄷㄷ",
+      "url": "https://www.fmkorea.com/index.php?mid=fifa_online&category=8064047289&document_srl=10049748847",
+      "views": 692,
+      "comments": 4,
+      "date": "20:34",
+      "category": "FSL/프로게이머",
+      "sentiment": "positive"
+    },
+    {
+      "title": "오펠이 수침을 저렇게 많이 썼나ㄷㄷ",
+      "url": "https://www.fmkorea.com/index.php?mid=fifa_online&category=8064047289&document_srl=10049738837",
+      "views": 1512,
+      "comments": 3,
+      "date": "20:31",
+      "category": "FSL/프로게이머",
+      "sentiment": "positive"
+    },
+    {
+      "title": "T1 유니폼",
+      "url": "https://www.fmkorea.com/index.php?mid=fifa_online&category=8064047289&document_srl=10049707646",
+      "views": 209,
+      "comments": 1,
+      "date": "20:22",
+      "category": "FSL/프로게이머",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "샤이프가 태갓을 쉽게 잡은 이유",
+      "url": "https://www.fmkorea.com/index.php?mid=fifa_online&category=8064047289&document_srl=10049637841",
+      "views": 545,
+      "comments": 6,
+      "date": "20:07",
+      "category": "FSL/프로게이머",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "구끼야 너도 이겨서 춤추자",
+      "url": "https://www.fmkorea.com/index.php?mid=fifa_online&category=8064047289&document_srl=10049655258",
+      "views": 244,
+      "comments": 4,
+      "date": "20:06",
+      "category": "FSL/프로게이머",
+      "sentiment": "positive"
+    },
+    {
+      "title": "[ONE VS MIBOB] 원 라브달린 제비 속도 ㄷㄷㄷㄷㄷㄷㄷㄷㄷㄷㄷㄷㄷㄷㄷㄷ",
+      "url": "https://www.fmkorea.com/index.php?mid=fifa_online&category=8064047289&document_srl=10049571428",
+      "views": 169,
+      "comments": 1,
+      "date": "19:43",
+      "category": "FSL/프로게이머",
+      "sentiment": "positive"
+    },
+    {
+      "title": "태갓 매드사이언티스트 이미지가 있어서 재밌음",
+      "url": "https://www.fmkorea.com/index.php?mid=fifa_online&category=8064047289&document_srl=10049556082",
+      "views": 201,
+      "comments": 2,
+      "date": "19:38",
+      "category": "FSL/프로게이머",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "DK 이번 시즌 기대해봐도 되나",
+      "url": "https://www.fmkorea.com/index.php?mid=fifa_online&category=8064047289&document_srl=10049554532",
+      "views": 355,
+      "comments": 2,
+      "date": "19:38",
+      "category": "FSL/프로게이머",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "오 원의 4222",
+      "url": "https://www.fmkorea.com/index.php?mid=fifa_online&category=8064047289&document_srl=10049545416",
+      "views": 30,
+      "comments": 0,
+      "date": "19:35",
+      "category": "FSL/프로게이머",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "찬이랑 노바 웃긴점",
+      "url": "https://www.fmkorea.com/index.php?mid=fifa_online&category=8064047289&document_srl=10049507376",
+      "views": 976,
+      "comments": 5,
+      "date": "19:24",
+      "category": "FSL/프로게이머",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "태갓이 최애 선수인데 2대0은 예상 못했네..",
+      "url": "https://www.fmkorea.com/index.php?mid=fifa_online&category=8064047289&document_srl=10049448323",
+      "views": 253,
+      "comments": 1,
+      "date": "19:09",
+      "category": "FSL/프로게이머",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "샤이프 파라파라 ㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋ",
+      "url": "https://www.fmkorea.com/index.php?mid=fifa_online&category=8064047289&document_srl=10049448587",
+      "views": 70000,
+      "comments": 31,
+      "date": "19:08",
+      "category": "FSL/프로게이머",
+      "sentiment": "positive"
+    },
+    {
+      "title": "제비가 볼수록 너무 좋아보이네요",
+      "url": "https://www.fmkorea.com/index.php?mid=fifa_online&category=8064047289&document_srl=10049430616",
+      "views": 214,
+      "comments": 0,
+      "date": "19:03",
+      "category": "FSL/프로게이머",
+      "sentiment": "positive"
+    },
+    {
+      "title": "로빙스루향상 저거 뽑아야하나 ㅋㅋㅋㅋ",
+      "url": "https://www.fmkorea.com/index.php?mid=fifa_online&category=8064047289&document_srl=10049404430",
+      "views": 1243,
+      "comments": 2,
+      "date": "18:56",
+      "category": "FSL/프로게이머",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "???: 코너킥으로 승부보자 친구야",
+      "url": "https://www.fmkorea.com/index.php?mid=fifa_online&category=8064047289&document_srl=10049383216",
+      "views": 492,
+      "comments": 0,
+      "date": "18:50",
+      "category": "FSL/프로게이머",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "[SHYPE VS TAEGOD] 샤이프 수침 얼리크로스 ㄷㄷㄷㄷㄷㄷㄷㄷㄷㄷㄷㄷㄷㄷㄷㄷㄷ",
+      "url": "https://www.fmkorea.com/index.php?mid=fifa_online&category=8064047289&document_srl=10049381520",
+      "views": 1341,
+      "comments": 2,
+      "date": "18:49",
+      "category": "FSL/프로게이머",
+      "sentiment": "positive"
+    },
+    {
+      "title": "둘 다 자기만의 스타일로 잘하네요",
+      "url": "https://www.fmkorea.com/index.php?mid=fifa_online&category=8064047289&document_srl=10049377786",
+      "views": 198,
+      "comments": 2,
+      "date": "18:48",
+      "category": "FSL/프로게이머",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "와 아크로 없어도 있는 것처럼 플레이하네 ㄷㄷㄷㄷㄷ",
+      "url": "https://www.fmkorea.com/index.php?mid=fifa_online&category=8064047289&document_srl=10049376926",
+      "views": 118,
+      "comments": 0,
+      "date": "18:48",
+      "category": "FSL/프로게이머",
+      "sentiment": "positive"
+    },
+    {
+      "title": "샤이프 잘한다...",
+      "url": "https://www.fmkorea.com/index.php?mid=fifa_online&category=8064047289&document_srl=10049376015",
+      "views": 227,
+      "comments": 2,
+      "date": "18:48",
+      "category": "FSL/프로게이머",
+      "sentiment": "positive"
+    },
+    {
+      "title": "[SHYPE VS TAEGOD] 태갓 미친 코너킥 설계 ㄷㄷㄷㄷㄷㄷㄷㄷㄷㄷㄷㄷㄷㄷ",
+      "url": "https://www.fmkorea.com/index.php?mid=fifa_online&category=8064047289&document_srl=10049371015",
+      "views": 214,
+      "comments": 1,
+      "date": "18:46",
+      "category": "FSL/프로게이머",
+      "sentiment": "positive"
+    },
+    {
+      "title": "태갓 << 이분은 그냥 예술가아님?",
+      "url": "https://www.fmkorea.com/index.php?mid=fifa_online&category=8064047289&document_srl=10049366470",
+      "views": 259,
+      "comments": 0,
+      "date": "18:45",
+      "category": "FSL/프로게이머",
+      "sentiment": "positive"
+    },
+    {
+      "title": "[SHYPE VS TAEGOD] 샤이프 아름다운 레이저슈터 ㄷㄷㄷㄷㄷㄷㄷㄷㄷㄷㄷㄷㄷㄷ",
+      "url": "https://www.fmkorea.com/index.php?mid=fifa_online&category=8064047289&document_srl=10049364580",
+      "views": 1279,
+      "comments": 2,
+      "date": "18:44",
+      "category": "FSL/프로게이머",
+      "sentiment": "positive"
+    },
+    {
+      "title": "와 태갓 진짜 코너킥은 진짜 ㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋ 저건 혐너가 아니라 ㄹㅇ 계산적인데",
+      "url": "https://www.fmkorea.com/index.php?mid=fifa_online&category=8064047289&document_srl=10049363116",
+      "views": 111,
+      "comments": 0,
+      "date": "18:44",
+      "category": "FSL/프로게이머",
+      "sentiment": "positive"
+    },
+    {
+      "title": "ㅋㅋㅋㅋ 코너킥만드려고 아몰랑 파워슛",
+      "url": "https://www.fmkorea.com/index.php?mid=fifa_online&category=8064047289&document_srl=10049362798",
+      "views": 211,
+      "comments": 1,
+      "date": "18:44",
+      "category": "FSL/프로게이머",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "레이저슛터가 터트릴 수 있으면 진짜 좋은거같네",
+      "url": "https://www.fmkorea.com/index.php?mid=fifa_online&category=8064047289&document_srl=10049362064",
+      "views": 96,
+      "comments": 0,
+      "date": "18:43",
+      "category": "FSL/프로게이머",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "레이저슈터 ㄷㄷㄷ",
+      "url": "https://www.fmkorea.com/index.php?mid=fifa_online&category=8064047289&document_srl=10049359997",
+      "views": 25,
+      "comments": 0,
+      "date": "18:43",
+      "category": "FSL/프로게이머",
+      "sentiment": "positive"
+    },
+    {
+      "title": "윙백 뤼디거 머여 ㅋㅋㅋㅋ",
+      "url": "https://www.fmkorea.com/index.php?mid=fifa_online&category=8064047289&document_srl=10049357381",
+      "views": 147,
+      "comments": 0,
+      "date": "18:42",
+      "category": "FSL/프로게이머",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "뤼디거 풀백이랑 공미 레이저 슈팅의 대결이라니 ㅋㅋㅋㅋㅋㅋㅋ",
+      "url": "https://www.fmkorea.com/index.php?mid=fifa_online&category=8064047289&document_srl=10049347804",
+      "views": 21,
+      "comments": 0,
+      "date": "18:39",
+      "category": "FSL/프로게이머",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "레슛 공미 VS 뤼디거 풀백",
+      "url": "https://www.fmkorea.com/index.php?mid=fifa_online&category=8064047289&document_srl=10049345986",
+      "views": 84,
+      "comments": 0,
+      "date": "18:39",
+      "category": "FSL/프로게이머",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "뤼디거 풀백 머임?",
+      "url": "https://www.fmkorea.com/index.php?mid=fifa_online&category=8064047289&document_srl=10049339898",
+      "views": 224,
+      "comments": 3,
+      "date": "18:37",
+      "category": "FSL/프로게이머",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "태갓의 뤼디거 풀백 ㅋㅋㅋㅋ",
+      "url": "https://www.fmkorea.com/index.php?mid=fifa_online&category=8064047289&document_srl=10049330843",
+      "views": 831,
+      "comments": 2,
+      "date": "18:35",
+      "category": "FSL/프로게이머",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "찬화 곽처럼 꺾이나했는데 아니였네 ㄷㄷ",
+      "url": "https://www.fmkorea.com/index.php?mid=fifa_online&category=8064047289&document_srl=10049329008",
+      "views": 491,
+      "comments": 1,
+      "date": "18:34",
+      "category": "FSL/프로게이머",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Shpye ㅎㅇㅌ",
+      "url": "https://www.fmkorea.com/index.php?mid=fifa_online&category=8064047289&document_srl=10049325137",
+      "views": 64,
+      "comments": 0,
+      "date": "18:33",
+      "category": "FSL/프로게이머",
+      "sentiment": "positive"
+    },
+    {
+      "title": "샤이프는 공미까지 레이저슛터 쓰나보네",
+      "url": "https://www.fmkorea.com/index.php?mid=fifa_online&category=8064047289&document_srl=10049299732",
+      "views": 56,
+      "comments": 0,
+      "date": "18:26",
+      "category": "FSL/프로게이머",
+      "sentiment": "positive"
+    },
+    {
+      "title": "찬 : 노바 선수가 연습할때도 잘해서 뽑을까 말까 고민했었는데 결국 뽑았다",
+      "url": "https://www.fmkorea.com/index.php?mid=fifa_online&category=8064047289&document_srl=10049287591",
+      "views": 208,
+      "comments": 2,
+      "date": "18:22",
+      "category": "FSL/프로게이머",
+      "sentiment": "positive"
+    },
+    {
+      "title": "자 신특 골고루 나오는 상황인대 두심은 언제 나오죠?",
+      "url": "https://www.fmkorea.com/index.php?mid=fifa_online&category=8064047289&document_srl=10049276076",
+      "views": 400,
+      "comments": 5,
+      "date": "18:19",
+      "category": "FSL/프로게이머",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "찬화야 이대로라면 믿지 못해",
+      "url": "https://www.fmkorea.com/index.php?mid=fifa_online&category=8064047289&document_srl=10049274997",
+      "views": 33,
+      "comments": 0,
+      "date": "18:18",
+      "category": "FSL/프로게이머",
+      "sentiment": "negative"
+    },
+    {
+      "title": "노바 작년 젠시티 2군일 때 원더08한테 배운거려나",
+      "url": "https://www.fmkorea.com/index.php?mid=fifa_online&category=8064047289&document_srl=10049272081",
+      "views": 135,
+      "comments": 0,
+      "date": "18:18",
+      "category": "FSL/프로게이머",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "아오 페리시치",
+      "url": "https://www.fmkorea.com/index.php?mid=fifa_online&category=8064047289&document_srl=10049267691",
+      "views": 177,
+      "comments": 0,
+      "date": "18:16",
+      "category": "FSL/프로게이머",
+      "sentiment": "negative"
+    },
+    {
+      "title": "뭐? 카보베르데가 연장전 빼면 다 무승부라고?",
+      "url": "https://www.fmkorea.com/index.php?mid=fifa_online&category=8064047289&document_srl=10049264551",
+      "views": 221,
+      "comments": 1,
+      "date": "18:16",
+      "category": "FSL/프로게이머",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "찬 상대로 에스파노래goat 할 수 있었는대 ㄲㅂ",
+      "url": "https://www.fmkorea.com/index.php?mid=fifa_online&category=8064047289&document_srl=10049265048",
+      "views": 870,
+      "comments": 2,
+      "date": "18:16",
+      "category": "FSL/프로게이머",
+      "sentiment": "positive"
+    },
+    {
+      "title": "클래식 플레이의 마지막 보루",
+      "url": "https://www.fmkorea.com/index.php?mid=fifa_online&category=8064047289&document_srl=10049263399",
+      "views": 113,
+      "comments": 0,
+      "date": "18:15",
+      "category": "FSL/프로게이머",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "괜히 챔피언 했던게 아니지",
+      "url": "https://www.fmkorea.com/index.php?mid=fifa_online&category=8064047289&document_srl=10049261660",
+      "views": 26,
+      "comments": 0,
+      "date": "18:15",
+      "category": "FSL/프로게이머",
+      "sentiment": "positive"
+    },
+    {
+      "title": "이래 올라갔는데 담상대가 샤이프or태갓임",
+      "url": "https://www.fmkorea.com/index.php?mid=fifa_online&category=8064047289&document_srl=10049259112",
+      "views": 68,
+      "comments": 0,
+      "date": "18:14",
+      "category": "FSL/프로게이머",
+      "sentiment": "positive"
+    },
+    {
+      "title": "노바 진짜 잘하시네",
+      "url": "https://www.fmkorea.com/index.php?mid=fifa_online&category=8064047289&document_srl=10049258281",
+      "views": 621,
+      "comments": 2,
+      "date": "18:14",
+      "category": "FSL/프로게이머",
+      "sentiment": "positive"
+    },
+    {
+      "title": "찬 현재 상황 ㅋㅋ",
+      "url": "https://www.fmkorea.com/index.php?mid=fifa_online&category=8064047289&document_srl=10049257039",
+      "views": 694,
+      "comments": 2,
+      "date": "18:13",
+      "category": "FSL/프로게이머",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "슈퍼스타",
+      "url": "https://www.fmkorea.com/index.php?mid=fifa_online&category=8064047289&document_srl=10049252651",
+      "views": 219,
+      "comments": 4,
+      "date": "18:12",
+      "category": "FSL/프로게이머",
+      "sentiment": "positive"
+    },
+    {
+      "title": "찬죽다살았네ㅋㅋ",
+      "url": "https://www.fmkorea.com/index.php?mid=fifa_online&category=8064047289&document_srl=10049252547",
+      "views": 27,
+      "comments": 0,
+      "date": "18:12",
+      "category": "FSL/프로게이머",
+      "sentiment": "positive"
+    },
+    {
+      "title": "아니 근데 노바도 ㅈㄴ잘하네ㅋㅋㅋㅋ",
+      "url": "https://www.fmkorea.com/index.php?mid=fifa_online&category=8064047289&document_srl=10049251466",
+      "views": 193,
+      "comments": 1,
+      "date": "18:12",
+      "category": "FSL/프로게이머",
+      "sentiment": "positive"
+    },
+    {
+      "title": "자 여러분 찬의 몰카였습니다!!",
+      "url": "https://www.fmkorea.com/index.php?mid=fifa_online&category=8064047289&document_srl=10049247833",
+      "views": 35,
+      "comments": 0,
+      "date": "18:11",
+      "category": "FSL/프로게이머",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "???: 에이징커브니 메타적응 실패니",
+      "url": "https://www.fmkorea.com/index.php?mid=fifa_online&category=8064047289&document_srl=10049245103",
+      "views": 228,
+      "comments": 4,
+      "date": "18:10",
+      "category": "FSL/프로게이머",
+      "sentiment": "negative"
+    },
+    {
+      "title": "반대 zw 빈골대 팅한순간 멘탈못잡았다...",
+      "url": "https://www.fmkorea.com/index.php?mid=fifa_online&category=8064047289&document_srl=10049246520",
+      "views": 163,
+      "comments": 1,
+      "date": "18:10",
+      "category": "FSL/프로게이머",
+      "sentiment": "negative"
+    },
+    {
+      "title": "[CHAN VS NOVA] 찬 미친 버저비터 ㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋ",
+      "url": "https://www.fmkorea.com/index.php?mid=fifa_online&category=8064047289&document_srl=10049246196",
+      "views": 202,
+      "comments": 2,
+      "date": "18:10",
+      "category": "FSL/프로게이머",
+      "sentiment": "positive"
+    },
+    {
+      "title": "찬직이 미치긴했네",
+      "url": "https://www.fmkorea.com/index.php?mid=fifa_online&category=8064047289&document_srl=10049244675",
+      "views": 18,
+      "comments": 0,
+      "date": "18:10",
+      "category": "FSL/프로게이머",
+      "sentiment": "positive"
+    },
+    {
+      "title": "찬은 찬이네",
+      "url": "https://www.fmkorea.com/index.php?mid=fifa_online&category=8064047289&document_srl=10049244638",
+      "views": 19,
+      "comments": 0,
+      "date": "18:10",
+      "category": "FSL/프로게이머",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "찬화 극장골ㄷㄷ",
+      "url": "https://www.fmkorea.com/index.php?mid=fifa_online&category=8064047289&document_srl=10049244519",
+      "views": 19,
+      "comments": 0,
+      "date": "18:10",
+      "category": "FSL/프로게이머",
+      "sentiment": "positive"
+    },
+    {
+      "title": "진짜 박찬화 사람 미치게하네 ㅋㅋㅋ",
+      "url": "https://www.fmkorea.com/index.php?mid=fifa_online&category=8064047289&document_srl=10049244103",
+      "views": 782,
+      "comments": 5,
+      "date": "18:10",
+      "category": "FSL/프로게이머",
+      "sentiment": "positive"
+    },
+    {
+      "title": "찬 멘탈 인정한다",
+      "url": "https://www.fmkorea.com/index.php?mid=fifa_online&category=8064047289&document_srl=10049243635",
+      "views": 209,
+      "comments": 1,
+      "date": "18:09",
+      "category": "FSL/프로게이머",
+      "sentiment": "positive"
+    },
+    {
+      "title": "[CHAN VS NOVA] 찬 미친 레이저슈터 동점골 ㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋ",
+      "url": "https://www.fmkorea.com/index.php?mid=fifa_online&category=8064047289&document_srl=10049242119",
+      "views": 5298,
+      "comments": 9,
+      "date": "18:09",
+      "category": "FSL/프로게이머",
+      "sentiment": "positive"
+    },
+    {
+      "title": "경기 수준 뭐냐",
+      "url": "https://www.fmkorea.com/index.php?mid=fifa_online&category=8064047289&document_srl=10049241266",
+      "views": 69,
+      "comments": 0,
+      "date": "18:09",
+      "category": "FSL/프로게이머",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "저건 뭔각이냐",
+      "url": "https://www.fmkorea.com/index.php?mid=fifa_online&category=8064047289&document_srl=10049241084",
+      "views": 23,
+      "comments": 0,
+      "date": "18:09",
+      "category": "FSL/프로게이머",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "뭔가 신이 '노바 너 오늘 이겨' 하고 모든 기운을 불어넣어주는데",
+      "url": "https://www.fmkorea.com/index.php?mid=fifa_online&category=8064047289&document_srl=10049240472",
+      "views": 183,
+      "comments": 1,
+      "date": "18:08",
+      "category": "FSL/프로게이머",
+      "sentiment": "positive"
+    },
+    {
+      "title": "와 레이저슈터 ㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋ",
+      "url": "https://www.fmkorea.com/index.php?mid=fifa_online&category=8064047289&document_srl=10049239320",
+      "views": 49,
+      "comments": 0,
+      "date": "18:08",
+      "category": "FSL/프로게이머",
+      "sentiment": "positive"
+    },
+    {
+      "title": "와 경기 개재밌네",
+      "url": "https://www.fmkorea.com/index.php?mid=fifa_online&category=8064047289&document_srl=10049239019",
+      "views": 26,
+      "comments": 0,
+      "date": "18:08",
+      "category": "FSL/프로게이머",
+      "sentiment": "positive"
+    },
+    {
+      "title": "사람들 거짓말쟁이네",
+      "url": "https://www.fmkorea.com/index.php?mid=fifa_online&category=8064047289&document_srl=10049236266",
+      "views": 124,
+      "comments": 0,
+      "date": "18:07",
+      "category": "FSL/프로게이머",
+      "sentiment": "negative"
+    },
+    {
+      "title": "둘다 멘탈 단단하다",
+      "url": "https://www.fmkorea.com/index.php?mid=fifa_online&category=8064047289&document_srl=10049235191",
+      "views": 15,
+      "comments": 0,
+      "date": "18:07",
+      "category": "FSL/프로게이머",
+      "sentiment": "positive"
+    },
+    {
+      "title": "개잘하네 ㅁㅊ",
+      "url": "https://www.fmkorea.com/index.php?mid=fifa_online&category=8064047289&document_srl=10049233391",
+      "views": 35,
+      "comments": 0,
+      "date": "18:06",
+      "category": "FSL/프로게이머",
+      "sentiment": "positive"
+    },
+    {
+      "title": "[CHAN VS NOVA] 찬 동점골 ㄷㄷㄷㄷㄷㄷㄷㄷㄷㄷㄷㄷㄷㄷㄷㄷㄷ",
+      "url": "https://www.fmkorea.com/index.php?mid=fifa_online&category=8064047289&document_srl=10049230413",
+      "views": 54,
+      "comments": 1,
+      "date": "18:06",
+      "category": "FSL/프로게이머",
+      "sentiment": "positive"
+    },
+    {
+      "title": "[CHAN VS NOVA] 찬 첫 트릭스터 활용 ㄷㄷㄷㄷㄷㄷㄷㄷㄷㄷㄷㄷㄷㄷ",
+      "url": "https://www.fmkorea.com/index.php?mid=fifa_online&category=8064047289&document_srl=10049224796",
+      "views": 224,
+      "comments": 0,
+      "date": "18:04",
+      "category": "FSL/프로게이머",
+      "sentiment": "positive"
+    },
+    {
+      "title": "찬 라브 터지기 시작하니까 잘풀리네 ㅋㄱ",
+      "url": "https://www.fmkorea.com/index.php?mid=fifa_online&category=8064047289&document_srl=10049224560",
+      "views": 15,
+      "comments": 0,
+      "date": "18:04",
+      "category": "FSL/프로게이머",
+      "sentiment": "positive"
+    },
+    {
+      "title": "찬화야 재미 없었다",
+      "url": "https://www.fmkorea.com/index.php?mid=fifa_online&category=8064047289&document_srl=10049223445",
+      "views": 230,
+      "comments": 0,
+      "date": "18:03",
+      "category": "FSL/프로게이머",
+      "sentiment": "negative"
+    },
+    {
+      "title": "와 이걸 결국 따라가네",
+      "url": "https://www.fmkorea.com/index.php?mid=fifa_online&category=8064047289&document_srl=10049223390",
+      "views": 56,
+      "comments": 0,
+      "date": "18:03",
+      "category": "FSL/프로게이머",
+      "sentiment": "positive"
+    },
+    {
+      "title": "찬 이걸 따라가네",
+      "url": "https://www.fmkorea.com/index.php?mid=fifa_online&category=8064047289&document_srl=10049223332",
+      "views": 116,
+      "comments": 0,
+      "date": "18:03",
+      "category": "FSL/프로게이머",
+      "sentiment": "positive"
+    },
+    {
+      "title": "골대 ㅅㅂ",
+      "url": "https://www.fmkorea.com/index.php?mid=fifa_online&category=8064047289&document_srl=10049222117",
+      "views": 7,
+      "comments": 0,
+      "date": "18:03",
+      "category": "FSL/프로게이머",
+      "sentiment": "negative"
+    },
+    {
+      "title": "fc온라인2 안나와도 괜찮을 듯?",
+      "url": "https://www.fmkorea.com/index.php?mid=fifa_online&category=8064047289&document_srl=10049220061",
+      "views": 592,
+      "comments": 2,
+      "date": "18:02",
+      "category": "FSL/프로게이머",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "지단 움직임이 ㄹㅇ 예술이네",
+      "url": "https://www.fmkorea.com/index.php?mid=fifa_online&category=8064047289&document_srl=10049218149",
+      "views": 182,
+      "comments": 0,
+      "date": "18:02",
+      "category": "FSL/프로게이머",
+      "sentiment": "positive"
+    },
+    {
+      "title": "신특 잘 쓰는게 차이가 큰 것 같은데",
+      "url": "https://www.fmkorea.com/index.php?mid=fifa_online&category=8064047289&document_srl=10049218019",
+      "views": 22,
+      "comments": 0,
+      "date": "18:02",
+      "category": "FSL/프로게이머",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "오늘 다 안따라주네",
+      "url": "https://www.fmkorea.com/index.php?mid=fifa_online&category=8064047289&document_srl=10049216537",
+      "views": 6,
+      "comments": 0,
+      "date": "18:01",
+      "category": "FSL/프로게이머",
+      "sentiment": "negative"
+    },
+    {
+      "title": "노바 라브 존나 잘쓴다",
+      "url": "https://www.fmkorea.com/index.php?mid=fifa_online&category=8064047289&document_srl=10049212105",
+      "views": 78,
+      "comments": 1,
+      "date": "18:00",
+      "category": "FSL/프로게이머",
+      "sentiment": "positive"
+    },
+    {
+      "title": "와 노바 너무 잘하네요",
+      "url": "https://www.fmkorea.com/index.php?mid=fifa_online&category=8064047289&document_srl=10049211535",
+      "views": 220,
+      "comments": 2,
+      "date": "18:00",
+      "category": "FSL/프로게이머",
+      "sentiment": "positive"
+    },
+    {
+      "title": "찬화 농담이 심해~",
+      "url": "https://www.fmkorea.com/index.php?mid=fifa_online&category=8064047289&document_srl=10049207276",
+      "views": 33,
+      "comments": 0,
+      "date": "17:59",
+      "category": "FSL/프로게이머",
+      "sentiment": "negative"
+    },
+    {
+      "title": "츠한 공격할때 간결함이 아예 사라졌네",
+      "url": "https://www.fmkorea.com/index.php?mid=fifa_online&category=8064047289&document_srl=10049205333",
+      "views": 22,
+      "comments": 0,
+      "date": "17:58",
+      "category": "FSL/프로게이머",
+      "sentiment": "negative"
+    },
+    {
+      "title": "이번 FSL시즌은 신인들이 폼이 좋네",
+      "url": "https://www.fmkorea.com/index.php?mid=fifa_online&category=8064047289&document_srl=10049193559",
+      "views": 107,
+      "comments": 1,
+      "date": "17:56",
+      "category": "FSL/프로게이머",
+      "sentiment": "positive"
+    },
+    {
+      "title": "순수 짬으로 한게임 가져갔네 ㅋㅋㅋ",
+      "url": "https://www.fmkorea.com/index.php?mid=fifa_online&category=8064047289&document_srl=10049172978",
+      "views": 218,
+      "comments": 0,
+      "date": "17:50",
+      "category": "FSL/프로게이머",
+      "sentiment": "positive"
+    },
+    {
+      "title": "메타의 노바 VS 클래식의 찬",
+      "url": "https://www.fmkorea.com/index.php?mid=fifa_online&category=8064047289&document_srl=10049139723",
+      "views": 47,
+      "comments": 0,
+      "date": "17:43",
+      "category": "FSL/프로게이머",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "찬화야 슬슬 재미없어지네 ㅎㅎ...",
+      "url": "https://www.fmkorea.com/index.php?mid=fifa_online&category=8064047289&document_srl=10049138181",
+      "views": 175,
+      "comments": 0,
+      "date": "17:43",
+      "category": "FSL/프로게이머",
+      "sentiment": "negative"
+    },
+    {
+      "title": "[CHAN VS NOVA] 찬 미친 드리블돌파 ㄷㄷㄷㄷㄷㄷㄷㄷㄷㄷㄷㄷㄷㄷㄷ",
+      "url": "https://www.fmkorea.com/index.php?mid=fifa_online&category=8064047289&document_srl=10049136988",
+      "views": 273,
+      "comments": 3,
+      "date": "17:42",
+      "category": "FSL/프로게이머",
+      "sentiment": "positive"
+    },
+    {
+      "title": "[CHAN VS NOVA] 노바 너클 프리킥 ㄷㄷㄷㄷㄷㄷㄷㄷㄷㄷㄷㄷㄷㄷㄷㄷㄷㄷ",
+      "url": "https://www.fmkorea.com/index.php?mid=fifa_online&category=8064047289&document_srl=10049116391",
+      "views": 414,
+      "comments": 1,
+      "date": "17:38",
+      "category": "FSL/프로게이머",
+      "sentiment": "positive"
+    },
+    {
+      "title": "이거 찬이 대떡당할수도 있겠는데",
+      "url": "https://www.fmkorea.com/index.php?mid=fifa_online&category=8064047289&document_srl=10049112188",
+      "views": 934,
+      "comments": 2,
+      "date": "17:37",
+      "category": "FSL/프로게이머",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "저사람 gganova인가 그사람 아닌가",
+      "url": "https://www.fmkorea.com/index.php?mid=fifa_online&category=8064047289&document_srl=10049102737",
+      "views": 254,
+      "comments": 3,
+      "date": "17:35",
+      "category": "FSL/프로게이머",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "신인이 찬 상대로 4:1?",
+      "url": "https://www.fmkorea.com/index.php?mid=fifa_online&category=8064047289&document_srl=10049097570",
+      "views": 171,
+      "comments": 1,
+      "date": "17:34",
+      "category": "FSL/프로게이머",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "노바 플레이 엄청 깔끔하네",
+      "url": "https://www.fmkorea.com/index.php?mid=fifa_online&category=8064047289&document_srl=10049096598",
+      "views": 171,
+      "comments": 1,
+      "date": "17:34",
+      "category": "FSL/프로게이머",
+      "sentiment": "positive"
+    },
+    {
+      "title": "[CHAN VS NOVA] 노바 호돈신 아다리 ㄷㄷㄷㄷㄷㄷㄷㄷㄷㄷㄷㄷㄷㄷㄷㄷ",
+      "url": "https://www.fmkorea.com/index.php?mid=fifa_online&category=8064047289&document_srl=10049094884",
+      "views": 77,
+      "comments": 0,
+      "date": "17:34",
+      "category": "FSL/프로게이머",
+      "sentiment": "positive"
+    },
+    {
+      "title": "[CHAN VS NOVA] 노바 2수침 라브 역습 ㄷㄷㄷㄷㄷㄷㄷㄷㄷㄷㄷㄷㄷㄷ",
+      "url": "https://www.fmkorea.com/index.php?mid=fifa_online&category=8064047289&document_srl=10049074352",
+      "views": 205,
+      "comments": 1,
+      "date": "17:30",
+      "category": "FSL/프로게이머",
+      "sentiment": "positive"
+    },
+    {
+      "title": "와 노바가 찬 잡나??????",
+      "url": "https://www.fmkorea.com/index.php?mid=fifa_online&category=8064047289&document_srl=10049073188",
+      "views": 375,
+      "comments": 5,
+      "date": "17:29",
+      "category": "FSL/프로게이머",
+      "sentiment": "positive"
+    },
+    {
+      "title": "와 노바 잘하네",
+      "url": "https://www.fmkorea.com/index.php?mid=fifa_online&category=8064047289&document_srl=10049069315",
+      "views": 29,
+      "comments": 2,
+      "date": "17:28",
+      "category": "FSL/프로게이머",
+      "sentiment": "positive"
+    },
+    {
+      "title": "찬화 왜케 재미가 없어졌누",
+      "url": "https://www.fmkorea.com/index.php?mid=fifa_online&category=8064047289&document_srl=10049060897",
+      "views": 231,
+      "comments": 0,
+      "date": "17:27",
+      "category": "FSL/프로게이머",
+      "sentiment": "negative"
+    },
+    {
+      "title": "노바선수 잘하네요 ㄷㄷ",
+      "url": "https://www.fmkorea.com/index.php?mid=fifa_online&category=8064047289&document_srl=10049038774",
+      "views": 67,
+      "comments": 0,
+      "date": "17:23",
+      "category": "FSL/프로게이머",
+      "sentiment": "positive"
+    },
+    {
+      "title": "보기 드문 스쿼드",
+      "url": "https://www.fmkorea.com/index.php?mid=fifa_online&category=8064047289&document_srl=10048983846",
+      "views": 1194,
+      "comments": 1,
+      "date": "17:14",
+      "category": "FSL/프로게이머",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "FSL 찬 vs 노바 누구 승리 봄?",
+      "url": "https://www.fmkorea.com/index.php?mid=fifa_online&category=8064047289&document_srl=10048968642",
+      "views": 132,
+      "comments": 4,
+      "date": "17:10",
+      "category": "FSL/프로게이머",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "[ 2026 FSL SUMMER 그룹스테이지 DAY2 ] 빅매치 프리뷰",
+      "url": "https://www.fmkorea.com/index.php?mid=fifa_online&category=8064047289&document_srl=10048224206",
+      "views": 1985,
+      "comments": 6,
+      "date": "13:39",
+      "category": "FSL/프로게이머",
+      "sentiment": "neutral"
+    }
+  ],
   "sentiment": {
-    "positive": 0,
-    "neutral": 0,
-    "negative": 0
+    "positive": 56,
+    "neutral": 34,
+    "negative": 10
   },
-  "top_issues": {},
-  "keywords": [],
+  "top_issues": {
+    "positive": "노바의 압도적 플레이로 찬과의 경기에서 우위",
+    "negative": "찬의 매력도 하락 및 흥미 상실",
+    "neutral": "CHAN VS NOVA 경기 관심도 및 선수 비교"
+  },
+  "keywords": [
+    {
+      "topic": "노바(Nova)",
+      "count": 11,
+      "pct": "27.5%",
+      "tags": "드리블, 프리킥, 플레이, 호돈신, 역습"
+    },
+    {
+      "topic": "찬(Chan)",
+      "count": 9,
+      "pct": "22.5%",
+      "tags": "미친플레이, 재미없음, 상대"
+    },
+    {
+      "topic": "경기/매치",
+      "count": 8,
+      "pct": "20.0%",
+      "tags": "CHAN VS NOVA, FSL, 스테이지"
+    },
+    {
+      "topic": "감탄/평가",
+      "count": 7,
+      "pct": "17.5%",
+      "tags": "ㄷㄷ, 깔끔, 잘하네"
+    },
+    {
+      "topic": "스쿼드/전략",
+      "count": 2,
+      "pct": "5.0%",
+      "tags": "메타, 클래식"
+    }
+  ],
   "churn_signals": [],
-  "esports_disengagement_signals": [],
-  "fsl_mention_rate": "0%",
-  "impact_score": 0,
-  "viewer_engagement_estimate": "0K",
-  "last_updated": "2026-07-06 14:40"
+  "esports_disengagement_signals": [
+    "찬화 재미없어짐 반복 언급",
+    "흥미도 감소 신호"
+  ],
+  "fsl_mention_rate": "38.9%",
+  "impact_score": 7.2,
+  "viewer_engagement_estimate": "45K",
+  "last_updated": "2026-07-07 11:03",
+  "history": [
+    {
+      "label": "07/07",
+      "date": "2026-07-07",
+      "esi": 10.0,
+      "posts": 118,
+      "esports": 46,
+      "positive": 56
+    }
+  ]
 }
