@@ -382,13 +382,16 @@ def calc_esi(posts, pos_rate):
         "fsl", "에프에스엘", "fsl spring", "fsl summer", "fsl winter", "fsl 팀배틀", "ftb",
         "fc pro", "fc pro masters", "eacc", "ea챔피언스컵",
         "결승전", "8강", "4강", "그룹스테이지", "녹아웃", "이스포츠", "e스포츠",
+        "프로게이머", "프로선수", "프로팀",
+        "중계", "해설", "캐스터",
+        "스크림", "팬미팅", "사인회", "세트스코어",
         "t1", "티원", "gen city", "젠시티", "gct",
-        "kt rolster", "kt 롤스터",
+        "kt rolster", "kt 롤스터", "kt",
         "kiwoom drx", "키움 디알엑스", "krx",
         "bnk fearx", "bnk 피어엑스", "bfx",
-        "ns redforce", "농심 레드포스",
+        "ns redforce", "농심 레드포스", "ns",
         "dn soopers", "디엔 수퍼스", "dns",
-        "dplus kia", "디플러스 기아",
+        "dplus kia", "디플러스 기아", "dk",
         "byul", "별빛", "오펠", "ofel", "호석", "hoseok", "navy", "네이비",
         "퓨처", "future", "피어스", "pierce",
         "wonder08", "원더08", "원더공팔", "crong", "크롱", "solid", "솔리드",
@@ -420,7 +423,7 @@ def calc_esi(posts, pos_rate):
     esports_weighted = t1_count * 1.0 + t2_count * 0.5
     mention_rate = esports_weighted / total
     sent_coeff = (pos_rate / 100) * 2  # 0~2
-    raw_esi = mention_rate * sent_coeff * 100 * 2.0
+    raw_esi = mention_rate * sent_coeff * 100 * 1.5
     esi_score = round(min(10.0, raw_esi), 1)
 
     return esi_score, t1_count, t2_count
