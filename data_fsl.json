@@ -5,14 +5,14 @@
     "end": "2026-07-07 09:59"
   },
   "total_posts": 118,
-  "total_views": 111891,
-  "avg_views_per_post": 948,
+  "total_views": 112139,
+  "avg_views_per_post": 950,
   "posts": [
     {
       "title": "[2026 FSL 서머  Match Day 2] 요약 리뷰",
       "url": "https://www.fmkorea.com/index.php?mid=fifa_online&category=8064047289&document_srl=10051699389",
       "views": 214,
-      "comments": 6,
+      "comments": 7,
       "date": "10:26",
       "category": "FSL/프로게이머",
       "sentiment": "neutral"
@@ -33,7 +33,7 @@
       "comments": 0,
       "date": "21:15",
       "category": "FSL/프로게이머",
-      "sentiment": "neutral"
+      "sentiment": "positive"
     },
     {
       "title": "[OFEL VS 9KKI] 오펠 쐐기골 ㄷㄷㄷㄷㄷㄷㄷㄷㄷㄷㄷㄷㄷㄷㄷㄷㄷㄷ",
@@ -119,7 +119,7 @@
     {
       "title": "[OFEL VS 9KKI] 오펠 패침 크로스 설계 ㄷㄷㄷㄷㄷㄷㄷㄷㄷㄷㄷㄷㄷㄷㄷㄷㄷ",
       "url": "https://www.fmkorea.com/index.php?mid=fifa_online&category=8064047289&document_srl=10049821135",
-      "views": 185,
+      "views": 192,
       "comments": 1,
       "date": "20:54",
       "category": "FSL/프로게이머",
@@ -128,7 +128,7 @@
     {
       "title": "[OFEL VS 9KKI] 회춘한 오펠 라브 트릭스터 활용 ㄷㄷㄷㄷㄷㄷㄷㄷㄷㄷㄷㄷㄷㄷㄷㄷㄷㄷ",
       "url": "https://www.fmkorea.com/index.php?mid=fifa_online&category=8064047289&document_srl=10049779497",
-      "views": 4099,
+      "views": 4340,
       "comments": 3,
       "date": "20:42",
       "category": "FSL/프로게이머",
@@ -258,7 +258,7 @@
       "comments": 1,
       "date": "19:09",
       "category": "FSL/프로게이머",
-      "sentiment": "neutral"
+      "sentiment": "negative"
     },
     {
       "title": "샤이프 파라파라 ㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋ",
@@ -312,7 +312,7 @@
       "comments": 2,
       "date": "18:48",
       "category": "FSL/프로게이머",
-      "sentiment": "neutral"
+      "sentiment": "positive"
     },
     {
       "title": "와 아크로 없어도 있는 것처럼 플레이하네 ㄷㄷㄷㄷㄷ",
@@ -465,7 +465,7 @@
       "comments": 0,
       "date": "18:26",
       "category": "FSL/프로게이머",
-      "sentiment": "positive"
+      "sentiment": "neutral"
     },
     {
       "title": "찬 : 노바 선수가 연습할때도 잘해서 뽑을까 말까 고민했었는데 결국 뽑았다",
@@ -555,7 +555,7 @@
       "comments": 0,
       "date": "18:14",
       "category": "FSL/프로게이머",
-      "sentiment": "positive"
+      "sentiment": "neutral"
     },
     {
       "title": "노바 진짜 잘하시네",
@@ -717,7 +717,7 @@
       "comments": 1,
       "date": "18:08",
       "category": "FSL/프로게이머",
-      "sentiment": "positive"
+      "sentiment": "neutral"
     },
     {
       "title": "와 레이저슈터 ㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋ",
@@ -960,7 +960,7 @@
       "comments": 2,
       "date": "17:37",
       "category": "FSL/프로게이머",
-      "sentiment": "neutral"
+      "sentiment": "negative"
     },
     {
       "title": "저사람 gganova인가 그사람 아닌가",
@@ -1072,56 +1072,50 @@
     }
   ],
   "sentiment": {
-    "positive": 56,
-    "neutral": 34,
-    "negative": 10
+    "positive": 55,
+    "neutral": 33,
+    "negative": 12
   },
   "top_issues": {
-    "positive": "노바의 압도적 플레이로 찬과의 경기에서 우위",
-    "negative": "찬의 매력도 하락 및 흥미 상실",
-    "neutral": "CHAN VS NOVA 경기 관심도 및 선수 비교"
+    "positive": "노바 선수 플레이 극찬",
+    "negative": "찬 선수 재미 저하",
+    "neutral": "찬 vs 노바 매치업 비교"
   },
   "keywords": [
     {
-      "topic": "노바(Nova)",
-      "count": 11,
-      "pct": "27.5%",
-      "tags": "드리블, 프리킥, 플레이, 호돈신, 역습"
-    },
-    {
-      "topic": "찬(Chan)",
+      "topic": "노바(NOVA)",
       "count": 9,
-      "pct": "22.5%",
-      "tags": "미친플레이, 재미없음, 상대"
+      "pct": "32.1%",
+      "tags": "미친플레이,깔끔함,선수력"
     },
     {
-      "topic": "경기/매치",
+      "topic": "찬(CHAN)",
       "count": 8,
-      "pct": "20.0%",
-      "tags": "CHAN VS NOVA, FSL, 스테이지"
+      "pct": "28.6%",
+      "tags": "재미없음,대떡,상대비교"
     },
     {
-      "topic": "감탄/평가",
-      "count": 7,
-      "pct": "17.5%",
-      "tags": "ㄷㄷ, 깔끔, 잘하네"
+      "topic": "매치업",
+      "count": 6,
+      "pct": "21.4%",
+      "tags": "찬vs노바,누구승리,대결"
     },
     {
-      "topic": "스쿼드/전략",
-      "count": 2,
-      "pct": "5.0%",
-      "tags": "메타, 클래식"
+      "topic": "플레이하이라이트",
+      "count": 4,
+      "pct": "14.3%",
+      "tags": "드리블돌파,프리킥,아다리"
     }
   ],
   "churn_signals": [],
   "esports_disengagement_signals": [
-    "찬화 재미없어짐 반복 언급",
-    "흥미도 감소 신호"
+    "찬 선수에 대한 재미 저하 표현 증가(3회)",
+    "상위 선수 흥미 분산(노바 이목 집중)"
   ],
-  "fsl_mention_rate": "38.9%",
-  "impact_score": 7.2,
-  "viewer_engagement_estimate": "45K",
-  "last_updated": "2026-07-07 11:03",
+  "fsl_mention_rate": "33.3%",
+  "impact_score": 6.2,
+  "viewer_engagement_estimate": "8.5K",
+  "last_updated": "2026-07-07 12:16",
   "history": [
     {
       "label": "07/07",
@@ -1129,7 +1123,7 @@
       "esi": 10.0,
       "posts": 118,
       "esports": 46,
-      "positive": 56
+      "positive": 55
     }
   ]
 }
