@@ -1,95 +1,59 @@
 {
   "source": "fsl",
   "collection_range": {
-    "start": "2026-07-09 10:01",
-    "end": "2026-07-10 09:59"
+    "start": "2026-07-10 10:01",
+    "end": "2026-07-11 09:59"
   },
-  "total_posts": 4,
-  "total_views": 4140,
-  "avg_views_per_post": 1035,
+  "total_posts": 1,
+  "total_views": 650,
+  "avg_views_per_post": 650,
   "posts": [
     {
-      "title": "엑시토 선수 인성논란",
-      "url": "https://www.fmkorea.com/index.php?mid=fifa_online&category=8064047289&document_srl=10064142374",
-      "views": 2698,
-      "comments": 4,
-      "date": "23:45",
-      "category": "FSL/프로게이머",
-      "sentiment": "negative"
-    },
-    {
-      "title": "다음주 패자조 떨어지면 FFL행 맞나요?",
-      "url": "https://www.fmkorea.com/index.php?mid=fifa_online&category=8064047289&document_srl=10063558917",
-      "views": 128,
-      "comments": 1,
-      "date": "21:27",
+      "title": "Fsl Day 4 리뷰",
+      "url": "https://www.fmkorea.com/index.php?mid=fifa_online&category=8064047289&document_srl=10065959187",
+      "views": 650,
+      "comments": 2,
+      "date": "13:58",
       "category": "FSL/프로게이머",
       "sentiment": "neutral"
-    },
-    {
-      "title": "구끼 방송 보고 쓰는 라브는 냅둬야 된다 봄",
-      "url": "https://www.fmkorea.com/index.php?mid=fifa_online&category=8064047289&document_srl=10062956247",
-      "views": 1130,
-      "comments": 4,
-      "date": "19:20",
-      "category": "FSL/프로게이머",
-      "sentiment": "positive"
-    },
-    {
-      "title": "딸깍 타이탄",
-      "url": "https://www.fmkorea.com/index.php?mid=fifa_online&category=8064047289&document_srl=10062047012",
-      "views": 184,
-      "comments": 0,
-      "date": "15:47",
-      "category": "FSL/프로게이머",
-      "sentiment": "positive"
     }
   ],
   "sentiment": {
-    "positive": 50,
-    "neutral": 25,
-    "negative": 25
+    "positive": 0,
+    "neutral": 100,
+    "negative": 0
   },
   "top_issues": {
-    "positive": "구끼 추천 라브 스쿼드",
-    "negative": "엑시토 선수 인성논란",
-    "neutral": "패자조 강등 시스템"
+    "positive": "없음",
+    "negative": "없음",
+    "neutral": "FSL 경기 결과 및 분석 공유"
   },
   "keywords": [
     {
-      "topic": "선수 인성",
+      "topic": "FSL",
       "count": 1,
-      "pct": "25.0%",
-      "tags": "엑시토, 논란"
+      "pct": "100.0%",
+      "tags": "리그, 경기, 이스포츠"
     },
     {
-      "topic": "리그 시스템",
+      "topic": "Day 4",
       "count": 1,
-      "pct": "25.0%",
-      "tags": "FFL, 패자조, 강등"
+      "pct": "100.0%",
+      "tags": "일정, 경기일, 라운드"
     },
     {
-      "topic": "스쿼드 추천",
+      "topic": "리뷰",
       "count": 1,
-      "pct": "25.0%",
-      "tags": "구끼, 라브"
-    },
-    {
-      "topic": "선수 평가",
-      "count": 1,
-      "pct": "25.0%",
-      "tags": "타이탄, 호평"
+      "pct": "100.0%",
+      "tags": "분석, 평가, 후기"
     }
   ],
   "churn_signals": [],
-  "esports_disengagement_signals": [
-    "인성논란 우려",
-    "강등 불안감"
-  ],
-  "fsl_mention_rate": "50.0%",
-  "impact_score": 4.2,
-  "viewer_engagement_estimate": "2.3K",
-  "last_updated": "2026-07-10 13:43",
+  "esports_disengagement_signals": [],
+  "fsl_mention_rate": "100.0%",
+  "impact_score": 3.2,
+  "viewer_engagement_estimate": "2.1K",
+  "last_updated": "2026-07-11 12:59",
   "history": [
     {
       "label": "07/07",
@@ -122,6 +86,14 @@
       "posts": 4,
       "esports": 2,
       "positive": 50
+    },
+    {
+      "label": "07/11",
+      "date": "2026-07-11",
+      "esi": 0.0,
+      "posts": 1,
+      "esports": 1,
+      "positive": 0
     }
   ]
 }
