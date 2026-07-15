@@ -90,14 +90,11 @@ def parse_date(date_str, now_kst, start_dt, end_dt):
     if re.match(r'^\d{1,2}:\d{2}$', date_str):
         h, m = map(int, date_str.split(":"))
         today_candidate = now_kst.replace(hour=h, minute=m, second=0, microsecond=0)
-        # 오늘 날짜로 범위 내이면 바로 반환
-        if start_dt <= today_candidate <= end_dt:
-            return today_candidate
-        # 범위 밖이면 어제 날짜로 재시도
-        yesterday_candidate = today_candidate - timedelta(days=1)
-        if start_dt <= yesterday_candidate <= end_dt:
-            return yesterday_candidate
-        # 둘 다 범위 밖 → out_of_range 카운트용으로 오늘 기준 반환
+        # 크롤링 시각보다 미래이거나 동일하면 어제 글로 처리
+        # (10:01에 실행 시 10:01 글은 어제 글, 09:59 글은 오늘 글)
+        if today_candidate >= now_kst:
+            return today_candidate - timedelta(days=1)
+        # 크롤링 시각보다 과거면 오늘 글
         return today_candidate
 
     # 월.일 형식 (예: "07.05")
