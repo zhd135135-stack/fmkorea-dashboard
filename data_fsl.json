@@ -1,95 +1,26 @@
 {
   "source": "fsl",
   "collection_range": {
-    "start": "2026-07-16 10:01",
-    "end": "2026-07-17 09:59"
+    "start": "2026-07-17 10:01",
+    "end": "2026-07-18 09:59"
   },
-  "total_posts": 4,
-  "total_views": 5157,
-  "avg_views_per_post": 1289,
-  "posts": [
-    {
-      "title": "어제자 퍼즈 bj들 반응",
-      "url": "https://www.fmkorea.com/index.php?mid=fifa_online&category=8064047289&document_srl=10092806036",
-      "views": 485,
-      "comments": 1,
-      "date": "23:37",
-      "category": "FSL/프로게이머",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "살아남은 것이 강하다는 증명",
-      "url": "https://www.fmkorea.com/index.php?mid=fifa_online&category=8064047289&document_srl=10092533212",
-      "views": 1436,
-      "comments": 4,
-      "date": "22:30",
-      "category": "FSL/프로게이머",
-      "sentiment": "positive"
-    },
-    {
-      "title": "딮기 임금체불 ㄷㄷ",
-      "url": "https://www.fmkorea.com/index.php?mid=fifa_online&category=8064047289&document_srl=10091368339",
-      "views": 2236,
-      "comments": 8,
-      "date": "17:59",
-      "category": "FSL/프로게이머",
-      "sentiment": "positive"
-    },
-    {
-      "title": "현재까지 FSL 성적",
-      "url": "https://www.fmkorea.com/index.php?mid=fifa_online&category=8064047289&document_srl=10088427305",
-      "views": 1000,
-      "comments": 0,
-      "date": "07.16",
-      "category": "FSL/프로게이머",
-      "sentiment": "neutral"
-    }
-  ],
+  "total_posts": 0,
+  "total_views": 0,
+  "avg_views_per_post": 0,
+  "posts": [],
   "sentiment": {
-    "positive": 50,
-    "neutral": 50,
+    "positive": 0,
+    "neutral": 0,
     "negative": 0
   },
-  "top_issues": {
-    "positive": "선수 임금체불 이슈 감탄",
-    "negative": "해당없음",
-    "neutral": "FSL 성적 정보공유"
-  },
-  "keywords": [
-    {
-      "topic": "임금체불",
-      "count": 1,
-      "pct": "25.0%",
-      "tags": "선수문제,딮기,노동이슈"
-    },
-    {
-      "topic": "FSL성적",
-      "count": 1,
-      "pct": "25.0%",
-      "tags": "리그정보,순위,통계"
-    },
-    {
-      "topic": "BJ반응",
-      "count": 1,
-      "pct": "25.0%",
-      "tags": "스트리밍,커뮤니티반응"
-    },
-    {
-      "topic": "생존/강함",
-      "count": 1,
-      "pct": "25.0%",
-      "tags": "극복,성공담"
-    }
-  ],
+  "top_issues": {},
+  "keywords": [],
   "churn_signals": [],
-  "esports_disengagement_signals": [
-    "선수임금체불문제",
-    "리그운영투명성문제"
-  ],
-  "fsl_mention_rate": "75.0%",
-  "impact_score": 4.2,
-  "viewer_engagement_estimate": "12K",
-  "last_updated": "2026-07-17 12:57",
+  "esports_disengagement_signals": [],
+  "fsl_mention_rate": "0%",
+  "impact_score": 0,
+  "viewer_engagement_estimate": "0K",
+  "last_updated": "2026-07-18 12:51",
   "history": [
     {
       "label": "07/07",
