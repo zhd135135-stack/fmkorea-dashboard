@@ -1,26 +1,120 @@
 {
   "source": "fsl",
   "collection_range": {
-    "start": "2026-07-18 10:01",
-    "end": "2026-07-19 09:59"
+    "start": "2026-07-19 10:01",
+    "end": "2026-07-20 09:59"
   },
-  "total_posts": 0,
-  "total_views": 0,
-  "avg_views_per_post": 0,
-  "posts": [],
+  "total_posts": 6,
+  "total_views": 14588,
+  "avg_views_per_post": 2431,
+  "posts": [
+    {
+      "title": "08이는 스스에 q부를 넣어달라는데 개발진들이 들어줄진 모르겠네요",
+      "url": "https://www.fmkorea.com/index.php?mid=fifa_online&category=8064047289&document_srl=10106308207",
+      "views": 480,
+      "comments": 10,
+      "date": "01:45",
+      "category": "FSL/프로게이머",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "08이 라브 밸런스에 대한 의견",
+      "url": "https://www.fmkorea.com/index.php?mid=fifa_online&category=8064047289&document_srl=10106280975",
+      "views": 917,
+      "comments": 0,
+      "date": "01:34",
+      "category": "FSL/프로게이머",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "FSL vs ek리그",
+      "url": "https://www.fmkorea.com/index.php?mid=fifa_online&category=8064047289&document_srl=10105686247",
+      "views": 231,
+      "comments": 5,
+      "date": "23:09",
+      "category": "FSL/프로게이머",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "세계 대회 우승자의 강등 위기",
+      "url": "https://www.fmkorea.com/index.php?mid=fifa_online&category=8064047289&document_srl=10105236290",
+      "views": 4414,
+      "comments": 9,
+      "date": "21:55",
+      "category": "FSL/프로게이머",
+      "sentiment": "negative"
+    },
+    {
+      "title": "WONDER08: 전 트릭스터가 싫어요",
+      "url": "https://www.fmkorea.com/index.php?mid=fifa_online&category=8064047289&document_srl=10104492659",
+      "views": 8296,
+      "comments": 7,
+      "date": "19:38",
+      "category": "FSL/프로게이머",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "그 코치진 불러다 소파 4개 깔아놓고 좌담하는거는 이번시즌 안하남",
+      "url": "https://www.fmkorea.com/index.php?mid=fifa_online&category=8064047289&document_srl=10103458455",
+      "views": 250,
+      "comments": 4,
+      "date": "14:39",
+      "category": "FSL/프로게이머",
+      "sentiment": "negative"
+    }
+  ],
   "sentiment": {
     "positive": 0,
-    "neutral": 0,
-    "negative": 0
+    "neutral": 67,
+    "negative": 33
   },
-  "top_issues": {},
-  "keywords": [],
+  "top_issues": {
+    "positive": "없음",
+    "negative": "밸런스 불만, 강등 위기",
+    "neutral": "게임 규칙, 대회 비교"
+  },
+  "keywords": [
+    {
+      "topic": "08(선수)",
+      "count": 3,
+      "pct": "50.0%",
+      "tags": "Q스킬, 밸런스, 트릭스터"
+    },
+    {
+      "topic": "밸런스/버그",
+      "count": 2,
+      "pct": "33.3%",
+      "tags": "개발진, 불만"
+    },
+    {
+      "topic": "FSL",
+      "count": 2,
+      "pct": "33.3%",
+      "tags": "리그, 방송"
+    },
+    {
+      "topic": "강등/순위",
+      "count": 1,
+      "pct": "16.7%",
+      "tags": "우승자"
+    },
+    {
+      "topic": "코칭/콘텐츠",
+      "count": 1,
+      "pct": "16.7%",
+      "tags": "좌담"
+    }
+  ],
   "churn_signals": [],
-  "esports_disengagement_signals": [],
-  "fsl_mention_rate": "0%",
-  "impact_score": 0,
-  "viewer_engagement_estimate": "0K",
-  "last_updated": "2026-07-19 13:19",
+  "esports_disengagement_signals": [
+    "밸런스 불만으로 인한 게임플레이 불신",
+    "강등 위기 등 스포츠성 논쟁",
+    "콘텐츠 포맷 변화에 대한 부정적 평가"
+  ],
+  "fsl_mention_rate": "33.3%",
+  "impact_score": 4.2,
+  "viewer_engagement_estimate": "12K",
+  "last_updated": "2026-07-20 13:33",
   "history": [
     {
       "label": "07/07",
@@ -93,6 +187,14 @@
       "posts": 4,
       "esports": 1,
       "positive": 50
+    },
+    {
+      "label": "07/20",
+      "date": "2026-07-20",
+      "esi": 0.0,
+      "posts": 6,
+      "esports": 2,
+      "positive": 0
     }
   ]
 }
