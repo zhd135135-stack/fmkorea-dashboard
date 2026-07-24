@@ -1,327 +1,110 @@
 {
   "source": "fsl",
   "collection_range": {
-    "start": "2026-07-22 10:01",
-    "end": "2026-07-23 09:59"
+    "start": "2026-07-23 10:01",
+    "end": "2026-07-24 09:59"
   },
-  "total_posts": 29,
-  "total_views": 51198,
-  "avg_views_per_post": 1765,
+  "total_posts": 5,
+  "total_views": 1920,
+  "avg_views_per_post": 384,
   "posts": [
+    {
+      "title": "우와 공경하다 엑시토만남!",
+      "url": "https://www.fmkorea.com/index.php?mid=fifa_online&category=8064047289&document_srl=10122818052",
+      "views": 247,
+      "comments": 2,
+      "date": "04:37",
+      "category": "FSL/프로게이머",
+      "sentiment": "positive"
+    },
+    {
+      "title": "대회가 확실히 트릭너프한게 영향이잇긴햇나봄",
+      "url": "https://www.fmkorea.com/index.php?mid=fifa_online&category=8064047289&document_srl=10122644275",
+      "views": 221,
+      "comments": 2,
+      "date": "01:38",
+      "category": "FSL/프로게이머",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "전재준 닮은꼴 DRX 원 vs 살아있는 화석 JM 누가 이길 것 같음?",
+      "url": "https://www.fmkorea.com/index.php?mid=fifa_online&category=8064047289&document_srl=10122334639",
+      "views": 210,
+      "comments": 4,
+      "date": "00:09",
+      "category": "FSL/프로게이머",
+      "sentiment": "positive"
+    },
     {
       "title": "난 근데 어제 지피제이 [맛없는데]?? 이거 FSL 시즌카드 홍보영상 울궈먹는건준 알았는대",
       "url": "https://www.fmkorea.com/index.php?mid=fifa_online&category=8064047289&document_srl=10119091067",
-      "views": 267,
+      "views": 857,
       "comments": 0,
-      "date": "08:42",
+      "date": "07.23",
       "category": "FSL/프로게이머",
       "sentiment": "negative"
     },
     {
       "title": "갠적으로 곽준혁은 4222보단 4231이 어울리는듯",
       "url": "https://www.fmkorea.com/index.php?mid=fifa_online&category=8064047289&document_srl=10118811444",
-      "views": 211,
-      "comments": 1,
-      "date": "03:54",
-      "category": "FSL/프로게이머",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "지피제이 사과 영상",
-      "url": "https://www.fmkorea.com/index.php?mid=fifa_online&category=8064047289&document_srl=10118359028",
-      "views": 20000,
-      "comments": 22,
-      "date": "23:09",
-      "category": "FSL/프로게이머",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "젠지의 숨은 칼날 지피제이",
-      "url": "https://www.fmkorea.com/index.php?mid=fifa_online&category=8064047289&document_srl=10118127395",
-      "views": 1607,
-      "comments": 0,
-      "date": "22:28",
-      "category": "FSL/프로게이머",
-      "sentiment": "positive"
-    },
-    {
-      "title": "16강은 노코인이죠?",
-      "url": "https://www.fmkorea.com/index.php?mid=fifa_online&category=8064047289&document_srl=10117444329",
-      "views": 272,
-      "comments": 2,
-      "date": "19:20",
-      "category": "FSL/프로게이머",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "와 FSL 16강 첫매치 ㄷㄷㄷㄷㄷㄷㄷㄷㄷ;",
-      "url": "https://www.fmkorea.com/index.php?mid=fifa_online&category=8064047289&document_srl=10117430182",
-      "views": 419,
-      "comments": 2,
-      "date": "19:19",
-      "category": "FSL/프로게이머",
-      "sentiment": "positive"
-    },
-    {
-      "title": "근데 조별리그 같은 조 였으면 못 뽑게하지",
-      "url": "https://www.fmkorea.com/index.php?mid=fifa_online&category=8064047289&document_srl=10117430603",
-      "views": 668,
-      "comments": 2,
-      "date": "19:16",
-      "category": "FSL/프로게이머",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "호석이는 손해 아님?",
-      "url": "https://www.fmkorea.com/index.php?mid=fifa_online&category=8064047289&document_srl=10117425320",
-      "views": 2697,
-      "comments": 2,
-      "date": "19:15",
-      "category": "FSL/프로게이머",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "FSL 16살 대진 및 일정",
-      "url": "https://www.fmkorea.com/index.php?mid=fifa_online&category=8064047289&document_srl=10117411663",
-      "views": 2200,
-      "comments": 1,
-      "date": "19:11",
-      "category": "FSL/프로게이머",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "fsl 16강 지명방식 조금 아쉽네",
-      "url": "https://www.fmkorea.com/index.php?mid=fifa_online&category=8064047289&document_srl=10117410808",
-      "views": 1381,
-      "comments": 1,
-      "date": "19:10",
-      "category": "FSL/프로게이머",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "fsl 지단 비상이네",
-      "url": "https://www.fmkorea.com/index.php?mid=fifa_online&category=8064047289&document_srl=10117405555",
-      "views": 1270,
-      "comments": 2,
-      "date": "19:09",
-      "category": "FSL/프로게이머",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "16강 첫 매치가 제일 재밌어보이네",
-      "url": "https://www.fmkorea.com/index.php?mid=fifa_online&category=8064047289&document_srl=10117394919",
-      "views": 204,
-      "comments": 1,
-      "date": "19:06",
-      "category": "FSL/프로게이머",
-      "sentiment": "positive"
-    },
-    {
-      "title": "찬 승자조 못 가니까 찬 호석도 보네",
-      "url": "https://www.fmkorea.com/index.php?mid=fifa_online&category=8064047289&document_srl=10117395213",
-      "views": 160,
-      "comments": 0,
-      "date": "19:06",
-      "category": "FSL/프로게이머",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "곽 태국 혐오증 ㅅㅂ ㅋㅋㅋㅋㅋ",
-      "url": "https://www.fmkorea.com/index.php?mid=fifa_online&category=8064047289&document_srl=10117388770",
-      "views": 400,
-      "comments": 0,
-      "date": "19:04",
-      "category": "FSL/프로게이머",
-      "sentiment": "positive"
-    },
-    {
-      "title": "마이크웤은 샤이프랑 곽이 제일 좋네",
-      "url": "https://www.fmkorea.com/index.php?mid=fifa_online&category=8064047289&document_srl=10117369558",
-      "views": 223,
-      "comments": 4,
-      "date": "18:59",
-      "category": "FSL/프로게이머",
-      "sentiment": "positive"
-    },
-    {
-      "title": "원더 : 니가 우리형 때렸냐??",
-      "url": "https://www.fmkorea.com/index.php?mid=fifa_online&category=8064047289&document_srl=10117347153",
-      "views": 424,
-      "comments": 0,
-      "date": "18:52",
-      "category": "FSL/프로게이머",
-      "sentiment": "positive"
-    },
-    {
-      "title": "역시 우승자의 품격",
-      "url": "https://www.fmkorea.com/index.php?mid=fifa_online&category=8064047289&document_srl=10117337516",
-      "views": 206,
-      "comments": 0,
-      "date": "18:50",
-      "category": "FSL/프로게이머",
-      "sentiment": "positive"
-    },
-    {
-      "title": "스피드 씹스터 버프 좀",
-      "url": "https://www.fmkorea.com/index.php?mid=fifa_online&category=8064047289&document_srl=10117332996",
-      "views": 216,
-      "comments": 1,
-      "date": "18:48",
-      "category": "FSL/프로게이머",
-      "sentiment": "negative"
-    },
-    {
-      "title": "선수별 매칭된 FSL 클래스 정리ㄷㄷㄷㄷㄷㄷ",
-      "url": "https://www.fmkorea.com/index.php?mid=fifa_online&category=8064047289&document_srl=10117309874",
-      "views": 10000,
-      "comments": 15,
-      "date": "18:46",
-      "category": "FSL/프로게이머",
-      "sentiment": "positive"
-    },
-    {
-      "title": "호석이의 트릭스터 지단",
-      "url": "https://www.fmkorea.com/index.php?mid=fifa_online&category=8064047289&document_srl=10117314166",
-      "views": 211,
-      "comments": 0,
-      "date": "18:43",
-      "category": "FSL/프로게이머",
-      "sentiment": "positive"
-    },
-    {
-      "title": "fsl 시즌 선수들이 직접 고르고 만들었다?",
-      "url": "https://www.fmkorea.com/index.php?mid=fifa_online&category=8064047289&document_srl=10117303299",
-      "views": 1596,
-      "comments": 5,
-      "date": "18:39",
-      "category": "FSL/프로게이머",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "선수들은 오버롤,스탯 아는거겠지?",
-      "url": "https://www.fmkorea.com/index.php?mid=fifa_online&category=8064047289&document_srl=10117300677",
-      "views": 220,
+      "views": 385,
       "comments": 3,
-      "date": "18:38",
-      "category": "FSL/프로게이머",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "대회 보는 사람인데",
-      "url": "https://www.fmkorea.com/index.php?mid=fifa_online&category=8064047289&document_srl=10117274745",
-      "views": 346,
-      "comments": 9,
-      "date": "18:30",
-      "category": "FSL/프로게이머",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "FSL 굴리트 미페",
-      "url": "https://www.fmkorea.com/index.php?mid=fifa_online&category=8064047289&document_srl=10117194763",
-      "views": 1720,
-      "comments": 7,
-      "date": "18:06",
-      "category": "FSL/프로게이머",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "16강 조 지명식 하네",
-      "url": "https://www.fmkorea.com/index.php?mid=fifa_online&category=8064047289&document_srl=10117149340",
-      "views": 610,
-      "comments": 2,
-      "date": "17:52",
-      "category": "FSL/프로게이머",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "FSL SUMMER 3주차 매치 리절트 네이비 ㄷㄷㄷㄷㄷ",
-      "url": "https://www.fmkorea.com/index.php?mid=fifa_online&category=8064047289&document_srl=10116408847",
-      "views": 220,
-      "comments": 3,
-      "date": "14:34",
-      "category": "FSL/프로게이머",
-      "sentiment": "positive"
-    },
-    {
-      "title": "근데 FSL은 몇 살부터 뛸 수 있는 거임?",
-      "url": "https://www.fmkorea.com/index.php?mid=fifa_online&category=8064047289&document_srl=10116125434",
-      "views": 1184,
-      "comments": 4,
-      "date": "07.22",
-      "category": "FSL/프로게이머",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "어제 fsl 불쾌한거 많이 나옴?",
-      "url": "https://www.fmkorea.com/index.php?mid=fifa_online&category=8064047289&document_srl=10115970956",
-      "views": 1492,
-      "comments": 10,
-      "date": "07.22",
-      "category": "FSL/프로게이머",
-      "sentiment": "negative"
-    },
-    {
-      "title": "2026 FSL 팀별 진출 현황",
-      "url": "https://www.fmkorea.com/index.php?mid=fifa_online&category=8064047289&document_srl=10115014217",
-      "views": 774,
-      "comments": 5,
-      "date": "07.22",
+      "date": "07.23",
       "category": "FSL/프로게이머",
       "sentiment": "neutral"
     }
   ],
   "sentiment": {
-    "positive": 34,
-    "neutral": 55,
-    "negative": 10
+    "positive": 40,
+    "neutral": 40,
+    "negative": 20
   },
   "top_issues": {
-    "positive": "FSL 16강 매치 흥미도 높음",
-    "negative": "선수 밸런싱 및 보정 논란",
-    "neutral": "대회 일정 및 규칙 정보"
+    "positive": "선수 만남/대회 기대감",
+    "negative": "카드 홍보 과다/불만",
+    "neutral": "선수 능력 분석/포메이션"
   },
   "keywords": [
     {
-      "topic": "16강",
-      "count": 8,
-      "pct": "27.6%",
-      "tags": "대진, 매치, 첫경기, 일정"
+      "topic": "프로게이머",
+      "count": 5,
+      "pct": "35.7%",
+      "tags": "공경하다, 전재준, DRX원, JM, 곽준혁"
     },
     {
-      "topic": "FSL 시즌카드/팀",
-      "count": 7,
-      "pct": "24.1%",
-      "tags": "선수카드, 클래스, 진출현황"
-    },
-    {
-      "topic": "개별선수",
-      "count": 9,
-      "pct": "31.0%",
-      "tags": "지피제이, 곽준혁, 호석, 찬"
-    },
-    {
-      "topic": "포메이션/빌드",
-      "count": 3,
-      "pct": "10.3%",
-      "tags": "4222, 4231, 지단"
-    },
-    {
-      "topic": "밸런스/버프",
+      "topic": "대회/경기",
       "count": 2,
-      "pct": "6.9%",
-      "tags": "스피드, 보정"
+      "pct": "14.3%",
+      "tags": "FSL, 시즌카드"
+    },
+    {
+      "topic": "게임메커닉",
+      "count": 2,
+      "pct": "14.3%",
+      "tags": "트릭너프, 포메이션(4222,4231)"
+    },
+    {
+      "topic": "감정표현",
+      "count": 2,
+      "pct": "14.3%",
+      "tags": "우와(긍정), 맛없는데(부정)"
+    },
+    {
+      "topic": "플레이어 비교",
+      "count": 1,
+      "pct": "7.1%",
+      "tags": "vs매칭"
     }
   ],
   "churn_signals": [],
   "esports_disengagement_signals": [
-    "밸런싱 논란 ('스피드 씹스터 버프')",
-    "불쾌감 언급 ('어제 불쾌한거 많이')",
-    "선수 손해 논쟁 ('호석이는 손해 아님?')"
+    "시즌카드 홍보에 대한 피로도 표현",
+    "게임 밸런스 조정(너프)에 대한 의구심"
   ],
-  "fsl_mention_rate": "93.1%",
-  "impact_score": 6.8,
-  "viewer_engagement_estimate": "12.5K",
-  "last_updated": "2026-07-23 13:11",
+  "fsl_mention_rate": "40.0%",
+  "impact_score": 5.5,
+  "viewer_engagement_estimate": "12.3K",
+  "last_updated": "2026-07-24 13:11",
   "history": [
     {
       "label": "07/07",
@@ -426,6 +209,14 @@
       "posts": 29,
       "esports": 19,
       "positive": 34
+    },
+    {
+      "label": "07/24",
+      "date": "2026-07-24",
+      "esi": 10.0,
+      "posts": 5,
+      "esports": 4,
+      "positive": 40
     }
   ]
 }
