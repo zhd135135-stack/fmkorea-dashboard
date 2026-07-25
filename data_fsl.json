@@ -1,110 +1,95 @@
 {
   "source": "fsl",
   "collection_range": {
-    "start": "2026-07-23 10:01",
-    "end": "2026-07-24 09:59"
+    "start": "2026-07-24 10:01",
+    "end": "2026-07-25 09:59"
   },
-  "total_posts": 5,
-  "total_views": 1920,
-  "avg_views_per_post": 384,
+  "total_posts": 4,
+  "total_views": 1817,
+  "avg_views_per_post": 454,
   "posts": [
+    {
+      "title": "밥먹듯이 16강을 진출하는 우타를 알아봅시다",
+      "url": "https://www.fmkorea.com/index.php?mid=fifa_online&category=8064047289&document_srl=10124525921",
+      "views": 214,
+      "comments": 1,
+      "date": "22:56",
+      "category": "FSL/프로게이머",
+      "sentiment": "positive"
+    },
     {
       "title": "우와 공경하다 엑시토만남!",
       "url": "https://www.fmkorea.com/index.php?mid=fifa_online&category=8064047289&document_srl=10122818052",
       "views": 247,
       "comments": 2,
-      "date": "04:37",
+      "date": "07.24",
       "category": "FSL/프로게이머",
       "sentiment": "positive"
     },
     {
       "title": "대회가 확실히 트릭너프한게 영향이잇긴햇나봄",
       "url": "https://www.fmkorea.com/index.php?mid=fifa_online&category=8064047289&document_srl=10122644275",
-      "views": 221,
+      "views": 1146,
       "comments": 2,
-      "date": "01:38",
+      "date": "07.24",
       "category": "FSL/프로게이머",
-      "sentiment": "neutral"
+      "sentiment": "negative"
     },
     {
       "title": "전재준 닮은꼴 DRX 원 vs 살아있는 화석 JM 누가 이길 것 같음?",
       "url": "https://www.fmkorea.com/index.php?mid=fifa_online&category=8064047289&document_srl=10122334639",
       "views": 210,
       "comments": 4,
-      "date": "00:09",
-      "category": "FSL/프로게이머",
-      "sentiment": "positive"
-    },
-    {
-      "title": "난 근데 어제 지피제이 [맛없는데]?? 이거 FSL 시즌카드 홍보영상 울궈먹는건준 알았는대",
-      "url": "https://www.fmkorea.com/index.php?mid=fifa_online&category=8064047289&document_srl=10119091067",
-      "views": 857,
-      "comments": 0,
-      "date": "07.23",
-      "category": "FSL/프로게이머",
-      "sentiment": "negative"
-    },
-    {
-      "title": "갠적으로 곽준혁은 4222보단 4231이 어울리는듯",
-      "url": "https://www.fmkorea.com/index.php?mid=fifa_online&category=8064047289&document_srl=10118811444",
-      "views": 385,
-      "comments": 3,
-      "date": "07.23",
+      "date": "07.24",
       "category": "FSL/프로게이머",
       "sentiment": "neutral"
     }
   ],
   "sentiment": {
-    "positive": 40,
-    "neutral": 40,
-    "negative": 20
+    "positive": 50,
+    "neutral": 25,
+    "negative": 25
   },
   "top_issues": {
-    "positive": "선수 만남/대회 기대감",
-    "negative": "카드 홍보 과다/불만",
-    "neutral": "선수 능력 분석/포메이션"
+    "positive": "우타 선수의 지속적인 16강 진출",
+    "negative": "대회 밸런스 이슈(너프)",
+    "neutral": "선수 비교 분석"
   },
   "keywords": [
     {
-      "topic": "프로게이머",
-      "count": 5,
-      "pct": "35.7%",
-      "tags": "공경하다, 전재준, DRX원, JM, 곽준혁"
-    },
-    {
-      "topic": "대회/경기",
+      "topic": "우타",
       "count": 2,
-      "pct": "14.3%",
-      "tags": "FSL, 시즌카드"
+      "pct": "40.0%",
+      "tags": "16강진출,선수평가"
     },
     {
-      "topic": "게임메커닉",
-      "count": 2,
-      "pct": "14.3%",
-      "tags": "트릭너프, 포메이션(4222,4231)"
-    },
-    {
-      "topic": "감정표현",
-      "count": 2,
-      "pct": "14.3%",
-      "tags": "우와(긍정), 맛없는데(부정)"
-    },
-    {
-      "topic": "플레이어 비교",
+      "topic": "대회밸런스",
       "count": 1,
-      "pct": "7.1%",
-      "tags": "vs매칭"
+      "pct": "20.0%",
+      "tags": "너프,보정이슈"
+    },
+    {
+      "topic": "선수비교",
+      "count": 1,
+      "pct": "20.0%",
+      "tags": "DRX,JM,매칭분석"
+    },
+    {
+      "topic": "엑시토",
+      "count": 1,
+      "pct": "20.0%",
+      "tags": "카드,팀패"
     }
   ],
   "churn_signals": [],
   "esports_disengagement_signals": [
-    "시즌카드 홍보에 대한 피로도 표현",
-    "게임 밸런스 조정(너프)에 대한 의구심"
+    "밸런스 불신(너프 언급)",
+    "카드 수급 불만"
   ],
-  "fsl_mention_rate": "40.0%",
-  "impact_score": 5.5,
-  "viewer_engagement_estimate": "12.3K",
-  "last_updated": "2026-07-24 13:11",
+  "fsl_mention_rate": "75.0%",
+  "impact_score": 6.2,
+  "viewer_engagement_estimate": "2.8K",
+  "last_updated": "2026-07-25 12:59",
   "history": [
     {
       "label": "07/07",
@@ -217,6 +202,14 @@
       "posts": 5,
       "esports": 4,
       "positive": 40
+    },
+    {
+      "label": "07/25",
+      "date": "2026-07-25",
+      "esi": 10.0,
+      "posts": 4,
+      "esports": 3,
+      "positive": 50
     }
   ]
 }
