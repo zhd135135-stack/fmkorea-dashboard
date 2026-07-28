@@ -1,26 +1,54 @@
 {
   "source": "fsl",
   "collection_range": {
-    "start": "2026-07-26 10:01",
-    "end": "2026-07-27 09:59"
+    "start": "2026-07-27 10:01",
+    "end": "2026-07-28 09:59"
   },
-  "total_posts": 0,
-  "total_views": 0,
-  "avg_views_per_post": 0,
-  "posts": [],
+  "total_posts": 3,
+  "total_views": 1320,
+  "avg_views_per_post": 440,
+  "posts": [
+    {
+      "title": "fsl 16강 못간 선수 카드는 시즌카드 안나오는거임?",
+      "url": "https://www.fmkorea.com/index.php?mid=fifa_online&category=8064047289&document_srl=10137421557",
+      "views": 479,
+      "comments": 8,
+      "date": "22:19",
+      "category": "FSL/프로게이머",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "점점 위로 올라오는 듯한 체이스",
+      "url": "https://www.fmkorea.com/index.php?mid=fifa_online&category=8064047289&document_srl=10133515376",
+      "views": 620,
+      "comments": 2,
+      "date": "21:55",
+      "category": "FSL/프로게이머",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "FFL 언제 하는지 아시는 분 있나요?",
+      "url": "https://www.fmkorea.com/index.php?mid=fifa_online&category=8064047289&document_srl=10136797272",
+      "views": 221,
+      "comments": 1,
+      "date": "19:47",
+      "category": "FSL/프로게이머",
+      "sentiment": "neutral"
+    }
+  ],
   "sentiment": {
-    "positive": 0,
-    "neutral": 0,
-    "negative": 0
+    "positive": 33,
+    "neutral": 34,
+    "negative": 33
   },
   "top_issues": {},
   "keywords": [],
   "churn_signals": [],
   "esports_disengagement_signals": [],
   "fsl_mention_rate": "0%",
-  "impact_score": 0,
+  "impact_score": 5.0,
   "viewer_engagement_estimate": "0K",
-  "last_updated": "2026-07-27 13:33",
+  "last_updated": "2026-07-28 12:57",
   "history": [
     {
       "label": "07/07",
@@ -141,6 +169,14 @@
       "posts": 4,
       "esports": 3,
       "positive": 50
+    },
+    {
+      "label": "07/28",
+      "date": "2026-07-28",
+      "esi": 10.0,
+      "posts": 3,
+      "esports": 2,
+      "positive": 0
     }
   ]
 }
