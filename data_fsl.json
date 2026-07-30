@@ -1,28 +1,28 @@
 {
   "source": "fsl",
   "collection_range": {
-    "start": "2026-07-28 10:01",
-    "end": "2026-07-29 09:59"
+    "start": "2026-07-29 10:01",
+    "end": "2026-07-30 09:59"
   },
   "total_posts": 2,
-  "total_views": 4171,
-  "avg_views_per_post": 2085,
+  "total_views": 815,
+  "avg_views_per_post": 407,
   "posts": [
     {
-      "title": "16강이라는 벽을 앞둔 클러치",
-      "url": "https://www.fmkorea.com/index.php?mid=fifa_online&category=8064047289&document_srl=10133044354",
-      "views": 3562,
-      "comments": 2,
-      "date": "22:02",
+      "title": "프로게이머의 4231은 뭐가 다를까? (feat. 3공미 활용)",
+      "url": "https://www.fmkorea.com/index.php?mid=fifa_online&category=8064047289&document_srl=10146338141",
+      "views": 229,
+      "comments": 0,
+      "date": "21:11",
       "category": "FSL/프로게이머",
       "sentiment": "neutral"
     },
     {
-      "title": "프로게이머의 4222은 뭐가 다를까? (feat. 스위칭이란 무엇인가?)",
-      "url": "https://www.fmkorea.com/index.php?mid=fifa_online&category=8064047289&document_srl=10140887546",
-      "views": 609,
-      "comments": 6,
-      "date": "18:19",
+      "title": "FSL 지단 나오면",
+      "url": "https://www.fmkorea.com/index.php?mid=fifa_online&category=8064047289&document_srl=10146098462",
+      "views": 586,
+      "comments": 2,
+      "date": "19:17",
       "category": "FSL/프로게이머",
       "sentiment": "neutral"
     }
@@ -39,7 +39,7 @@
   "fsl_mention_rate": "0%",
   "impact_score": 5.0,
   "viewer_engagement_estimate": "0K",
-  "last_updated": "2026-07-29 13:08",
+  "last_updated": "2026-07-30 12:52",
   "history": [
     {
       "label": "07/07",
@@ -172,6 +172,14 @@
     {
       "label": "07/29",
       "date": "2026-07-29",
+      "esi": 10.0,
+      "posts": 2,
+      "esports": 1,
+      "positive": 0
+    },
+    {
+      "label": "07/30",
+      "date": "2026-07-30",
       "esi": 10.0,
       "posts": 2,
       "esports": 1,
