@@ -1,28 +1,55 @@
 {
   "source": "fsl",
   "collection_range": {
-    "start": "2026-07-29 10:01",
-    "end": "2026-07-30 09:59"
+    "start": "2026-07-30 10:01",
+    "end": "2026-07-31 09:59"
   },
-  "total_posts": 2,
-  "total_views": 815,
-  "avg_views_per_post": 407,
+  "total_posts": 5,
+  "total_views": 1638,
+  "avg_views_per_post": 327,
   "posts": [
     {
-      "title": "프로게이머의 4231은 뭐가 다를까? (feat. 3공미 활용)",
-      "url": "https://www.fmkorea.com/index.php?mid=fifa_online&category=8064047289&document_srl=10146338141",
-      "views": 229,
+      "title": "대회 FSL 9카 사용하나보네요",
+      "url": "https://www.fmkorea.com/index.php?mid=fifa_online&category=8064047289&document_srl=10152852811",
+      "views": 244,
       "comments": 0,
-      "date": "21:11",
+      "date": "02:12",
       "category": "FSL/프로게이머",
       "sentiment": "neutral"
     },
     {
-      "title": "FSL 지단 나오면",
-      "url": "https://www.fmkorea.com/index.php?mid=fifa_online&category=8064047289&document_srl=10146098462",
-      "views": 586,
+      "title": "FSL 에토 기대 되네요;; 양발까지 ㄷㄷ",
+      "url": "https://www.fmkorea.com/index.php?mid=fifa_online&category=8064047289&document_srl=10151264547",
+      "views": 732,
       "comments": 2,
-      "date": "19:17",
+      "date": "20:08",
+      "category": "FSL/프로게이머",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "[티켓 예매 오픈] 2026 FSL SUMMER 현장 관람 안내",
+      "url": "https://www.fmkorea.com/index.php?mid=fifa_online&category=8064047289&document_srl=10150233159",
+      "views": 207,
+      "comments": 1,
+      "date": "16:30",
+      "category": "FSL/프로게이머",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "FSL예매도 Nol로 넘어갔넴",
+      "url": "https://www.fmkorea.com/index.php?mid=fifa_online&category=8064047289&document_srl=10150184267",
+      "views": 243,
+      "comments": 2,
+      "date": "16:17",
+      "category": "FSL/프로게이머",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "FSL피구 양발이네요 ㄷㄷ",
+      "url": "https://www.fmkorea.com/index.php?mid=fifa_online&category=8064047289&document_srl=10149435345",
+      "views": 212,
+      "comments": 0,
+      "date": "07.30",
       "category": "FSL/프로게이머",
       "sentiment": "neutral"
     }
@@ -39,7 +66,7 @@
   "fsl_mention_rate": "0%",
   "impact_score": 5.0,
   "viewer_engagement_estimate": "0K",
-  "last_updated": "2026-07-30 12:52",
+  "last_updated": "2026-07-31 13:19",
   "history": [
     {
       "label": "07/07",
@@ -183,6 +210,14 @@
       "esi": 10.0,
       "posts": 2,
       "esports": 1,
+      "positive": 0
+    },
+    {
+      "label": "07/31",
+      "date": "2026-07-31",
+      "esi": 10.0,
+      "posts": 5,
+      "esports": 5,
       "positive": 0
     }
   ]
