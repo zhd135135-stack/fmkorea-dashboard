@@ -1,62 +1,26 @@
 {
   "source": "fsl",
   "collection_range": {
-    "start": "2026-07-31 10:01",
-    "end": "2026-08-01 09:59"
+    "start": "2026-08-01 10:01",
+    "end": "2026-08-02 09:59"
   },
-  "total_posts": 2,
-  "total_views": 651,
-  "avg_views_per_post": 325,
-  "posts": [
-    {
-      "title": "FSL 직관 일요일",
-      "url": "https://www.fmkorea.com/index.php?mid=fifa_online&category=8064047289&document_srl=10154919037",
-      "views": 407,
-      "comments": 2,
-      "date": "16:41",
-      "category": "FSL/프로게이머",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "대회 FSL 9카 사용하나보네요",
-      "url": "https://www.fmkorea.com/index.php?mid=fifa_online&category=8064047289&document_srl=10152852811",
-      "views": 244,
-      "comments": 0,
-      "date": "07.31",
-      "category": "FSL/프로게이머",
-      "sentiment": "neutral"
-    }
-  ],
+  "total_posts": 0,
+  "total_views": 0,
+  "avg_views_per_post": 0,
+  "posts": [],
   "sentiment": {
     "positive": 0,
-    "neutral": 100,
+    "neutral": 0,
     "negative": 0
   },
-  "top_issues": {
-    "positive": "없음",
-    "negative": "없음",
-    "neutral": "FSL 직관 및 대회 정보"
-  },
-  "keywords": [
-    {
-      "topic": "FSL 직관",
-      "count": 1,
-      "pct": "50.0%",
-      "tags": "이벤트, 현장"
-    },
-    {
-      "topic": "대회",
-      "count": 1,
-      "pct": "50.0%",
-      "tags": "스쿼드, 게임정보"
-    }
-  ],
+  "top_issues": {},
+  "keywords": [],
   "churn_signals": [],
   "esports_disengagement_signals": [],
-  "fsl_mention_rate": "100.0%",
-  "impact_score": 2.5,
-  "viewer_engagement_estimate": "1K",
-  "last_updated": "2026-08-01 13:17",
+  "fsl_mention_rate": "0%",
+  "impact_score": 0,
+  "viewer_engagement_estimate": "0K",
+  "last_updated": "2026-08-02 13:20",
   "history": [
     {
       "label": "07/07",
