@@ -13,53 +13,52 @@
       "url": "https://www.fmkorea.com/index.php?mid=fifa_online&category=8064047289&document_srl=10166180321",
       "views": 115,
       "comments": 1,
-      "date": "12:58",
+      "date": "08.03",
       "category": "FSL/프로게이머",
-      "sentiment": "negative"
+      "sentiment": "neutral"
     },
     {
       "title": "원 vs 김정민 JM하면 원이 극정배임?",
       "url": "https://www.fmkorea.com/index.php?mid=fifa_online&category=8064047289&document_srl=10165748696",
       "views": 1206,
       "comments": 22,
-      "date": "10:41",
+      "date": "08.03",
       "category": "FSL/프로게이머",
       "sentiment": "neutral"
     }
   ],
   "sentiment": {
     "positive": 0,
-    "neutral": 50,
-    "negative": 50
+    "neutral": 100,
+    "negative": 0
   },
   "top_issues": {
     "positive": "없음",
     "negative": "경기 예매 놓침",
-    "neutral": "선수 대전 정보 질문"
+    "neutral": "선수 매칭 정보 질문"
   },
   "keywords": [
     {
       "topic": "경기 예매",
       "count": 1,
       "pct": "50.0%",
-      "tags": "일요일,실수"
+      "tags": "일정관리, 티켓"
     },
     {
-      "topic": "선수 매칭",
+      "topic": "선수 비교",
       "count": 1,
       "pct": "50.0%",
-      "tags": "원,김정민,포지션"
+      "tags": "원, 김정민, 포지션 분석"
     }
   ],
   "churn_signals": [],
   "esports_disengagement_signals": [
-    "경기 예매 실패",
-    "사전 준비 부족"
+    "경기 예매 실패"
   ],
-  "fsl_mention_rate": "100.0%",
+  "fsl_mention_rate": "50.0%",
   "impact_score": 2.5,
-  "viewer_engagement_estimate": "1.2K",
-  "last_updated": "2026-08-04 10:38",
+  "viewer_engagement_estimate": "0.5K",
+  "last_updated": "2026-08-04 13:08",
   "history": [
     {
       "label": "07/07",
