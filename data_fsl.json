@@ -1,64 +1,62 @@
 {
   "source": "fsl",
   "collection_range": {
-    "start": "2026-08-03 10:01",
-    "end": "2026-08-04 09:59"
+    "start": "2026-08-04 10:01",
+    "end": "2026-08-05 09:59"
   },
   "total_posts": 2,
-  "total_views": 1321,
-  "avg_views_per_post": 660,
+  "total_views": 3113,
+  "avg_views_per_post": 1556,
   "posts": [
     {
-      "title": "아 까먹고 있다가 일요일 경기 예매 못했는대",
-      "url": "https://www.fmkorea.com/index.php?mid=fifa_online&category=8064047289&document_srl=10166180321",
-      "views": 115,
-      "comments": 1,
-      "date": "08.03",
+      "title": "젠시티 선수들의 맨시티 선수 포즈 따라하기",
+      "url": "https://www.fmkorea.com/index.php?mid=fifa_online&category=8064047289&document_srl=10171644379",
+      "views": 196,
+      "comments": 0,
+      "date": "19:06",
       "category": "FSL/프로게이머",
-      "sentiment": "neutral"
+      "sentiment": "positive"
     },
     {
-      "title": "원 vs 김정민 JM하면 원이 극정배임?",
-      "url": "https://www.fmkorea.com/index.php?mid=fifa_online&category=8064047289&document_srl=10165748696",
-      "views": 1206,
-      "comments": 22,
-      "date": "08.03",
+      "title": "FSL때문에 강해진 롬바르디아 FC 팀컬러 선수 분석",
+      "url": "https://www.fmkorea.com/index.php?mid=fifa_online&category=8064047289&document_srl=10171206158",
+      "views": 2917,
+      "comments": 3,
+      "date": "17:47",
       "category": "FSL/프로게이머",
-      "sentiment": "neutral"
+      "sentiment": "positive"
     }
   ],
   "sentiment": {
-    "positive": 0,
-    "neutral": 100,
+    "positive": 100,
+    "neutral": 0,
     "negative": 0
   },
   "top_issues": {
-    "positive": "없음",
-    "negative": "경기 예매 놓침",
-    "neutral": "선수 매칭 정보 질문"
+    "positive": "선수 콘텐츠 및 팀 분석",
+    "negative": "없음",
+    "neutral": "없음"
   },
   "keywords": [
     {
-      "topic": "경기 예매",
+      "topic": "선수 포즈/퍼포먼스",
       "count": 1,
       "pct": "50.0%",
-      "tags": "일정관리, 티켓"
+      "tags": "젠시티, 맨시티, 모방, 엔터테인먼트"
     },
     {
-      "topic": "선수 비교",
+      "topic": "팀 강화 분석",
       "count": 1,
       "pct": "50.0%",
-      "tags": "원, 김정민, 포지션 분석"
+      "tags": "롬바르디아FC, 팀컬러, FSL, 선수 분석"
     }
   ],
   "churn_signals": [],
-  "esports_disengagement_signals": [
-    "경기 예매 실패"
-  ],
+  "esports_disengagement_signals": [],
   "fsl_mention_rate": "50.0%",
-  "impact_score": 2.5,
-  "viewer_engagement_estimate": "0.5K",
-  "last_updated": "2026-08-04 13:08",
+  "impact_score": 6.5,
+  "viewer_engagement_estimate": "8.2K",
+  "last_updated": "2026-08-05 12:55",
   "history": [
     {
       "label": "07/07",
@@ -227,6 +225,14 @@
       "posts": 2,
       "esports": 1,
       "positive": 0
+    },
+    {
+      "label": "08/05",
+      "date": "2026-08-05",
+      "esi": 10.0,
+      "posts": 2,
+      "esports": 3,
+      "positive": 100
     }
   ]
 }
