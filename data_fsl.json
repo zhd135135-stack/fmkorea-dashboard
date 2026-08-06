@@ -1,62 +1,95 @@
 {
   "source": "fsl",
   "collection_range": {
-    "start": "2026-08-04 10:01",
-    "end": "2026-08-05 09:59"
+    "start": "2026-08-05 10:01",
+    "end": "2026-08-06 09:59"
   },
-  "total_posts": 2,
-  "total_views": 3113,
-  "avg_views_per_post": 1556,
+  "total_posts": 4,
+  "total_views": 2984,
+  "avg_views_per_post": 746,
   "posts": [
     {
-      "title": "젠시티 선수들의 맨시티 선수 포즈 따라하기",
-      "url": "https://www.fmkorea.com/index.php?mid=fifa_online&category=8064047289&document_srl=10171644379",
-      "views": 196,
+      "title": "셰우첸코 드뎌 영입",
+      "url": "https://www.fmkorea.com/index.php?mid=fifa_online&category=8064047289&document_srl=10177321559",
+      "views": 218,
       "comments": 0,
-      "date": "19:06",
+      "date": "02:16",
       "category": "FSL/프로게이머",
       "sentiment": "positive"
     },
     {
-      "title": "FSL때문에 강해진 롬바르디아 FC 팀컬러 선수 분석",
-      "url": "https://www.fmkorea.com/index.php?mid=fifa_online&category=8064047289&document_srl=10171206158",
-      "views": 2917,
-      "comments": 3,
-      "date": "17:47",
+      "title": "젠시티 선수단 맨시티 vs 팀 K리그 경기 관람",
+      "url": "https://www.fmkorea.com/index.php?mid=fifa_online&category=8064047289&document_srl=10176433072",
+      "views": 235,
+      "comments": 1,
+      "date": "22:19",
       "category": "FSL/프로게이머",
-      "sentiment": "positive"
+      "sentiment": "neutral"
+    },
+    {
+      "title": "원더08 후사노프랑 개닮았네 ㅋㅋㅋㅋ",
+      "url": "https://www.fmkorea.com/index.php?mid=fifa_online&category=8064047289&document_srl=10174761236",
+      "views": 2305,
+      "comments": 4,
+      "date": "15:20",
+      "category": "FSL/프로게이머",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "와 월요일부터 트라이중인대. 자리 진짜 안나네 ㅋㅋㅋㅋ",
+      "url": "https://www.fmkorea.com/index.php?mid=fifa_online&category=8064047289&document_srl=10173742544",
+      "views": 226,
+      "comments": 0,
+      "date": "08.05",
+      "category": "FSL/프로게이머",
+      "sentiment": "negative"
     }
   ],
   "sentiment": {
-    "positive": 100,
-    "neutral": 0,
-    "negative": 0
+    "positive": 25,
+    "neutral": 50,
+    "negative": 25
   },
   "top_issues": {
-    "positive": "선수 콘텐츠 및 팀 분석",
-    "negative": "없음",
-    "neutral": "없음"
+    "positive": "선수 영입 성공",
+    "negative": "자리 부족 문제",
+    "neutral": "팀 경기 관람/선수 정보"
   },
   "keywords": [
     {
-      "topic": "선수 포즈/퍼포먼스",
+      "topic": "선수 영입",
       "count": 1,
-      "pct": "50.0%",
-      "tags": "젠시티, 맨시티, 모방, 엔터테인먼트"
+      "pct": "25.0%",
+      "tags": "셰우첸코,신규영입"
     },
     {
-      "topic": "팀 강화 분석",
+      "topic": "팀 경기 관람",
       "count": 1,
-      "pct": "50.0%",
-      "tags": "롬바르디아FC, 팀컬러, FSL, 선수 분석"
+      "pct": "25.0%",
+      "tags": "젠시티,맨시티,K리그"
+    },
+    {
+      "topic": "선수 비교/평가",
+      "count": 1,
+      "pct": "25.0%",
+      "tags": "원더08,후사노프랑,개닮음"
+    },
+    {
+      "topic": "스쿼드 구성 어려움",
+      "count": 1,
+      "pct": "25.0%",
+      "tags": "자리부족,트라이,월요일"
     }
   ],
   "churn_signals": [],
-  "esports_disengagement_signals": [],
-  "fsl_mention_rate": "50.0%",
-  "impact_score": 6.5,
-  "viewer_engagement_estimate": "8.2K",
-  "last_updated": "2026-08-05 12:55",
+  "esports_disengagement_signals": [
+    "자리 부족으로 인한 구성 난항",
+    "스쿼드 완성 어려움"
+  ],
+  "fsl_mention_rate": "100.0%",
+  "impact_score": 4.2,
+  "viewer_engagement_estimate": "2.1K",
+  "last_updated": "2026-08-06 13:07",
   "history": [
     {
       "label": "07/07",
@@ -233,6 +266,14 @@
       "posts": 2,
       "esports": 3,
       "positive": 100
+    },
+    {
+      "label": "08/06",
+      "date": "2026-08-06",
+      "esi": 10.0,
+      "posts": 4,
+      "esports": 2,
+      "positive": 25
     }
   ]
 }
