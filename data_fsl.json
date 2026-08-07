@@ -1,95 +1,116 @@
 {
   "source": "fsl",
   "collection_range": {
-    "start": "2026-08-05 10:01",
-    "end": "2026-08-06 09:59"
+    "start": "2026-08-06 10:01",
+    "end": "2026-08-07 09:59"
   },
-  "total_posts": 4,
-  "total_views": 2984,
-  "avg_views_per_post": 746,
+  "total_posts": 7,
+  "total_views": 23046,
+  "avg_views_per_post": 3292,
   "posts": [
     {
-      "title": "셰우첸코 드뎌 영입",
-      "url": "https://www.fmkorea.com/index.php?mid=fifa_online&category=8064047289&document_srl=10177321559",
-      "views": 218,
+      "title": "야 운영진아 구글플레이 뭐 특혜 있는거 아니면 일반석으로 돌려라ㅡㅡ",
+      "url": "https://www.fmkorea.com/index.php?mid=fifa_online&category=8064047289&document_srl=10181727541",
+      "views": 134,
       "comments": 0,
-      "date": "02:16",
+      "date": "08:13",
+      "category": "FSL/프로게이머",
+      "sentiment": "negative"
+    },
+    {
+      "title": "fsl 돈 vs wg 돈",
+      "url": "https://www.fmkorea.com/index.php?mid=fifa_online&category=8064047289&document_srl=10181503512",
+      "views": 277,
+      "comments": 6,
+      "date": "03:20",
+      "category": "FSL/프로게이머",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "FSL 코인 누구 타는 게 정배일까요..",
+      "url": "https://www.fmkorea.com/index.php?mid=fifa_online&category=8064047289&document_srl=10181367196",
+      "views": 250,
+      "comments": 4,
+      "date": "01:35",
+      "category": "FSL/프로게이머",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "세메뇨랑 피파하는 원더08 ㄷㄷ",
+      "url": "https://www.fmkorea.com/index.php?mid=fifa_online&category=8064047289&document_srl=10180457608",
+      "views": 20000,
+      "comments": 8,
+      "date": "21:19",
       "category": "FSL/프로게이머",
       "sentiment": "positive"
     },
     {
-      "title": "젠시티 선수단 맨시티 vs 팀 K리그 경기 관람",
-      "url": "https://www.fmkorea.com/index.php?mid=fifa_online&category=8064047289&document_srl=10176433072",
-      "views": 235,
-      "comments": 1,
-      "date": "22:19",
+      "title": "곽 선수 지금 16강 진출은 되어있죠?",
+      "url": "https://www.fmkorea.com/index.php?mid=fifa_online&category=8064047289&document_srl=10178450176",
+      "views": 1189,
+      "comments": 5,
+      "date": "08.06",
       "category": "FSL/프로게이머",
       "sentiment": "neutral"
     },
     {
-      "title": "원더08 후사노프랑 개닮았네 ㅋㅋㅋㅋ",
-      "url": "https://www.fmkorea.com/index.php?mid=fifa_online&category=8064047289&document_srl=10174761236",
-      "views": 2305,
-      "comments": 4,
-      "date": "15:20",
-      "category": "FSL/프로게이머",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "와 월요일부터 트라이중인대. 자리 진짜 안나네 ㅋㅋㅋㅋ",
-      "url": "https://www.fmkorea.com/index.php?mid=fifa_online&category=8064047289&document_srl=10173742544",
-      "views": 226,
+      "title": "일요일 구글플레이 자리는 났음ㅇㅇ",
+      "url": "https://www.fmkorea.com/index.php?mid=fifa_online&category=8064047289&document_srl=10178070431",
+      "views": 823,
       "comments": 0,
-      "date": "08.05",
+      "date": "08.06",
       "category": "FSL/프로게이머",
-      "sentiment": "negative"
+      "sentiment": "neutral"
+    },
+    {
+      "title": "셰우첸코 드뎌 영입",
+      "url": "https://www.fmkorea.com/index.php?mid=fifa_online&category=8064047289&document_srl=10177321559",
+      "views": 373,
+      "comments": 0,
+      "date": "08.06",
+      "category": "FSL/프로게이머",
+      "sentiment": "positive"
     }
   ],
   "sentiment": {
-    "positive": 25,
-    "neutral": 50,
-    "negative": 25
+    "positive": 29,
+    "neutral": 57,
+    "negative": 14
   },
   "top_issues": {
-    "positive": "선수 영입 성공",
-    "negative": "자리 부족 문제",
-    "neutral": "팀 경기 관람/선수 정보"
+    "positive": "선수 영입 및 활약",
+    "negative": "플랫폼 특혜 논쟁",
+    "neutral": "FSL 코인/스쿼드 정보"
   },
   "keywords": [
     {
-      "topic": "선수 영입",
-      "count": 1,
-      "pct": "25.0%",
-      "tags": "셰우첸코,신규영입"
+      "topic": "FSL 운영",
+      "count": 3,
+      "pct": "42.9%",
+      "tags": "구글플레이,코인,돈"
     },
     {
-      "topic": "팀 경기 관람",
-      "count": 1,
-      "pct": "25.0%",
-      "tags": "젠시티,맨시티,K리그"
+      "topic": "선수 활약",
+      "count": 3,
+      "pct": "42.9%",
+      "tags": "원더08,곽선수,셰우첸코"
     },
     {
-      "topic": "선수 비교/평가",
+      "topic": "게임 정보",
       "count": 1,
-      "pct": "25.0%",
-      "tags": "원더08,후사노프랑,개닮음"
-    },
-    {
-      "topic": "스쿼드 구성 어려움",
-      "count": 1,
-      "pct": "25.0%",
-      "tags": "자리부족,트라이,월요일"
+      "pct": "14.3%",
+      "tags": "16강진출"
     }
   ],
   "churn_signals": [],
   "esports_disengagement_signals": [
-    "자리 부족으로 인한 구성 난항",
-    "스쿼드 완성 어려움"
+    "운영 투명성 의문(구글플레이 특혜 논쟁)",
+    "플랫폼 공정성 불만"
   ],
-  "fsl_mention_rate": "100.0%",
+  "fsl_mention_rate": "85.7%",
   "impact_score": 4.2,
-  "viewer_engagement_estimate": "2.1K",
-  "last_updated": "2026-08-06 13:07",
+  "viewer_engagement_estimate": "12K",
+  "last_updated": "2026-08-07 12:46",
   "history": [
     {
       "label": "07/07",
@@ -274,6 +295,14 @@
       "posts": 4,
       "esports": 2,
       "positive": 25
+    },
+    {
+      "label": "08/07",
+      "date": "2026-08-07",
+      "esi": 10.0,
+      "posts": 7,
+      "esports": 3,
+      "positive": 29
     }
   ]
 }
