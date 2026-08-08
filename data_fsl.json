@@ -1,19 +1,82 @@
 {
   "source": "fsl",
   "collection_range": {
-    "start": "2026-08-06 10:01",
-    "end": "2026-08-07 09:59"
+    "start": "2026-08-07 10:01",
+    "end": "2026-08-08 09:59"
   },
-  "total_posts": 7,
-  "total_views": 23046,
-  "avg_views_per_post": 3292,
+  "total_posts": 10,
+  "total_views": 6324,
+  "avg_views_per_post": 632,
   "posts": [
+    {
+      "title": "곽준혁 한태 다 건 청년",
+      "url": "https://www.fmkorea.com/index.php?mid=fifa_online&category=8064047289&document_srl=10185757831",
+      "views": 233,
+      "comments": 0,
+      "date": "09:47",
+      "category": "FSL/프로게이머",
+      "sentiment": "positive"
+    },
+    {
+      "title": "(뿌꾸형에게) 구매예정인 FSL 호나우두의 원더08 vs 아끼는 동생 곽준혁이 만나면 누구를 응원하실건가요?",
+      "url": "https://www.fmkorea.com/index.php?mid=fifa_online&category=8064047289&document_srl=10185381113",
+      "views": 2101,
+      "comments": 3,
+      "date": "03:56",
+      "category": "FSL/프로게이머",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "오랜만에 뿌꾸형이 공식유툽에 게스트로 출연한 토크쇼 재밌네요",
+      "url": "https://www.fmkorea.com/index.php?mid=fifa_online&category=8064047289&document_srl=10185369374",
+      "views": 823,
+      "comments": 0,
+      "date": "03:44",
+      "category": "FSL/프로게이머",
+      "sentiment": "positive"
+    },
+    {
+      "title": "곽준혁은 지피제이만 잡으면 8강부터는 원코 더 있어서",
+      "url": "https://www.fmkorea.com/index.php?mid=fifa_online&category=8064047289&document_srl=10184162491",
+      "views": 646,
+      "comments": 1,
+      "date": "20:56",
+      "category": "FSL/프로게이머",
+      "sentiment": "positive"
+    },
+    {
+      "title": "노이즈vs원더08 누구로 보시나요?",
+      "url": "https://www.fmkorea.com/index.php?mid=fifa_online&category=8064047289&document_srl=10182996473",
+      "views": 491,
+      "comments": 2,
+      "date": "15:37",
+      "category": "FSL/프로게이머",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "요새 프로게이머 최호석 폼 어때요?",
+      "url": "https://www.fmkorea.com/index.php?mid=fifa_online&category=8064047289&document_srl=10182864593",
+      "views": 458,
+      "comments": 16,
+      "date": "14:54",
+      "category": "FSL/프로게이머",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "요즘 샤이프 선수 폼 어떤가요?",
+      "url": "https://www.fmkorea.com/index.php?mid=fifa_online&category=8064047289&document_srl=10182400056",
+      "views": 201,
+      "comments": 4,
+      "date": "12:15",
+      "category": "FSL/프로게이머",
+      "sentiment": "neutral"
+    },
     {
       "title": "야 운영진아 구글플레이 뭐 특혜 있는거 아니면 일반석으로 돌려라ㅡㅡ",
       "url": "https://www.fmkorea.com/index.php?mid=fifa_online&category=8064047289&document_srl=10181727541",
-      "views": 134,
+      "views": 196,
       "comments": 0,
-      "date": "08:13",
+      "date": "08.07",
       "category": "FSL/프로게이머",
       "sentiment": "negative"
     },
@@ -22,95 +85,71 @@
       "url": "https://www.fmkorea.com/index.php?mid=fifa_online&category=8064047289&document_srl=10181503512",
       "views": 277,
       "comments": 6,
-      "date": "03:20",
+      "date": "08.07",
       "category": "FSL/프로게이머",
       "sentiment": "neutral"
     },
     {
       "title": "FSL 코인 누구 타는 게 정배일까요..",
       "url": "https://www.fmkorea.com/index.php?mid=fifa_online&category=8064047289&document_srl=10181367196",
-      "views": 250,
+      "views": 898,
       "comments": 4,
-      "date": "01:35",
+      "date": "08.07",
       "category": "FSL/프로게이머",
       "sentiment": "neutral"
-    },
-    {
-      "title": "세메뇨랑 피파하는 원더08 ㄷㄷ",
-      "url": "https://www.fmkorea.com/index.php?mid=fifa_online&category=8064047289&document_srl=10180457608",
-      "views": 20000,
-      "comments": 8,
-      "date": "21:19",
-      "category": "FSL/프로게이머",
-      "sentiment": "positive"
-    },
-    {
-      "title": "곽 선수 지금 16강 진출은 되어있죠?",
-      "url": "https://www.fmkorea.com/index.php?mid=fifa_online&category=8064047289&document_srl=10178450176",
-      "views": 1189,
-      "comments": 5,
-      "date": "08.06",
-      "category": "FSL/프로게이머",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "일요일 구글플레이 자리는 났음ㅇㅇ",
-      "url": "https://www.fmkorea.com/index.php?mid=fifa_online&category=8064047289&document_srl=10178070431",
-      "views": 823,
-      "comments": 0,
-      "date": "08.06",
-      "category": "FSL/프로게이머",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "셰우첸코 드뎌 영입",
-      "url": "https://www.fmkorea.com/index.php?mid=fifa_online&category=8064047289&document_srl=10177321559",
-      "views": 373,
-      "comments": 0,
-      "date": "08.06",
-      "category": "FSL/프로게이머",
-      "sentiment": "positive"
     }
   ],
   "sentiment": {
-    "positive": 29,
-    "neutral": 57,
-    "negative": 14
+    "positive": 30,
+    "neutral": 60,
+    "negative": 10
   },
   "top_issues": {
-    "positive": "선수 영입 및 활약",
-    "negative": "플랫폼 특혜 논쟁",
-    "neutral": "FSL 코인/스쿼드 정보"
+    "positive": "곽준혁 선수 활약 및 인기",
+    "negative": "게임 밸런스/운영진 논란",
+    "neutral": "선수 폼 평가 및 스쿼드 선택"
   },
   "keywords": [
     {
-      "topic": "FSL 운영",
+      "topic": "곽준혁",
       "count": 3,
-      "pct": "42.9%",
-      "tags": "구글플레이,코인,돈"
+      "pct": "30.0%",
+      "tags": "선수평가, 인지도, 팬층"
     },
     {
-      "topic": "선수 활약",
-      "count": 3,
-      "pct": "42.9%",
-      "tags": "원더08,곽선수,셰우첸코"
+      "topic": "원더08",
+      "count": 2,
+      "pct": "20.0%",
+      "tags": "카드, 비교평가"
     },
     {
-      "topic": "게임 정보",
+      "topic": "선수폼평가",
+      "count": 3,
+      "pct": "30.0%",
+      "tags": "호나우두, 최호석, 샤이프"
+    },
+    {
+      "topic": "스쿼드/카드선택",
+      "count": 2,
+      "pct": "20.0%",
+      "tags": "구매, 추천"
+    },
+    {
+      "topic": "운영진/밸런스",
       "count": 1,
-      "pct": "14.3%",
-      "tags": "16강진출"
+      "pct": "10.0%",
+      "tags": "불만, 보정의혹"
     }
   ],
   "churn_signals": [],
   "esports_disengagement_signals": [
-    "운영 투명성 의문(구글플레이 특혜 논쟁)",
-    "플랫폼 공정성 불만"
+    "운영진 신뢰 하락(구글플레이 특혜 의혹)",
+    "게임 밸런스 불만"
   ],
-  "fsl_mention_rate": "85.7%",
-  "impact_score": 4.2,
+  "fsl_mention_rate": "100.0%",
+  "impact_score": 6.2,
   "viewer_engagement_estimate": "12K",
-  "last_updated": "2026-08-07 12:46",
+  "last_updated": "2026-08-08 11:52",
   "history": [
     {
       "label": "07/07",
@@ -303,6 +342,14 @@
       "posts": 7,
       "esports": 3,
       "positive": 29
+    },
+    {
+      "label": "08/08",
+      "date": "2026-08-08",
+      "esi": 10.0,
+      "posts": 10,
+      "esports": 8,
+      "positive": 30
     }
   ]
 }
