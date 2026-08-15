@@ -1,290 +1,128 @@
 {
   "source": "fsl",
   "collection_range": {
-    "start": "2026-08-13 10:01",
-    "end": "2026-08-14 09:59"
+    "start": "2026-08-14 10:01",
+    "end": "2026-08-15 09:59"
   },
-  "total_posts": 25,
-  "total_views": 44479,
-  "avg_views_per_post": 1779,
+  "total_posts": 8,
+  "total_views": 6027,
+  "avg_views_per_post": 753,
   "posts": [
+    {
+      "title": "현시점 FTB 포인트 근황",
+      "url": "https://www.fmkorea.com/index.php?mid=fifa_online&category=8064047289&document_srl=10213291188",
+      "views": 181,
+      "comments": 0,
+      "date": "02:09",
+      "category": "FSL/프로게이머",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "8월19일 FSL 동행자 구합니다.",
+      "url": "https://www.fmkorea.com/index.php?mid=fifa_online&category=8064047289&document_srl=10212555416",
+      "views": 251,
+      "comments": 6,
+      "date": "23:01",
+      "category": "FSL/프로게이머",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "와 아자르 가격 겁나 오르네",
+      "url": "https://www.fmkorea.com/index.php?mid=fifa_online&category=8064047289&document_srl=10212473025",
+      "views": 2120,
+      "comments": 3,
+      "date": "22:43",
+      "category": "FSL/프로게이머",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "담당자의 비밀 제안서",
+      "url": "https://www.fmkorea.com/index.php?mid=fifa_online&category=8064047289&document_srl=10212239529",
+      "views": 1117,
+      "comments": 4,
+      "date": "21:54",
+      "category": "FSL/프로게이머",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "JM선수님 본캐 닉네임 아시는분 있나요??",
+      "url": "https://www.fmkorea.com/index.php?mid=fifa_online&category=8064047289&document_srl=10211667560",
+      "views": 203,
+      "comments": 2,
+      "date": "20:00",
+      "category": "FSL/프로게이머",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "곽선수 유니폼 도착 !!",
+      "url": "https://www.fmkorea.com/index.php?mid=fifa_online&category=8064047289&document_srl=10210264122",
+      "views": 866,
+      "comments": 2,
+      "date": "14:28",
+      "category": "FSL/프로게이머",
+      "sentiment": "positive"
+    },
+    {
+      "title": "대부분 선수들보면 2선라인은...",
+      "url": "https://www.fmkorea.com/index.php?mid=fifa_online&category=8064047289&document_srl=10210003531",
+      "views": 895,
+      "comments": 3,
+      "date": "13:02",
+      "category": "FSL/프로게이머",
+      "sentiment": "neutral"
+    },
     {
       "title": "이거 보셨어요??",
       "url": "https://www.fmkorea.com/index.php?mid=fifa_online&category=8064047289&document_srl=10208431564",
-      "views": 275,
+      "views": 394,
       "comments": 1,
-      "date": "00:39",
-      "category": "FSL/프로게이머",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "곽준혁 이번에 최호석 이기면 4강인가요?",
-      "url": "https://www.fmkorea.com/index.php?mid=fifa_online&category=8064047289&document_srl=10208202427",
-      "views": 1329,
-      "comments": 6,
-      "date": "23:53",
-      "category": "FSL/프로게이머",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "8월 18일 FSL 현장 동행자로 같이 가실분 있나요",
-      "url": "https://www.fmkorea.com/index.php?mid=fifa_online&category=8064047289&document_srl=10207877799",
-      "views": 123,
-      "comments": 0,
-      "date": "22:46",
-      "category": "FSL/프로게이머",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "올해 kt 엘빈 코치가 대단하다고 느낀다 진짜 ㅋㅋㅋ",
-      "url": "https://www.fmkorea.com/index.php?mid=fifa_online&category=8064047289&document_srl=10206952139",
-      "views": 217,
-      "comments": 2,
-      "date": "20:21",
-      "category": "FSL/프로게이머",
-      "sentiment": "positive"
-    },
-    {
-      "title": "정민 형님 ㅋㅋㅋ",
-      "url": "https://www.fmkorea.com/index.php?mid=fifa_online&category=8064047289&document_srl=10206624562",
-      "views": 1467,
-      "comments": 1,
-      "date": "19:45",
-      "category": "FSL/프로게이머",
-      "sentiment": "positive"
-    },
-    {
-      "title": "우타 JM Light Noiz선수가 투볼란치에 쓰는 훈련코치.JPG",
-      "url": "https://www.fmkorea.com/index.php?mid=fifa_online&category=8064047289&document_srl=10206376335",
-      "views": 474,
-      "comments": 16,
-      "date": "19:15",
-      "category": "FSL/프로게이머",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "파이널스테이지 데이1,2 승자가 다이렉트 4강진출인가여??",
-      "url": "https://www.fmkorea.com/index.php?mid=fifa_online&category=8064047289&document_srl=10206345624",
-      "views": 240,
-      "comments": 6,
-      "date": "19:07",
-      "category": "FSL/프로게이머",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "FSL 현장포토 4주차",
-      "url": "https://www.fmkorea.com/index.php?mid=fifa_online&category=8064047289&document_srl=10206169008",
-      "views": 134,
-      "comments": 0,
-      "date": "18:12",
-      "category": "FSL/프로게이머",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "원더08 사과 방송 요약",
-      "url": "https://www.fmkorea.com/index.php?mid=fifa_online&category=8064047289&document_srl=10206147841",
-      "views": 20000,
-      "comments": 23,
-      "date": "18:04",
-      "category": "FSL/프로게이머",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "원더08 선수 잠시후에 어제있었던일 사과 방송 한다네요",
-      "url": "https://www.fmkorea.com/index.php?mid=fifa_online&category=8064047289&document_srl=10205923516",
-      "views": 3431,
-      "comments": 11,
-      "date": "17:09",
-      "category": "FSL/프로게이머",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "다음주 fsl 직관도 ㄷㄱㄷㄱ",
-      "url": "https://www.fmkorea.com/index.php?mid=fifa_online&category=8064047289&document_srl=10205696944",
-      "views": 156,
-      "comments": 0,
-      "date": "16:06",
-      "category": "FSL/프로게이머",
-      "sentiment": "positive"
-    },
-    {
-      "title": "하이라이트 보는데 노이즈 졸라 잘하네",
-      "url": "https://www.fmkorea.com/index.php?mid=fifa_online&category=8064047289&document_srl=10205469340",
-      "views": 490,
-      "comments": 4,
-      "date": "14:58",
-      "category": "FSL/프로게이머",
-      "sentiment": "positive"
-    },
-    {
-      "title": "이거 컴퓨터로눈 예매안됨?",
-      "url": "https://www.fmkorea.com/index.php?mid=fifa_online&category=8064047289&document_srl=10205295590",
-      "views": 233,
-      "comments": 1,
-      "date": "14:07",
-      "category": "FSL/프로게이머",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "캬 티켓 1분컷이네요ㅋㅋ",
-      "url": "https://www.fmkorea.com/index.php?mid=fifa_online&category=8064047289&document_srl=10205283287",
-      "views": 1463,
-      "comments": 4,
-      "date": "14:03",
-      "category": "FSL/프로게이머",
-      "sentiment": "positive"
-    },
-    {
-      "title": "우타 선수 많이 잘하나요?",
-      "url": "https://www.fmkorea.com/index.php?mid=fifa_online&category=8064047289&document_srl=10205270471",
-      "views": 997,
-      "comments": 21,
-      "date": "13:58",
-      "category": "FSL/프로게이머",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "지피제이 VS 원더08 보고 싶다",
-      "url": "https://www.fmkorea.com/index.php?mid=fifa_online&category=8064047289&document_srl=10205211890",
-      "views": 235,
-      "comments": 0,
-      "date": "13:40",
-      "category": "FSL/프로게이머",
-      "sentiment": "positive"
-    },
-    {
-      "title": "우타 우승",
-      "url": "https://www.fmkorea.com/index.php?mid=fifa_online&category=8064047289&document_srl=10205201581",
-      "views": 296,
-      "comments": 4,
-      "date": "13:37",
-      "category": "FSL/프로게이머",
-      "sentiment": "positive"
-    },
-    {
-      "title": "원더08 뭔가 조금씩 우하향하는거 같아서 아쉬움",
-      "url": "https://www.fmkorea.com/index.php?mid=fifa_online&category=8064047289&document_srl=10205156307",
-      "views": 1916,
-      "comments": 6,
-      "date": "13:21",
-      "category": "FSL/프로게이머",
-      "sentiment": "negative"
-    },
-    {
-      "title": "FSL 모든 경기 다시보는 중인데",
-      "url": "https://www.fmkorea.com/index.php?mid=fifa_online&category=8064047289&document_srl=10205128648",
-      "views": 203,
-      "comments": 0,
-      "date": "13:11",
-      "category": "FSL/프로게이머",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "나 8강 예측 지금까지 거의 다 틀렸네 ㅋㅋㅋ",
-      "url": "https://www.fmkorea.com/index.php?mid=fifa_online&category=8064047289&document_srl=10204930450",
-      "views": 436,
-      "comments": 4,
-      "date": "08.13",
-      "category": "FSL/프로게이머",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "8강 언제함?",
-      "url": "https://www.fmkorea.com/index.php?mid=fifa_online&category=8064047289&document_srl=10204100611",
-      "views": 1394,
-      "comments": 2,
-      "date": "08.13",
-      "category": "FSL/프로게이머",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "지금까지 폼만 보면 호석 노이즈가 제일 좋은거같음",
-      "url": "https://www.fmkorea.com/index.php?mid=fifa_online&category=8064047289&document_srl=10204066537",
-      "views": 244,
-      "comments": 6,
-      "date": "08.13",
-      "category": "FSL/프로게이머",
-      "sentiment": "positive"
-    },
-    {
-      "title": "오늘경기 하이라이트 유튭댓글 개한심하네 진짜ㅋㅋ",
-      "url": "https://www.fmkorea.com/index.php?mid=fifa_online&category=8064047289&document_srl=10203837833",
-      "views": 2695,
-      "comments": 5,
-      "date": "08.13",
-      "category": "FSL/프로게이머",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "맨유라서 fsl 찰턴이랑 퍼디난드 보유하고 있었는데 이게 웬걸?",
-      "url": "https://www.fmkorea.com/index.php?mid=fifa_online&category=8064047289&document_srl=10203803447",
-      "views": 1798,
-      "comments": 2,
-      "date": "08.13",
-      "category": "FSL/프로게이머",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "원더 저장면 난 별생각업는데",
-      "url": "https://www.fmkorea.com/index.php?mid=fifa_online&category=8064047289&document_srl=10203746436",
-      "views": 4233,
-      "comments": 4,
-      "date": "08.13",
+      "date": "08.14",
       "category": "FSL/프로게이머",
       "sentiment": "neutral"
     }
   ],
   "sentiment": {
-    "positive": 32,
-    "neutral": 64,
-    "negative": 4
+    "positive": 12,
+    "neutral": 88,
+    "negative": 0
   },
   "top_issues": {
-    "positive": "선수 퍼포먼스 극찬",
-    "negative": "팀 성적 하향세 우려",
-    "neutral": "경기 일정/티켓 정보"
+    "positive": "선수 유니폼 도착",
+    "negative": "없음",
+    "neutral": "FTB포인트, 카드가격, 선수정보"
   },
   "keywords": [
     {
-      "topic": "FSL 경기/일정",
-      "count": 8,
-      "pct": "32.0%",
-      "tags": "현장관람,티켓,직관,예매,경기시간"
+      "topic": "선수정보/커뮤니티",
+      "count": 4,
+      "pct": "50.0%",
+      "tags": "선수 닉네임, 본캐, 라인 분석"
     },
     {
-      "topic": "선수 평가",
-      "count": 7,
-      "pct": "28.0%",
-      "tags": "노이즈,호석,엘빈,정민,우타"
-    },
-    {
-      "topic": "팀 평가",
-      "count": 5,
-      "pct": "20.0%",
-      "tags": "원더08,kt,지피제이"
-    },
-    {
-      "topic": "스쿼드/카드",
+      "topic": "게임진행",
       "count": 2,
-      "pct": "8.0%",
-      "tags": "훈련코치,카드활용"
+      "pct": "25.0%",
+      "tags": "FTB포인트, 동행자 모집"
     },
     {
-      "topic": "커뮤니티 반응",
-      "count": 3,
-      "pct": "12.0%",
-      "tags": "사과방송,유튜브반응"
+      "topic": "카드/거래",
+      "count": 1,
+      "pct": "12.5%",
+      "tags": "아자르 가격상승"
+    },
+    {
+      "topic": "선수응원",
+      "count": 1,
+      "pct": "12.5%",
+      "tags": "곽선수 유니폼"
     }
   ],
   "churn_signals": [],
-  "esports_disengagement_signals": [
-    "원더08 성적 하향세 우려",
-    "예측 정확도 저하"
-  ],
-  "fsl_mention_rate": "88.0%",
-  "impact_score": 6.2,
-  "viewer_engagement_estimate": "12.5K",
-  "last_updated": "2026-08-14 12:22",
+  "esports_disengagement_signals": [],
+  "fsl_mention_rate": "37.5%",
+  "impact_score": 3.2,
+  "viewer_engagement_estimate": "2.5K",
+  "last_updated": "2026-08-15 11:11",
   "history": [
     {
       "label": "07/07",
@@ -525,6 +363,14 @@
       "posts": 25,
       "esports": 19,
       "positive": 32
+    },
+    {
+      "label": "08/15",
+      "date": "2026-08-15",
+      "esi": 10.0,
+      "posts": 8,
+      "esports": 3,
+      "positive": 12
     }
   ]
 }
