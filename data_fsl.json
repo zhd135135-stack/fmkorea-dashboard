@@ -1,128 +1,26 @@
 {
   "source": "fsl",
   "collection_range": {
-    "start": "2026-08-14 10:01",
-    "end": "2026-08-15 09:59"
+    "start": "2026-08-15 10:01",
+    "end": "2026-08-16 09:59"
   },
-  "total_posts": 8,
-  "total_views": 6027,
-  "avg_views_per_post": 753,
-  "posts": [
-    {
-      "title": "현시점 FTB 포인트 근황",
-      "url": "https://www.fmkorea.com/index.php?mid=fifa_online&category=8064047289&document_srl=10213291188",
-      "views": 181,
-      "comments": 0,
-      "date": "02:09",
-      "category": "FSL/프로게이머",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "8월19일 FSL 동행자 구합니다.",
-      "url": "https://www.fmkorea.com/index.php?mid=fifa_online&category=8064047289&document_srl=10212555416",
-      "views": 251,
-      "comments": 6,
-      "date": "23:01",
-      "category": "FSL/프로게이머",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "와 아자르 가격 겁나 오르네",
-      "url": "https://www.fmkorea.com/index.php?mid=fifa_online&category=8064047289&document_srl=10212473025",
-      "views": 2120,
-      "comments": 3,
-      "date": "22:43",
-      "category": "FSL/프로게이머",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "담당자의 비밀 제안서",
-      "url": "https://www.fmkorea.com/index.php?mid=fifa_online&category=8064047289&document_srl=10212239529",
-      "views": 1117,
-      "comments": 4,
-      "date": "21:54",
-      "category": "FSL/프로게이머",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "JM선수님 본캐 닉네임 아시는분 있나요??",
-      "url": "https://www.fmkorea.com/index.php?mid=fifa_online&category=8064047289&document_srl=10211667560",
-      "views": 203,
-      "comments": 2,
-      "date": "20:00",
-      "category": "FSL/프로게이머",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "곽선수 유니폼 도착 !!",
-      "url": "https://www.fmkorea.com/index.php?mid=fifa_online&category=8064047289&document_srl=10210264122",
-      "views": 866,
-      "comments": 2,
-      "date": "14:28",
-      "category": "FSL/프로게이머",
-      "sentiment": "positive"
-    },
-    {
-      "title": "대부분 선수들보면 2선라인은...",
-      "url": "https://www.fmkorea.com/index.php?mid=fifa_online&category=8064047289&document_srl=10210003531",
-      "views": 895,
-      "comments": 3,
-      "date": "13:02",
-      "category": "FSL/프로게이머",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "이거 보셨어요??",
-      "url": "https://www.fmkorea.com/index.php?mid=fifa_online&category=8064047289&document_srl=10208431564",
-      "views": 394,
-      "comments": 1,
-      "date": "08.14",
-      "category": "FSL/프로게이머",
-      "sentiment": "neutral"
-    }
-  ],
+  "total_posts": 0,
+  "total_views": 0,
+  "avg_views_per_post": 0,
+  "posts": [],
   "sentiment": {
-    "positive": 12,
-    "neutral": 88,
+    "positive": 0,
+    "neutral": 0,
     "negative": 0
   },
-  "top_issues": {
-    "positive": "선수 유니폼 도착",
-    "negative": "없음",
-    "neutral": "FTB포인트, 카드가격, 선수정보"
-  },
-  "keywords": [
-    {
-      "topic": "선수정보/커뮤니티",
-      "count": 4,
-      "pct": "50.0%",
-      "tags": "선수 닉네임, 본캐, 라인 분석"
-    },
-    {
-      "topic": "게임진행",
-      "count": 2,
-      "pct": "25.0%",
-      "tags": "FTB포인트, 동행자 모집"
-    },
-    {
-      "topic": "카드/거래",
-      "count": 1,
-      "pct": "12.5%",
-      "tags": "아자르 가격상승"
-    },
-    {
-      "topic": "선수응원",
-      "count": 1,
-      "pct": "12.5%",
-      "tags": "곽선수 유니폼"
-    }
-  ],
+  "top_issues": {},
+  "keywords": [],
   "churn_signals": [],
   "esports_disengagement_signals": [],
-  "fsl_mention_rate": "37.5%",
-  "impact_score": 3.2,
-  "viewer_engagement_estimate": "2.5K",
-  "last_updated": "2026-08-15 11:11",
+  "fsl_mention_rate": "0%",
+  "impact_score": 0,
+  "viewer_engagement_estimate": "0K",
+  "last_updated": "2026-08-16 11:19",
   "history": [
     {
       "label": "07/07",
