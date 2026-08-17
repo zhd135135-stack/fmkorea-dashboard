@@ -1,26 +1,116 @@
 {
   "source": "fsl",
   "collection_range": {
-    "start": "2026-08-15 10:01",
-    "end": "2026-08-16 09:59"
+    "start": "2026-08-16 10:01",
+    "end": "2026-08-17 09:59"
   },
-  "total_posts": 0,
-  "total_views": 0,
-  "avg_views_per_post": 0,
-  "posts": [],
+  "total_posts": 7,
+  "total_views": 6003,
+  "avg_views_per_post": 857,
+  "posts": [
+    {
+      "title": "뭔가 다시 4222에서 4231,42211로 넘어가는듯",
+      "url": "https://www.fmkorea.com/index.php?mid=fifa_online&category=8064047289&document_srl=10221306427",
+      "views": 868,
+      "comments": 2,
+      "date": "00:36",
+      "category": "FSL/프로게이머",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "뭐야 JM이 김정민이었네????",
+      "url": "https://www.fmkorea.com/index.php?mid=fifa_online&category=8064047289&document_srl=10220576592",
+      "views": 228,
+      "comments": 2,
+      "date": "22:02",
+      "category": "FSL/프로게이머",
+      "sentiment": "positive"
+    },
+    {
+      "title": "FFL 최종 진출자 4인",
+      "url": "https://www.fmkorea.com/index.php?mid=fifa_online&category=8064047289&document_srl=10219595627",
+      "views": 219,
+      "comments": 15,
+      "date": "18:39",
+      "category": "FSL/프로게이머",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "FFL 지금",
+      "url": "https://www.fmkorea.com/index.php?mid=fifa_online&category=8064047289&document_srl=10219445126",
+      "views": 1055,
+      "comments": 3,
+      "date": "17:58",
+      "category": "FSL/프로게이머",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "체이스 방에서 가져온 FFL 현재 성적",
+      "url": "https://www.fmkorea.com/index.php?mid=fifa_online&category=8064047289&document_srl=10219145421",
+      "views": 2739,
+      "comments": 2,
+      "date": "16:45",
+      "category": "FSL/프로게이머",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "FFL중간집계 해줄 천사분",
+      "url": "https://www.fmkorea.com/index.php?mid=fifa_online&category=8064047289&document_srl=10219087605",
+      "views": 136,
+      "comments": 0,
+      "date": "16:24",
+      "category": "FSL/프로게이머",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "FFL 예선 개빡이다 이번에",
+      "url": "https://www.fmkorea.com/index.php?mid=fifa_online&category=8064047289&document_srl=10218830176",
+      "views": 758,
+      "comments": 3,
+      "date": "14:52",
+      "category": "FSL/프로게이머",
+      "sentiment": "negative"
+    }
+  ],
   "sentiment": {
-    "positive": 0,
-    "neutral": 0,
-    "negative": 0
+    "positive": 14,
+    "neutral": 71,
+    "negative": 14
   },
-  "top_issues": {},
-  "keywords": [],
+  "top_issues": {
+    "positive": "선수 정보 발굴 및 공유",
+    "negative": "예선 난이도 및 피로도",
+    "neutral": "FFL 진행상황 정보공유"
+  },
+  "keywords": [
+    {
+      "topic": "FFL",
+      "count": 5,
+      "pct": "71.4%",
+      "tags": "대회진행, 성적집계, 예선"
+    },
+    {
+      "topic": "포메이션",
+      "count": 1,
+      "pct": "14.3%",
+      "tags": "4222, 4231, 42211"
+    },
+    {
+      "topic": "선수정보",
+      "count": 1,
+      "pct": "14.3%",
+      "tags": "JM, 김정민"
+    }
+  ],
   "churn_signals": [],
-  "esports_disengagement_signals": [],
-  "fsl_mention_rate": "0%",
-  "impact_score": 0,
-  "viewer_engagement_estimate": "0K",
-  "last_updated": "2026-08-16 11:19",
+  "esports_disengagement_signals": [
+    "예선 난이도 불만(개빡이다)",
+    "정보 수집 의존도 높음"
+  ],
+  "fsl_mention_rate": "71.4%",
+  "impact_score": 3.2,
+  "viewer_engagement_estimate": "8.5K",
+  "last_updated": "2026-08-17 11:17",
   "history": [
     {
       "label": "07/07",
@@ -269,6 +359,14 @@
       "posts": 8,
       "esports": 3,
       "positive": 12
+    },
+    {
+      "label": "08/17",
+      "date": "2026-08-17",
+      "esi": 10.0,
+      "posts": 7,
+      "esports": 2,
+      "positive": 14
     }
   ]
 }
