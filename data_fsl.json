@@ -1,137 +1,68 @@
 {
   "source": "fsl",
   "collection_range": {
-    "start": "2026-08-20 10:01",
-    "end": "2026-08-21 09:59"
+    "start": "2026-08-21 10:01",
+    "end": "2026-08-22 09:59"
   },
-  "total_posts": 9,
-  "total_views": 16149,
-  "avg_views_per_post": 1794,
+  "total_posts": 2,
+  "total_views": 484,
+  "avg_views_per_post": 242,
   "posts": [
     {
-      "title": "8/24(월) FSL 구글 초대석 동행자 구합니다!",
-      "url": "https://www.fmkorea.com/index.php?mid=fifa_online&category=8064047289&document_srl=10236150296",
-      "views": 227,
-      "comments": 16,
-      "date": "21:03",
-      "category": "FSL/프로게이머",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "화요일 경기도 1분도 안되서 매진..",
-      "url": "https://www.fmkorea.com/index.php?mid=fifa_online&category=8064047289&document_srl=10234907104",
-      "views": 670,
+      "title": "Fsl같은 대회는 팀을 어케 짬",
+      "url": "https://www.fmkorea.com/index.php?mid=fifa_online&category=8064047289&document_srl=10239857710",
+      "views": 272,
       "comments": 1,
-      "date": "15:01",
-      "category": "FSL/프로게이머",
-      "sentiment": "positive"
-    },
-    {
-      "title": "평일이어도 싹다 매진이네요",
-      "url": "https://www.fmkorea.com/index.php?mid=fifa_online&category=8064047289&document_srl=10234750124",
-      "views": 2047,
-      "comments": 0,
-      "date": "14:13",
-      "category": "FSL/프로게이머",
-      "sentiment": "positive"
-    },
-    {
-      "title": "Fsl 좌석 교환",
-      "url": "https://www.fmkorea.com/index.php?mid=fifa_online&category=8064047289&document_srl=10234741383",
-      "views": 219,
-      "comments": 9,
-      "date": "14:10",
+      "date": "18:43",
       "category": "FSL/프로게이머",
       "sentiment": "neutral"
     },
     {
-      "title": "FSL 직관 후기",
-      "url": "https://www.fmkorea.com/index.php?mid=fifa_online&category=8064047289&document_srl=10233986052",
-      "views": 2566,
-      "comments": 8,
-      "date": "08.20",
+      "title": "우타vs디케 어캐 예상들하심?",
+      "url": "https://www.fmkorea.com/index.php?mid=fifa_online&category=8064047289&document_srl=10239118729",
+      "views": 212,
+      "comments": 5,
+      "date": "15:40",
       "category": "FSL/프로게이머",
       "sentiment": "neutral"
-    },
-    {
-      "title": "이번 시즌 우승자 예측",
-      "url": "https://www.fmkorea.com/index.php?mid=fifa_online&category=8064047289&document_srl=10233920911",
-      "views": 228,
-      "comments": 10,
-      "date": "08.20",
-      "category": "FSL/프로게이머",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "fsl 보는게 확실히 도움은 좀 되는듯",
-      "url": "https://www.fmkorea.com/index.php?mid=fifa_online&category=8064047289&document_srl=10233873357",
-      "views": 587,
-      "comments": 2,
-      "date": "08.20",
-      "category": "FSL/프로게이머",
-      "sentiment": "positive"
-    },
-    {
-      "title": "Jm 탈락이 슬픈게",
-      "url": "https://www.fmkorea.com/index.php?mid=fifa_online&category=8064047289&document_srl=10233483955",
-      "views": 1374,
-      "comments": 1,
-      "date": "08.20",
-      "category": "FSL/프로게이머",
-      "sentiment": "negative"
-    },
-    {
-      "title": "현장 직관 드롭스 당첨",
-      "url": "https://www.fmkorea.com/index.php?mid=fifa_online&category=8064047289&document_srl=10233370139",
-      "views": 8231,
-      "comments": 12,
-      "date": "08.20",
-      "category": "FSL/프로게이머",
-      "sentiment": "positive"
     }
   ],
   "sentiment": {
-    "positive": 44,
-    "neutral": 44,
-    "negative": 11
+    "positive": 0,
+    "neutral": 100,
+    "negative": 0
   },
   "top_issues": {
-    "positive": "티켓 매진, 현장 열기 높음",
-    "negative": "선수 탈락으로 팬심 흔들림",
-    "neutral": "FSL 관전과 관련 정보"
+    "positive": "없음",
+    "negative": "없음",
+    "neutral": "FSL 대회 팀 구성 및 선수 비교"
   },
   "keywords": [
     {
-      "topic": "티켓/좌석",
-      "count": 4,
-      "pct": "44.4%",
-      "tags": "매진, 초대석, 좌석교환, 직관"
-    },
-    {
-      "topic": "FSL 경기",
-      "count": 6,
-      "pct": "66.7%",
-      "tags": "구글, 경기, 시즌, 우승, 후기"
-    },
-    {
-      "topic": "선수/팀",
+      "topic": "FSL",
       "count": 1,
-      "pct": "11.1%",
-      "tags": "JM, 탈락"
+      "pct": "50.0%",
+      "tags": "리그,대회,팀구성"
     },
     {
-      "topic": "이벤트",
+      "topic": "팀짜기",
       "count": 1,
-      "pct": "11.1%",
-      "tags": "드롭스, 당첨"
+      "pct": "50.0%",
+      "tags": "스쿼드,편성"
+    },
+    {
+      "topic": "선수비교",
+      "count": 1,
+      "pct": "50.0%",
+      "tags": "우타,디케,예상"
     }
   ],
   "churn_signals": [],
   "esports_disengagement_signals": [],
-  "fsl_mention_rate": "100.0%",
-  "impact_score": 7.2,
-  "viewer_engagement_estimate": "12K",
-  "last_updated": "2026-08-21 11:21",
+  "fsl_mention_rate": "50.0%",
+  "impact_score": 2.5,
+  "viewer_engagement_estimate": "5K",
+  "last_updated": "2026-08-22 11:13",
   "history": [
     {
       "label": "07/07",
@@ -420,6 +351,14 @@
       "posts": 9,
       "esports": 5,
       "positive": 44
+    },
+    {
+      "label": "08/22",
+      "date": "2026-08-22",
+      "esi": 0.0,
+      "posts": 2,
+      "esports": 2,
+      "positive": 0
     }
   ]
 }
