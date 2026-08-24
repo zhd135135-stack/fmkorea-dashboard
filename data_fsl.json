@@ -1,26 +1,351 @@
 {
   "source": "fsl",
   "collection_range": {
-    "start": "2026-08-22 10:01",
-    "end": "2026-08-23 09:59"
+    "start": "2026-08-23 10:01",
+    "end": "2026-08-24 09:59"
   },
-  "total_posts": 0,
-  "total_views": 0,
-  "avg_views_per_post": 0,
-  "posts": [],
+  "total_posts": 31,
+  "total_views": 159233,
+  "avg_views_per_post": 5136,
+  "posts": [
+    {
+      "title": "FFL 하이라이트 마갈량 썸네일 ㅋㅋㅋㅋㅋㅋ",
+      "url": "https://www.fmkorea.com/index.php?mid=fifa_online&category=8064047289&document_srl=10248369274",
+      "views": 750,
+      "comments": 6,
+      "date": "19:25",
+      "category": "FSL/프로게이머",
+      "sentiment": "positive"
+    },
+    {
+      "title": "프슬탭 포텐컷은 앵간한 플레이로는 못넘기는대",
+      "url": "https://www.fmkorea.com/index.php?mid=fifa_online&category=8064047289&document_srl=10247518565",
+      "views": 210,
+      "comments": 4,
+      "date": "16:16",
+      "category": "FSL/프로게이머",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "크롱은 진짜 압도적이네요 ㄷㄷ",
+      "url": "https://www.fmkorea.com/index.php?mid=fifa_online&category=8064047289&document_srl=10247468272",
+      "views": 1150,
+      "comments": 9,
+      "date": "16:00",
+      "category": "FSL/프로게이머",
+      "sentiment": "positive"
+    },
+    {
+      "title": "[FFL] 크롱 라브+트릭+레이저슛=골 ㄷㄷㄷㄷㄷㄷㄷㄷㄷㄷㄷㄷㄷㄷㄷㄷㄷㄷㄷㄷㄷ",
+      "url": "https://www.fmkorea.com/index.php?mid=fifa_online&category=8064047289&document_srl=10247452505",
+      "views": 1543,
+      "comments": 6,
+      "date": "15:55",
+      "category": "FSL/프로게이머",
+      "sentiment": "positive"
+    },
+    {
+      "title": "크롱 저거는 진짜 매크로네",
+      "url": "https://www.fmkorea.com/index.php?mid=fifa_online&category=8064047289&document_srl=10247436216",
+      "views": 223,
+      "comments": 0,
+      "date": "15:49",
+      "category": "FSL/프로게이머",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "아쉽다 Tak",
+      "url": "https://www.fmkorea.com/index.php?mid=fifa_online&category=8064047289&document_srl=10247404257",
+      "views": 218,
+      "comments": 0,
+      "date": "15:39",
+      "category": "FSL/프로게이머",
+      "sentiment": "negative"
+    },
+    {
+      "title": "오늘 대회보기가 좀 힘드네요",
+      "url": "https://www.fmkorea.com/index.php?mid=fifa_online&category=8064047289&document_srl=10247400366",
+      "views": 1220,
+      "comments": 6,
+      "date": "15:38",
+      "category": "FSL/프로게이머",
+      "sentiment": "negative"
+    },
+    {
+      "title": "마갈량이스 pk실축 ㅋㅋ",
+      "url": "https://www.fmkorea.com/index.php?mid=fifa_online&category=8064047289&document_srl=10247399953",
+      "views": 89,
+      "comments": 0,
+      "date": "15:37",
+      "category": "FSL/프로게이머",
+      "sentiment": "negative"
+    },
+    {
+      "title": "[FFL] 또 승부차기를 실축하는 가브리엘 마갈량이스 ㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋ",
+      "url": "https://www.fmkorea.com/index.php?mid=fifa_online&category=8064047289&document_srl=10247396025",
+      "views": 80000,
+      "comments": 67,
+      "date": "15:36",
+      "category": "FSL/프로게이머",
+      "sentiment": "negative"
+    },
+    {
+      "title": "마갈량 연속 실축은 ㅅㅂㅋㅋㅋㅋ",
+      "url": "https://www.fmkorea.com/index.php?mid=fifa_online&category=8064047289&document_srl=10247395626",
+      "views": 25,
+      "comments": 0,
+      "date": "15:36",
+      "category": "FSL/프로게이머",
+      "sentiment": "negative"
+    },
+    {
+      "title": "마갈량 오늘만 승차 두번ㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋ",
+      "url": "https://www.fmkorea.com/index.php?mid=fifa_online&category=8064047289&document_srl=10247394161",
+      "views": 87,
+      "comments": 0,
+      "date": "15:35",
+      "category": "FSL/프로게이머",
+      "sentiment": "negative"
+    },
+    {
+      "title": "또 마갈량 ㅋㅋㅋㅋ",
+      "url": "https://www.fmkorea.com/index.php?mid=fifa_online&category=8064047289&document_srl=10247393596",
+      "views": 20,
+      "comments": 0,
+      "date": "15:35",
+      "category": "FSL/프로게이머",
+      "sentiment": "negative"
+    },
+    {
+      "title": "ㅅㅂ 또 마갈량 ㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋ",
+      "url": "https://www.fmkorea.com/index.php?mid=fifa_online&category=8064047289&document_srl=10247393125",
+      "views": 141,
+      "comments": 0,
+      "date": "15:35",
+      "category": "FSL/프로게이머",
+      "sentiment": "negative"
+    },
+    {
+      "title": "[FFL] 킥오프1분만에 골넣는 탁 ㄷㄷㄷㄷㄷㄷㄷㄷㄷㄷㄷㄷㄷㄷㄷㄷㄷㄷㄷㄷ",
+      "url": "https://www.fmkorea.com/index.php?mid=fifa_online&category=8064047289&document_srl=10247375541",
+      "views": 61,
+      "comments": 0,
+      "date": "15:29",
+      "category": "FSL/프로게이머",
+      "sentiment": "positive"
+    },
+    {
+      "title": "[FFL] 크롱 시그니처 MZ넛맥 ㄷㄷㄷㄷㄷㄷㄷㄷㄷㄷㄷㄷㄷㄷㄷㄷㄷㄷ",
+      "url": "https://www.fmkorea.com/index.php?mid=fifa_online&category=8064047289&document_srl=10247366707",
+      "views": 148,
+      "comments": 0,
+      "date": "15:26",
+      "category": "FSL/프로게이머",
+      "sentiment": "positive"
+    },
+    {
+      "title": "[FFL] 탁 파워슛 역전골 ㄷㄷㄷㄷㄷㄷㄷㄷㄷㄷㄷㄷㄷㄷㄷㄷㄷ",
+      "url": "https://www.fmkorea.com/index.php?mid=fifa_online&category=8064047289&document_srl=10247363665",
+      "views": 73,
+      "comments": 0,
+      "date": "15:25",
+      "category": "FSL/프로게이머",
+      "sentiment": "positive"
+    },
+    {
+      "title": "노바 다음 시즌 기대중",
+      "url": "https://www.fmkorea.com/index.php?mid=fifa_online&category=8064047289&document_srl=10247282058",
+      "views": 151,
+      "comments": 0,
+      "date": "14:57",
+      "category": "FSL/프로게이머",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "fsl시즌 라부는",
+      "url": "https://www.fmkorea.com/index.php?mid=fifa_online&category=8064047289&document_srl=10247272490",
+      "views": 295,
+      "comments": 10,
+      "date": "14:54",
+      "category": "FSL/프로게이머",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "미니언 3대떡 ㄷㄷ",
+      "url": "https://www.fmkorea.com/index.php?mid=fifa_online&category=8064047289&document_srl=10247273584",
+      "views": 645,
+      "comments": 2,
+      "date": "14:54",
+      "category": "FSL/프로게이머",
+      "sentiment": "positive"
+    },
+    {
+      "title": "[FFL] 지피제이를 보는듯한 노바의 삼각패스각 ㄷㄷㄷㄷㄷㄷㄷㄷㄷㄷㄷㄷㄷㄷㄷㄷㄷㄷ",
+      "url": "https://www.fmkorea.com/index.php?mid=fifa_online&category=8064047289&document_srl=10247260137",
+      "views": 204,
+      "comments": 0,
+      "date": "14:49",
+      "category": "FSL/프로게이머",
+      "sentiment": "positive"
+    },
+    {
+      "title": "[FFL] 승부차기를 실축하는 가브리엘 마갈량이스 ㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋ",
+      "url": "https://www.fmkorea.com/index.php?mid=fifa_online&category=8064047289&document_srl=10247239592",
+      "views": 70000,
+      "comments": 73,
+      "date": "14:43",
+      "category": "FSL/프로게이머",
+      "sentiment": "negative"
+    },
+    {
+      "title": "실축 고증 미쳤네 그냥",
+      "url": "https://www.fmkorea.com/index.php?mid=fifa_online&category=8064047289&document_srl=10247233615",
+      "views": 233,
+      "comments": 1,
+      "date": "14:40",
+      "category": "FSL/프로게이머",
+      "sentiment": "positive"
+    },
+    {
+      "title": "마갈량 케파 개웃기네진짜",
+      "url": "https://www.fmkorea.com/index.php?mid=fifa_online&category=8064047289&document_srl=10247232815",
+      "views": 206,
+      "comments": 2,
+      "date": "14:40",
+      "category": "FSL/프로게이머",
+      "sentiment": "negative"
+    },
+    {
+      "title": "[FFL] 미니언 신두형 헤더 2골로 역전 ㄷㄷㄷㄷㄷㄷㄷㄷㄷㄷㄷㄷㄷㄷㄷㄷㄷㄷㄷㄷㄷㄷㄷ",
+      "url": "https://www.fmkorea.com/index.php?mid=fifa_online&category=8064047289&document_srl=10247198396",
+      "views": 21,
+      "comments": 0,
+      "date": "14:29",
+      "category": "FSL/프로게이머",
+      "sentiment": "positive"
+    },
+    {
+      "title": "노바가 압도적이네",
+      "url": "https://www.fmkorea.com/index.php?mid=fifa_online&category=8064047289&document_srl=10247179248",
+      "views": 203,
+      "comments": 1,
+      "date": "14:22",
+      "category": "FSL/프로게이머",
+      "sentiment": "positive"
+    },
+    {
+      "title": "노바 젠시티 2군 아니었나",
+      "url": "https://www.fmkorea.com/index.php?mid=fifa_online&category=8064047289&document_srl=10247178823",
+      "views": 112,
+      "comments": 1,
+      "date": "14:22",
+      "category": "FSL/프로게이머",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "[FFL] 노바 음바페 미친 드리블 ㄷㄷㄷㄷㄷㄷㄷㄷㄷㄷㄷㄷㄷㄷㄷㄷㄷㄷㄷㄷㄷ",
+      "url": "https://www.fmkorea.com/index.php?mid=fifa_online&category=8064047289&document_srl=10247178340",
+      "views": 42,
+      "comments": 0,
+      "date": "14:22",
+      "category": "FSL/프로게이머",
+      "sentiment": "positive"
+    },
+    {
+      "title": "미니언 정배로 봤는데",
+      "url": "https://www.fmkorea.com/index.php?mid=fifa_online&category=8064047289&document_srl=10247147578",
+      "views": 22,
+      "comments": 0,
+      "date": "14:12",
+      "category": "FSL/프로게이머",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "노바 개잘하네 ㄷ;",
+      "url": "https://www.fmkorea.com/index.php?mid=fifa_online&category=8064047289&document_srl=10247143689",
+      "views": 151,
+      "comments": 1,
+      "date": "14:10",
+      "category": "FSL/프로게이머",
+      "sentiment": "positive"
+    },
+    {
+      "title": "FFL로 떨어진 선수들은 FSL로 복귀 어케 하나요?",
+      "url": "https://www.fmkorea.com/index.php?mid=fifa_online&category=8064047289&document_srl=10247132733",
+      "views": 499,
+      "comments": 4,
+      "date": "14:07",
+      "category": "FSL/프로게이머",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "오늘 FFL",
+      "url": "https://www.fmkorea.com/index.php?mid=fifa_online&category=8064047289&document_srl=10246925335",
+      "views": 491,
+      "comments": 5,
+      "date": "12:56",
+      "category": "FSL/프로게이머",
+      "sentiment": "neutral"
+    }
+  ],
   "sentiment": {
-    "positive": 0,
-    "neutral": 0,
-    "negative": 0
+    "positive": 42,
+    "neutral": 26,
+    "negative": 32
   },
-  "top_issues": {},
-  "keywords": [],
+  "top_issues": {
+    "positive": "크롱, 탁, 노바의 압도적 플레이",
+    "negative": "마갈량의 반복적 PK 실축",
+    "neutral": "선수정보 및 팀 관련 질문"
+  },
+  "keywords": [
+    {
+      "topic": "마갈량",
+      "count": 9,
+      "pct": "29.0%",
+      "tags": "PK실축, 승부차기, 웃음"
+    },
+    {
+      "topic": "크롱",
+      "count": 4,
+      "pct": "12.9%",
+      "tags": "압도적, 라브, MZ넛맥"
+    },
+    {
+      "topic": "노바",
+      "count": 6,
+      "pct": "19.4%",
+      "tags": "압도적, 드리블, 삼각패스"
+    },
+    {
+      "topic": "탁",
+      "count": 3,
+      "pct": "9.7%",
+      "tags": "킥오프골, 역전골"
+    },
+    {
+      "topic": "미니언",
+      "count": 3,
+      "pct": "9.7%",
+      "tags": "3대떡, 헤더역전"
+    },
+    {
+      "topic": "FFL/FSL",
+      "count": 11,
+      "pct": "35.5%",
+      "tags": "하이라이트, 대회"
+    }
+  ],
   "churn_signals": [],
-  "esports_disengagement_signals": [],
-  "fsl_mention_rate": "0%",
-  "impact_score": 0,
-  "viewer_engagement_estimate": "0K",
-  "last_updated": "2026-08-23 11:21",
+  "esports_disengagement_signals": [
+    "마갈량 PK 반복 실축에 대한 비아냥(9회 언급)",
+    "대회 시청 어려움 표현",
+    "시즌 평가 및 복귀 방법 질문"
+  ],
+  "fsl_mention_rate": "35.5%",
+  "impact_score": 6.8,
+  "viewer_engagement_estimate": "8.2K",
+  "last_updated": "2026-08-24 11:20",
   "history": [
     {
       "label": "07/07",
@@ -317,6 +642,14 @@
       "posts": 2,
       "esports": 2,
       "positive": 0
+    },
+    {
+      "label": "08/24",
+      "date": "2026-08-24",
+      "esi": 10.0,
+      "posts": 31,
+      "esports": 15,
+      "positive": 42
     }
   ]
 }
