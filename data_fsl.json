@@ -1,136 +1,28 @@
 {
   "source": "fsl",
   "collection_range": {
-    "start": "2026-08-26 10:01",
-    "end": "2026-08-27 09:59"
+    "start": "2026-08-27 10:01",
+    "end": "2026-08-28 09:59"
   },
-  "total_posts": 14,
-  "total_views": 22881,
-  "avg_views_per_post": 1634,
+  "total_posts": 2,
+  "total_views": 3573,
+  "avg_views_per_post": 1786,
   "posts": [
+    {
+      "title": "[2026 FCL] 대회 개최 및 이벤트 사전 안내",
+      "url": "https://www.fmkorea.com/index.php?mid=fifa_online&category=8064047289&document_srl=10264288991",
+      "views": 1767,
+      "comments": 3,
+      "date": "08.27",
+      "category": "FSL/프로게이머",
+      "sentiment": "neutral"
+    },
     {
       "title": "(마감)8/30(일) FSL 다이아 초대석 동행 구해요",
       "url": "https://www.fmkorea.com/index.php?mid=fifa_online&category=8064047289&document_srl=10262470717",
       "views": 1806,
       "comments": 8,
-      "date": "09:31",
-      "category": "FSL/프로게이머",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "8/30 일요일 오후 3시 경기 동행자 구합니다",
-      "url": "https://www.fmkorea.com/index.php?mid=fifa_online&category=8064047289&document_srl=10260553347",
-      "views": 233,
-      "comments": 3,
-      "date": "20:01",
-      "category": "FSL/프로게이머",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "fsl 취소했습니다",
-      "url": "https://www.fmkorea.com/index.php?mid=fifa_online&category=8064047289&document_srl=10260473144",
-      "views": 868,
-      "comments": 3,
-      "date": "08.26",
-      "category": "FSL/프로게이머",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "라이트 선수가 춤을 좀 못 춘다고 생각하지 않습니다",
-      "url": "https://www.fmkorea.com/index.php?mid=fifa_online&category=8064047289&document_srl=10260154130",
-      "views": 139,
-      "comments": 0,
-      "date": "08.26",
-      "category": "FSL/프로게이머",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "(마감)8/30(일) FSL 다이아 초대석 동행 구해요~",
-      "url": "https://www.fmkorea.com/index.php?mid=fifa_online&category=8064047289&document_srl=10259942533",
-      "views": 1552,
-      "comments": 4,
-      "date": "08.26",
-      "category": "FSL/프로게이머",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "아니 쉬바 앱없이 결제 비번이 안떠서 시간만료로 날아갔네",
-      "url": "https://www.fmkorea.com/index.php?mid=fifa_online&category=8064047289&document_srl=10259284791",
-      "views": 209,
-      "comments": 8,
-      "date": "08.26",
-      "category": "FSL/프로게이머",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "FSL 예매 뚫었다 ㅅㅅ",
-      "url": "https://www.fmkorea.com/index.php?mid=fifa_online&category=8064047289&document_srl=10259277609",
-      "views": 951,
-      "comments": 3,
-      "date": "08.26",
-      "category": "FSL/프로게이머",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "FSL 예매 ㅋㅋㅋㅋ",
-      "url": "https://www.fmkorea.com/index.php?mid=fifa_online&category=8064047289&document_srl=10259275764",
-      "views": 220,
-      "comments": 1,
-      "date": "08.26",
-      "category": "FSL/프로게이머",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "티켓예매 개빨리 매진되네 30초컷 뭐고 ㄷㄷ",
-      "url": "https://www.fmkorea.com/index.php?mid=fifa_online&category=8064047289&document_srl=10259272809",
-      "views": 71,
-      "comments": 0,
-      "date": "08.26",
-      "category": "FSL/프로게이머",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "소신 발언 FSL 시청 드롭스 fc로 줘야한다고 생각해오.. 적어도 bp를 주거나(1000만원이상)",
-      "url": "https://www.fmkorea.com/index.php?mid=fifa_online&category=8064047289&document_srl=10259234628",
-      "views": 7926,
-      "comments": 48,
-      "date": "08.26",
-      "category": "FSL/프로게이머",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "하 떨린다,,,",
-      "url": "https://www.fmkorea.com/index.php?mid=fifa_online&category=8064047289&document_srl=10259135581",
-      "views": 820,
-      "comments": 2,
-      "date": "08.26",
-      "category": "FSL/프로게이머",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "이번 fsl에서 4222 lam ram 쓰는 프로게이머 누가 있나요??",
-      "url": "https://www.fmkorea.com/index.php?mid=fifa_online&category=8064047289&document_srl=10258134087",
-      "views": 516,
-      "comments": 2,
-      "date": "08.26",
-      "category": "FSL/프로게이머",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "새로운 현장 직관 드롭스 당첨",
-      "url": "https://www.fmkorea.com/index.php?mid=fifa_online&category=8064047289&document_srl=10258014624",
-      "views": 7340,
-      "comments": 7,
-      "date": "08.26",
-      "category": "FSL/프로게이머",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "FTB 포인트",
-      "url": "https://www.fmkorea.com/index.php?mid=fifa_online&category=8064047289&document_srl=10257769810",
-      "views": 230,
-      "comments": 0,
-      "date": "08.26",
+      "date": "08.27",
       "category": "FSL/프로게이머",
       "sentiment": "neutral"
     }
@@ -147,7 +39,7 @@
   "fsl_mention_rate": "0%",
   "impact_score": 5.0,
   "viewer_engagement_estimate": "0K",
-  "last_updated": "2026-08-27 19:51",
+  "last_updated": "2026-08-28 21:26",
   "history": [
     {
       "label": "07/07",
@@ -475,6 +367,14 @@
       "esi": 10.0,
       "posts": 14,
       "esports": 9,
+      "positive": 0
+    },
+    {
+      "label": "08/28",
+      "date": "2026-08-28",
+      "esi": 10.0,
+      "posts": 2,
+      "esports": 1,
       "positive": 0
     }
   ]
