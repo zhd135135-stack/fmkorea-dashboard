@@ -1,62 +1,26 @@
 {
   "source": "fsl",
   "collection_range": {
-    "start": "2026-09-04 10:01",
-    "end": "2026-09-05 09:59"
+    "start": "2026-09-05 10:01",
+    "end": "2026-09-06 09:59"
   },
-  "total_posts": 2,
-  "total_views": 9194,
-  "avg_views_per_post": 4597,
-  "posts": [
-    {
-      "title": "원더08도 우승하고 FSL탭 봤겠죠? ㅋㅋㅋㅋ",
-      "url": "https://www.fmkorea.com/index.php?mid=fifa_online&category=8064047289&document_srl=10297302488",
-      "views": 2667,
-      "comments": 6,
-      "date": "22:26",
-      "category": "FSL/프로게이머",
-      "sentiment": "positive"
-    },
-    {
-      "title": "DK 로스터 변경 (리뿌 선수 복귀)",
-      "url": "https://www.fmkorea.com/index.php?mid=fifa_online&category=8064047289&document_srl=10296599993",
-      "views": 6527,
-      "comments": 13,
-      "date": "20:09",
-      "category": "FSL/프로게이머",
-      "sentiment": "neutral"
-    }
-  ],
+  "total_posts": 0,
+  "total_views": 0,
+  "avg_views_per_post": 0,
+  "posts": [],
   "sentiment": {
-    "positive": 50,
-    "neutral": 50,
+    "positive": 0,
+    "neutral": 0,
     "negative": 0
   },
-  "top_issues": {
-    "positive": "원더08 우승 달성",
-    "negative": "없음",
-    "neutral": "DK 로스터 변경"
-  },
-  "keywords": [
-    {
-      "topic": "우승",
-      "count": 1,
-      "pct": "50.0%",
-      "tags": "원더08,성공,FSL"
-    },
-    {
-      "topic": "로스터",
-      "count": 1,
-      "pct": "50.0%",
-      "tags": "DK,리뿌,선수복귀"
-    }
-  ],
+  "top_issues": {},
+  "keywords": [],
   "churn_signals": [],
   "esports_disengagement_signals": [],
-  "fsl_mention_rate": "50.0%",
-  "impact_score": 4.2,
-  "viewer_engagement_estimate": "2.1K",
-  "last_updated": "2026-09-05 14:12",
+  "fsl_mention_rate": "0%",
+  "impact_score": 0,
+  "viewer_engagement_estimate": "0K",
+  "last_updated": "2026-09-06 14:26",
   "history": [
     {
       "label": "07/07",
