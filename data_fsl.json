@@ -1,794 +1,77 @@
 {
   "source": "fsl",
   "collection_range": {
-    "start": "2026-09-09 10:01",
-    "end": "2026-09-10 09:59"
+    "start": "2026-09-10 10:01",
+    "end": "2026-09-11 09:59"
   },
-  "total_posts": 81,
-  "total_views": 54962,
-  "avg_views_per_post": 678,
+  "total_posts": 3,
+  "total_views": 5631,
+  "avg_views_per_post": 1877,
   "posts": [
+    {
+      "title": "혹시 FTB 보러가실분 예매하십쇼",
+      "url": "https://www.fmkorea.com/index.php?mid=fifa_online&category=8064047289&document_srl=10321172875",
+      "views": 132,
+      "comments": 0,
+      "date": "08:58",
+      "category": "FSL/프로게이머",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "각 팀별 국제대회 FC PRO CHAMPIONS CUP 경우의 수를 알아보자(한국팀 최대 4팀?!)",
+      "url": "https://www.fmkorea.com/index.php?mid=fifa_online&category=8064047289&document_srl=10316467603",
+      "views": 3818,
+      "comments": 4,
+      "date": "14:42",
+      "category": "FSL/프로게이머",
+      "sentiment": "neutral"
+    },
     {
       "title": "티원만 확정인줄 알았는데 젠시티도 확정인거같네요",
       "url": "https://www.fmkorea.com/index.php?mid=fifa_online&category=8064047289&document_srl=10316886572",
-      "views": 1483,
+      "views": 1681,
       "comments": 2,
-      "date": "00:55",
-      "category": "FSL/프로게이머",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "FSL 대회에서 금지 기술 아시는분?",
-      "url": "https://www.fmkorea.com/index.php?mid=fifa_online&category=8064047289&document_srl=10316047095",
-      "views": 510,
-      "comments": 9,
-      "date": "21:01",
-      "category": "FSL/프로게이머",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "쿠폰주는 신보석 ㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋ",
-      "url": "https://www.fmkorea.com/index.php?mid=fifa_online&category=8064047289&document_srl=10315790415",
-      "views": 10000,
-      "comments": 8,
-      "date": "19:51",
-      "category": "FSL/프로게이머",
-      "sentiment": "positive"
-    },
-    {
-      "title": "FTB 3일차 정리 및 11일 예고",
-      "url": "https://www.fmkorea.com/index.php?mid=fifa_online&category=8064047289&document_srl=10315771715",
-      "views": 242,
-      "comments": 1,
-      "date": "19:47",
-      "category": "FSL/프로게이머",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "[T1 vs BFX] 오펠 굴리트 트릭스터 중거리 ㄷㄷㄷㄷㄷㄷㄷㄷㄷㄷㄷㄷ",
-      "url": "https://www.fmkorea.com/index.php?mid=fifa_online&category=8064047289&document_srl=10315752115",
-      "views": 417,
-      "comments": 0,
-      "date": "19:40",
-      "category": "FSL/프로게이머",
-      "sentiment": "positive"
-    },
-    {
-      "title": "T1이 팀이 진짜 세긴하네요",
-      "url": "https://www.fmkorea.com/index.php?mid=fifa_online&category=8064047289&document_srl=10315750525",
-      "views": 1050,
-      "comments": 7,
-      "date": "19:40",
-      "category": "FSL/프로게이머",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "[T1 vs BFX] 태갓 역습 굴리트 헤더 동점골ㄹㄹㄹㄹㄹㄹㄹㄹㄹㄹㄹㄹㄹ",
-      "url": "https://www.fmkorea.com/index.php?mid=fifa_online&category=8064047289&document_srl=10315745437",
-      "views": 371,
-      "comments": 0,
-      "date": "19:39",
-      "category": "FSL/프로게이머",
-      "sentiment": "positive"
-    },
-    {
-      "title": "[T1 vs BFX] 오펠 63분만에 선제골ㄹㄹㄹㄹㄹㄹㄹㄹㄹㄹ",
-      "url": "https://www.fmkorea.com/index.php?mid=fifa_online&category=8064047289&document_srl=10315736180",
-      "views": 206,
-      "comments": 0,
-      "date": "19:36",
-      "category": "FSL/프로게이머",
-      "sentiment": "positive"
-    },
-    {
-      "title": "오펠 심리전 개도라방스네",
-      "url": "https://www.fmkorea.com/index.php?mid=fifa_online&category=8064047289&document_srl=10315733409",
-      "views": 29,
-      "comments": 0,
-      "date": "19:35",
-      "category": "FSL/프로게이머",
-      "sentiment": "positive"
-    },
-    {
-      "title": "팀배틀 몇등까지 국제전이에요?",
-      "url": "https://www.fmkorea.com/index.php?mid=fifa_online&category=8064047289&document_srl=10315717721",
-      "views": 224,
-      "comments": 9,
-      "date": "19:30",
-      "category": "FSL/프로게이머",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "오늘도 역전의 발판은 태갓이다ㅏ",
-      "url": "https://www.fmkorea.com/index.php?mid=fifa_online&category=8064047289&document_srl=10315707325",
-      "views": 95,
-      "comments": 0,
-      "date": "19:27",
-      "category": "FSL/프로게이머",
-      "sentiment": "positive"
-    },
-    {
-      "title": "태갓 해줘ㅓㅓㅓㅓㅓ",
-      "url": "https://www.fmkorea.com/index.php?mid=fifa_online&category=8064047289&document_srl=10315703033",
-      "views": 28,
-      "comments": 0,
-      "date": "19:26",
-      "category": "FSL/프로게이머",
-      "sentiment": "positive"
-    },
-    {
-      "title": "진짜 오펠 짬바 미쳤네 ㅋㅋ",
-      "url": "https://www.fmkorea.com/index.php?mid=fifa_online&category=8064047289&document_srl=10315695153",
-      "views": 206,
-      "comments": 2,
-      "date": "19:23",
-      "category": "FSL/프로게이머",
-      "sentiment": "positive"
-    },
-    {
-      "title": "라이트 에시앙 그게 안들어간게 아쉽겠네 ㅋㅋ",
-      "url": "https://www.fmkorea.com/index.php?mid=fifa_online&category=8064047289&document_srl=10315691845",
-      "views": 107,
-      "comments": 1,
-      "date": "19:22",
-      "category": "FSL/프로게이머",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "승차의 신은 오펠인가 ㅋㅋㅋㅋㅋ",
-      "url": "https://www.fmkorea.com/index.php?mid=fifa_online&category=8064047289&document_srl=10315690305",
-      "views": 192,
-      "comments": 0,
-      "date": "19:22",
-      "category": "FSL/프로게이머",
-      "sentiment": "positive"
-    },
-    {
-      "title": "[T1 vs BFX] 라이트 에시앙 수침크로스 설계 ㄷㄷㄷㄷㄷㄷㄷㄷㄷㄷㄷ",
-      "url": "https://www.fmkorea.com/index.php?mid=fifa_online&category=8064047289&document_srl=10315655139",
-      "views": 177,
-      "comments": 2,
-      "date": "19:11",
-      "category": "FSL/프로게이머",
-      "sentiment": "positive"
-    },
-    {
-      "title": "[T1 vs BFX] 네이비 논스톱슛 설계 ㄷㄷㄷㄷㄷㄷㄷㄷㄷㄷㄷ",
-      "url": "https://www.fmkorea.com/index.php?mid=fifa_online&category=8064047289&document_srl=10315641363",
-      "views": 208,
-      "comments": 0,
-      "date": "19:07",
-      "category": "FSL/프로게이머",
-      "sentiment": "positive"
-    },
-    {
-      "title": "고개를 들지 못하는 T1 Byul",
-      "url": "https://www.fmkorea.com/index.php?mid=fifa_online&category=8064047289&document_srl=10315638756",
-      "views": 968,
-      "comments": 3,
-      "date": "19:07",
-      "category": "FSL/프로게이머",
-      "sentiment": "negative"
-    },
-    {
-      "title": "[T1 vs BFX] 라이트 빠르고 간결한 역습전개 ㄷㄷㄷㄷㄷㄷㄷㄷㄷㄷㄷㄷㄷㄷ",
-      "url": "https://www.fmkorea.com/index.php?mid=fifa_online&category=8064047289&document_srl=10315637350",
-      "views": 97,
-      "comments": 0,
-      "date": "19:06",
-      "category": "FSL/프로게이머",
-      "sentiment": "positive"
-    },
-    {
-      "title": "별 이름값에 받는 연봉이면",
-      "url": "https://www.fmkorea.com/index.php?mid=fifa_online&category=8064047289&document_srl=10315637931",
-      "views": 1310,
-      "comments": 0,
-      "date": "19:06",
-      "category": "FSL/프로게이머",
-      "sentiment": "negative"
-    },
-    {
-      "title": "오우 라이트 네이비 빅매치 ㄷㄷ",
-      "url": "https://www.fmkorea.com/index.php?mid=fifa_online&category=8064047289&document_srl=10315632967",
-      "views": 25,
-      "comments": 0,
-      "date": "19:05",
-      "category": "FSL/프로게이머",
-      "sentiment": "positive"
-    },
-    {
-      "title": "별은 중거리 너프되고 맛이간듯",
-      "url": "https://www.fmkorea.com/index.php?mid=fifa_online&category=8064047289&document_srl=10315627892",
-      "views": 1674,
-      "comments": 3,
-      "date": "19:03",
-      "category": "FSL/프로게이머",
-      "sentiment": "negative"
-    },
-    {
-      "title": "별은 맘 아프네",
-      "url": "https://www.fmkorea.com/index.php?mid=fifa_online&category=8064047289&document_srl=10315617325",
-      "views": 207,
-      "comments": 6,
-      "date": "19:00",
-      "category": "FSL/프로게이머",
-      "sentiment": "negative"
-    },
-    {
-      "title": "별 좀 안타깝네",
-      "url": "https://www.fmkorea.com/index.php?mid=fifa_online&category=8064047289&document_srl=10315616236",
-      "views": 258,
-      "comments": 0,
-      "date": "19:00",
-      "category": "FSL/프로게이머",
-      "sentiment": "negative"
-    },
-    {
-      "title": "재계약 달린 경기였나싶을정도의",
-      "url": "https://www.fmkorea.com/index.php?mid=fifa_online&category=8064047289&document_srl=10315615737",
-      "views": 205,
-      "comments": 0,
-      "date": "19:00",
-      "category": "FSL/프로게이머",
-      "sentiment": "negative"
-    },
-    {
-      "title": "[T1 vs BFX] 카이저 쐐기골ㄹㄹㄹㄹㄹㄹㄹㄹㄹㄹㄹ",
-      "url": "https://www.fmkorea.com/index.php?mid=fifa_online&category=8064047289&document_srl=10315612619",
-      "views": 362,
-      "comments": 0,
-      "date": "18:59",
-      "category": "FSL/프로게이머",
-      "sentiment": "positive"
-    },
-    {
-      "title": "별은 다음시즌에 못볼 거 같은데",
-      "url": "https://www.fmkorea.com/index.php?mid=fifa_online&category=8064047289&document_srl=10315610735",
-      "views": 1920,
-      "comments": 7,
-      "date": "18:58",
-      "category": "FSL/프로게이머",
-      "sentiment": "negative"
-    },
-    {
-      "title": "별 리액션 맛잇넼ㅋ",
-      "url": "https://www.fmkorea.com/index.php?mid=fifa_online&category=8064047289&document_srl=10315609852",
-      "views": 779,
-      "comments": 2,
-      "date": "18:58",
-      "category": "FSL/프로게이머",
-      "sentiment": "positive"
-    },
-    {
-      "title": "비욜은 재계약 못하겠는데",
-      "url": "https://www.fmkorea.com/index.php?mid=fifa_online&category=8064047289&document_srl=10315609740",
-      "views": 84,
-      "comments": 0,
-      "date": "18:58",
-      "category": "FSL/프로게이머",
-      "sentiment": "negative"
-    },
-    {
-      "title": "별은 재계약 쉽지 않겠다",
-      "url": "https://www.fmkorea.com/index.php?mid=fifa_online&category=8064047289&document_srl=10315609523",
-      "views": 517,
-      "comments": 1,
-      "date": "18:58",
-      "category": "FSL/프로게이머",
-      "sentiment": "negative"
-    },
-    {
-      "title": "[T1 vs BFX] 카이저 빠른 레이저슛 ㄷㄷㄷㄷㄷㄷㄷㄷㄷㄷㄷㄷㄷㄷㄷ",
-      "url": "https://www.fmkorea.com/index.php?mid=fifa_online&category=8064047289&document_srl=10315578882",
-      "views": 203,
-      "comments": 1,
-      "date": "18:49",
-      "category": "FSL/프로게이머",
-      "sentiment": "positive"
-    },
-    {
-      "title": "T1은 피어스 콜업하려나",
-      "url": "https://www.fmkorea.com/index.php?mid=fifa_online&category=8064047289&document_srl=10315578597",
-      "views": 1831,
-      "comments": 3,
-      "date": "18:49",
-      "category": "FSL/프로게이머",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "별 이번에는 진짜 증명해야하는데",
-      "url": "https://www.fmkorea.com/index.php?mid=fifa_online&category=8064047289&document_srl=10315574673",
-      "views": 160,
-      "comments": 0,
-      "date": "18:48",
-      "category": "FSL/프로게이머",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "박기홍 부활할 수 있나",
-      "url": "https://www.fmkorea.com/index.php?mid=fifa_online&category=8064047289&document_srl=10315566155",
-      "views": 1157,
-      "comments": 5,
-      "date": "18:45",
-      "category": "FSL/프로게이머",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "노이즈 뭔가 우승자 포스가 안나네...",
-      "url": "https://www.fmkorea.com/index.php?mid=fifa_online&category=8064047289&document_srl=10315556486",
-      "views": 448,
-      "comments": 3,
-      "date": "18:42",
-      "category": "FSL/프로게이머",
-      "sentiment": "negative"
-    },
-    {
-      "title": "호석은 개인적으로 매우 아쉬웠던 선수...",
-      "url": "https://www.fmkorea.com/index.php?mid=fifa_online&category=8064047289&document_srl=10315537412",
-      "views": 1199,
-      "comments": 0,
-      "date": "18:37",
-      "category": "FSL/프로게이머",
-      "sentiment": "negative"
-    },
-    {
-      "title": "호석 하품까지 조롱하는 유봉훈 ㅋㅋㅋㅋㅋㅋㅋ",
-      "url": "https://www.fmkorea.com/index.php?mid=fifa_online&category=8064047289&document_srl=10315525042",
-      "views": 655,
-      "comments": 2,
-      "date": "18:33",
-      "category": "FSL/프로게이머",
-      "sentiment": "positive"
-    },
-    {
-      "title": "여기 최고 인기팀은 어디임?",
-      "url": "https://www.fmkorea.com/index.php?mid=fifa_online&category=8064047289&document_srl=10315505349",
-      "views": 237,
-      "comments": 3,
-      "date": "18:26",
-      "category": "FSL/프로게이머",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "김관형 매직인가",
-      "url": "https://www.fmkorea.com/index.php?mid=fifa_online&category=8064047289&document_srl=10315454897",
-      "views": 469,
-      "comments": 4,
-      "date": "18:09",
-      "category": "FSL/프로게이머",
-      "sentiment": "positive"
-    },
-    {
-      "title": "JM 못나온 건 아쉽네 ㅠㅠ",
-      "url": "https://www.fmkorea.com/index.php?mid=fifa_online&category=8064047289&document_srl=10315442823",
-      "views": 663,
-      "comments": 0,
-      "date": "18:05",
-      "category": "FSL/프로게이머",
-      "sentiment": "negative"
-    },
-    {
-      "title": "디케 우타를 잡고 대떡냇네",
-      "url": "https://www.fmkorea.com/index.php?mid=fifa_online&category=8064047289&document_srl=10315441295",
-      "views": 1265,
-      "comments": 2,
-      "date": "18:05",
-      "category": "FSL/프로게이머",
-      "sentiment": "positive"
-    },
-    {
-      "title": "[KT vs DNS] 우타를 잡는 구끼 버저비터 ㄷㄷㄷㄷㄷㄷㄷㄷㄷㄷㄷㄷㄷ",
-      "url": "https://www.fmkorea.com/index.php?mid=fifa_online&category=8064047289&document_srl=10315436367",
-      "views": 10000,
-      "comments": 10,
-      "date": "18:03",
-      "category": "FSL/프로게이머",
-      "sentiment": "positive"
-    },
-    {
-      "title": "8강에 3명 넣어놓고 대떡?? ㅋㅋㅋㅋㅋㅋ",
-      "url": "https://www.fmkorea.com/index.php?mid=fifa_online&category=8064047289&document_srl=10315436308",
-      "views": 719,
-      "comments": 3,
-      "date": "18:03",
-      "category": "FSL/프로게이머",
-      "sentiment": "positive"
-    },
-    {
-      "title": "우타는 fsl 4강 결승 둘다 첫경기를 졌다",
-      "url": "https://www.fmkorea.com/index.php?mid=fifa_online&category=8064047289&document_srl=10315435627",
-      "views": 246,
-      "comments": 1,
-      "date": "18:03",
-      "category": "FSL/프로게이머",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "구끼가 우타를 잡아내다니 ;;;",
-      "url": "https://www.fmkorea.com/index.php?mid=fifa_online&category=8064047289&document_srl=10315435502",
-      "views": 119,
-      "comments": 0,
-      "date": "18:03",
-      "category": "FSL/프로게이머",
-      "sentiment": "positive"
-    },
-    {
-      "title": "구끼 사실상 우승ㄷㄷ",
-      "url": "https://www.fmkorea.com/index.php?mid=fifa_online&category=8064047289&document_srl=10315434783",
-      "views": 324,
-      "comments": 2,
-      "date": "18:03",
-      "category": "FSL/프로게이머",
-      "sentiment": "positive"
-    },
-    {
-      "title": "든숲이 kt를 대떡 냈다고?",
-      "url": "https://www.fmkorea.com/index.php?mid=fifa_online&category=8064047289&document_srl=10315434218",
-      "views": 198,
-      "comments": 1,
-      "date": "18:02",
-      "category": "FSL/프로게이머",
-      "sentiment": "positive"
-    },
-    {
-      "title": "역시 단판은 모른다",
-      "url": "https://www.fmkorea.com/index.php?mid=fifa_online&category=8064047289&document_srl=10315433759",
-      "views": 22,
-      "comments": 0,
-      "date": "18:02",
-      "category": "FSL/프로게이머",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "든숲 스윕은 놀랍다ㅋㅋㅋㅋ",
-      "url": "https://www.fmkorea.com/index.php?mid=fifa_online&category=8064047289&document_srl=10315433535",
-      "views": 230,
-      "comments": 1,
-      "date": "18:02",
-      "category": "FSL/프로게이머",
-      "sentiment": "positive"
-    },
-    {
-      "title": "와 든숲이 킅 대떡 뭐고",
-      "url": "https://www.fmkorea.com/index.php?mid=fifa_online&category=8064047289&document_srl=10315433091",
-      "views": 21,
-      "comments": 0,
-      "date": "18:02",
-      "category": "FSL/프로게이머",
-      "sentiment": "positive"
-    },
-    {
-      "title": "구끼의 그날 ㄷㄷㄷㄷㄷㄷㄷㄷㄷㄷ",
-      "url": "https://www.fmkorea.com/index.php?mid=fifa_online&category=8064047289&document_srl=10315432736",
-      "views": 1113,
-      "comments": 2,
-      "date": "18:02",
-      "category": "FSL/프로게이머",
-      "sentiment": "positive"
-    },
-    {
-      "title": "와 디엔숲 스윕 ㄷㄷㄷㄷㄷ",
-      "url": "https://www.fmkorea.com/index.php?mid=fifa_online&category=8064047289&document_srl=10315432628",
-      "views": 56,
-      "comments": 0,
-      "date": "18:02",
-      "category": "FSL/프로게이머",
-      "sentiment": "positive"
-    },
-    {
-      "title": "[KT vs DNS] 우타 김민재 코너킥 동점골ㄹㄹㄹㄹㄹㄹㄹㄹㄹㄹㄹㄹ",
-      "url": "https://www.fmkorea.com/index.php?mid=fifa_online&category=8064047289&document_srl=10315428014",
-      "views": 255,
-      "comments": 0,
-      "date": "18:01",
-      "category": "FSL/프로게이머",
-      "sentiment": "positive"
-    },
-    {
-      "title": "[KT vs DNS] 우타 EC탈압박 패스 ㄷㄷㄷㄷㄷㄷㄷㄷㄷㄷㄷㄷ",
-      "url": "https://www.fmkorea.com/index.php?mid=fifa_online&category=8064047289&document_srl=10315421409",
-      "views": 151,
-      "comments": 1,
-      "date": "17:58",
-      "category": "FSL/프로게이머",
-      "sentiment": "positive"
-    },
-    {
-      "title": "우타가 분명 못하는건 아닌데",
-      "url": "https://www.fmkorea.com/index.php?mid=fifa_online&category=8064047289&document_srl=10315417490",
-      "views": 446,
-      "comments": 1,
-      "date": "17:57",
-      "category": "FSL/프로게이머",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "정민이형 표정 ㅋㅋㅋㅋ",
-      "url": "https://www.fmkorea.com/index.php?mid=fifa_online&category=8064047289&document_srl=10315415195",
-      "views": 210,
-      "comments": 4,
-      "date": "17:56",
-      "category": "FSL/프로게이머",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "? KT가 이렇게 무너진다고?",
-      "url": "https://www.fmkorea.com/index.php?mid=fifa_online&category=8064047289&document_srl=10315414932",
-      "views": 24,
-      "comments": 0,
-      "date": "17:56",
-      "category": "FSL/프로게이머",
-      "sentiment": "negative"
-    },
-    {
-      "title": "[KT vs DNS] 구끼 볼란치로 집게드리블 돌파 ㄷㄷㄷㄷㄷㄷㄷㄷㄷㄷㄷㄷ",
-      "url": "https://www.fmkorea.com/index.php?mid=fifa_online&category=8064047289&document_srl=10315401035",
-      "views": 589,
-      "comments": 5,
-      "date": "17:53",
-      "category": "FSL/프로게이머",
-      "sentiment": "positive"
-    },
-    {
-      "title": "케이티가 대떡당한다고??",
-      "url": "https://www.fmkorea.com/index.php?mid=fifa_online&category=8064047289&document_srl=10315398158",
-      "views": 235,
-      "comments": 1,
-      "date": "17:51",
-      "category": "FSL/프로게이머",
-      "sentiment": "negative"
-    },
-    {
-      "title": "KT는 비상이네 우타랑 JM이 해줘야한다",
-      "url": "https://www.fmkorea.com/index.php?mid=fifa_online&category=8064047289&document_srl=10315377487",
-      "views": 238,
-      "comments": 16,
-      "date": "17:46",
-      "category": "FSL/프로게이머",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "[KT vs DNS] 키퍼와 헤더경합해서 이기는 굴멘 ㄷㄷㄷㄷㄷㄷㄷㄷㄷㄷㄷㄷㄷ",
-      "url": "https://www.fmkorea.com/index.php?mid=fifa_online&category=8064047289&document_srl=10315367273",
-      "views": 115,
-      "comments": 0,
-      "date": "17:43",
-      "category": "FSL/프로게이머",
-      "sentiment": "positive"
-    },
-    {
-      "title": "굴리트는 키퍼도 밀어내고 헤더를 따네",
-      "url": "https://www.fmkorea.com/index.php?mid=fifa_online&category=8064047289&document_srl=10315362752",
-      "views": 134,
-      "comments": 1,
-      "date": "17:42",
-      "category": "FSL/프로게이머",
-      "sentiment": "positive"
-    },
-    {
-      "title": "[KT vs DNS] TK 기성용 제자리 니어ZD ㄷㄷㄷㄷㄷㄷㄷㄷㄷㄷㄷㄷㄷㄷ",
-      "url": "https://www.fmkorea.com/index.php?mid=fifa_online&category=8064047289&document_srl=10315349666",
-      "views": 136,
-      "comments": 0,
-      "date": "17:40",
-      "category": "FSL/프로게이머",
-      "sentiment": "positive"
-    },
-    {
-      "title": "클러치 봉반꿀 ㅋㅋㅋㅋㅋㅋ",
-      "url": "https://www.fmkorea.com/index.php?mid=fifa_online&category=8064047289&document_srl=10315350497",
-      "views": 267,
-      "comments": 1,
-      "date": "17:39",
-      "category": "FSL/프로게이머",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "[KT vs DNS] 김민재 패고가는 라브터진 호돈신 ㄷㄷㄷㄷㄷㄷㄷㄷㄷㄷㄷㄷㄷ",
-      "url": "https://www.fmkorea.com/index.php?mid=fifa_online&category=8064047289&document_srl=10315345629",
-      "views": 247,
-      "comments": 3,
-      "date": "17:37",
-      "category": "FSL/프로게이머",
-      "sentiment": "positive"
-    },
-    {
-      "title": "[KT vs DNS] 클러치 파워슛 노란불 골ㄹㄹㄹㄹㄹㄹㄹㄹㄹㄹㄹㄹ",
-      "url": "https://www.fmkorea.com/index.php?mid=fifa_online&category=8064047289&document_srl=10315338758",
-      "views": 25,
-      "comments": 0,
-      "date": "17:36",
-      "category": "FSL/프로게이머",
-      "sentiment": "positive"
-    },
-    {
-      "title": "TK 간만에 나와서 어떤 경기력 보여줄지",
-      "url": "https://www.fmkorea.com/index.php?mid=fifa_online&category=8064047289&document_srl=10315319311",
-      "views": 39,
-      "comments": 0,
-      "date": "17:31",
-      "category": "FSL/프로게이머",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "[KT vs DNS] 샤이프 역전골ㄹㄹㄹㄹㄹㄹㄹㄹㄹㄹㄹㄹㄹ",
-      "url": "https://www.fmkorea.com/index.php?mid=fifa_online&category=8064047289&document_srl=10315300169",
-      "views": 141,
-      "comments": 2,
-      "date": "17:26",
-      "category": "FSL/프로게이머",
-      "sentiment": "positive"
-    },
-    {
-      "title": "샤이프 ㄷㄷ 이걸역전하네",
-      "url": "https://www.fmkorea.com/index.php?mid=fifa_online&category=8064047289&document_srl=10315295258",
-      "views": 78,
-      "comments": 1,
-      "date": "17:25",
-      "category": "FSL/프로게이머",
-      "sentiment": "positive"
-    },
-    {
-      "title": "[KT vs DNS] 샤이프 버저비터 동점골ㄹㄹㄹㄹㄹㄹㄹㄹㄹㄹㄹㄹㄹㄹ",
-      "url": "https://www.fmkorea.com/index.php?mid=fifa_online&category=8064047289&document_srl=10315287653",
-      "views": 144,
-      "comments": 1,
-      "date": "17:23",
-      "category": "FSL/프로게이머",
-      "sentiment": "positive"
-    },
-    {
-      "title": "[KT vs DNS] 디케 레이저슛 차는척 ZD 심리전 ㄷㄷㄷㄷㄷㄷㄷㄷㄷㄷㄷ",
-      "url": "https://www.fmkorea.com/index.php?mid=fifa_online&category=8064047289&document_srl=10315279067",
-      "views": 106,
-      "comments": 0,
-      "date": "17:22",
-      "category": "FSL/프로게이머",
-      "sentiment": "positive"
-    },
-    {
-      "title": "샤이프도 이걸 동점까지 따라가네 ㄷㄷ",
-      "url": "https://www.fmkorea.com/index.php?mid=fifa_online&category=8064047289&document_srl=10315273367",
-      "views": 22,
-      "comments": 0,
-      "date": "17:20",
-      "category": "FSL/프로게이머",
-      "sentiment": "positive"
-    },
-    {
-      "title": "샤이프 방금 za에요?",
-      "url": "https://www.fmkorea.com/index.php?mid=fifa_online&category=8064047289&document_srl=10315271407",
-      "views": 82,
-      "comments": 2,
-      "date": "17:20",
-      "category": "FSL/프로게이머",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "[KT vs DNS] 샤이프 크로스 키컨보고 슛 ㄷㄷㄷㄷㄷㄷㄷㄷㄷㄷㄷㄷㄷ",
-      "url": "https://www.fmkorea.com/index.php?mid=fifa_online&category=8064047289&document_srl=10315267843",
-      "views": 106,
-      "comments": 0,
-      "date": "17:19",
-      "category": "FSL/프로게이머",
-      "sentiment": "positive"
-    },
-    {
-      "title": "[KT vs DNS] 디케 안정환 수침크로스 설계 ㄷㄷㄷㄷㄷㄷㄷㄷㄷㄷㄷㄷㄷ",
-      "url": "https://www.fmkorea.com/index.php?mid=fifa_online&category=8064047289&document_srl=10315258874",
-      "views": 42,
-      "comments": 0,
-      "date": "17:17",
-      "category": "FSL/프로게이머",
-      "sentiment": "positive"
-    },
-    {
-      "title": "디케 진짜 많이 늘었다 ㄷㄷㄷㄷㄷㄷㄷㄷㄷㄷㄷ",
-      "url": "https://www.fmkorea.com/index.php?mid=fifa_online&category=8064047289&document_srl=10315254936",
-      "views": 248,
-      "comments": 2,
-      "date": "17:16",
-      "category": "FSL/프로게이머",
-      "sentiment": "positive"
-    },
-    {
-      "title": "[KT vs DNS] 디케 기성용 지리는 측면 레이저슛 ㄷㄷㄷㄷㄷㄷㄷㄷㄷㄷㄷㄷㄷㄷㄷㄷ",
-      "url": "https://www.fmkorea.com/index.php?mid=fifa_online&category=8064047289&document_srl=10315249634",
-      "views": 85,
-      "comments": 1,
-      "date": "17:15",
-      "category": "FSL/프로게이머",
-      "sentiment": "positive"
-    },
-    {
-      "title": "농심은 림광철 이후에 쭉 아쉽네",
-      "url": "https://www.fmkorea.com/index.php?mid=fifa_online&category=8064047289&document_srl=10315077999",
-      "views": 243,
-      "comments": 2,
-      "date": "16:29",
-      "category": "FSL/프로게이머",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "맨시티 선수들과 피파하는 젠시티 ㅋㅋ",
-      "url": "https://www.fmkorea.com/index.php?mid=fifa_online&category=8064047289&document_srl=10315015470",
-      "views": 2042,
-      "comments": 2,
-      "date": "16:10",
-      "category": "FSL/프로게이머",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "현폼기준 든숲 1옵션 누구라 보시나요",
-      "url": "https://www.fmkorea.com/index.php?mid=fifa_online&category=8064047289&document_srl=10314732957",
-      "views": 654,
-      "comments": 6,
-      "date": "14:31",
-      "category": "FSL/프로게이머",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "FSL 2년차 엪붕이들의 평가는?",
-      "url": "https://www.fmkorea.com/index.php?mid=fifa_online&category=8064047289&document_srl=10313261123",
-      "views": 2572,
-      "comments": 16,
-      "date": "09.09",
+      "date": "09.10",
       "category": "FSL/프로게이머",
       "sentiment": "neutral"
     }
   ],
   "sentiment": {
-    "positive": 56,
-    "neutral": 27,
-    "negative": 17
+    "positive": 0,
+    "neutral": 100,
+    "negative": 0
   },
   "top_issues": {
-    "positive": "샤이프 클러치 플레이 대활약",
-    "negative": "KT 경기력 부진 우려",
-    "neutral": "선수 평가 및 정보 질문"
+    "positive": "해당사항없음",
+    "negative": "해당사항없음",
+    "neutral": "국제대회 팀 확정 및 예매 안내"
   },
   "keywords": [
     {
-      "topic": "샤이프",
-      "count": 8,
-      "pct": "25.8%",
-      "tags": "역전골, 동점골, 버저비터, 클러치"
+      "topic": "FC PRO CHAMPIONS CUP",
+      "count": 1,
+      "pct": "33.3%",
+      "tags": "국제대회, 경우의 수, 한국팀"
     },
     {
-      "topic": "KT vs DNS",
-      "count": 17,
-      "pct": "54.8%",
-      "tags": "경기, 스코어, 경합"
+      "topic": "FTB(FC온라인 더 비기닝)",
+      "count": 1,
+      "pct": "33.3%",
+      "tags": "예매, 오프라인, 이벤트"
     },
     {
-      "topic": "디케",
-      "count": 5,
-      "pct": "16.1%",
-      "tags": "실력향상, 레이저슛, 심리전"
-    },
-    {
-      "topic": "구끼",
-      "count": 2,
-      "pct": "6.5%",
-      "tags": "볼란치, 드리블"
-    },
-    {
-      "topic": "우타",
-      "count": 3,
-      "pct": "9.7%",
-      "tags": "코너킥, 패스, 성능"
+      "topic": "팀 확정",
+      "count": 1,
+      "pct": "33.3%",
+      "tags": "티원, 젠시티, 참가팀"
     }
   ],
   "churn_signals": [],
-  "esports_disengagement_signals": [
-    "KT 팀 경기력 악화 언급 증가",
-    "선수 개인 평가 질문 다수"
-  ],
-  "fsl_mention_rate": "9.7%",
-  "impact_score": 7.2,
-  "viewer_engagement_estimate": "8.5K",
-  "last_updated": "2026-09-10 14:30",
+  "esports_disengagement_signals": [],
+  "fsl_mention_rate": "100.0%",
+  "impact_score": 3.5,
+  "viewer_engagement_estimate": "2.1K",
+  "last_updated": "2026-09-11 14:33",
   "history": [
     {
       "label": "07/07",
@@ -1205,6 +488,14 @@
       "posts": 81,
       "esports": 55,
       "positive": 56
+    },
+    {
+      "label": "09/11",
+      "date": "2026-09-11",
+      "esi": 0.0,
+      "posts": 3,
+      "esports": 3,
+      "positive": 0
     }
   ]
 }
