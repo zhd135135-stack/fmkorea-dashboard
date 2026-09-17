@@ -1,26 +1,65 @@
 {
   "source": "fsl",
   "collection_range": {
-    "start": "2026-09-15 10:01",
-    "end": "2026-09-16 09:59"
+    "start": "2026-09-16 10:01",
+    "end": "2026-09-17 09:59"
   },
-  "total_posts": 0,
-  "total_views": 0,
-  "avg_views_per_post": 0,
-  "posts": [],
+  "total_posts": 2,
+  "total_views": 4196,
+  "avg_views_per_post": 2098,
+  "posts": [
+    {
+      "title": "김민교는 크로스 할거면 큰 키넣었어야지",
+      "url": "https://www.fmkorea.com/index.php?mid=fifa_online&category=8064047289&document_srl=10342657762",
+      "views": 172,
+      "comments": 0,
+      "date": "22:52",
+      "category": "FSL/프로게이머",
+      "sentiment": "negative"
+    },
+    {
+      "title": "우질 사람 아니다.",
+      "url": "https://www.fmkorea.com/index.php?mid=fifa_online&category=8064047289&document_srl=10341916613",
+      "views": 4024,
+      "comments": 4,
+      "date": "19:34",
+      "category": "FSL/프로게이머",
+      "sentiment": "negative"
+    }
+  ],
   "sentiment": {
     "positive": 0,
     "neutral": 0,
-    "negative": 0
+    "negative": 100
   },
-  "top_issues": {},
-  "keywords": [],
+  "top_issues": {
+    "positive": "없음",
+    "negative": "선수 스쿼드 구성 비판",
+    "neutral": "없음"
+  },
+  "keywords": [
+    {
+      "topic": "김민교",
+      "count": 1,
+      "pct": "50.0%",
+      "tags": "선수평가,전술비판"
+    },
+    {
+      "topic": "우질",
+      "count": 1,
+      "pct": "50.0%",
+      "tags": "선수성능,능력비판"
+    }
+  ],
   "churn_signals": [],
-  "esports_disengagement_signals": [],
-  "fsl_mention_rate": "0%",
-  "impact_score": 0,
-  "viewer_engagement_estimate": "0K",
-  "last_updated": "2026-09-16 14:35",
+  "esports_disengagement_signals": [
+    "선수 능력 부정평가",
+    "스쿼드 운영 비판"
+  ],
+  "fsl_mention_rate": "100.0%",
+  "impact_score": 3.2,
+  "viewer_engagement_estimate": "2.1K",
+  "last_updated": "2026-09-17 14:40",
   "history": [
     {
       "label": "07/07",
@@ -468,6 +507,14 @@
       "esi": 0.0,
       "posts": 1,
       "esports": 1,
+      "positive": 0
+    },
+    {
+      "label": "09/17",
+      "date": "2026-09-17",
+      "esi": 0.0,
+      "posts": 2,
+      "esports": 0,
       "positive": 0
     }
   ]
