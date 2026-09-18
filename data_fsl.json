@@ -1,65 +1,53 @@
 {
   "source": "fsl",
   "collection_range": {
-    "start": "2026-09-16 10:01",
-    "end": "2026-09-17 09:59"
+    "start": "2026-09-17 10:01",
+    "end": "2026-09-18 09:59"
   },
-  "total_posts": 2,
-  "total_views": 4196,
-  "avg_views_per_post": 2098,
+  "total_posts": 1,
+  "total_views": 1437,
+  "avg_views_per_post": 1437,
   "posts": [
     {
-      "title": "김민교는 크로스 할거면 큰 키넣었어야지",
-      "url": "https://www.fmkorea.com/index.php?mid=fifa_online&category=8064047289&document_srl=10342657762",
-      "views": 172,
+      "title": "FCL 대회 참여 스트리머들도 ㄹㅇ 석나가겠네",
+      "url": "https://www.fmkorea.com/index.php?mid=fifa_online&category=8064047289&document_srl=10344657480",
+      "views": 1437,
       "comments": 0,
-      "date": "22:52",
+      "date": "09.17",
       "category": "FSL/프로게이머",
-      "sentiment": "negative"
-    },
-    {
-      "title": "우질 사람 아니다.",
-      "url": "https://www.fmkorea.com/index.php?mid=fifa_online&category=8064047289&document_srl=10341916613",
-      "views": 4024,
-      "comments": 4,
-      "date": "19:34",
-      "category": "FSL/프로게이머",
-      "sentiment": "negative"
+      "sentiment": "positive"
     }
   ],
   "sentiment": {
-    "positive": 0,
+    "positive": 100,
     "neutral": 0,
-    "negative": 100
+    "negative": 0
   },
   "top_issues": {
-    "positive": "없음",
-    "negative": "선수 스쿼드 구성 비판",
+    "positive": "FCL 대회 스트리머 참여 호평",
+    "negative": "없음",
     "neutral": "없음"
   },
   "keywords": [
     {
-      "topic": "김민교",
+      "topic": "FCL 대회",
       "count": 1,
-      "pct": "50.0%",
-      "tags": "선수평가,전술비판"
+      "pct": "100.0",
+      "tags": "스트리머, 참여"
     },
     {
-      "topic": "우질",
+      "topic": "석나(높은 수익/성과)",
       "count": 1,
-      "pct": "50.0%",
-      "tags": "선수성능,능력비판"
+      "pct": "100.0",
+      "tags": "성공, 긍정반응"
     }
   ],
   "churn_signals": [],
-  "esports_disengagement_signals": [
-    "선수 능력 부정평가",
-    "스쿼드 운영 비판"
-  ],
+  "esports_disengagement_signals": [],
   "fsl_mention_rate": "100.0%",
-  "impact_score": 3.2,
-  "viewer_engagement_estimate": "2.1K",
-  "last_updated": "2026-09-17 14:40",
+  "impact_score": 6.5,
+  "viewer_engagement_estimate": "8K",
+  "last_updated": "2026-09-18 14:29",
   "history": [
     {
       "label": "07/07",
@@ -516,6 +504,14 @@
       "posts": 2,
       "esports": 0,
       "positive": 0
+    },
+    {
+      "label": "09/18",
+      "date": "2026-09-18",
+      "esi": 0.0,
+      "posts": 1,
+      "esports": 0,
+      "positive": 100
     }
   ]
 }
