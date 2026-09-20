@@ -1,140 +1,26 @@
 {
   "source": "fsl",
   "collection_range": {
-    "start": "2026-09-18 10:01",
-    "end": "2026-09-19 09:59"
+    "start": "2026-09-19 10:01",
+    "end": "2026-09-20 09:59"
   },
-  "total_posts": 10,
-  "total_views": 2681,
-  "avg_views_per_post": 268,
-  "posts": [
-    {
-      "title": "정령왕 누구에여 아니 ㅋㅋ 첨 보는데 너무 잘하네",
-      "url": "https://www.fmkorea.com/index.php?mid=fifa_online&category=8064047289&document_srl=10349409020",
-      "views": 1044,
-      "comments": 10,
-      "date": "19:55",
-      "category": "FSL/프로게이머",
-      "sentiment": "positive"
-    },
-    {
-      "title": "싸커가 압승 인거같애",
-      "url": "https://www.fmkorea.com/index.php?mid=fifa_online&category=8064047289&document_srl=10349386779",
-      "views": 207,
-      "comments": 2,
-      "date": "19:49",
-      "category": "FSL/프로게이머",
-      "sentiment": "positive"
-    },
-    {
-      "title": "러리햄 지렷다",
-      "url": "https://www.fmkorea.com/index.php?mid=fifa_online&category=8064047289&document_srl=10349380443",
-      "views": 219,
-      "comments": 2,
-      "date": "19:47",
-      "category": "FSL/프로게이머",
-      "sentiment": "positive"
-    },
-    {
-      "title": "대커러리 ㅋㅋㅋㅋ",
-      "url": "https://www.fmkorea.com/index.php?mid=fifa_online&category=8064047289&document_srl=10349377975",
-      "views": 163,
-      "comments": 0,
-      "date": "19:46",
-      "category": "FSL/프로게이머",
-      "sentiment": "positive"
-    },
-    {
-      "title": "체이스: 젠시티 좀 부수고 싶은데?",
-      "url": "https://www.fmkorea.com/index.php?mid=fifa_online&category=8064047289&document_srl=10349291246",
-      "views": 105,
-      "comments": 0,
-      "date": "19:28",
-      "category": "FSL/프로게이머",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "저거 몇카 붙인거지?",
-      "url": "https://www.fmkorea.com/index.php?mid=fifa_online&category=8064047289&document_srl=10349310451",
-      "views": 215,
-      "comments": 3,
-      "date": "19:27",
-      "category": "FSL/프로게이머",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "ㅋ 갑분 강화 먼데 ㅋㅋㅋㅋ",
-      "url": "https://www.fmkorea.com/index.php?mid=fifa_online&category=8064047289&document_srl=10349304979",
-      "views": 252,
-      "comments": 4,
-      "date": "19:25",
-      "category": "FSL/프로게이머",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "일단 3 .4위전 예측성공",
-      "url": "https://www.fmkorea.com/index.php?mid=fifa_online&category=8064047289&document_srl=10349100051",
-      "views": 69,
-      "comments": 0,
-      "date": "18:19",
-      "category": "FSL/프로게이머",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "역시 호지윤이다",
-      "url": "https://www.fmkorea.com/index.php?mid=fifa_online&category=8064047289&document_srl=10349095097",
-      "views": 172,
-      "comments": 0,
-      "date": "18:18",
-      "category": "FSL/프로게이머",
-      "sentiment": "positive"
-    },
-    {
-      "title": "와 ㅅㅂ 수침 욕나올만큼 개 잘쓰신다...",
-      "url": "https://www.fmkorea.com/index.php?mid=fifa_online&category=8064047289&document_srl=10349051189",
-      "views": 235,
-      "comments": 2,
-      "date": "18:04",
-      "category": "FSL/프로게이머",
-      "sentiment": "positive"
-    }
-  ],
+  "total_posts": 0,
+  "total_views": 0,
+  "avg_views_per_post": 0,
+  "posts": [],
   "sentiment": {
-    "positive": 60,
-    "neutral": 40,
+    "positive": 0,
+    "neutral": 0,
     "negative": 0
   },
-  "top_issues": {
-    "positive": "선수 실력 칭찬 및 플레이 감탄",
-    "negative": "강화 시스템 불만",
-    "neutral": "선수/팀 정보 및 경기 예측"
-  },
-  "keywords": [
-    {
-      "topic": "선수 칭찬",
-      "count": 5,
-      "pct": "50.0%",
-      "tags": "정령왕, 러리햄, 호지윤, 수침"
-    },
-    {
-      "topic": "팀/리그 언급",
-      "count": 3,
-      "pct": "30.0%",
-      "tags": "싸커, 젠시티, 3.4위전"
-    },
-    {
-      "topic": "게임 시스템",
-      "count": 2,
-      "pct": "20.0%",
-      "tags": "강화, 카드강화"
-    }
-  ],
+  "top_issues": {},
+  "keywords": [],
   "churn_signals": [],
   "esports_disengagement_signals": [],
-  "fsl_mention_rate": "100.0%",
-  "impact_score": 6.8,
-  "viewer_engagement_estimate": "12K",
-  "last_updated": "2026-09-19 14:25",
+  "fsl_mention_rate": "0%",
+  "impact_score": 0,
+  "viewer_engagement_estimate": "0K",
+  "last_updated": "2026-09-20 14:38",
   "history": [
     {
       "label": "07/07",
