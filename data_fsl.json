@@ -1,26 +1,36 @@
 {
   "source": "fsl",
   "collection_range": {
-    "start": "2026-09-26 10:01",
-    "end": "2026-09-27 09:59"
+    "start": "2026-09-27 10:01",
+    "end": "2026-09-28 09:59"
   },
-  "total_posts": 0,
-  "total_views": 0,
-  "avg_views_per_post": 0,
-  "posts": [],
+  "total_posts": 1,
+  "total_views": 1336,
+  "avg_views_per_post": 1336,
+  "posts": [
+    {
+      "title": "INvitation cup 젠시티 우승!",
+      "url": "https://www.fmkorea.com/index.php?mid=fifa_online&category=8064047289&document_srl=10382972476",
+      "views": 1336,
+      "comments": 3,
+      "date": "21:02",
+      "category": "FSL·프로게이머",
+      "sentiment": "neutral"
+    }
+  ],
   "sentiment": {
-    "positive": 0,
-    "neutral": 0,
-    "negative": 0
+    "positive": 33,
+    "neutral": 34,
+    "negative": 33
   },
   "top_issues": {},
   "keywords": [],
   "churn_signals": [],
   "esports_disengagement_signals": [],
   "fsl_mention_rate": "0%",
-  "impact_score": 0,
+  "impact_score": 5.0,
   "viewer_engagement_estimate": "0K",
-  "last_updated": "2026-09-27 15:05",
+  "last_updated": "2026-09-28 15:15",
   "history": [
     {
       "label": "07/07",
@@ -493,6 +503,14 @@
       "posts": 10,
       "esports": 1,
       "positive": 60
+    },
+    {
+      "label": "09/28",
+      "date": "2026-09-28",
+      "esi": 10.0,
+      "posts": 1,
+      "esports": 1,
+      "positive": 0
     }
   ]
 }
