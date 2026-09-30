@@ -1,19 +1,19 @@
 {
   "source": "fsl",
   "collection_range": {
-    "start": "2026-09-28 10:01",
-    "end": "2026-09-29 09:59"
+    "start": "2026-09-29 10:01",
+    "end": "2026-09-30 09:59"
   },
   "total_posts": 1,
-  "total_views": 1117,
-  "avg_views_per_post": 1117,
+  "total_views": 1825,
+  "avg_views_per_post": 1825,
   "posts": [
     {
-      "title": "속보 곽준혁 방송복귀",
-      "url": "https://www.fmkorea.com/index.php?mid=fifa_online&category=8064047289&document_srl=10386790877",
-      "views": 1117,
+      "title": "시티상황을 fsl로 비유해보니까 ㅈㄴ 아찔하네",
+      "url": "https://www.fmkorea.com/index.php?mid=fifa_online&category=8064047289&document_srl=10392514150",
+      "views": 1825,
       "comments": 1,
-      "date": "19:41",
+      "date": "03:02",
       "category": "FSL·프로게이머",
       "sentiment": "neutral"
     }
@@ -30,7 +30,7 @@
   "fsl_mention_rate": "0%",
   "impact_score": 5.0,
   "viewer_engagement_estimate": "0K",
-  "last_updated": "2026-09-29 15:31",
+  "last_updated": "2026-09-30 15:14",
   "history": [
     {
       "label": "07/07",
@@ -515,6 +515,14 @@
     {
       "label": "09/29",
       "date": "2026-09-29",
+      "esi": 10.0,
+      "posts": 1,
+      "esports": 1,
+      "positive": 0
+    },
+    {
+      "label": "09/30",
+      "date": "2026-09-30",
       "esi": 10.0,
       "posts": 1,
       "esports": 1,
