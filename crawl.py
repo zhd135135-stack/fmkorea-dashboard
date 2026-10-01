@@ -75,7 +75,7 @@ TARGETS = {
         "output": "data_all.json"
     },
 }
-MAX_PAGES = 150
+MAX_PAGES = 400
 # 조기종료 판정 임계값 (기존 5 → 20 완화)
 OUT_OF_RANGE_THRESHOLD = 20
 # [PATCH 2026-10-01] 목록 행이 0개인 페이지가 연속 몇 번이면 종료할지
