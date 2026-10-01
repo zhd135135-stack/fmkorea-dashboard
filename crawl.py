@@ -7,7 +7,7 @@
 - 전날 10:01 ~ 당일 09:59 범위 데이터 수집
 - Claude API로 감성분석 (50개 배치, max_tokens 4096)
 - data_fsl.json / data_all.json 저장
- 
+
 [PATCH 2026-07-16] 22시 조기종료 버그 수정
 - 증상: 전날 10:01~22:41 약 12시간치 게시글 누락 (최종 페이지 최고참 글이 22시대에서 끊김)
 - 원인: MM.DD(날짜만) 형식 글을 그날 00:00으로 파싱 → start_dt(전날 10:01)보다 이전으로 오판
@@ -18,6 +18,15 @@
      (시각을 모르니 날짜 단위로 보수적으로 포함 처리 — 과소수집보다 과다수집이 안전)
   2) 조기종료 카운트는 '확실히' 범위보다 오래된 글(날짜 자체가 start_dt 날짜보다 이전)만 카운트
   3) 조기종료 임계값 5 → 20으로 완화 (안전마진)
+
+[PATCH 2026-10-01] 로그 가시성 강화 + 빈 페이지 헛돌기 방지
+- 배경: 예약 실행이 10:01이 아니라 오후 2~3시에 도는 경우, 1페이지부터 수십 페이지가
+  '당일 10시 이후 글(범위보다 최신)'이라 수집 0 / 범위밖 0으로 찍힘 → 고장처럼 보임
+- 수정:
+  1) 페이지별 로그에 목록 행 수 + 첫/마지막 글 시각 출력 (정상 스킵인지 고장인지 즉시 구분)
+  2) 목록 행(tr)이 0개인 페이지가 연속 2번이면 종료 (구조 변경/차단 시 150페이지 헛돌기 방지)
+  3) 각 게시판 1페이지 HTML을 debug_fsl.html / debug_all.html로 저장 (원인 확인용)
+  4) ALL URL을 canonical 형식(index.php?mid=fifa_online)으로 통일 (동일 페이지)
 """
 import json
 import os
@@ -29,6 +38,7 @@ import requests
 import urllib3
 from bs4 import BeautifulSoup
 import anthropic
+
 # Windows runner 한글 인코딩 깨짐 방지
 try:
     if hasattr(sys.stdout, 'reconfigure'):
@@ -37,16 +47,20 @@ try:
         sys.stderr.reconfigure(encoding='utf-8', errors='replace')
 except Exception:
     pass
+
 urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
+
 KST = timezone(timedelta(hours=9))
 ANTHROPIC_API_KEY = os.environ.get("ANTHROPIC_API_KEY", "")
 FMKOREA_COOKIE = os.environ.get("FMKOREA_COOKIE", "")
+
 DEFAULT_UA = (
     "Mozilla/5.0 (Windows NT 10.0; Win64; x64) "
     "AppleWebKit/537.36 (KHTML, like Gecko) "
     "Chrome/124.0.0.0 Safari/537.36"
 )
 BASE_URL = "https://www.fmkorea.com"
+
 # FSL 먼저, ALL 나중 (세션 초기 상태에서 FSL 차단 방지)
 TARGETS = {
     "fsl": {
@@ -55,14 +69,19 @@ TARGETS = {
         "output": "data_fsl.json"
     },
     "all": {
-        "url": f"{BASE_URL}/fifa_online",
-        "referer": f"{BASE_URL}/",
+        # [PATCH 2026-10-01] /fifa_online → index.php?mid=fifa_online (FSL과 동일 형식)
+        "url": f"{BASE_URL}/index.php?mid=fifa_online",
+        "referer": f"{BASE_URL}/fifa_online",
         "output": "data_all.json"
     },
 }
 MAX_PAGES = 150
 # 조기종료 판정 임계값 (기존 5 → 20 완화)
 OUT_OF_RANGE_THRESHOLD = 20
+# [PATCH 2026-10-01] 목록 행이 0개인 페이지가 연속 몇 번이면 종료할지
+EMPTY_PAGE_THRESHOLD = 2
+
+
 def make_session(cookie_str):
     session = requests.Session()
     session.headers.update({
@@ -78,6 +97,8 @@ def make_session(cookie_str):
                 k, v = part.split("=", 1)
                 session.cookies.set(k.strip(), v.strip(), domain=".fmkorea.com")
     return session
+
+
 def parse_date(date_str, now_kst, start_dt, end_dt):
     """
     날짜 문자열을 (datetime, has_time) 튜플로 변환.
@@ -118,6 +139,8 @@ def parse_date(date_str, now_kst, start_dt, end_dt):
         except Exception:
             return None, False
     return None, False
+
+
 def is_in_range(post_dt, has_time, start_dt, end_dt):
     """
     post_dt: parse_date가 반환한 datetime
@@ -134,11 +157,16 @@ def is_in_range(post_dt, has_time, start_dt, end_dt):
     day_start = post_dt.replace(hour=0, minute=0, second=0, microsecond=0)
     day_end = post_dt.replace(hour=23, minute=59, second=59, microsecond=999999)
     return day_start <= end_dt and day_end >= start_dt
+
+
 def parse_posts_from_html(html, now_kst, start_dt, end_dt):
     soup = BeautifulSoup(html, "html.parser")
     posts = []
     out_of_range_count = 0
-    for tr in soup.select("table.bd_lst tbody tr"):
+    rows = soup.select("table.bd_lst tbody tr")
+    row_count = len(rows)
+    page_times = []
+    for tr in rows:
         if "notice" in tr.get("class", []):
             continue
         title_el = tr.select_one("td.title a")
@@ -151,6 +179,8 @@ def parse_posts_from_html(html, now_kst, start_dt, end_dt):
         url = BASE_URL + href if href.startswith("/") else href
         date_el = tr.select_one("td.time")
         date_str = date_el.get_text(strip=True) if date_el else ""
+        if date_str:
+            page_times.append(date_str)
         post_dt, has_time = parse_date(date_str, now_kst, start_dt, end_dt)
         in_range = is_in_range(post_dt, has_time, start_dt, end_dt)
         # 조기종료 카운트: '확실히' 범위보다 오래된 글만 카운트한다.
@@ -199,9 +229,13 @@ def parse_posts_from_html(html, now_kst, start_dt, end_dt):
             "category": category,
             "sentiment": "pending"
         })
-    return posts, out_of_range_count
+    span = f"{page_times[0]} ~ {page_times[-1]}" if page_times else "-"
+    return posts, out_of_range_count, row_count, span
+
+
 def crawl_with_date_range(session, base_url, referer, source, start_dt, end_dt, now_kst):
     all_posts = []
+    empty_pages = 0
     for page in range(1, MAX_PAGES + 1):
         sep = "&" if "?" in base_url else "?"
         url = base_url if page == 1 else f"{base_url}{sep}page={page}"
@@ -225,20 +259,37 @@ def crawl_with_date_range(session, base_url, referer, source, start_dt, end_dt, 
                 print(f"  실패: {resp.status_code}")
                 break
             html = resp.text
+            # [PATCH 2026-10-01] 1페이지 HTML 저장 (원인 확인용)
+            if page == 1:
+                try:
+                    with open(f"debug_{source}.html", "w", encoding="utf-8") as f:
+                        f.write(html)
+                except Exception as e:
+                    print(f"  디버그 HTML 저장 실패: {e}")
             if "에펨코리아 보안 시스템" in html or "cf-turnstile" in html:
                 print("  Cloudflare 챌린지 감지 - 쿠키를 갱신해야 합니다.")
                 break
         except Exception as e:
             print(f"  크롤링 실패: {e}")
             break
-        posts, out_of_range_count = parse_posts_from_html(html, now_kst, start_dt, end_dt)
+        posts, out_of_range_count, row_count, span = parse_posts_from_html(html, now_kst, start_dt, end_dt)
         all_posts.extend(posts)
-        print(f"  수집된 게시글: {len(posts)}개 (누적: {len(all_posts)}개, 확실히 범위밖: {out_of_range_count}개)")
+        print(f"  수집된 게시글: {len(posts)}개 (누적: {len(all_posts)}개, 확실히 범위밖: {out_of_range_count}개, 목록행: {row_count}개, 글시각: {span})")
         if out_of_range_count >= OUT_OF_RANGE_THRESHOLD:
             print(f"  범위 이전 글 {out_of_range_count}개 감지 -> 수집 종료")
             break
+        # [PATCH 2026-10-01] 목록 자체가 비어 있으면 헛돌지 말고 종료
+        if row_count == 0:
+            empty_pages += 1
+            if empty_pages >= EMPTY_PAGE_THRESHOLD:
+                print(f"  게시글 목록을 찾지 못함 ({empty_pages}페이지 연속) -> 페이지 구조 변경 또는 차단 의심, debug_{source}.html 확인 필요")
+                break
+        else:
+            empty_pages = 0
         time.sleep(1)
     return all_posts
+
+
 def analyze_sentiment(posts, source):
     if not posts or not ANTHROPIC_API_KEY:
         return {
@@ -348,6 +399,8 @@ def analyze_sentiment(posts, source):
         "churn_signals": [],
         "impact_score": 5.0
     }
+
+
 def calc_esi(posts, pos_rate):
     """
     ESI 계산 (개선된 공식)
@@ -400,6 +453,8 @@ def calc_esi(posts, pos_rate):
     raw_esi = mention_rate * sent_coeff * 100 * 1.5
     esi_score = round(min(10.0, raw_esi), 1)
     return esi_score, t1_count, t2_count
+
+
 def main():
     now_kst = datetime.now(KST)
     now_str = now_kst.strftime("%Y-%m-%d %H:%M")
@@ -520,5 +575,7 @@ def main():
         else:
             time.sleep(2)
     print("\n크롤링 완료!")
+
+
 if __name__ == "__main__":
     main()
