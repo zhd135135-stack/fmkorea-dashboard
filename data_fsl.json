@@ -33,30 +33,30 @@
     "negative": 50
   },
   "top_issues": {
-    "positive": "선수 운용 결정",
-    "negative": "게임 상황 불안정",
+    "positive": "선수 운영 긍정 평가",
+    "negative": "게임 상황 불안감",
     "neutral": ""
   },
   "keywords": [
     {
-      "topic": "스쿼드 운용",
+      "topic": "선수 운영",
       "count": 1,
       "pct": "50.0%",
-      "tags": "선수선택,포메이션"
+      "tags": "오케이, 스쿼드 구성"
     },
     {
-      "topic": "게임밸런스",
+      "topic": "FSL 시스템",
       "count": 1,
       "pct": "50.0%",
-      "tags": "현실비유,불안정"
+      "tags": "게임 밸런스, 상황 공감"
     }
   ],
   "churn_signals": [],
   "esports_disengagement_signals": [],
   "fsl_mention_rate": "50.0%",
-  "impact_score": 3.0,
-  "viewer_engagement_estimate": "2K",
-  "last_updated": "2026-10-01 15:18",
+  "impact_score": 3.5,
+  "viewer_engagement_estimate": "1.2K",
+  "last_updated": "2026-10-01 15:27",
   "history": [
     {
       "label": "07/07",
