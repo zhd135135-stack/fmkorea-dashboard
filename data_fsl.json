@@ -4,59 +4,23 @@
     "start": "2026-09-30 10:01",
     "end": "2026-10-01 09:59"
   },
-  "total_posts": 2,
-  "total_views": 2666,
-  "avg_views_per_post": 1333,
-  "posts": [
-    {
-      "title": "오케이 스스 쓸게요",
-      "url": "https://www.fmkorea.com/index.php?mid=fifa_online&category=8064047289&document_srl=10393587210",
-      "views": 572,
-      "comments": 0,
-      "date": "09.30",
-      "category": "FSL·프로게이머",
-      "sentiment": "positive"
-    },
-    {
-      "title": "시티상황을 fsl로 비유해보니까 ㅈㄴ 아찔하네",
-      "url": "https://www.fmkorea.com/index.php?mid=fifa_online&category=8064047289&document_srl=10392514150",
-      "views": 2094,
-      "comments": 1,
-      "date": "09.30",
-      "category": "FSL·프로게이머",
-      "sentiment": "negative"
-    }
-  ],
+  "total_posts": 0,
+  "total_views": 0,
+  "avg_views_per_post": 0,
+  "posts": [],
   "sentiment": {
-    "positive": 50,
+    "positive": 0,
     "neutral": 0,
-    "negative": 50
+    "negative": 0
   },
-  "top_issues": {
-    "positive": "선수 운영 긍정 평가",
-    "negative": "게임 상황 불안감",
-    "neutral": ""
-  },
-  "keywords": [
-    {
-      "topic": "선수 운영",
-      "count": 1,
-      "pct": "50.0%",
-      "tags": "오케이, 스쿼드 구성"
-    },
-    {
-      "topic": "FSL 시스템",
-      "count": 1,
-      "pct": "50.0%",
-      "tags": "게임 밸런스, 상황 공감"
-    }
-  ],
+  "top_issues": {},
+  "keywords": [],
   "churn_signals": [],
   "esports_disengagement_signals": [],
-  "fsl_mention_rate": "50.0%",
-  "impact_score": 3.5,
-  "viewer_engagement_estimate": "1.2K",
-  "last_updated": "2026-10-01 15:27",
+  "fsl_mention_rate": "0%",
+  "impact_score": 0,
+  "viewer_engagement_estimate": "0K",
+  "last_updated": "2026-10-01 15:49",
   "history": [
     {
       "label": "07/07",
