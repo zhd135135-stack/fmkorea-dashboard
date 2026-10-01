@@ -1,5 +1,6 @@
 name: FM Korea Crawler
 on:
+  workflow_dispatch:
   schedule:
     - cron: '1 1 * * *'
 jobs:
@@ -7,9 +8,9 @@ jobs:
     runs-on: self-hosted
     steps:
       - name: Checkout repo
-        uses: actions/checkout@v4
+        uses: actions/checkout@v5
       - name: Set up Python
-        uses: actions/setup-python@v5
+        uses: actions/setup-python@v6
         with:
           python-version: '3.11'
       - name: Install dependencies
