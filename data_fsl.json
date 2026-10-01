@@ -1,36 +1,62 @@
 {
   "source": "fsl",
   "collection_range": {
-    "start": "2026-09-29 10:01",
-    "end": "2026-09-30 09:59"
+    "start": "2026-09-30 10:01",
+    "end": "2026-10-01 09:59"
   },
-  "total_posts": 1,
-  "total_views": 1825,
-  "avg_views_per_post": 1825,
+  "total_posts": 2,
+  "total_views": 2666,
+  "avg_views_per_post": 1333,
   "posts": [
+    {
+      "title": "오케이 스스 쓸게요",
+      "url": "https://www.fmkorea.com/index.php?mid=fifa_online&category=8064047289&document_srl=10393587210",
+      "views": 572,
+      "comments": 0,
+      "date": "09.30",
+      "category": "FSL·프로게이머",
+      "sentiment": "positive"
+    },
     {
       "title": "시티상황을 fsl로 비유해보니까 ㅈㄴ 아찔하네",
       "url": "https://www.fmkorea.com/index.php?mid=fifa_online&category=8064047289&document_srl=10392514150",
-      "views": 1825,
+      "views": 2094,
       "comments": 1,
-      "date": "03:02",
+      "date": "09.30",
       "category": "FSL·프로게이머",
-      "sentiment": "neutral"
+      "sentiment": "negative"
     }
   ],
   "sentiment": {
-    "positive": 33,
-    "neutral": 34,
-    "negative": 33
+    "positive": 50,
+    "neutral": 0,
+    "negative": 50
   },
-  "top_issues": {},
-  "keywords": [],
+  "top_issues": {
+    "positive": "선수 운용 결정",
+    "negative": "게임 상황 불안정",
+    "neutral": ""
+  },
+  "keywords": [
+    {
+      "topic": "스쿼드 운용",
+      "count": 1,
+      "pct": "50.0%",
+      "tags": "선수선택,포메이션"
+    },
+    {
+      "topic": "게임밸런스",
+      "count": 1,
+      "pct": "50.0%",
+      "tags": "현실비유,불안정"
+    }
+  ],
   "churn_signals": [],
   "esports_disengagement_signals": [],
-  "fsl_mention_rate": "0%",
-  "impact_score": 5.0,
-  "viewer_engagement_estimate": "0K",
-  "last_updated": "2026-09-30 15:14",
+  "fsl_mention_rate": "50.0%",
+  "impact_score": 3.0,
+  "viewer_engagement_estimate": "2K",
+  "last_updated": "2026-10-01 15:18",
   "history": [
     {
       "label": "07/07",
@@ -527,6 +553,14 @@
       "posts": 1,
       "esports": 1,
       "positive": 0
+    },
+    {
+      "label": "10/01",
+      "date": "2026-10-01",
+      "esi": 10.0,
+      "posts": 2,
+      "esports": 1,
+      "positive": 50
     }
   ]
 }
