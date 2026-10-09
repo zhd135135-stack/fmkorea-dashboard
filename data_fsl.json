@@ -1,26 +1,71 @@
 {
   "source": "fsl",
   "collection_range": {
-    "start": "2026-10-07 10:01",
-    "end": "2026-10-08 09:59"
+    "start": "2026-10-08 10:01",
+    "end": "2026-10-09 09:59"
   },
-  "total_posts": 0,
-  "total_views": 0,
-  "avg_views_per_post": 0,
-  "posts": [],
+  "total_posts": 3,
+  "total_views": 1305,
+  "avg_views_per_post": 435,
+  "posts": [
+    {
+      "title": "2026 FC PRO CHAMPIONS CUP 사전등록 뜸",
+      "url": "https://www.fmkorea.com/index.php?mid=fifa_online&category=8064047289&document_srl=10424798742",
+      "views": 868,
+      "comments": 9,
+      "date": "10.08",
+      "category": "FSL·프로게이머",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "이러면 오프라인 좌석이 추첨제인거임???",
+      "url": "https://www.fmkorea.com/index.php?mid=fifa_online&category=8064047289&document_srl=10424683740",
+      "views": 217,
+      "comments": 0,
+      "date": "10.08",
+      "category": "FSL·프로게이머",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "2026 FC Pro Champions Cup 풀 배정",
+      "url": "https://www.fmkorea.com/index.php?mid=fifa_online&category=8064047289&document_srl=10424156856",
+      "views": 220,
+      "comments": 2,
+      "date": "10.08",
+      "category": "FSL·프로게이머",
+      "sentiment": "neutral"
+    }
+  ],
   "sentiment": {
     "positive": 0,
-    "neutral": 0,
+    "neutral": 100,
     "negative": 0
   },
-  "top_issues": {},
-  "keywords": [],
+  "top_issues": {
+    "positive": "해당 이슈 없음",
+    "negative": "해당 이슈 없음",
+    "neutral": "2026 FC Pro Champions Cup 대회 정보"
+  },
+  "keywords": [
+    {
+      "topic": "2026 FC Pro Champions Cup",
+      "count": 2,
+      "pct": "66.7%",
+      "tags": "대회, 사전등록, 풀배정"
+    },
+    {
+      "topic": "오프라인 좌석",
+      "count": 1,
+      "pct": "33.3%",
+      "tags": "추첨제, 할당방식"
+    }
+  ],
   "churn_signals": [],
   "esports_disengagement_signals": [],
-  "fsl_mention_rate": "0%",
-  "impact_score": 0,
-  "viewer_engagement_estimate": "0K",
-  "last_updated": "2026-10-08 15:56",
+  "fsl_mention_rate": "100.0%",
+  "impact_score": 3.2,
+  "viewer_engagement_estimate": "2.5K",
+  "last_updated": "2026-10-09 16:05",
   "history": [
     {
       "label": "07/07",
@@ -525,6 +570,14 @@
       "posts": 2,
       "esports": 1,
       "positive": 50
+    },
+    {
+      "label": "10/09",
+      "date": "2026-10-09",
+      "esi": 0.0,
+      "posts": 3,
+      "esports": 2,
+      "positive": 0
     }
   ]
 }
