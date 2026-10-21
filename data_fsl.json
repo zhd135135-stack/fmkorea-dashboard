@@ -1,155 +1,53 @@
 {
   "source": "fsl",
   "collection_range": {
-    "start": "2026-10-19 10:01",
-    "end": "2026-10-20 09:59"
+    "start": "2026-10-20 10:01",
+    "end": "2026-10-21 09:59"
   },
-  "total_posts": 10,
-  "total_views": 300168,
-  "avg_views_per_post": 30016,
+  "total_posts": 1,
+  "total_views": 1903,
+  "avg_views_per_post": 1903,
   "posts": [
     {
-      "title": "FC 온라인 커리어 비교( KWAK, CHAN, JM, HOSEOK, WONDER08 )",
-      "url": "https://www.fmkorea.com/index.php?mid=fifa_online&category=8064047289&document_srl=10462415449",
-      "views": 230,
-      "comments": 4,
-      "date": "14:59",
+      "title": "T1선수단 요즘 핫한 릴스찍었네 ㅋㅋ",
+      "url": "https://www.fmkorea.com/index.php?mid=fifa_online&category=8064047289&document_srl=10465227877",
+      "views": 1903,
+      "comments": 1,
+      "date": "10.20",
       "category": "FSL·프로게이머",
       "sentiment": "neutral"
-    },
-    {
-      "title": "근데 어제 경기 텐백전술 보고 느낀건데",
-      "url": "https://www.fmkorea.com/index.php?mid=fifa_online&category=8064047289&document_srl=10462403443",
-      "views": 3010,
-      "comments": 16,
-      "date": "14:54",
-      "category": "FSL·프로게이머",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "LHAT 선수는 FSL에서 한번 보고싶네",
-      "url": "https://www.fmkorea.com/index.php?mid=fifa_online&category=8064047289&document_srl=10461745236",
-      "views": 10000,
-      "comments": 4,
-      "date": "10.19",
-      "category": "FSL·프로게이머",
-      "sentiment": "positive"
-    },
-    {
-      "title": "피파 대회는 텀이 너무 아쉽네",
-      "url": "https://www.fmkorea.com/index.php?mid=fifa_online&category=8064047289&document_srl=10461711095",
-      "views": 594,
-      "comments": 0,
-      "date": "10.19",
-      "category": "FSL·프로게이머",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "뭐야 어제 티원 우승했구나",
-      "url": "https://www.fmkorea.com/index.php?mid=fifa_online&category=8064047289&document_srl=10461693549",
-      "views": 228,
-      "comments": 0,
-      "date": "10.19",
-      "category": "FSL·프로게이머",
-      "sentiment": "positive"
-    },
-    {
-      "title": "난 정성민이 티원 로스터에 들어올거라 보는대",
-      "url": "https://www.fmkorea.com/index.php?mid=fifa_online&category=8064047289&document_srl=10461678231",
-      "views": 1428,
-      "comments": 4,
-      "date": "10.19",
-      "category": "FSL·프로게이머",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "최호석 선수 방송국이름머임?",
-      "url": "https://www.fmkorea.com/index.php?mid=fifa_online&category=8064047289&document_srl=10461156955",
-      "views": 1026,
-      "comments": 2,
-      "date": "10.19",
-      "category": "FSL·프로게이머",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "진짜 개인전으로 연말 왕중왕전 고봉밥 매치 보고싶네",
-      "url": "https://www.fmkorea.com/index.php?mid=fifa_online&category=8064047289&document_srl=10461137347",
-      "views": 224,
-      "comments": 4,
-      "date": "10.19",
-      "category": "FSL·프로게이머",
-      "sentiment": "positive"
-    },
-    {
-      "title": "국제대회 결승 직관 후기",
-      "url": "https://www.fmkorea.com/index.php?mid=fifa_online&category=8064047289&document_srl=10461029209",
-      "views": 3428,
-      "comments": 5,
-      "date": "10.19",
-      "category": "FSL·프로게이머",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "와 방금 길거리에서 티원 선수들 만나서 사진 찍음 ㄷㄷㄷㄷ",
-      "url": "https://www.fmkorea.com/index.php?mid=fifa_online&category=8064047289&document_srl=10460875295",
-      "views": 280000,
-      "comments": 130,
-      "date": "10.19",
-      "category": "FSL·프로게이머",
-      "sentiment": "positive"
     }
   ],
   "sentiment": {
-    "positive": 40,
-    "neutral": 60,
+    "positive": 0,
+    "neutral": 100,
     "negative": 0
   },
   "top_issues": {
-    "positive": "선수 만남, 경기 관전 기대감",
-    "negative": "대회 일정 간격 아쉬움",
-    "neutral": "선수/팀 정보 및 커리어 비교"
+    "positive": "없음",
+    "negative": "없음",
+    "neutral": "T1선수단 릴스 콘텐츠"
   },
   "keywords": [
     {
-      "topic": "선수 관심도",
-      "count": 7,
-      "pct": "35.0%",
-      "tags": "KWAK,CHAN,JM,HOSEOK,WONDER08,정성민,최호석,LHAT"
+      "topic": "T1선수단",
+      "count": 1,
+      "pct": "50.0%",
+      "tags": "프로팀,콘텐츠"
     },
     {
-      "topic": "티원(팀)",
-      "count": 3,
-      "pct": "15.0%",
-      "tags": "우승,로스터,직관"
-    },
-    {
-      "topic": "경기/전술",
-      "count": 3,
-      "pct": "15.0%",
-      "tags": "텐백전술,개인전,왕중왕전"
-    },
-    {
-      "topic": "대회 운영",
-      "count": 2,
-      "pct": "10.0%",
-      "tags": "국제대회,일정간격"
-    },
-    {
-      "topic": "FSL 프로리그",
-      "count": 4,
-      "pct": "20.0%",
-      "tags": "경기,선수,우승,관전"
+      "topic": "릴스",
+      "count": 1,
+      "pct": "50.0%",
+      "tags": "SNS,마케팅"
     }
   ],
   "churn_signals": [],
-  "esports_disengagement_signals": [
-    "대회 일정 간격 불만",
-    "장기간 대회 대기"
-  ],
-  "fsl_mention_rate": "80.0%",
-  "impact_score": 6.5,
-  "viewer_engagement_estimate": "45K",
-  "last_updated": "2026-10-20 14:37",
+  "esports_disengagement_signals": [],
+  "fsl_mention_rate": "0.0%",
+  "impact_score": 2.5,
+  "viewer_engagement_estimate": "3K",
+  "last_updated": "2026-10-21 14:39",
   "history": [
     {
       "label": "07/07",
@@ -718,6 +616,14 @@
       "posts": 10,
       "esports": 7,
       "positive": 40
+    },
+    {
+      "label": "10/21",
+      "date": "2026-10-21",
+      "esi": 0.0,
+      "posts": 1,
+      "esports": 1,
+      "positive": 0
     }
   ]
 }
