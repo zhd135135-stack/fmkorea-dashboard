@@ -1,26 +1,45 @@
 {
   "source": "fsl",
   "collection_range": {
-    "start": "2026-10-27 10:01",
-    "end": "2026-10-28 09:59"
+    "start": "2026-10-28 10:01",
+    "end": "2026-10-29 09:59"
   },
-  "total_posts": 0,
-  "total_views": 0,
-  "avg_views_per_post": 0,
-  "posts": [],
+  "total_posts": 2,
+  "total_views": 451,
+  "avg_views_per_post": 225,
+  "posts": [
+    {
+      "title": "20~23곽준혁 25원더",
+      "url": "https://www.fmkorea.com/index.php?mid=fifa_online&category=8064047289&document_srl=10493916833",
+      "views": 225,
+      "comments": 12,
+      "date": "17:27",
+      "category": "FSL·프로게이머",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "정민이형 게임 좀 해줘..",
+      "url": "https://www.fmkorea.com/index.php?mid=fifa_online&category=8064047289&document_srl=10492720928",
+      "views": 226,
+      "comments": 0,
+      "date": "10.28",
+      "category": "FSL·프로게이머",
+      "sentiment": "neutral"
+    }
+  ],
   "sentiment": {
-    "positive": 0,
-    "neutral": 0,
-    "negative": 0
+    "positive": 33,
+    "neutral": 34,
+    "negative": 33
   },
   "top_issues": {},
   "keywords": [],
   "churn_signals": [],
   "esports_disengagement_signals": [],
   "fsl_mention_rate": "0%",
-  "impact_score": 0,
+  "impact_score": 5.0,
   "viewer_engagement_estimate": "0K",
-  "last_updated": "2026-10-28 15:33",
+  "last_updated": "2026-10-29 15:41",
   "history": [
     {
       "label": "07/07",
@@ -612,6 +631,14 @@
       "esi": 0.0,
       "posts": 1,
       "esports": 0,
+      "positive": 0
+    },
+    {
+      "label": "10/29",
+      "date": "2026-10-29",
+      "esi": 10.0,
+      "posts": 2,
+      "esports": 1,
       "positive": 0
     }
   ]
