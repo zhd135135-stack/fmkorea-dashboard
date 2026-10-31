@@ -1,19 +1,28 @@
 {
   "source": "fsl",
   "collection_range": {
-    "start": "2026-10-29 10:01",
-    "end": "2026-10-30 09:59"
+    "start": "2026-10-30 10:01",
+    "end": "2026-10-31 09:59"
   },
-  "total_posts": 1,
-  "total_views": 2511,
-  "avg_views_per_post": 2511,
+  "total_posts": 2,
+  "total_views": 1715,
+  "avg_views_per_post": 857,
   "posts": [
     {
-      "title": "구끼 두심단 합류",
-      "url": "https://www.fmkorea.com/index.php?mid=fifa_online&category=8064047289&document_srl=10497055818",
-      "views": 2511,
-      "comments": 6,
-      "date": "16:32",
+      "title": "봉피셜 다음 우승 곽준혁이다 ㄷㄷ",
+      "url": "https://www.fmkorea.com/index.php?mid=fifa_online&category=8064047289&document_srl=10500698100",
+      "views": 1288,
+      "comments": 3,
+      "date": "17:31",
+      "category": "FSL·프로게이머",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "젠지가 젠시티 넘어가고서부터",
+      "url": "https://www.fmkorea.com/index.php?mid=fifa_online&category=8064047289&document_srl=10500501899",
+      "views": 427,
+      "comments": 0,
+      "date": "16:34",
       "category": "FSL·프로게이머",
       "sentiment": "neutral"
     }
@@ -30,7 +39,7 @@
   "fsl_mention_rate": "0%",
   "impact_score": 5.0,
   "viewer_engagement_estimate": "0K",
-  "last_updated": "2026-10-30 15:43",
+  "last_updated": "2026-10-31 15:33",
   "history": [
     {
       "label": "07/07",
@@ -638,6 +647,14 @@
       "esi": 10.0,
       "posts": 1,
       "esports": 1,
+      "positive": 0
+    },
+    {
+      "label": "10/31",
+      "date": "2026-10-31",
+      "esi": 10.0,
+      "posts": 2,
+      "esports": 2,
       "positive": 0
     }
   ]
