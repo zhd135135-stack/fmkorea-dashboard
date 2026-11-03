@@ -1,26 +1,74 @@
 {
   "source": "fsl",
   "collection_range": {
-    "start": "2026-11-01 10:01",
-    "end": "2026-11-02 09:59"
+    "start": "2026-11-02 10:01",
+    "end": "2026-11-03 09:59"
   },
-  "total_posts": 0,
-  "total_views": 0,
-  "avg_views_per_post": 0,
-  "posts": [],
+  "total_posts": 2,
+  "total_views": 1665,
+  "avg_views_per_post": 832,
+  "posts": [
+    {
+      "title": "프로 구끼님 up시즌 왓킨스,레벨링,음뵈모 총평",
+      "url": "https://www.fmkorea.com/index.php?mid=fifa_online&category=8064047289&document_srl=10511196534",
+      "views": 998,
+      "comments": 12,
+      "date": "18:21",
+      "category": "FSL·프로게이머",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "구끼: 음뵈모좋다.",
+      "url": "https://www.fmkorea.com/index.php?mid=fifa_online&category=8064047289&document_srl=10510872505",
+      "views": 667,
+      "comments": 0,
+      "date": "16:58",
+      "category": "FSL·프로게이머",
+      "sentiment": "positive"
+    }
+  ],
   "sentiment": {
-    "positive": 0,
-    "neutral": 0,
+    "positive": 50,
+    "neutral": 50,
     "negative": 0
   },
-  "top_issues": {},
-  "keywords": [],
+  "top_issues": {
+    "positive": "음뵈모 선수 호평",
+    "negative": "해당 없음",
+    "neutral": "선수 성능 평가 정보"
+  },
+  "keywords": [
+    {
+      "topic": "음뵈모",
+      "count": 2,
+      "pct": "40.0%",
+      "tags": "선수평가,성능"
+    },
+    {
+      "topic": "구끼",
+      "count": 2,
+      "pct": "40.0%",
+      "tags": "프로게이머,의견"
+    },
+    {
+      "topic": "up시즌",
+      "count": 1,
+      "pct": "20.0%",
+      "tags": "게임시즌"
+    },
+    {
+      "topic": "왓킨스/레벨링",
+      "count": 1,
+      "pct": "20.0%",
+      "tags": "선수평가"
+    }
+  ],
   "churn_signals": [],
   "esports_disengagement_signals": [],
-  "fsl_mention_rate": "0%",
-  "impact_score": 0,
-  "viewer_engagement_estimate": "0K",
-  "last_updated": "2026-11-02 16:06",
+  "fsl_mention_rate": "100.0%",
+  "impact_score": 3.2,
+  "viewer_engagement_estimate": "2.1K",
+  "last_updated": "2026-11-03 16:29",
   "history": [
     {
       "label": "07/07",
@@ -637,6 +685,14 @@
       "posts": 2,
       "esports": 2,
       "positive": 0
+    },
+    {
+      "label": "11/03",
+      "date": "2026-11-03",
+      "esi": 10.0,
+      "posts": 2,
+      "esports": 2,
+      "positive": 50
     }
   ]
 }
