@@ -1,26 +1,231 @@
 {
   "source": "fsl",
   "collection_range": {
-    "start": "2026-11-08 10:01",
-    "end": "2026-11-09 09:59"
+    "start": "2026-11-09 10:01",
+    "end": "2026-11-10 09:59"
   },
-  "total_posts": 0,
-  "total_views": 0,
-  "avg_views_per_post": 0,
-  "posts": [],
+  "total_posts": 19,
+  "total_views": 68061,
+  "avg_views_per_post": 3582,
+  "posts": [
+    {
+      "title": "근데 팀상금이 쎈 만큼 선수들도  일단 페이컷해서 슈퍼팀 만들려나?",
+      "url": "https://www.fmkorea.com/index.php?mid=fifa_online&category=8064047289&document_srl=10538097649",
+      "views": 1940,
+      "comments": 2,
+      "date": "23:15",
+      "category": "FSL·프로게이머",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "티원은 어떨게 될려나",
+      "url": "https://www.fmkorea.com/index.php?mid=fifa_online&category=8064047289&document_srl=10537400659",
+      "views": 2478,
+      "comments": 5,
+      "date": "19:36",
+      "category": "FSL·프로게이머",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "오피셜)KIWOOM DRX , 찬 세비어 계약종료",
+      "url": "https://www.fmkorea.com/index.php?mid=fifa_online&category=8064047289&document_srl=10537295533",
+      "views": 8038,
+      "comments": 9,
+      "date": "19:01",
+      "category": "FSL·프로게이머",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "곽준혁이 어디로 갈지 궁금하네",
+      "url": "https://www.fmkorea.com/index.php?mid=fifa_online&category=8064047289&document_srl=10537148405",
+      "views": 568,
+      "comments": 7,
+      "date": "18:17",
+      "category": "FSL·프로게이머",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "폭스가 노이즈 못 잡은거 좀 아쉽네",
+      "url": "https://www.fmkorea.com/index.php?mid=fifa_online&category=8064047289&document_srl=10536608313",
+      "views": 3226,
+      "comments": 0,
+      "date": "11.09",
+      "category": "FSL·프로게이머",
+      "sentiment": "negative"
+    },
+    {
+      "title": "노이즈가 어디갈지 궁금하네",
+      "url": "https://www.fmkorea.com/index.php?mid=fifa_online&category=8064047289&document_srl=10536598225",
+      "views": 1020,
+      "comments": 0,
+      "date": "11.09",
+      "category": "FSL·프로게이머",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "올해 시장에 선수들 많이 나올거라더니 진짜 그럴 분위기네요",
+      "url": "https://www.fmkorea.com/index.php?mid=fifa_online&category=8064047289&document_srl=10536586658",
+      "views": 226,
+      "comments": 0,
+      "date": "11.09",
+      "category": "FSL·프로게이머",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "젠지 리플레이 코치나 김관형 코치 데려왔음 좋겠다",
+      "url": "https://www.fmkorea.com/index.php?mid=fifa_online&category=8064047289&document_srl=10536580951",
+      "views": 220,
+      "comments": 0,
+      "date": "11.09",
+      "category": "FSL·프로게이머",
+      "sentiment": "positive"
+    },
+    {
+      "title": "곽도 이제 거의 라스트댄스 아닌가",
+      "url": "https://www.fmkorea.com/index.php?mid=fifa_online&category=8064047289&document_srl=10536510459",
+      "views": 870,
+      "comments": 2,
+      "date": "11.09",
+      "category": "FSL·프로게이머",
+      "sentiment": "negative"
+    },
+    {
+      "title": "체이스가 든숲 에이스아닌가",
+      "url": "https://www.fmkorea.com/index.php?mid=fifa_online&category=8064047289&document_srl=10536502942",
+      "views": 2017,
+      "comments": 0,
+      "date": "11.09",
+      "category": "FSL·프로게이머",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "스토브 쏟아져나오나?",
+      "url": "https://www.fmkorea.com/index.php?mid=fifa_online&category=8064047289&document_srl=10536497011",
+      "views": 2938,
+      "comments": 2,
+      "date": "11.09",
+      "category": "FSL·프로게이머",
+      "sentiment": "positive"
+    },
+    {
+      "title": "DNS 근황",
+      "url": "https://www.fmkorea.com/index.php?mid=fifa_online&category=8064047289&document_srl=10536350856",
+      "views": 1755,
+      "comments": 5,
+      "date": "11.09",
+      "category": "FSL·프로게이머",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "제이드 체이스 샤이프 DNS와 계약종료",
+      "url": "https://www.fmkorea.com/index.php?mid=fifa_online&category=8064047289&document_srl=10536333150",
+      "views": 2257,
+      "comments": 6,
+      "date": "11.09",
+      "category": "FSL·프로게이머",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "[대회 안내] 2027 FSL TRYOUT 참가 신청 안내",
+      "url": "https://www.fmkorea.com/index.php?mid=fifa_online&category=8064047289&document_srl=10536241289",
+      "views": 1231,
+      "comments": 2,
+      "date": "11.09",
+      "category": "FSL·프로게이머",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "프로팀들 입장에서 쌀먹 방향으로 가려는 듯?",
+      "url": "https://www.fmkorea.com/index.php?mid=fifa_online&category=8064047289&document_srl=10536227156",
+      "views": 4692,
+      "comments": 3,
+      "date": "11.09",
+      "category": "FSL·프로게이머",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "와 이적시장 잼겠다",
+      "url": "https://www.fmkorea.com/index.php?mid=fifa_online&category=8064047289&document_srl=10536182307",
+      "views": 1622,
+      "comments": 3,
+      "date": "11.09",
+      "category": "FSL·프로게이머",
+      "sentiment": "positive"
+    },
+    {
+      "title": "오피셜)Dplus KIA , 곽 샤인 노바 리뿌 진성 코치 계약종료",
+      "url": "https://www.fmkorea.com/index.php?mid=fifa_online&category=8064047289&document_srl=10535994332",
+      "views": 20000,
+      "comments": 18,
+      "date": "11.09",
+      "category": "FSL·프로게이머",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "오피셜)BNK FEARX , 노이즈 태갓 계약종료",
+      "url": "https://www.fmkorea.com/index.php?mid=fifa_online&category=8064047289&document_srl=10535296676",
+      "views": 10000,
+      "comments": 24,
+      "date": "11.09",
+      "category": "FSL·프로게이머",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "오피셜)BNK FEARX , 라이트 카이저 리플레이 코치 재계약",
+      "url": "https://www.fmkorea.com/index.php?mid=fifa_online&category=8064047289&document_srl=10535291577",
+      "views": 2963,
+      "comments": 8,
+      "date": "11.09",
+      "category": "FSL·프로게이머",
+      "sentiment": "positive"
+    }
+  ],
   "sentiment": {
-    "positive": 0,
-    "neutral": 0,
-    "negative": 0
+    "positive": 21,
+    "neutral": 68,
+    "negative": 11
   },
-  "top_issues": {},
-  "keywords": [],
+  "top_issues": {
+    "positive": "이적시장 활성화로 팬심 고조",
+    "negative": "폭스의 팀 성적 부진",
+    "neutral": "2027 FSL 이적 및 계약 정보"
+  },
+  "keywords": [
+    {
+      "topic": "계약종료/재계약",
+      "count": 7,
+      "pct": "36.8%",
+      "tags": "DRX, BNK FEARX, Dplus KIA, 선수 이동"
+    },
+    {
+      "topic": "이적시장/선수이동",
+      "count": 6,
+      "pct": "31.6%",
+      "tags": "곽준혁, 노이즈, 체이스, 제이드, DNS"
+    },
+    {
+      "topic": "팀 전략/스쿼드",
+      "count": 4,
+      "pct": "21.1%",
+      "tags": "슈퍼팀, 페이컷, 쌀먹"
+    },
+    {
+      "topic": "선수 개인평가",
+      "count": 3,
+      "pct": "15.8%",
+      "tags": "폭스 비판, 체이스 평가, 곽 라스트댄스"
+    }
+  ],
   "churn_signals": [],
-  "esports_disengagement_signals": [],
-  "fsl_mention_rate": "0%",
-  "impact_score": 0,
-  "viewer_engagement_estimate": "0K",
-  "last_updated": "2026-11-09 16:33",
+  "esports_disengagement_signals": [
+    "진행 중인 대회 감소",
+    "선수단 구조조정 빈번",
+    "팬 관심사 이적시장 편중"
+  ],
+  "fsl_mention_rate": "89.5%",
+  "impact_score": 6.2,
+  "viewer_engagement_estimate": "45K",
+  "last_updated": "2026-11-10 16:57",
   "history": [
     {
       "label": "07/07",
@@ -653,6 +858,14 @@
       "posts": 1,
       "esports": 1,
       "positive": 0
+    },
+    {
+      "label": "11/10",
+      "date": "2026-11-10",
+      "esi": 10.0,
+      "posts": 19,
+      "esports": 12,
+      "positive": 21
     }
   ]
 }
