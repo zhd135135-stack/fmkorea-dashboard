@@ -1,53 +1,26 @@
 {
   "source": "fsl",
   "collection_range": {
-    "start": "2026-11-12 10:01",
-    "end": "2026-11-13 09:59"
+    "start": "2026-11-13 10:01",
+    "end": "2026-11-14 09:59"
   },
-  "total_posts": 1,
-  "total_views": 2433,
-  "avg_views_per_post": 2433,
-  "posts": [
-    {
-      "title": "[DNS] Re-SIGN 9KKI",
-      "url": "https://www.fmkorea.com/index.php?mid=fifa_online&category=8064047289&document_srl=10547302358",
-      "views": 2433,
-      "comments": 4,
-      "date": "17:15",
-      "category": "FSL·프로게이머",
-      "sentiment": "positive"
-    }
-  ],
+  "total_posts": 0,
+  "total_views": 0,
+  "avg_views_per_post": 0,
+  "posts": [],
   "sentiment": {
-    "positive": 100,
+    "positive": 0,
     "neutral": 0,
     "negative": 0
   },
-  "top_issues": {
-    "positive": "선수 재계약 소식",
-    "negative": "없음",
-    "neutral": "없음"
-  },
-  "keywords": [
-    {
-      "topic": "9KKI",
-      "count": 1,
-      "pct": "50.0%",
-      "tags": "프로게이머,선수"
-    },
-    {
-      "topic": "Re-SIGN",
-      "count": 1,
-      "pct": "50.0%",
-      "tags": "재계약,영입"
-    }
-  ],
+  "top_issues": {},
+  "keywords": [],
   "churn_signals": [],
   "esports_disengagement_signals": [],
-  "fsl_mention_rate": "100.0%",
-  "impact_score": 3.5,
-  "viewer_engagement_estimate": "2.1K",
-  "last_updated": "2026-11-13 16:32",
+  "fsl_mention_rate": "0%",
+  "impact_score": 0,
+  "viewer_engagement_estimate": "0K",
+  "last_updated": "2026-11-14 16:17",
   "history": [
     {
       "label": "07/07",
