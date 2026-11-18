@@ -1,113 +1,306 @@
 {
   "source": "fsl",
   "collection_range": {
-    "start": "2026-11-16 10:01",
-    "end": "2026-11-17 09:59"
+    "start": "2026-11-17 10:01",
+    "end": "2026-11-18 09:59"
   },
-  "total_posts": 6,
-  "total_views": 68707,
-  "avg_views_per_post": 11451,
+  "total_posts": 26,
+  "total_views": 116251,
+  "avg_views_per_post": 4471,
   "posts": [
     {
-      "title": "젠지 찬or곽 + 피어스 + 트라이아웃 + 좋은 코치",
-      "url": "https://www.fmkorea.com/index.php?mid=fifa_online&category=8064047289&document_srl=10563103284",
-      "views": 2723,
-      "comments": 10,
-      "date": "20:35",
+      "title": "젠지 원더 곽 찬이면 진짜 그슬각인데 ㅋㅋㅋㅋ",
+      "url": "https://www.fmkorea.com/index.php?mid=fifa_online&category=8064047289&document_srl=10567996835",
+      "views": 2499,
+      "comments": 4,
+      "date": "01:19",
       "category": "FSL·프로게이머",
       "sentiment": "positive"
     },
     {
-      "title": "7팀 운영하고 예선으로 4명 참가시킬려나",
-      "url": "https://www.fmkorea.com/index.php?mid=fifa_online&category=8064047289&document_srl=10561701119",
-      "views": 4273,
-      "comments": 4,
-      "date": "11.16",
+      "title": "찬의 한말씀",
+      "url": "https://www.fmkorea.com/index.php?mid=fifa_online&category=8064047289&document_srl=10567649663",
+      "views": 10000,
+      "comments": 3,
+      "date": "23:42",
       "category": "FSL·프로게이머",
       "sentiment": "neutral"
     },
     {
-      "title": "FSL 공지 - 7개 구단 운영",
-      "url": "https://www.fmkorea.com/index.php?mid=fifa_online&category=8064047289&document_srl=10561607992",
-      "views": 20000,
-      "comments": 14,
-      "date": "11.16",
+      "title": "2024년 프차 스토브, 올해 스토브 젠지가 제일 먼저 연락",
+      "url": "https://www.fmkorea.com/index.php?mid=fifa_online&category=8064047289&document_srl=10567631818",
+      "views": 3675,
+      "comments": 0,
+      "date": "23:37",
+      "category": "FSL·프로게이머",
+      "sentiment": "positive"
+    },
+    {
+      "title": "찬 방송 킴",
+      "url": "https://www.fmkorea.com/index.php?mid=fifa_online&category=8064047289&document_srl=10567610968",
+      "views": 1358,
+      "comments": 0,
+      "date": "23:32",
       "category": "FSL·프로게이머",
       "sentiment": "neutral"
     },
     {
-      "title": "[오피셜] 디플러스 기아 피파팀 운영 종료",
-      "url": "https://www.fmkorea.com/index.php?mid=fifa_online&category=8064047289&document_srl=10561495694",
-      "views": 20000,
+      "title": "여차하면 젠지단장이 코치로 들어와도 됨",
+      "url": "https://www.fmkorea.com/index.php?mid=fifa_online&category=8064047289&document_srl=10567181607",
+      "views": 1614,
+      "comments": 7,
+      "date": "21:36",
+      "category": "FSL·프로게이머",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "지피제이 데려가는 팀 없어",
+      "url": "https://www.fmkorea.com/index.php?mid=fifa_online&category=8064047289&document_srl=10566737771",
+      "views": 2613,
+      "comments": 3,
+      "date": "19:54",
+      "category": "FSL·프로게이머",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "젠시티 라인업 지리네요",
+      "url": "https://www.fmkorea.com/index.php?mid=fifa_online&category=8064047289&document_srl=10566724799",
+      "views": 2172,
+      "comments": 3,
+      "date": "19:50",
+      "category": "FSL·프로게이머",
+      "sentiment": "positive"
+    },
+    {
+      "title": "아니 곽은 언제 떠",
+      "url": "https://www.fmkorea.com/index.php?mid=fifa_online&category=8064047289&document_srl=10566671176",
+      "views": 2247,
       "comments": 9,
-      "date": "11.16",
+      "date": "19:36",
       "category": "FSL·프로게이머",
       "sentiment": "negative"
     },
     {
-      "title": "롤이랑 다르게 엪온은 상금으로도 굴러는가서",
-      "url": "https://www.fmkorea.com/index.php?mid=fifa_online&category=8064047289&document_srl=10561485826",
-      "views": 1711,
-      "comments": 11,
-      "date": "11.16",
+      "title": "찬 젠지면 티원이랑 하는게 궁금하네",
+      "url": "https://www.fmkorea.com/index.php?mid=fifa_online&category=8064047289&document_srl=10566661244",
+      "views": 1477,
+      "comments": 5,
+      "date": "19:35",
       "category": "FSL·프로게이머",
       "sentiment": "neutral"
     },
     {
-      "title": "오피셜)Dplus KIA , 피파 온라인 운영 종료",
-      "url": "https://www.fmkorea.com/index.php?mid=fifa_online&category=8064047289&document_srl=10561438858",
+      "title": "박찬화 공지",
+      "url": "https://www.fmkorea.com/index.php?mid=fifa_online&category=8064047289&document_srl=10566658680",
       "views": 20000,
-      "comments": 23,
-      "date": "11.16",
+      "comments": 5,
+      "date": "19:33",
+      "category": "FSL·프로게이머",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "티원 젠지 내년에 재밌겠다",
+      "url": "https://www.fmkorea.com/index.php?mid=fifa_online&category=8064047289&document_srl=10566651577",
+      "views": 874,
+      "comments": 2,
+      "date": "19:31",
+      "category": "FSL·프로게이머",
+      "sentiment": "positive"
+    },
+    {
+      "title": "젠시티 3옵션이 누구일려나",
+      "url": "https://www.fmkorea.com/index.php?mid=fifa_online&category=8064047289&document_srl=10566644621",
+      "views": 1541,
+      "comments": 8,
+      "date": "19:29",
+      "category": "FSL·프로게이머",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "원더 찬 둘이 같은 팀이면 시너지 장난아닐듯",
+      "url": "https://www.fmkorea.com/index.php?mid=fifa_online&category=8064047289&document_srl=10566605827",
+      "views": 203,
+      "comments": 0,
+      "date": "19:18",
+      "category": "FSL·프로게이머",
+      "sentiment": "positive"
+    },
+    {
+      "title": "박찬화 히위고 떴다방!!!",
+      "url": "https://www.fmkorea.com/index.php?mid=fifa_online&category=8064047289&document_srl=10566605310",
+      "views": 1096,
+      "comments": 0,
+      "date": "19:18",
+      "category": "FSL·프로게이머",
+      "sentiment": "positive"
+    },
+    {
+      "title": "WELCOME, CHANPION",
+      "url": "https://www.fmkorea.com/index.php?mid=fifa_online&category=8064047289&document_srl=10566600219",
+      "views": 20000,
+      "comments": 22,
+      "date": "19:16",
+      "category": "FSL·프로게이머",
+      "sentiment": "positive"
+    },
+    {
+      "title": "원더08 고원재 + Chan 박찬화",
+      "url": "https://www.fmkorea.com/index.php?mid=fifa_online&category=8064047289&document_srl=10566597316",
+      "views": 3015,
+      "comments": 7,
+      "date": "19:16",
+      "category": "FSL·프로게이머",
+      "sentiment": "positive"
+    },
+    {
+      "title": "박찬화 젠지 ㄷㄷ",
+      "url": "https://www.fmkorea.com/index.php?mid=fifa_online&category=8064047289&document_srl=10566594649",
+      "views": 1009,
+      "comments": 3,
+      "date": "19:15",
+      "category": "FSL·프로게이머",
+      "sentiment": "positive"
+    },
+    {
+      "title": "찬 젠지 ㄷㄷ",
+      "url": "https://www.fmkorea.com/index.php?mid=fifa_online&category=8064047289&document_srl=10566591945",
+      "views": 2164,
+      "comments": 3,
+      "date": "19:14",
+      "category": "FSL·프로게이머",
+      "sentiment": "positive"
+    },
+    {
+      "title": "곽이랑 찬은 어디로 갈려나....",
+      "url": "https://www.fmkorea.com/index.php?mid=fifa_online&category=8064047289&document_srl=10566551731",
+      "views": 1653,
+      "comments": 3,
+      "date": "19:03",
+      "category": "FSL·프로게이머",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "젠시티 슈퍼팀이라는",
+      "url": "https://www.fmkorea.com/index.php?mid=fifa_online&category=8064047289&document_srl=10566355499",
+      "views": 1049,
+      "comments": 12,
+      "date": "18:10",
+      "category": "FSL·프로게이머",
+      "sentiment": "positive"
+    },
+    {
+      "title": "코치 오피셜 안뜬 팀들 새로운 코치가 있나요?",
+      "url": "https://www.fmkorea.com/index.php?mid=fifa_online&category=8064047289&document_srl=10565621940",
+      "views": 2770,
+      "comments": 5,
+      "date": "11.17",
+      "category": "FSL·프로게이머",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "든숲에서 곽or찬 중 한명 영입하지 않을까 했는데",
+      "url": "https://www.fmkorea.com/index.php?mid=fifa_online&category=8064047289&document_srl=10565520044",
+      "views": 3859,
+      "comments": 7,
+      "date": "11.17",
+      "category": "FSL·프로게이머",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "젠지는 누구이려나",
+      "url": "https://www.fmkorea.com/index.php?mid=fifa_online&category=8064047289&document_srl=10565161706",
+      "views": 3299,
+      "comments": 10,
+      "date": "11.17",
+      "category": "FSL·프로게이머",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "[오피셜]DN Soopers , 크롱 노바 릴라 코치 영입",
+      "url": "https://www.fmkorea.com/index.php?mid=fifa_online&category=8064047289&document_srl=10565093035",
+      "views": 20000,
+      "comments": 18,
+      "date": "11.17",
+      "category": "FSL·프로게이머",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "[오피셜]DN Soopers , 클러치 재계약",
+      "url": "https://www.fmkorea.com/index.php?mid=fifa_online&category=8064047289&document_srl=10565088409",
+      "views": 2222,
+      "comments": 1,
+      "date": "11.17",
+      "category": "FSL·프로게이머",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "옆집은 펑펑 터지는데 여기는 뭐 없남,,,???",
+      "url": "https://www.fmkorea.com/index.php?mid=fifa_online&category=8064047289&document_srl=10564678111",
+      "views": 3842,
+      "comments": 7,
+      "date": "11.17",
       "category": "FSL·프로게이머",
       "sentiment": "negative"
     }
   ],
   "sentiment": {
-    "positive": 17,
+    "positive": 42,
     "neutral": 50,
-    "negative": 33
+    "negative": 8
   },
   "top_issues": {
-    "positive": "젠지 코칭스태프 강화",
-    "negative": "구단 운영 종료",
-    "neutral": "FSL 운영 체계"
+    "positive": "박찬화 젠지 영입 호평",
+    "negative": "팀 무소식 불만",
+    "neutral": "2024 오프시즌 거래 정보"
   },
   "keywords": [
     {
-      "topic": "구단운영",
-      "count": 3,
-      "pct": "50.0%",
-      "tags": "젠지,디플러스기아,7팀"
+      "topic": "박찬화(Chan)",
+      "count": 12,
+      "pct": "23.1%",
+      "tags": "젠지,원더,영입,지렸다,ㄷㄷ"
     },
     {
-      "topic": "코칭스태프",
-      "count": 1,
-      "pct": "16.7%",
-      "tags": "찬,곽,피어스,트라이아웃"
+      "topic": "젠지",
+      "count": 10,
+      "pct": "19.2%",
+      "tags": "팀빌딩,슈퍼팀,라인업"
     },
     {
-      "topic": "운영종료",
-      "count": 2,
-      "pct": "33.3%",
-      "tags": "디플러스기아,피파온라인"
+      "topic": "곽(원더)",
+      "count": 8,
+      "pct": "15.4%",
+      "tags": "영입,시너지,선택"
     },
     {
-      "topic": "상금풀",
-      "count": 1,
-      "pct": "16.7%",
-      "tags": "롤비교,투자"
+      "topic": "오피셜 영입",
+      "count": 5,
+      "pct": "9.6%",
+      "tags": "코치,재계약,DN"
+    },
+    {
+      "topic": "팀 라인업 조합",
+      "count": 7,
+      "pct": "13.5%",
+      "tags": "시너지,기대감"
+    },
+    {
+      "topic": "미결정 팀",
+      "count": 5,
+      "pct": "9.6%",
+      "tags": "불안감,대기"
     }
   ],
   "churn_signals": [],
   "esports_disengagement_signals": [
-    "주요 구단(디플러스 기아) 피파온라인 운영 종료",
-    "상금풀 부족으로 인한 투자 매력도 하락"
+    "팀 소식 부재 불만",
+    "미영입 선수 불안감",
+    "경쟁팀 대비 뒤쳐짐 우려"
   ],
-  "fsl_mention_rate": "50.0%",
-  "impact_score": 6.5,
-  "viewer_engagement_estimate": "2.3K",
-  "last_updated": "2026-11-17 17:45",
+  "fsl_mention_rate": "92.3%",
+  "impact_score": 7.2,
+  "viewer_engagement_estimate": "45K",
+  "last_updated": "2026-11-18 17:08",
   "history": [
     {
       "label": "07/07",
@@ -788,6 +981,14 @@
       "posts": 6,
       "esports": 4,
       "positive": 17
+    },
+    {
+      "label": "11/18",
+      "date": "2026-11-18",
+      "esi": 10.0,
+      "posts": 26,
+      "esports": 13,
+      "positive": 42
     }
   ]
 }
