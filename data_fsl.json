@@ -1,218 +1,116 @@
 {
   "source": "fsl",
   "collection_range": {
-    "start": "2026-11-18 10:01",
-    "end": "2026-11-19 09:59"
+    "start": "2026-11-19 10:01",
+    "end": "2026-11-20 09:59"
   },
-  "total_posts": 17,
-  "total_views": 64559,
-  "avg_views_per_post": 3797,
+  "total_posts": 7,
+  "total_views": 50632,
+  "avg_views_per_post": 7233,
   "posts": [
     {
-      "title": "젠지 감독 신보석이면 재밌을거같음ㅋㅋㅋㅋ",
-      "url": "https://www.fmkorea.com/index.php?mid=fifa_online&category=8064047289&document_srl=10570832938",
-      "views": 2166,
-      "comments": 3,
-      "date": "21:21",
-      "category": "FSL·프로게이머",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "아직 로스터 공개 안된게 어디지?",
-      "url": "https://www.fmkorea.com/index.php?mid=fifa_online&category=8064047289&document_srl=10570799800",
-      "views": 2427,
-      "comments": 2,
-      "date": "21:13",
-      "category": "FSL·프로게이머",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "FSL 올스타 스쿼드",
-      "url": "https://www.fmkorea.com/index.php?mid=fifa_online&category=8064047289&document_srl=10570433224",
-      "views": 1356,
-      "comments": 0,
-      "date": "19:36",
-      "category": "FSL·프로게이머",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "젠지 마지막 멤버 + 코치 누구일거같음??",
-      "url": "https://www.fmkorea.com/index.php?mid=fifa_online&category=8064047289&document_srl=10570412336",
-      "views": 632,
-      "comments": 3,
-      "date": "19:30",
-      "category": "FSL·프로게이머",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "WELCOME, Shype",
-      "url": "https://www.fmkorea.com/index.php?mid=fifa_online&category=8064047289&document_srl=10570396912",
+      "title": "곽준혁 : 해외에서도 오퍼 있었다",
+      "url": "https://www.fmkorea.com/index.php?mid=fifa_online&category=8064047289&document_srl=10575694923",
       "views": 10000,
-      "comments": 14,
-      "date": "19:25",
-      "category": "FSL·프로게이머",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "공식) FSL 올스타전 진행 ㄷㄷ",
-      "url": "https://www.fmkorea.com/index.php?mid=fifa_online&category=8064047289&document_srl=10570385025",
-      "views": 8606,
-      "comments": 5,
-      "date": "19:22",
-      "category": "FSL·프로게이머",
-      "sentiment": "positive"
-    },
-    {
-      "title": "진짜 폭스 곽이네 ㄷㄷ 내부자들에서도 유민 코치님이 살짝 러브콜 보냈었는데",
-      "url": "https://www.fmkorea.com/index.php?mid=fifa_online&category=8064047289&document_srl=10570332559",
-      "views": 1003,
-      "comments": 0,
-      "date": "19:05",
-      "category": "FSL·프로게이머",
-      "sentiment": "positive"
-    },
-    {
-      "title": "오 미스터 곽이 폭스로 가는구나 ㄷㄷㄷ",
-      "url": "https://www.fmkorea.com/index.php?mid=fifa_online&category=8064047289&document_srl=10570268714",
-      "views": 1423,
-      "comments": 1,
-      "date": "18:43",
-      "category": "FSL·프로게이머",
-      "sentiment": "positive"
-    },
-    {
-      "title": "오우 곽 오피셜 영상 나왔다",
-      "url": "https://www.fmkorea.com/index.php?mid=fifa_online&category=8064047289&document_srl=10570250802",
-      "views": 2064,
-      "comments": 0,
-      "date": "18:37",
-      "category": "FSL·프로게이머",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "오피셜)BNK FEARX , 체이스 곽 영입",
-      "url": "https://www.fmkorea.com/index.php?mid=fifa_online&category=8064047289&document_srl=10570240322",
-      "views": 20000,
-      "comments": 19,
-      "date": "18:33",
-      "category": "FSL·프로게이머",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "BFX 리플레이 코치 + 곽 조합이면 이거 기대해볼만하겠네요",
-      "url": "https://www.fmkorea.com/index.php?mid=fifa_online&category=8064047289&document_srl=10570135049",
-      "views": 2487,
-      "comments": 1,
-      "date": "17:59",
-      "category": "FSL·프로게이머",
-      "sentiment": "positive"
-    },
-    {
-      "title": "오피셜)오피셜)KIWOOM DRX , 탁 콜업",
-      "url": "https://www.fmkorea.com/index.php?mid=fifa_online&category=8064047289&document_srl=10570121151",
-      "views": 1684,
-      "comments": 7,
-      "date": "17:55",
-      "category": "FSL·프로게이머",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "금마 안오나 베트남",
-      "url": "https://www.fmkorea.com/index.php?mid=fifa_online&category=8064047289&document_srl=10569898310",
-      "views": 270,
       "comments": 6,
-      "date": "11.18",
+      "date": "23:27",
       "category": "FSL·프로게이머",
       "sentiment": "neutral"
     },
     {
-      "title": "곽 피어엑스면 젠지 3옵션 누구려나",
-      "url": "https://www.fmkorea.com/index.php?mid=fifa_online&category=8064047289&document_srl=10569844613",
-      "views": 4543,
-      "comments": 3,
-      "date": "11.18",
+      "title": "김승환 “젠지 4번째 멤버 이름 들으면 놀랄만함”",
+      "url": "https://www.fmkorea.com/index.php?mid=fifa_online&category=8064047289&document_srl=10575478631",
+      "views": 3339,
+      "comments": 8,
+      "date": "22:31",
       "category": "FSL·프로게이머",
       "sentiment": "neutral"
     },
     {
-      "title": "근데 원더 찬에 + 곽까지 가능함?",
-      "url": "https://www.fmkorea.com/index.php?mid=fifa_online&category=8064047289&document_srl=10569536497",
-      "views": 1573,
-      "comments": 17,
-      "date": "11.18",
+      "title": "젠지 하루에 한명씩 공개니 오늘 7시쯤 네번째 멤버뜨겠군",
+      "url": "https://www.fmkorea.com/index.php?mid=fifa_online&category=8064047289&document_srl=10573996159",
+      "views": 2409,
+      "comments": 6,
+      "date": "11.19",
       "category": "FSL·프로게이머",
       "sentiment": "neutral"
     },
     {
-      "title": "다른팀들은 그렇다치는데 농심은 왜 소식이 없지?",
-      "url": "https://www.fmkorea.com/index.php?mid=fifa_online&category=8064047289&document_srl=10569182650",
-      "views": 1324,
+      "title": "딮기 남은자리는 어떻게됨?",
+      "url": "https://www.fmkorea.com/index.php?mid=fifa_online&category=8064047289&document_srl=10573974972",
+      "views": 2105,
       "comments": 1,
-      "date": "11.18",
+      "date": "11.19",
       "category": "FSL·프로게이머",
       "sentiment": "neutral"
     },
     {
-      "title": "젠지 원더 곽 찬이면 진짜 그슬각인데 ㅋㅋㅋㅋ",
-      "url": "https://www.fmkorea.com/index.php?mid=fifa_online&category=8064047289&document_srl=10567996835",
-      "views": 3001,
-      "comments": 4,
-      "date": "11.18",
+      "title": "피파팀은 원래 1년에 한 번씩 이적하나요?",
+      "url": "https://www.fmkorea.com/index.php?mid=fifa_online&category=8064047289&document_srl=10573876104",
+      "views": 979,
+      "comments": 3,
+      "date": "11.19",
       "category": "FSL·프로게이머",
-      "sentiment": "positive"
+      "sentiment": "neutral"
+    },
+    {
+      "title": "방배우 fsl 공식해설 하차",
+      "url": "https://www.fmkorea.com/index.php?mid=fifa_online&category=8064047289&document_srl=10573503153",
+      "views": 30000,
+      "comments": 40,
+      "date": "11.19",
+      "category": "FSL·프로게이머",
+      "sentiment": "negative"
+    },
+    {
+      "title": "올스타전 대진 당일 공개네",
+      "url": "https://www.fmkorea.com/index.php?mid=fifa_online&category=8064047289&document_srl=10573205083",
+      "views": 1800,
+      "comments": 3,
+      "date": "11.19",
+      "category": "FSL·프로게이머",
+      "sentiment": "neutral"
     }
   ],
   "sentiment": {
-    "positive": 29,
-    "neutral": 71,
-    "negative": 0
+    "positive": 0,
+    "neutral": 86,
+    "negative": 14
   },
   "top_issues": {
-    "positive": "선수 영입 소식 긍정 반응",
-    "negative": "로스터 미공개 불만",
-    "neutral": "팀 로스터 구성 궁금증"
+    "positive": "선수 이적 소식",
+    "negative": "해설자 하차",
+    "neutral": "팀 멤버 공개/리그 운영"
   },
   "keywords": [
     {
-      "topic": "곽 (선수)",
-      "count": 7,
-      "pct": "41.2%",
-      "tags": "폭스,피어엑스,젠지,영입,ㄷㄷ"
-    },
-    {
-      "topic": "젠지",
-      "count": 5,
-      "pct": "29.4%",
-      "tags": "로스터,멤버,옵션,스쿼드"
-    },
-    {
-      "topic": "FSL 로스터",
-      "count": 6,
-      "pct": "35.3%",
-      "tags": "영입,공식,코치,멤버구성"
-    },
-    {
-      "topic": "팀 구성",
+      "topic": "팀 멤버/이적",
       "count": 4,
-      "pct": "23.5%",
-      "tags": "농심,키움,BNK,드래곤엑스"
+      "pct": "57.1%",
+      "tags": "곽준혁, 젠지, 멤버영입, 하루공개"
     },
     {
-      "topic": "올스타",
+      "topic": "리그 운영",
       "count": 2,
-      "pct": "11.8%",
-      "tags": "스쿼드,전"
+      "pct": "28.6%",
+      "tags": "올스타전, 당일공개, 대진"
+    },
+    {
+      "topic": "인사변동",
+      "count": 1,
+      "pct": "14.3%",
+      "tags": "방배우, 해설진, 하차"
     }
   ],
   "churn_signals": [],
   "esports_disengagement_signals": [
-    "로스터 공개 지연으로 인한 답답함",
-    "농심 등 일부 팀 소식 부재"
+    "해설자 하차 (방배우 공식해설 하차)",
+    "팀 멤버십 미결정 (딮 남은자리 불안감)"
   ],
-  "fsl_mention_rate": "94.1%",
-  "impact_score": 6.2,
-  "viewer_engagement_estimate": "2.3K",
-  "last_updated": "2026-11-19 17:18",
+  "fsl_mention_rate": "71.4%",
+  "impact_score": 4.2,
+  "viewer_engagement_estimate": "12K",
+  "last_updated": "2026-11-20 16:59",
   "history": [
     {
       "label": "07/07",
@@ -909,6 +807,14 @@
       "posts": 17,
       "esports": 8,
       "positive": 29
+    },
+    {
+      "label": "11/20",
+      "date": "2026-11-20",
+      "esi": 0.0,
+      "posts": 7,
+      "esports": 3,
+      "positive": 0
     }
   ]
 }
