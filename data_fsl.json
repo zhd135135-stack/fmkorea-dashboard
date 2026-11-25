@@ -1,46 +1,28 @@
 {
   "source": "fsl",
   "collection_range": {
-    "start": "2026-11-23 10:01",
-    "end": "2026-11-24 09:59"
+    "start": "2026-11-24 10:01",
+    "end": "2026-11-25 09:59"
   },
-  "total_posts": 4,
-  "total_views": 16746,
-  "avg_views_per_post": 4186,
+  "total_posts": 2,
+  "total_views": 2070,
+  "avg_views_per_post": 1035,
   "posts": [
+    {
+      "title": "Fc Pro All-Star 태국 출전 선수",
+      "url": "https://www.fmkorea.com/index.php?mid=fifa_online&category=8064047289&document_srl=10592901525",
+      "views": 1122,
+      "comments": 1,
+      "date": "00:45",
+      "category": "FSL·프로게이머",
+      "sentiment": "neutral"
+    },
     {
       "title": "원더는 그냥 바둑 두는것 같음",
       "url": "https://www.fmkorea.com/index.php?mid=fifa_online&category=8064047289&document_srl=10589792787",
-      "views": 592,
+      "views": 948,
       "comments": 1,
-      "date": "01:58",
-      "category": "FSL·프로게이머",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "정성민은 어디 간다는 소식 없나",
-      "url": "https://www.fmkorea.com/index.php?mid=fifa_online&category=8064047289&document_srl=10587195211",
-      "views": 3529,
-      "comments": 4,
-      "date": "11.23",
-      "category": "FSL·프로게이머",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "지피제이 프로올스타전 나오나봄",
-      "url": "https://www.fmkorea.com/index.php?mid=fifa_online&category=8064047289&document_srl=10586163053",
-      "views": 10000,
-      "comments": 7,
-      "date": "11.23",
-      "category": "FSL·프로게이머",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "올스타전 쭉 보고 느낀 신특 부분들",
-      "url": "https://www.fmkorea.com/index.php?mid=fifa_online&category=8064047289&document_srl=10586151953",
-      "views": 2625,
-      "comments": 10,
-      "date": "11.23",
+      "date": "11.24",
       "category": "FSL·프로게이머",
       "sentiment": "neutral"
     }
@@ -53,43 +35,31 @@
   "top_issues": {
     "positive": "없음",
     "negative": "없음",
-    "neutral": "선수/팀 소식 및 올스타전 정보"
+    "neutral": "FSL 선수단 정보 공유"
   },
   "keywords": [
     {
-      "topic": "올스타전",
-      "count": 2,
-      "pct": "50.0%",
-      "tags": "프로게이머, 경기정보"
-    },
-    {
-      "topic": "선수 정보",
-      "count": 2,
-      "pct": "50.0%",
-      "tags": "원더, 정성민, 지피제이"
-    },
-    {
-      "topic": "신특",
+      "topic": "FSL 국제전",
       "count": 1,
-      "pct": "25.0%",
-      "tags": "게임분석, 패치"
+      "pct": "50.0%",
+      "tags": "All-Star,태국,선수정보"
+    },
+    {
+      "topic": "프로게이머 플레이스타일",
+      "count": 1,
+      "pct": "50.0%",
+      "tags": "원더,바둑,전술"
     }
   ],
   "churn_signals": [],
-  "esports_disengagement_signals": [],
-  "fsl_mention_rate": "75.0%",
-  "impact_score": 3.2,
-  "viewer_engagement_estimate": "2.5K",
-  "last_updated": "2026-11-24 19:38",
+  "esports_disengagement_signals": [
+    "게시글 2개 제한으로 판단 불가"
+  ],
+  "fsl_mention_rate": "50.0%",
+  "impact_score": 2.5,
+  "viewer_engagement_estimate": "2K",
+  "last_updated": "2026-11-25 18:28",
   "history": [
-    {
-      "label": "07/09",
-      "date": "2026-07-09",
-      "esi": 10.0,
-      "posts": 69,
-      "esports": 39,
-      "positive": 52
-    },
     {
       "label": "07/10",
       "date": "2026-07-10",
@@ -799,6 +769,14 @@
       "date": "2026-11-24",
       "esi": 0.0,
       "posts": 4,
+      "esports": 1,
+      "positive": 0
+    },
+    {
+      "label": "11/25",
+      "date": "2026-11-25",
+      "esi": 0.0,
+      "posts": 2,
       "esports": 1,
       "positive": 0
     }
