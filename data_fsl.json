@@ -1,28 +1,46 @@
 {
   "source": "fsl",
   "collection_range": {
-    "start": "2026-11-24 10:01",
-    "end": "2026-11-25 09:59"
+    "start": "2026-11-25 10:01",
+    "end": "2026-11-26 09:59"
   },
-  "total_posts": 2,
-  "total_views": 2070,
-  "avg_views_per_post": 1035,
+  "total_posts": 4,
+  "total_views": 19780,
+  "avg_views_per_post": 4945,
   "posts": [
     {
-      "title": "Fc Pro All-Star 태국 출전 선수",
-      "url": "https://www.fmkorea.com/index.php?mid=fifa_online&category=8064047289&document_srl=10592901525",
-      "views": 1122,
-      "comments": 1,
-      "date": "00:45",
+      "title": "이번 스토브리그",
+      "url": "https://www.fmkorea.com/index.php?mid=fifa_online&category=8064047289&document_srl=10594930321",
+      "views": 3622,
+      "comments": 6,
+      "date": "18:15",
       "category": "FSL·프로게이머",
       "sentiment": "neutral"
     },
     {
-      "title": "원더는 그냥 바둑 두는것 같음",
-      "url": "https://www.fmkorea.com/index.php?mid=fifa_online&category=8064047289&document_srl=10589792787",
-      "views": 948,
+      "title": "오피셜)KT롤스터 , TK777 계약종료 & Savior 영입",
+      "url": "https://www.fmkorea.com/index.php?mid=fifa_online&category=8064047289&document_srl=10594787286",
+      "views": 7291,
+      "comments": 8,
+      "date": "11.25",
+      "category": "FSL·프로게이머",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "오피셜)KT 롤스터 , erwin & JM & UTA & Dike 재계약",
+      "url": "https://www.fmkorea.com/index.php?mid=fifa_online&category=8064047289&document_srl=10594783066",
+      "views": 6591,
       "comments": 1,
-      "date": "11.24",
+      "date": "11.25",
+      "category": "FSL·프로게이머",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Fc Pro All-Star 태국 출전 선수",
+      "url": "https://www.fmkorea.com/index.php?mid=fifa_online&category=8064047289&document_srl=10592901525",
+      "views": 2276,
+      "comments": 1,
+      "date": "11.25",
       "category": "FSL·프로게이머",
       "sentiment": "neutral"
     }
@@ -35,39 +53,41 @@
   "top_issues": {
     "positive": "없음",
     "negative": "없음",
-    "neutral": "FSL 선수단 정보 공유"
+    "neutral": "선수 계약/영입 공식발표"
   },
   "keywords": [
     {
-      "topic": "FSL 국제전",
-      "count": 1,
-      "pct": "50.0%",
-      "tags": "All-Star,태국,선수정보"
+      "topic": "팀 운영",
+      "count": 3,
+      "pct": "75.0%",
+      "tags": "KT롤스터, 계약, 영입, 재계약"
     },
     {
-      "topic": "프로게이머 플레이스타일",
+      "topic": "선수",
+      "count": 5,
+      "pct": "62.5%",
+      "tags": "TK777, Savior, erwin, JM, UTA, Dike"
+    },
+    {
+      "topic": "스토브리그",
       "count": 1,
-      "pct": "50.0%",
-      "tags": "원더,바둑,전술"
+      "pct": "25.0%",
+      "tags": "오프시즌"
+    },
+    {
+      "topic": "국제대회",
+      "count": 1,
+      "pct": "25.0%",
+      "tags": "FC Pro All-Star, 태국"
     }
   ],
   "churn_signals": [],
-  "esports_disengagement_signals": [
-    "게시글 2개 제한으로 판단 불가"
-  ],
-  "fsl_mention_rate": "50.0%",
-  "impact_score": 2.5,
-  "viewer_engagement_estimate": "2K",
-  "last_updated": "2026-11-25 18:28",
+  "esports_disengagement_signals": [],
+  "fsl_mention_rate": "75.0%",
+  "impact_score": 3.0,
+  "viewer_engagement_estimate": "2.5K",
+  "last_updated": "2026-11-26 18:06",
   "history": [
-    {
-      "label": "07/10",
-      "date": "2026-07-10",
-      "esi": 10.0,
-      "posts": 4,
-      "esports": 2,
-      "positive": 50
-    },
     {
       "label": "07/11",
       "date": "2026-07-11",
@@ -778,6 +798,14 @@
       "esi": 0.0,
       "posts": 2,
       "esports": 1,
+      "positive": 0
+    },
+    {
+      "label": "11/26",
+      "date": "2026-11-26",
+      "esi": 0.0,
+      "posts": 4,
+      "esports": 3,
       "positive": 0
     }
   ]
