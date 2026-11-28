@@ -1,37 +1,208 @@
 {
   "source": "fsl",
   "collection_range": {
-    "start": "2026-11-26 10:01",
-    "end": "2026-11-27 09:59"
+    "start": "2026-11-27 10:01",
+    "end": "2026-11-28 09:59"
   },
-  "total_posts": 3,
-  "total_views": 9322,
-  "avg_views_per_post": 3107,
+  "total_posts": 22,
+  "total_views": 28620,
+  "avg_views_per_post": 1300,
   "posts": [
+    {
+      "title": "로드투 파이널 상자 공경만 주는거?",
+      "url": "https://www.fmkorea.com/index.php?mid=fifa_online&category=8064047289&document_srl=10602336179",
+      "views": 951,
+      "comments": 4,
+      "date": "22:33",
+      "category": "FSL·프로게이머",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "내년에 소라윗만 한국오면 구 페이즈클랜 3명 다 한국 리그 경험하는거네 ㅋㅋ",
+      "url": "https://www.fmkorea.com/index.php?mid=fifa_online&category=8064047289&document_srl=10601720912",
+      "views": 253,
+      "comments": 0,
+      "date": "19:05",
+      "category": "FSL·프로게이머",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "티덱은 상상도 못했네 ㄷㄷ",
+      "url": "https://www.fmkorea.com/index.php?mid=fifa_online&category=8064047289&document_srl=10601625738",
+      "views": 268,
+      "comments": 0,
+      "date": "18:27",
+      "category": "FSL·프로게이머",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "젠시티 우승 못하면 ufc각이다",
+      "url": "https://www.fmkorea.com/index.php?mid=fifa_online&category=8064047289&document_srl=10601621665",
+      "views": 1715,
+      "comments": 3,
+      "date": "18:26",
+      "category": "FSL·프로게이머",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "젠지 그슬각인데 ㄹㅇ",
+      "url": "https://www.fmkorea.com/index.php?mid=fifa_online&category=8064047289&document_srl=10601617663",
+      "views": 1221,
+      "comments": 1,
+      "date": "18:24",
+      "category": "FSL·프로게이머",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "젠시티 원더08 찬 티덱이면",
+      "url": "https://www.fmkorea.com/index.php?mid=fifa_online&category=8064047289&document_srl=10601615019",
+      "views": 451,
+      "comments": 0,
+      "date": "18:23",
+      "category": "FSL·프로게이머",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "근데 원더 찬 티덱이면 에결 누가 나감",
+      "url": "https://www.fmkorea.com/index.php?mid=fifa_online&category=8064047289&document_srl=10601609774",
+      "views": 1536,
+      "comments": 5,
+      "date": "18:21",
+      "category": "FSL·프로게이머",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "와 잰시 티디킨왔네",
+      "url": "https://www.fmkorea.com/index.php?mid=fifa_online&category=8064047289&document_srl=10601608508",
+      "views": 575,
+      "comments": 0,
+      "date": "18:21",
+      "category": "FSL·프로게이머",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "젠시티 아겜 금메달리스트 데려왔네 ㄷㄷㄷㄷㄷ",
+      "url": "https://www.fmkorea.com/index.php?mid=fifa_online&category=8064047289&document_srl=10601598493",
+      "views": 3487,
+      "comments": 5,
+      "date": "18:18",
+      "category": "FSL·프로게이머",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "젠시티 멤버 개쌔다",
+      "url": "https://www.fmkorea.com/index.php?mid=fifa_online&category=8064047289&document_srl=10601597460",
+      "views": 238,
+      "comments": 0,
+      "date": "18:16",
+      "category": "FSL·프로게이머",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "샤이프가 자기 4옵션이라고 한 이유가 있었다 ㅋㅋㅋㅋㅋ",
+      "url": "https://www.fmkorea.com/index.php?mid=fifa_online&category=8064047289&document_srl=10601594509",
+      "views": 205,
+      "comments": 0,
+      "date": "18:15",
+      "category": "FSL·프로게이머",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "Welcome, TDKeane",
+      "url": "https://www.fmkorea.com/index.php?mid=fifa_online&category=8064047289&document_srl=10601592975",
+      "views": 366,
+      "comments": 0,
+      "date": "18:15",
+      "category": "FSL·프로게이머",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "이러면 개인전에서 준혁이 티덱 만나면 전투력올라감?",
+      "url": "https://www.fmkorea.com/index.php?mid=fifa_online&category=8064047289&document_srl=10601589384",
+      "views": 247,
+      "comments": 5,
+      "date": "18:13",
+      "category": "FSL·프로게이머",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "젠시티 4번째 멤버 티덱이네ㄷㄷ",
+      "url": "https://www.fmkorea.com/index.php?mid=fifa_online&category=8064047289&document_srl=10601586374",
+      "views": 1638,
+      "comments": 0,
+      "date": "18:12",
+      "category": "FSL·프로게이머",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "젠시티덱 ㅅㅅㅅㅅㅅㅅㅅㅅㅅㅅㅅㅅ",
+      "url": "https://www.fmkorea.com/index.php?mid=fifa_online&category=8064047289&document_srl=10601585461",
+      "views": 1972,
+      "comments": 2,
+      "date": "18:12",
+      "category": "FSL·프로게이머",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "젠시티 마지막멤버 공개하네",
+      "url": "https://www.fmkorea.com/index.php?mid=fifa_online&category=8064047289&document_srl=10601564149",
+      "views": 218,
+      "comments": 0,
+      "date": "18:03",
+      "category": "FSL·프로게이머",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "원더08 방송 on",
+      "url": "https://www.fmkorea.com/index.php?mid=fifa_online&category=8064047289&document_srl=10601561794",
+      "views": 220,
+      "comments": 0,
+      "date": "18:02",
+      "category": "FSL·프로게이머",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "아놔 숲 안들어가지네",
+      "url": "https://www.fmkorea.com/index.php?mid=fifa_online&category=8064047289&document_srl=10601560688",
+      "views": 263,
+      "comments": 0,
+      "date": "18:01",
+      "category": "FSL·프로게이머",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "젠지 티덱이면 공경랭킹에 있는사람 찐인가보네",
+      "url": "https://www.fmkorea.com/index.php?mid=fifa_online&category=8064047289&document_srl=10601410415",
+      "views": 630,
+      "comments": 1,
+      "date": "11.27",
+      "category": "FSL·프로게이머",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "젠지 마지막 멤버 18:00 공개",
+      "url": "https://www.fmkorea.com/index.php?mid=fifa_online&category=8064047289&document_srl=10601374367",
+      "views": 3285,
+      "comments": 13,
+      "date": "11.27",
+      "category": "FSL·프로게이머",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "티덱 98년생이었구나",
+      "url": "https://www.fmkorea.com/index.php?mid=fifa_online&category=8064047289&document_srl=10600727243",
+      "views": 1801,
+      "comments": 1,
+      "date": "11.27",
+      "category": "FSL·프로게이머",
+      "sentiment": "neutral"
+    },
     {
       "title": "[오피셜] 티덱 어드바이스 계약종료",
       "url": "https://www.fmkorea.com/index.php?mid=fifa_online&category=8064047289&document_srl=10599755789",
-      "views": 6205,
+      "views": 7080,
       "comments": 6,
-      "date": "00:33",
-      "category": "FSL·프로게이머",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "네이비) FSL 올스타전 곽을 뽑을 수밖에 없었다",
-      "url": "https://www.fmkorea.com/index.php?mid=fifa_online&category=8064047289&document_srl=10598582459",
-      "views": 799,
-      "comments": 3,
-      "date": "18:35",
-      "category": "FSL·프로게이머",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "샤이프) 이번 주에 젠시티 선수 공개 된다",
-      "url": "https://www.fmkorea.com/index.php?mid=fifa_online&category=8064047289&document_srl=10598151561",
-      "views": 2318,
-      "comments": 1,
-      "date": "11.26",
+      "date": "11.27",
       "category": "FSL·프로게이머",
       "sentiment": "neutral"
     }
@@ -48,16 +219,8 @@
   "fsl_mention_rate": "0%",
   "impact_score": 5.0,
   "viewer_engagement_estimate": "0K",
-  "last_updated": "2026-11-27 18:22",
+  "last_updated": "2026-11-28 17:38",
   "history": [
-    {
-      "label": "07/13",
-      "date": "2026-07-13",
-      "esi": 10.0,
-      "posts": 92,
-      "esports": 53,
-      "positive": 61
-    },
     {
       "label": "07/14",
       "date": "2026-07-14",
@@ -768,6 +931,14 @@
       "esi": 10.0,
       "posts": 3,
       "esports": 2,
+      "positive": 0
+    },
+    {
+      "label": "11/28",
+      "date": "2026-11-28",
+      "esi": 10.0,
+      "posts": 22,
+      "esports": 9,
       "positive": 0
     }
   ]
